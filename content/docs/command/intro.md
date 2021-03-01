@@ -29,10 +29,10 @@ Create an account in [code.org](https://studio.code.org/users/sign_up) website
 {{< tip >}}
 - [Exploring how computers work](https://www.youtube.com/watch?v=QZwneRb-zqA) 
 - [How do computers remember](https://www.youtube.com/watch?v=I0-izyq6q5s)
-- [Intro to computer science](https://www.youtube.com/watch?v=z-OxzIC6pic) 
+- [Intro to computer science Harvard](https://www.youtube.com/watch?v=z-OxzIC6pic) 
 {{< /tip >}}
 
 
 ## Next class preparation
 
-{{< button "../command_line.md/" "Basic Command Line" "mb-1 grid-4" >}}
+{{< button "../command_line/" "Basic Command Line" "mb-1 grid-4" >}}
