@@ -1,18 +1,40 @@
 ---
-title: "Themes' Docs"
+title: "Welcome to the course 🎉"
 weight: 1
 ---
 
-These docs consists of two parts:
+![Tesla rocket](https://media0.giphy.com/media/l4pTldWDec8WamJUc/200.gif)
 
-1. Hugo Compose Themes docs
-2. Hugo Clarity Theme docs.
 
-Please note that the features listed under each theme are independent of each other. That is to say, some features may only be found in one theme and not in both.
+In this awesome course You will be learning fundamental computer science skills that are an absolute **MUST** for any IT field 🎉
 
-<!-- That content is better than dummy lorem ipsum 2) That content serves a good real-world demo for this theme 3) Publish more structured docs for each theme which are better than long blocky READMEs -->
+You will be also introduced to programming and have your very first practical experience with one of the most popular programming languages: Python, HTML, CSS and Javascript.
 
-{{< button "./compose/" "Compose Theme Docs" "mb-1" >}}
+## Sections 📚
+These docs consists of **four** parts:
 
-{{< button "./clarity/" "Clarity Theme Docs" >}}
+1. Basic Command Line (Linux)
+2. Version Control with GIT
+3. Web Fundamentals
+4. Introduction to Programing (Python)
 
+
+# After this course 🤔
+
+- Understand and use the basic command line                                  
+- Use git/GitHub repository
+- Understand the fundamentals of the web and its working
+- Do basic python programming
+
+After the successful completion of this introductory course, you can choose and apply for any other intermediate-level courses offered by ReDI!
+
+
+## Courses links
+
+{{< button "./command/" "Basic Command Line" "mb-1 grid-4" >}}
+
+{{< button "./git/" "Version Control with GIT" "mb-1 grid-4">}}
+
+{{< button "./web/" "Web Fundamentals" "mb-1 grid-4">}}
+
+{{< button "./python/" "Introduction to Programing (Python)" "mb-1 grid-4" >}}

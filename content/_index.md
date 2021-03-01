@@ -1,8 +1,7 @@
 +++
-title = "Compose"
+title = "Berlin 2021 - Intro to Computer Science"
 # define chart data here
 [data]
-  fileLink = "content/projects.csv" # path to where csv is stored
   colors = ["#627c62", "#11819b", "#ef7f1a", "#4e1154"] # chart colors
   columnTitles = ["Section", "Status", "Author"] # optional if no table will be displayed from dataset
   baseChartOn = 3 # number of column the chart(s) and graph should be drawn from # can be overridden directly via shortcode parameter # it's therefore optional
@@ -11,24 +10,23 @@ title = "Compose"
 
 {{< block "grid-2" >}}
 {{< column >}}
-# Compose your Docs with __Ease__.
 
-Compose is a lean theme for the `Hugo`, inspired by [forestry.io](https://forestry.io). 
+# Welcome to **Intro to Computer-Science 2021** course Berlin 🇩🇪 
 
-We do a [Pull Request](https://github.com/onweru/compose/pulls) contributions workflow on **GitHub**. Also feel free to raise any issues or feature suggestions.
+Here you will find most of the content for our courses, prerequisites for each class, summaries of the classes and extra content so you can work on your own.
 
 {{< tip "warning" >}}
-Note that the theme is built with simplicity in mind. [This way](/), if a suggestion complicates the usability of the theme, it may be declined. New users are always welcome!
+This is a work in process document for the course of 2021 in Berlin.
 {{< /tip >}}
 
-{{< tip >}}
-You can [generate graphs, charts](]("docs/compose/graphs-charts-tables/#show-a-pie-doughnut--bar-chart-at-once")) and tables from a csv, ~~or a json~~ dataset
-{{< /tip >}}
+{{< button "docs/" "Get started with the course 🚀" >}}
 
-{{< button "docs/compose/" "Read the Docs" >}}{{< button "https://github.com/onweru/compose" "Download Theme" >}}
 {{< /column >}}
 
 {{< column >}}
-![diy](/images/scribble.jpg)
+![Margaret Hamilton](https://upload.wikimedia.org/wikipedia/commons/2/2e/Margaret_Hamilton.gif)
+
+[Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)) - She sent rockets to the moon 🚀
+
 {{< /column >}}
 {{< /block >}}
