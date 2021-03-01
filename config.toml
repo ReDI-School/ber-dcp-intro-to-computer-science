@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://redi-school.github.io/ber-dcp-intro-to-computer-science/"
 title = "Intro to Computer-Science Berlin 2021"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
@@ -6,8 +6,8 @@ enableRobotsTXT = true
 theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of this repo
 # theme = "compose"
 enableGitInfo = true
-
 disableKinds = ["taxonomy", "taxonomyTerm"]
+publishDir = "docs"
 
 [outputs]
   home = ["HTML", "RSS","JSON"]
@@ -42,7 +42,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 # Everything below this are Site Params
 
 [params]
-
   repo = "https://github.com/ReDI-School/ber-dcp-intro-to-computer-science"
 
   time_format_blog = "Monday, January 02, 2006"
