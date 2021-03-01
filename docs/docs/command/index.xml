@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Command Line on Intro to Computer-Science Berlin 2021</title>
-    <link>https://redi-school.github.io/docs/command/</link>
+    <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/</link>
     <description>Recent content in Command Line on Intro to Computer-Science Berlin 2021</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/docs/command/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>02/March - Inspiration class </title>
-      <link>https://redi-school.github.io/docs/command/intro/</link>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://redi-school.github.io/docs/command/intro/</guid>
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/intro/</guid>
       <description>Pre Requisites Create an account in code.org website
  https://studio.code.org/users/sign_up  Class Curriculum    Section content Expected time (mins) Pre - Requirements     Teacher/Student introduction 20-30 mins ❌   Showing the outline of the course: 5-10 mins ❌   Intro to computer science: 20-30 minutes ❌   Small break 5mins ❌   Dance Party 20-30 mins Register code.org   Small introduction to what is software/code 20-30 mins ❌   Next class overview 5 mins ❌    Extra resources  Exploring how computers work How do computers remember Intro to computer science   Next class preparation Basic Command Line </description>
     </item>
     
     <item>
       <title>04/March</title>
-      <link>https://redi-school.github.io/docs/command/command_line/</link>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/command_line/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://redi-school.github.io/docs/command/command_line/</guid>
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/command_line/</guid>
       <description></description>
     </item>
     

@@ -1,4 +1,4 @@
-baseURL = "https://redi-school.github.io"
+baseURL = "https://redi-school.github.io/ber-dcp-intro-to-computer-science/"
 title = "Intro to Computer-Science Berlin 2021"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
