@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Compose Docs"
+title = "Intro to Computer-Science Berlin 2021"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
@@ -14,14 +14,9 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 #  menu items
 [[menu.main]]
-  name = "Docs"
+  name = "Courses"
   weight = 2
   url = "docs/"
-
-[[menu.main]]
-  name = "Example"
-  weight = 3
-  url = "https://docs.neuralvibes.com"
 
 [markup]
   [markup.goldmark]
@@ -48,7 +43,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
 
-  repo = "https://github.com/onweru/compose"
+  repo = "https://github.com/ReDI-School/ber-dcp-intro-to-computer-science"
 
   time_format_blog = "Monday, January 02, 2006"
   time_format_default = "January 2, 2006"
@@ -62,18 +57,12 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 
   # Site logo
   [params.logo]
-    lightMode = "images/compose.svg"
-    darkMode = "images/compose-light.svg"
+    lightMode = 'images/E048.svg'
+    darkMode = 'images/E048.svg'
 
   [params.source]
     name = "GitHub"
     iconLight = "images/GitHubMarkLight.svg"
     iconDark = "images/GitHubMarkDark.svg"
-    url = "https://github.com/onweru/compose/"
-
-  # optional
-  # attribution. Feel free to delete this
-  [params.author]
-    name = "Weru"
-    url = "https://neuralvibes.com/author/"
+    url = "https://github.com/ReDI-School/ber-dcp-intro-to-computer-science"
 
