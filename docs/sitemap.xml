@@ -2,64 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/compose/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
+    <loc>/docs/command/</loc>
+    <lastmod>2021-03-01T19:59:52+01:00</lastmod>
   </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
+    <loc>/docs/git/</loc>
+    <lastmod>2021-03-01T19:59:52+01:00</lastmod>
   </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/compose/install-theme/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
+    <loc>/docs/web/</loc>
+    <lastmod>2021-03-01T19:59:52+01:00</lastmod>
   </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/compose/use-forestry-cms/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
+    <loc>/docs/</loc>
+    <lastmod>2021-03-01T19:59:52+01:00</lastmod>
   </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/compose/organize-content/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
+    <loc>/docs/python/</loc>
+    <lastmod>2021-03-01T19:59:52+01:00</lastmod>
   </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/compose/shortcodes/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
+    <loc>/docs/command/intro/</loc>
+    <lastmod>2021-03-01T19:59:52+01:00</lastmod>
   </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/compose/shortcodes-example/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
+    <loc>/docs/command/command_line/</loc>
+    <lastmod>2021-03-01T19:59:52+01:00</lastmod>
   </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/compose/search/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2021-03-01T19:59:52+01:00</lastmod>
   </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/compose/graphs-charts-tables/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/clarity/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/clarity/getting-started/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/clarity/features/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/clarity/customize/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/clarity/images/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/clarity/blogging/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/compose/customize/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/search/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/clarity/syntax-highlighting/</loc>
-    <lastmod>2021-02-28T14:49:55+03:00</lastmod>
-  </url><url>
-    <loc>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/clarity/theme-overrides/</loc>
+    <loc>/search/</loc>
     <lastmod>2021-02-28T14:49:55+03:00</lastmod>
   </url>
 </urlset>

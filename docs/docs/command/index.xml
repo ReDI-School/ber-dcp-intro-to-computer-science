@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Berlin 2021 - Intro to Computer Science on Intro to Computer-Science Berlin 2021</title>
-    <link>/</link>
-    <description>Recent content in Berlin 2021 - Intro to Computer Science on Intro to Computer-Science Berlin 2021</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <title>Command Line on Intro to Computer-Science Berlin 2021</title>
+    <link>/docs/command/</link>
+    <description>Recent content in Command Line on Intro to Computer-Science Berlin 2021</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/docs/command/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>02/March - Inspiration class </title>
       <link>/docs/command/intro/</link>
@@ -21,15 +21,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/docs/command/command_line/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Search</title>
-      <link>/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/search/</guid>
       <description></description>
     </item>
     
