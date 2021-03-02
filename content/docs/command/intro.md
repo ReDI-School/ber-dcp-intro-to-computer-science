@@ -27,9 +27,12 @@ Create an account in [code.org](https://studio.code.org/users/sign_up) website
 
 ## Extra resources
 {{< tip >}}
+- [Intro to computer science Harvard - Binary](https://www.youtube.com/watch?v=z-OxzIC6pic) 
 - [Exploring how computers work](https://www.youtube.com/watch?v=QZwneRb-zqA) 
 - [How do computers remember](https://www.youtube.com/watch?v=I0-izyq6q5s)
-- [Intro to computer science Harvard](https://www.youtube.com/watch?v=z-OxzIC6pic) 
+- [History of computer science](https://www.fondation-lamap.org/en/page/65565/1-2-3-code-scientific-background-a-brief-history-of-computer-science)
+- [Scratch](https://scratch.mit.edu/projects/editor/?tutorial=getStarted)
+- [Presentation](https://docs.google.com/presentation/d/1ifk91QmsKUEBJ5SRXbNkFnWSLMdFgm01AVlwuerk0c8/edit?usp=sharing)
 {{< /tip >}}
 
 
