@@ -1,10 +1,10 @@
 ## Guide
 
-This guide covers the necessary bits. As the project evolves, it will only become more comprehensive
+This guide covers the necessary bits. As the project evolves, it will become more comprehensive
 
 ## Usage
 
-- Install go (recommended https://github.com/kennyp/asdf-golang)
-- Install hugo in your computer
-- Local development `hugo server`
-- Before pushing to build the command `hugo`
+- Install go 1.16+ (https://golang.org/doc/install)
+- Install hugo on your computer (`go install github.com/gohugoio/hugo@v0.81.0`)
+- Test your changes on a local development server with `make server`
+- Before pushing to github build the site with `make build`
