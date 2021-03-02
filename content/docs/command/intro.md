@@ -35,4 +35,4 @@ Create an account in [code.org](https://studio.code.org/users/sign_up) website
 
 ## Next class preparation
 
-{{< button "../command_line/" "Basic Command Line" "mb-1 grid-4" >}}
+{{< button "../command_line_part1" "Operating systems & Command Line Basics Part 1" "mb-1 grid-4" >}}
