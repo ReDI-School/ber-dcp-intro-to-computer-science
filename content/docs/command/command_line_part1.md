@@ -30,7 +30,7 @@ Create an account on [repl.it](https://repl.it/signup)
 {{< tip >}}
 - [Computer Basics: Understanding Operating Systems](https://www.youtube.com/watch?v=fkGCLIQx1MI)
 - [Operating Systems: Crash Course Computer Science #18](https://www.youtube.com/watch?v=26QPDBe-NB8)
-- [Beginner's Guide to the Bash Terminal](hhttps://www.youtube.com/watch?v=oxuRxtrO2Ag)
+- [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
 - [What Is Abstraction in Computer Science](https://www.youtube.com/watch?v=_y-5nZAbgt4)
   {{< /tip >}}
 
