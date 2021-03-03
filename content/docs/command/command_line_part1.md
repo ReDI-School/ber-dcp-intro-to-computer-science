@@ -32,6 +32,11 @@ Create an account on [repl.it](https://repl.it/signup)
 - [Operating Systems: Crash Course Computer Science #18](https://www.youtube.com/watch?v=26QPDBe-NB8)
 - [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
 - [What Is Abstraction in Computer Science](https://www.youtube.com/watch?v=_y-5nZAbgt4)
+- [How to use the Command Line Terminal On Your Mac](https://www.youtube.com/watch?v=FfT8OfMpARM)
+- [How to Install Linux Terminal on Windows 10](https://www.youtube.com/watch?v=LLlfLpvQg04)
+- [Jobs: Linux & Career Opportunities](https://www.youtube.com/watch?v=Ic2GhUnlN38)
+- [Jobs: Inside Site Reliability Engineering](https://www.youtube.com/watch?v=-Tz-HYeWyzY)
+- [Jobs: Career Switch to IT](https://www.youtube.com/watch?v=NyCyknm_n8M)
   {{< /tip >}}
 
 
