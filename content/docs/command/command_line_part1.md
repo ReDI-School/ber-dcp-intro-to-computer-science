@@ -19,15 +19,54 @@ Create an account on [repl.it](https://repl.it/signup)
 | Operating system (OS) basics                | 20-25 minutes        | ❌                  |
 | Principle of abstraction                    | 5-10 minutes         | ❌                  |
 | Graphical & command line interfaces to OS   | 5-10 minutes         | ❌                  |
+| Linux file system hierarchy                 | 5-10 minutes         | repl.it account    |
 | Class break                                 | 10 minutes           | ❌                  |
-| The Linux command line                      | 20-25 minutes        | repl.it account    |
-| Linux file system hierarchy                 | 20-25 minutes        | repl.it account    |
+| The Linux command line                      | 35-40 minutes        | repl.it account    |
 | Job opportunities                           | 5-10 minutes         | ❌                  |
 | Next class overview                         | 5 minutes            | ❌                  |
 
+## Operating system (OS) basics
+- Questions
+  - Can you think of any operating systems in nature?
+  - Can you think of any operating systems in society?
+  - What are some operating systems you've used?
+  
+## Principle of abstraction
+- Questions:
+  - Can you think of other examples of the Principle of abstraction in:
+    - Society
+    - Science & Technology
+  
+## The Linux command line
+- Questions:
+  - Use the `man` command to view documentation for the following commands:
+    - echo 
+    - man
+    - pwd
+    - ls
+    - cd
+    - cat
+    - cp
+    - mv
+    - mkdir
+    - touch
+    - find
+    - grep
+    - history
+    - date
+    - whoami
+
+  
+## Job opportunities
+- Systems Administrator
+- DevOps Engineer
+- Site Reliability Engineer
+- Questions:
+  - Can you think of any other career opportunities?
 
 ## Extra resources
 {{< tip >}}
+- [Presentation](https://docs.google.com/presentation/d/1SvSWzSK45t7ysdm8pBSc04OoIaMq8KmAg2uhpuQq2TY/edit?usp=sharing)
 - [Computer Basics: Understanding Operating Systems](https://www.youtube.com/watch?v=fkGCLIQx1MI)
 - [Operating Systems: Crash Course Computer Science #18](https://www.youtube.com/watch?v=26QPDBe-NB8)
 - [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
