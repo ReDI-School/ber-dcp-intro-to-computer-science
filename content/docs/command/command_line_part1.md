@@ -39,9 +39,12 @@ Create an account on [repl.it](https://repl.it/signup)
   
 ## The Linux command line
 - Questions:
-  - Use the `man` command to view documentation for the following commands:
-    - echo 
-    - man
+  - Create an account on repl.it
+  - Click `+ New Repl` on the top-left side of the page
+  - Select `Bash` from the `Language` drop-down menu
+  - Click `create repl`
+  - Explore the following commands in your bash command line interface on repl.it:
+    - echo
     - pwd
     - ls
     - cd
