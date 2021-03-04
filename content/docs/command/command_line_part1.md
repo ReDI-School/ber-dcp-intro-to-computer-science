@@ -69,7 +69,7 @@ Create an account on [repl.it](https://repl.it/signup)
 
 ## Extra resources
 {{< tip >}}
-- [Presentation](https://docs.google.com/presentation/d/1SvSWzSK45t7ysdm8pBSc04OoIaMq8KmAg2uhpuQq2TY/edit?usp=sharing)
+- [Presentation](https://docs.google.com/presentation/d/1tDpO3sOITdGojJxEB0IbvBubtcKeHeQlgihLSer15AA/edit?usp=sharing)
 - [Computer Basics: Understanding Operating Systems](https://www.youtube.com/watch?v=fkGCLIQx1MI)
 - [Operating Systems: Crash Course Computer Science #18](https://www.youtube.com/watch?v=26QPDBe-NB8)
 - [Beginner's Guide to the Bash Terminal](https://www.youtube.com/watch?v=oxuRxtrO2Ag)
