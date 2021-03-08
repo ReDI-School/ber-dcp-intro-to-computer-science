@@ -14,12 +14,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/command_line_part2/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-03-02T01:57:12&#43;01:00" />
+<meta property="article:modified_time" content="2021-03-08T22:45:57&#43;03:00" />
 
 <meta itemprop="name" content="09/March/2021 - Command Line Basics Part 2">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2021-03-02T01:57:12&#43;01:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="dateModified" content="2021-03-08T22:45:57&#43;03:00" />
+<meta itemprop="wordCount" content="1787">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="09/March/2021 - Command Line Basics Part 2"/>
 <meta name="twitter:description" content="Goals"/>
@@ -130,7 +130,19 @@
     <li><a href="#next-class-preparation">Next class preparation</a></li>
   </ul>
 </nav>
-        <h3 class="section_link active"><a id="docs-09march2021---command-line-basics-part-2" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/command_line_part2/">09/March/2021 - Command Line Basics Part 2</a></h3><nav id="TableOfContents"></nav>
+        <h3 class="section_link active"><a id="docs-09march2021---command-line-basics-part-2" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/command_line_part2/">09/March/2021 - Command Line Basics Part 2</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre Requisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#recap-session-1command_line_part1">Recap <a href="../command_line_part1">Session 1</a></a></li>
+    <li><a href="#navigating-through-the-linux-file-system">Navigating through the Linux File System</a></li>
+    <li><a href="#create-view-manipulate-files--folders">Create, view, manipulate files &amp; folders</a></li>
+    <li><a href="#group-project-creating-a-journaldiary">Group project: Creating a journal/diary</a></li>
+    <li><a href="#installing-software--package-managers">Installing software &amp; package managers</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
       </section>
   </section>
   <section class="section aside_inner">
@@ -147,7 +159,430 @@
 </aside>
 
   <main class="content">
-    <h1>09/March/2021 - Command Line Basics Part 2</h1><p><img src="https://media1.giphy.com/media/kfR5iyQgmq7PoiFTAf/giphy.gif" alt=""></p>
+    <h1>09/March/2021 - Command Line Basics Part 2</h1>
+<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/anatomy_of_command_line.png" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/anatomy_of_command_line.png">
+  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/anatomy_of_command_line.png" media="(prefers-color-scheme: dark)">
+  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/anatomy_of_command_line.png" alt="Anatomy of a command line">
+</picture>
+
+<h2 id="pre-requisites">Pre Requisites</h2>
+<ul>
+<li>
+<p>Create an account on <a href="https://repl.it/signup">repl.it</a></p>
+</li>
+<li>
+<p>Optional( for Windows users only): <a href="https://www.youtube.com/watch?v=LLlfLpvQg04">How to Install Linux Terminal on Windows 10</a></p>
+</li>
+</ul>
+<h2 id="class-curriculum">Class Curriculum</h2>
+<table>
+<thead>
+<tr>
+<th>Section content</th>
+<th>Expected time (mins)</th>
+<th>Pre - Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Digital Career Support Team</td>
+<td>10-15 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Recap <a href="../command_line_part1">Session 1</a></td>
+<td>15-20 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Navigation of Linux file system</td>
+<td>5-10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Create, view, manipulate files &amp; folders</td>
+<td>5-10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Class break</td>
+<td>10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Group project: Creating a journal/diary</td>
+<td>20-25 minutes</td>
+<td>repl.it account</td>
+</tr>
+<tr>
+<td>Installing software &amp; package managers</td>
+<td>10-15 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Summary &amp; Next class overview</td>
+<td>10 minutes</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="recap-session-1command_line_part1">Recap <a href="../command_line_part1">Session 1</a></h2>
+<ul>
+<li>Questions
+<ul>
+<li>Linux and Windows are ...</li>
+<li>To create a directory in linux we use the command: ...</li>
+<li>To create a file in linux we use the command: ...</li>
+<li>Commands like above/before expect us to provide also an ...</li>
+</ul>
+</li>
+</ul>
+<h2 id="navigating-through-the-linux-file-system">Navigating through the Linux File System</h2>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/# <span class="nb">pwd</span>
+<span class="ln"> 2</span>/
+<span class="ln"> 3</span>root@abc40003dc7a:/# <span class="nb">cd</span> home/
+<span class="ln"> 4</span>root@abc40003dc7a:/home# <span class="nb">pwd</span>
+<span class="ln"> 5</span>/home
+<span class="ln"> 6</span>root@abc40003dc7a:/home# <span class="nb">cd</span> deliergky/
+<span class="ln"> 7</span>root@abc40003dc7a:/home/deliergky# <span class="nb">pwd</span>
+<span class="ln"> 8</span>/home/deliergky
+<span class="ln"> 9</span>root@abc40003dc7a:/home/deliergky# <span class="nb">cd</span> ..
+<span class="ln">10</span>root@abc40003dc7a:/home# <span class="nb">pwd</span>
+<span class="ln">11</span>/home
+<span class="ln">12</span>root@abc40003dc7a:/home# <span class="nb">cd</span> ..
+<span class="ln">13</span>root@abc40003dc7a:/# <span class="nb">pwd</span>
+<span class="ln">14</span>/
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# <span class="nb">pwd</span>
+<span class="ln">2</span>/home/deliergky
+<span class="ln">3</span>root@abc40003dc7a:/home/deliergky# <span class="nb">cd</span> ~
+<span class="ln">4</span>root@abc40003dc7a:~# <span class="nb">pwd</span>
+<span class="ln">5</span>/root
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>$ ls -an
+<span class="ln"> 2</span>total <span class="m">88</span>
+<span class="ln"> 3</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 17:48 .
+<span class="ln"> 4</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 17:48 ..
+<span class="ln"> 5</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:47 bin
+<span class="ln"> 6</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Apr <span class="m">24</span>  <span class="m">2018</span> boot
+<span class="ln"> 7</span>drwxr-xr-x   <span class="m">5</span> <span class="m">0</span> <span class="m">0</span>  <span class="m">360</span> Mar  <span class="m">8</span> 17:48 dev
+<span class="ln"> 8</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:29 etc
+<span class="ln"> 9</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:31 home
+<span class="ln">10</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 17:59 lib
+<span class="ln">11</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:46 lib64
+<span class="ln">12</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:43 media
+<span class="ln">13</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:43 mnt
+<span class="ln">14</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:43 opt
+<span class="ln">15</span>dr-xr-xr-x <span class="m">127</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 17:48 proc
+<span class="ln">16</span>drwx------   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:47 root
+<span class="ln">17</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">4</span> 02:24 run
+<span class="ln">18</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">4</span> 02:24 sbin
+<span class="ln">19</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:43 srv
+<span class="ln">20</span>dr-xr-xr-x  <span class="m">13</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 17:48 sys
+<span class="ln">21</span>drwxrwxrwt   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:04 tmp
+<span class="ln">22</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:43 usr
+<span class="ln">23</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:47 var
+</code></pre></div><h2 id="create-view-manipulate-files--folders">Create, view, manipulate files &amp; folders</h2>
+<section class="grid-2"  >
+
+<div><ul>
+<li><em>Create</em> a <em>file</em>:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# mkdir -p 2021/03
+</code></pre></div><ul>
+<li><em>Create</em> a <em>folder</em>:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# touch 2021/03/08.log
+</code></pre></div><ul>
+<li><em>Copy</em> a <em>file</em>:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# cp 2021/03/09.log 2021/03/10.log
+<span class="ln">2</span>root@abc40003dc7a:/home/deliergky# cat 2021/03/10.log
+<span class="ln">3</span>Learning something cool @ReDI
+</code></pre></div><ul>
+<li><em>Copy</em> a <em>folder</em>:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/home/deliergky# cp -r 2021/03/ 2021/04
+<span class="ln"> 2</span>root@abc40003dc7a:/home/deliergky# ls -an 2021/04/
+<span class="ln"> 3</span>total <span class="m">16</span>
+<span class="ln"> 4</span>drwxr-xr-x <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:58 .
+<span class="ln"> 5</span>drwxr-xr-x <span class="m">4</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:58 ..
+<span class="ln"> 6</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:58 07.log
+<span class="ln"> 7</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:58 08.log
+<span class="ln"> 8</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>   <span class="m">30</span> Mar  <span class="m">8</span> 18:58 09.log
+<span class="ln"> 9</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>   <span class="m">30</span> Mar  <span class="m">8</span> 18:58 11.log
+<span class="ln">10</span>root@abc40003dc7a:/home/deliergky#
+</code></pre></div><ul>
+<li><em>Delete/Remove</em> a <em>file</em>:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# rm 2021/04/09.log
+<span class="ln">2</span>root@abc40003dc7a:/home/deliergky# ls -an 2021/04/
+<span class="ln">3</span>total <span class="m">12</span>
+<span class="ln">4</span>drwxr-xr-x <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 19:01 .
+<span class="ln">5</span>drwxr-xr-x <span class="m">4</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:58 ..
+<span class="ln">6</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:58 07.log
+<span class="ln">7</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:58 08.log
+<span class="ln">8</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>   <span class="m">30</span> Mar  <span class="m">8</span> 18:58 11.log
+<span class="ln">9</span>root@abc40003dc7a:/home/deliergky#
+</code></pre></div><ul>
+<li><em>Delete/Remove</em> a <em>folder</em>:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# rm 2021/04/
+<span class="ln">2</span>rm: cannot remove <span class="s1">&#39;2021/04/&#39;</span>: Is a directory
+<span class="ln">3</span>root@abc40003dc7a:/home/deliergky# rm -r 2021/04/
+<span class="ln">4</span>root@abc40003dc7a:/home/deliergky#
+</code></pre></div></div>
+
+<div><ul>
+<li><em>View</em> a <em>file</em>:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# cat 2021/03/08.log
+<span class="ln">2</span>International Women<span class="s1">&#39;s Day (March 8) is a global day celebrating the social, economic, cultural, and political achievements of women. The day also marks a call to action for accelerating women&#39;</span>s equality.
+</code></pre></div><ul>
+<li><em>List</em> a <em>folder's</em> content:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# ls -an 2021/03/
+<span class="ln">2</span>total <span class="m">12</span>
+<span class="ln">3</span>drwxr-xr-x <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:35 .
+<span class="ln">4</span>drwxr-xr-x <span class="m">3</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:31 ..
+<span class="ln">5</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:35 07.log
+<span class="ln">6</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>  <span class="m">204</span> Mar  <span class="m">8</span> 18:41 08.log
+<span class="ln">7</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:34 09.log
+</code></pre></div><ul>
+<li><em>Update</em> a <em>file's</em> content:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# <span class="nb">echo</span> <span class="s2">&#34;Learning something cool @ReDI&#34;</span> &gt; 2021/03/09.log
+<span class="ln">2</span>root@abc40003dc7a:/home/deliergky# cat 2021/03/09.log
+<span class="ln">3</span>Learning something cool @ReDI
+</code></pre></div><ul>
+<li><em>Rename</em> a <em>file</em>:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# mv 2021/03/10.log 2021/03/11.log
+<span class="ln">2</span>root@abc40003dc7a:/home/deliergky# ls -an 2021/03/
+<span class="ln">3</span>total <span class="m">16</span>
+<span class="ln">4</span>drwxr-xr-x <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:49 .
+<span class="ln">5</span>drwxr-xr-x <span class="m">3</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:31 ..
+<span class="ln">6</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:35 07.log
+<span class="ln">7</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:44 08.log
+<span class="ln">8</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>   <span class="m">30</span> Mar  <span class="m">8</span> 18:47 09.log
+<span class="ln">9</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>   <span class="m">30</span> Mar  <span class="m">8</span> 18:48 11.log
+</code></pre></div></div>
+
+</section>
+
+<h2 id="group-project-creating-a-journaldiary">Group project: Creating a journal/diary</h2>
+<section class="grid-2"  >
+<div><p>Let's create a simple diary in the following format: <code>2021/03/09.log</code></p>
+<p>Where:</p>
+<ul>
+<li><code>2021</code> represents the year and is a folder</li>
+<li><code>03</code> represents the month and is a folder</li>
+<li><code>09.log</code> represents the day and is a file</li>
+</ul>
+<p>Add also some content to the files ;-)</p>
+</div>
+
+<div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/home/deliergky# ls -alR 2021/
+<span class="ln"> 2</span>2021/:
+<span class="ln"> 3</span>total <span class="m">20</span>
+<span class="ln"> 4</span>drwxr-xr-x <span class="m">5</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 .
+<span class="ln"> 5</span>drwxr-xr-x <span class="m">3</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 18:31 ..
+<span class="ln"> 6</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 18:49 <span class="m">03</span>
+<span class="ln"> 7</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 <span class="m">04</span>
+<span class="ln"> 8</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 <span class="m">05</span>
+<span class="ln"> 9</span>
+<span class="ln">10</span>2021/03:
+<span class="ln">11</span>total <span class="m">16</span>
+<span class="ln">12</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 18:49 .
+<span class="ln">13</span>drwxr-xr-x <span class="m">5</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 ..
+<span class="ln">14</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 18:35 07.log
+<span class="ln">15</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 18:44 08.log
+<span class="ln">16</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 18:47 09.log
+<span class="ln">17</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 18:48 11.log
+<span class="ln">18</span>
+<span class="ln">19</span>2021/04:
+<span class="ln">20</span>total <span class="m">16</span>
+<span class="ln">21</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 .
+<span class="ln">22</span>drwxr-xr-x <span class="m">5</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 ..
+<span class="ln">23</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 19:05 07.log
+<span class="ln">24</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 19:05 08.log
+<span class="ln">25</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 19:05 09.log
+<span class="ln">26</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 19:05 11.log
+<span class="ln">27</span>
+<span class="ln">28</span>2021/05:
+<span class="ln">29</span>total <span class="m">16</span>
+<span class="ln">30</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 .
+<span class="ln">31</span>drwxr-xr-x <span class="m">5</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 ..
+<span class="ln">32</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 19:05 07.log
+<span class="ln">33</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 19:05 08.log
+<span class="ln">34</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 19:05 09.log
+<span class="ln">35</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 19:05 11.log
+</code></pre></div></div>
+
+</section>
+
+<h2 id="installing-software--package-managers">Installing software &amp; package managers</h2>
+
+<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/linux-package-manager-explanation.webp" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/linux-package-manager-explanation.webp">
+  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/linux-package-manager-explanation.webp" media="(prefers-color-scheme: dark)">
+  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/linux-package-manager-explanation.webp" alt="Linux package managers">
+</picture>
+
+<ul>
+<li>
+<p>Package: collections of files that are bundled together and can be installed and removed as a group</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/# apt show golang
+<span class="ln"> 2</span>Package: golang
+<span class="ln"> 3</span>Version: 2:1.10~4ubuntu1
+<span class="ln"> 4</span>Priority: optional
+<span class="ln"> 5</span>Section: devel
+<span class="ln"> 6</span>Source: golang-defaults
+<span class="ln"> 7</span>Origin: Ubuntu
+<span class="ln"> 8</span>Maintainer: Ubuntu Developers &lt;ubuntu-devel-discuss@lists.ubuntu.com&gt;
+<span class="ln"> 9</span>Original-Maintainer: Go Compiler Team &lt;pkg-golang-devel@lists.alioth.debian.org&gt;
+<span class="ln">10</span>Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+<span class="ln">11</span>Installed-Size: 11.3 kB
+<span class="ln">12</span>Depends: golang-1.10, golang-doc <span class="o">(</span>&gt;<span class="o">=</span> 2:1.10~4ubuntu1<span class="o">)</span>, golang-go <span class="o">(</span>&gt;<span class="o">=</span> 2:1.10~4ubuntu1<span class="o">)</span>, golang-src <span class="o">(</span>&gt;<span class="o">=</span> 2:1.10~4ubuntu1<span class="o">)</span>
+<span class="ln">13</span>Homepage: https://golang.org
+<span class="ln">14</span>Supported: 5y
+<span class="ln">15</span>Download-Size: <span class="m">2896</span> B
+<span class="ln">16</span>APT-Sources: http://archive.ubuntu.com/ubuntu bionic/main amd64 Packages
+<span class="ln">17</span>Description: Go programming language compiler - metapackage
+</code></pre></div></li>
+<li>
+<p>Keeps track of what software is installed</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/# apt list golang
+<span class="ln">2</span>Listing... Done
+<span class="ln">3</span>golang/bionic,now 2:1.10~4ubuntu1 amd64 <span class="o">[</span>installed<span class="o">]</span>
+</code></pre></div></li>
+<li>
+<p>Allows you to easily install new software</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/# apt-get install golang
+<span class="ln"> 2</span>Reading package lists... Done
+<span class="ln"> 3</span>Building dependency tree
+<span class="ln"> 4</span>Reading state information... Done
+<span class="ln"> 5</span>The following additional packages will be installed:
+<span class="ln"> 6</span>binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dirmngr dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base gnupg gnupg-l10n
+<span class="ln"> 7</span>gnupg-utils golang-1.10 golang-1.10-doc golang-1.10-go golang-1.10-race-detector-runtime golang-1.10-src golang-doc golang-go golang-race-detector-runtime
+<span class="ln"> 8</span>golang-src gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan4
+<span class="ln"> 9</span>libasn1-8-heimdal libassuan0 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libfakeroot libfile-fcntllock-perl
+<span class="ln">10</span>libgcc-7-dev libgdbm-compat4 libgdbm5 libglib2.0-0 libglib2.0-data libgomp1 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
+<span class="ln">11</span>libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1 libkrb5-26-heimdal libksba8 libldap-2.4-2 libldap-common liblocale-gettext-perl liblsan0
+<span class="ln">12</span>libmpc3 libmpfr6 libmpx2 libnpth0 libperl5.26 libquadmath0 libreadline7 libroken18-heimdal libsasl2-2 libsasl2-modules libsasl2-modules-db libsqlite3-0
+<span class="ln">13</span>libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev netbase patch perl perl-modules-5.26
+<span class="ln">14</span>pinentry-curses pkg-config readline-common shared-mime-info xdg-user-dirs xz-utils
+<span class="ln">15</span>Suggested packages:
+<span class="ln">16</span>binutils-doc cpp-doc gcc-7-locales dbus-user-session libpam-systemd pinentry-gnome3 tor debian-keyring g++-multilib g++-7-multilib gcc-7-doc
+<span class="ln">17</span>libstdc++6-7-dbg gcc-multilib autoconf automake libtool flex bison gdb gcc-doc gcc-7-multilib libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg
+<span class="ln">18</span>libasan4-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx2-dbg libquadmath0-dbg parcimonie xloadimage bzr ca-certificates git mercurial
+<span class="ln">19</span>subversion scdaemon glibc-doc gdbm-l10n libsasl2-modules-gssapi-mit <span class="p">|</span> libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
+<span class="ln">20</span>libsasl2-modules-sql libstdc++-7-doc make-doc man-browser ed diffutils-doc perl-doc libterm-readline-gnu-perl <span class="p">|</span> libterm-readline-perl-perl pinentry-doc
+<span class="ln">21</span>readline-doc
+<span class="ln">22</span>The following NEW packages will be installed:
+<span class="ln">23</span>binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dirmngr dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base gnupg gnupg-l10n
+<span class="ln">24</span>gnupg-utils golang golang-1.10 golang-1.10-doc golang-1.10-go golang-1.10-race-detector-runtime golang-1.10-src golang-doc golang-go
+<span class="ln">25</span>golang-race-detector-runtime golang-src gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl libalgorithm-diff-xs-perl
+<span class="ln">26</span>libalgorithm-merge-perl libasan4 libasn1-8-heimdal libassuan0 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libfakeroot
+<span class="ln">27</span>libfile-fcntllock-perl libgcc-7-dev libgdbm-compat4 libgdbm5 libglib2.0-0 libglib2.0-data libgomp1 libgssapi3-heimdal libhcrypto4-heimdal
+<span class="ln">28</span>libheimbase1-heimdal libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1 libkrb5-26-heimdal libksba8 libldap-2.4-2 libldap-common
+<span class="ln">29</span>liblocale-gettext-perl liblsan0 libmpc3 libmpfr6 libmpx2 libnpth0 libperl5.26 libquadmath0 libreadline7 libroken18-heimdal libsasl2-2 libsasl2-modules
+<span class="ln">30</span>libsasl2-modules-db libsqlite3-0 libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev netbase
+<span class="ln">31</span>patch perl perl-modules-5.26 pinentry-curses pkg-config readline-common shared-mime-info xdg-user-dirs xz-utils
+<span class="ln">32</span><span class="m">0</span> upgraded, <span class="m">100</span> newly installed, <span class="m">0</span> to remove and <span class="m">0</span> not upgraded.
+<span class="ln">33</span>Need to get <span class="m">110</span> MB of archives.
+<span class="ln">34</span>After this operation, <span class="m">496</span> MB of additional disk space will be used.
+<span class="ln">35</span>Do you want to <span class="k">continue</span>? <span class="o">[</span>Y/n<span class="o">]</span>
+</code></pre></div></li>
+<li>
+<p>Upgrade software to newer versions,</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/# apt-get upgrade golang
+<span class="ln">2</span>Reading package lists... Done
+<span class="ln">3</span>Building dependency tree
+<span class="ln">4</span>Reading state information... Done
+<span class="ln">5</span>golang is already the newest version <span class="o">(</span>2:1.10~4ubuntu1<span class="o">)</span>.
+<span class="ln">6</span>Calculating upgrade... Done
+<span class="ln">7</span><span class="m">0</span> upgraded, <span class="m">0</span> newly installed, <span class="m">0</span> to remove and <span class="m">0</span> not upgraded.
+</code></pre></div></li>
+<li>
+<p>Remove software that you previously installed</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/# apt-get remove golang
+<span class="ln"> 2</span>Reading package lists... Done
+<span class="ln"> 3</span>Building dependency tree
+<span class="ln"> 4</span>Reading state information... Done
+<span class="ln"> 5</span>The following packages were automatically installed and are no longer required:
+<span class="ln"> 6</span>binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dirmngr dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base gnupg gnupg-l10n
+<span class="ln"> 7</span>gnupg-utils golang-1.10 golang-1.10-doc golang-1.10-go golang-1.10-race-detector-runtime golang-1.10-src golang-doc golang-go golang-race-detector-runtime
+<span class="ln"> 8</span>golang-src gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan4
+<span class="ln"> 9</span>libasn1-8-heimdal libassuan0 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libfakeroot libfile-fcntllock-perl
+<span class="ln">10</span>libgcc-7-dev libgdbm-compat4 libgdbm5 libglib2.0-0 libglib2.0-data libgomp1 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
+<span class="ln">11</span>libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1 libkrb5-26-heimdal libksba8 libldap-2.4-2 libldap-common liblocale-gettext-perl liblsan0
+<span class="ln">12</span>libmpc3 libmpfr6 libmpx2 libnpth0 libperl5.26 libquadmath0 libreadline7 libroken18-heimdal libsasl2-2 libsasl2-modules libsasl2-modules-db libsqlite3-0
+<span class="ln">13</span>libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev netbase patch perl perl-modules-5.26
+<span class="ln">14</span>pinentry-curses pkg-config readline-common shared-mime-info xdg-user-dirs xz-utils
+<span class="ln">15</span>Use <span class="s1">&#39;apt autoremove&#39;</span> to remove them.
+<span class="ln">16</span>The following packages will be REMOVED:
+<span class="ln">17</span>golang
+<span class="ln">18</span><span class="m">0</span> upgraded, <span class="m">0</span> newly installed, <span class="m">1</span> to remove and <span class="m">0</span> not upgraded.
+<span class="ln">19</span>After this operation, 11.3 kB disk space will be freed.
+<span class="ln">20</span>Do you want to <span class="k">continue</span>? <span class="o">[</span>Y/n<span class="o">]</span> Y
+<span class="ln">21</span><span class="o">(</span>Reading database ... <span class="m">21037</span> files and directories currently installed.<span class="o">)</span>
+<span class="ln">22</span>Removing golang <span class="o">(</span>2:1.10~4ubuntu1<span class="o">)</span> ... 
+</code></pre></div></li>
+<li>
+<p>Downloaded from software repositories(repos, sources, feeds)</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/# apt-get update
+<span class="ln">2</span>Get:1 http://archive.ubuntu.com/ubuntu bionic InRelease <span class="o">[</span><span class="m">242</span> kB<span class="o">]</span>
+<span class="ln">3</span>Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease <span class="o">[</span>88.7 kB<span class="o">]</span>
+<span class="ln">4</span>Get:3 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages <span class="o">[</span>24.5 kB<span class="o">]</span>
+<span class="ln">5</span>Get:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease <span class="o">[</span>88.7 kB<span class="o">]</span>
+<span class="ln">6</span>...
+<span class="ln">7</span>Fetched 22.0 MB in 27s <span class="o">(</span><span class="m">810</span> kB/s<span class="o">)</span>
+<span class="ln">8</span>Reading package lists... Done
+</code></pre></div></li>
+<li>
+<p>Varies by Operating System &amp; Distribution</p>
+<ul>
+<li>
+<p>MacOS: <code>brew install golang</code>, AppStore</p>
+</li>
+<li>
+<p>Windows: PackageManagement, Chocalatey...</p>
+
+<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/windows-package-management.png" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/windows-package-management.png">
+  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/windows-package-management.png" media="(prefers-color-scheme: dark)">
+  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/windows-package-management.png" alt="Windows package management">
+</picture>
+
+</li>
+<li>
+<p>Linux: <code>yum</code>, <code>apt-get</code>, <code>zypper</code></p>
+
+<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/packages-by-distro.jpg" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/packages-by-distro.jpg">
+  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/packages-by-distro.jpg" media="(prefers-color-scheme: dark)">
+  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/packages-by-distro.jpg" alt="Linux package managers">
+</picture>
+
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="extra-resources">Extra resources</h2>
+
+<div class="tip">
+  <ul>
+<li><a href="https://www.youtube.com/watch?v=460IxkYmZxQ">Linux Filesystem Hierarchy - Part 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=WMaWG5ZRht4">Linux Filesystem Hierarchy - Part 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=BFMyUgF6I8Y">Briana's Bash Tutorial: How to Use the Command Line in Linux, Windows, and Mac</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/a-linux-command-line-primer">A linux command line primer</a></li>
+<li><a href="https://www.learnenough.com/command-line-tutorial/basics">Learn Enough Command Line to Be Dangerous</a></li>
+<li><a href="https://ryanstutorials.net/linuxtutorial/cheatsheet.php">Linux command line basic cheat sheet</a></li>
+<li><a href="https://www.freecodecamp.org/news/the-linux-commands-handbook/">The Linux Command Handbook</a></li>
+<li><a href="https://devopedia.org/package-manager">Package Managers</a></li>
+<li><a href="https://summarynetworks.com/ses/what-is-a-package-manager-in-linux/">What is a package manager in Linux</a></li>
+</ul>
+
+</div>
+
+<h2 id="next-class-preparation">Next class preparation</h2>
+<a href="../../git" class="button mb-1 grid-4">Version Control with GIT</a>
 
     <div class="pager">
   
@@ -315,7 +750,7 @@
   </symbol>
 </svg>
 
-<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.33c39fe654e5e9b532b7271f379ff81ca53f8a89d4196f93e38499ebba177cfa4246ff9481f84fba0e9cdc09b7c49a83f9f1b4c8a5165125c3992f1f8136fd78.js"></script>
+<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.a1309bb2796cc2e1dd6e2ee021bf36664369b912ec140464aca66e9ec6a0a9beae0d6573dd168130373e923e6f999c1f407b0483e39f01abbd998a73819411d3.js"></script>
 
 </body>
 </html>
