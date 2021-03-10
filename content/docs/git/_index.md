@@ -1,5 +1,5 @@
 +++
-title = "11/March - Version Control with Git and GitHub"
+title = "Version Control with Git and GitHub"
 description = "Goals"
 # weight = 10
 +++
@@ -63,17 +63,14 @@ What you will learn:
 
 | Section content                             | Expected time (mins) | Pre - Requirements |
 | ------------------------------------------- | -------------------- | ------------------ |
-| Review Learnings from Preparatory Materials | 10 minutes    1       | video + article   |
+| Review Learnings from Preparatory Materials | 15 minutes           | video + article    |
 | Lesson Goals                                | 5-10 minutes         | ❌                  |
-| Initialise a local repository                     | 5-10 minutes         | git                |
-| Make our first commits                                | 5-10 minutes         | git                |
+| Make a local repository and first commits   | 10-15 minutes        | git                |
+| Create a GitHub repository and push commits | 10-15 minutes        | git and github     |
 | Class break                                 | 10 minutes           | ❌                  |
-| Create a GitHub repository                  | 35-40 minutes        | github  account    |
-| Push to GitHub                              | 5-10 minutes         | git and github     |
-| Make a branch                               | 5-10 minutes         | github account     |
-| Open a pull request                         | 5-10 minutes         | github account     |
-| Fork and clone a GitHub repository          | 5-10 minutes         | git and github     |
-| Wrap-up and Next class overview             | 5 minutes            | ❌                  |
+| Make a branch and open a pull request       | 15-20 minutes        | git and github     |
+| Fork and clone a GitHub repository          | 10-15 minutes        | git and github     |
+| Wrap-up and next class overview             | 10-15 minutes        | ❌                  |
 
 ## Lesson Goal
 
@@ -328,4 +325,4 @@ repository for inspiration: https://github.com/abhisheknaiidu/awesome-github-pro
 
 ## Next class preparation
 
-{{< button "../command_line_part1" "Operating systems & Command Line Basics Part 1" "mb-1 grid-4" >}}
+{{< button "../web" "Web Fundamentals" "mb-1 grid-4" >}}
