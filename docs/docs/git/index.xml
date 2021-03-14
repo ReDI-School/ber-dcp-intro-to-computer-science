@@ -5,5 +5,29 @@
     <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/</link>
     <description>Recent content in Version Control with Git and GitHub on Intro to Computer-Science Berlin 2021</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>11/March - Version Control with Git and GitHub</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github/</guid>
+      <description>Pre Requisites 1. Install Git 💾 First! Check if you already have git installed, open your command line and run:
+1git --version If you see something like the following output then you already have git installed:
+1git version 2.x.x Otherwise, here are instructions to install Git:
+ For Windows For MacOS  2. Sign up to GitHub 🚀 Sign up here: https://github.com/join
+Why?
+ We will use it in the class to store our code It can be used to collaborate with others It can be used to showcase your work  3.</description>
+    </item>
+    
+    <item>
+      <title>16/March - Review Git and Command Line; Intro to the Internet</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/review_git_command_line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/review_git_command_line/</guid>
+      <description>We will spend the first part of class going over how the internet works conceptually and then spend the rest of the session doing practical exercises using Git, GitHub, and the command line.
+Prerequisites 1. Watch these Videos These videos from Khan Academy&#39;s Internet 101 series will give you a high-level overview of how the internet works. Please try to take notes on the questions below each video; we will go over these in class as well, but they cover the main points from the videos.</description>
+    </item>
+    
   </channel>
 </rss>
