@@ -57,8 +57,8 @@ Review the content from last class. Make sure that have completed the prerequisi
 | ---------------------------------------- | -------------------- | ------------------ |
 | Lesson Agenda and Goals                  | 5 minutes            | ❌                 |
 | Go over video questions in small groups  | 10-15 minutes        | videos             |
-| Review tricky questions as a whole class | 10-15 minutes        | videos             |
 | Kahoot on preparatory material           | 10-15 minutes        | videos             |
+| Review tricky questions as a whole class | 10-15 minutes        | videos             |
 | Class break                              | 10 minutes           | ❌                 |
 | Git Activity (in smaller groups)         | 45-60 minutes        | review last class  |
 
