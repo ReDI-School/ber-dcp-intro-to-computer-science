@@ -10,21 +10,19 @@
 <link rel="shortcut icon" href='https://redi-school.github.io/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://redi-school.github.io/favicons/browserconfig.xml'>
 <title>Version Control with Git and GitHub | Intro to Computer-Science Berlin 2021</title><meta property="og:title" content="Version Control with Git and GitHub" />
-<meta property="og:description" content="Goals" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/" />
 
 <meta itemprop="name" content="Version Control with Git and GitHub">
-<meta itemprop="description" content="Goals"><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Version Control with Git and GitHub"/>
-<meta name="twitter:description" content="Goals"/>
+<meta name="twitter:description" content=""/>
 
 
 <link rel="stylesheet" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/css/styles.691e1175b9b265f22727d90637a62963a8bc963d776a8fbeed95a74e87f589a5943592899c51a62f56754edc55745c52af817c925bdbb1947cec7af4897c6e73.css" integrity="sha512-aR4RdbmyZfInJ9kGN6YpY6i8lj13ao&#43;&#43;7ZWnTof1iaWUNZKJnFGmL1Z1TtxVdFxSr4F8klvbsZR87Hr0iXxucw==">
 
 
-
-  <meta name="description" content="Goals">
 
 </head>
   
@@ -141,291 +139,84 @@
       </section>
   </section>
   <section class="section aside_inner">
+    <h2 class="section_title active"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/" class="group">Version Control with Git and GitHub</a></h2>
+      <section class="" id="docs-version-control-with-git-and-github">
+        <h3 class="section_link"><a id="docs-11march---version-control-with-git-and-github" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github/">11/March - Version Control with Git and GitHub</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre Requisites</a>
+      <ul>
+        <li><a href="#1-install-git-">1. Install Git 💾</a></li>
+        <li><a href="#2-sign-up-to-github-">2. Sign up to GitHub 🚀</a></li>
+        <li><a href="#3-watch-the-first-807-minutes-of-this-video-">3. Watch the first 8:07 minutes of this video 📽️</a></li>
+        <li><a href="#4-read-this-">4. Read this 📚</a></li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#1-create-a-local-repository">1. Create a local repository</a></li>
+    <li><a href="#2-make-a-commit">2. Make a commit</a></li>
+    <li><a href="#3-create-a-remote-repository-on-github">3. Create a remote repository (on GitHub)</a></li>
+    <li><a href="#4-push-the-contents-of-your-local-repository-to-the-remote">4. Push the contents of your local repository to the remote</a></li>
+    <li><a href="#5-create-a-branch">5. Create a branch</a></li>
+    <li><a href="#6-create-a-pull-request">6. Create a pull request</a>
+      <ul>
+        <li><a href="#reviewing-a-pull-request">Reviewing a pull request</a></li>
+        <li><a href="#merge-a-pull-request">Merge a pull request</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-fork-and-clone-a-repository">7. Fork and clone a repository</a></li>
+    <li><a href="#8-follow-up-activity-make-improvements-to-your-github-profile-readme">8. Follow-up activity: make improvements to your GitHub Profile README</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-16march---review-git-and-command-line-intro-to-the-internet" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/review_git_command_line/">16/March - Review Git and Command Line; Intro to the Internet</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#1-watch-these-videos">1. Watch these Videos</a></li>
+        <li><a href="#2-review-exercises-from-thursday-11march">2. Review exercises from Thursday (11/March)</a></li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goals">Lesson Goals</a></li>
+    <li><a href="#git-and-command-line-review">Git and Command Line Review</a>
+      <ul>
+        <li><a href="#0-command-line-cheat-sheet">0. Command Line cheat sheet</a></li>
+        <li><a href="#1-fork-and-clone-repository">1. Fork and clone repository</a></li>
+        <li><a href="#2-checkout-a-new-branch">2. Checkout a new branch</a></li>
+        <li><a href="#3-making-and-committing-some-changes">3. Making and committing some changes</a></li>
+        <li><a href="#4-create-a-pull-request-pr-on-github">4. Create a pull request (PR) on GitHub</a></li>
+        <li><a href="#5-optional-advanced-git-practice">5. [Optional] Advanced Git practice</a></li>
+      </ul>
+    </li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/" class="group">Web development</a></h2>
   </section>
   <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/" class="group">Introduction to Programing (Python)</a></h2>
-  </section>
-  <section class="section aside_inner">
-    <h2 class="section_title active"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/" class="group">Version Control with Git and GitHub</a></h2>
   </section>
       </section>
   </section>
 </aside>
 
   <main class="content">
-    <h1>Version Control with Git and GitHub</h1><p><img src="https://media.giphy.com/media/3oFzlWBadh6GNv3rdS/giphy.gif" alt="gif of computer"></p>
-<h2 id="pre-requisites">Pre Requisites</h2>
-<h3 id="1-install-git-">1. Install Git 💾</h3>
-<p>First! Check if you already have git installed, open your command line and run:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git --version
-</code></pre></div><p>If you see something like the following output then you already have
-git installed:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git version 2.x.x
-</code></pre></div><p>Otherwise, here are instructions to install Git:</p>
-<ul>
-<li><a href="https://github.com/git-guides/install-git#install-git-on-windows">For Windows</a></li>
-<li><a href="https://github.com/git-guides/install-git#install-git-on-mac">For MacOS</a></li>
+    <h1>Version Control with Git and GitHub</h1><ul>
+<li>Git terminology</li>
+<li>Working with a local repository on the command line</li>
+<li>Creating, initializing, and cloning a repository</li>
+<li>Basics of branching</li>
+<li>Staging and commiting work</li>
+<li>Setting up remote repository (GitHub) and pushing local commits</li>
 </ul>
-<h3 id="2-sign-up-to-github-">2. Sign up to GitHub 🚀</h3>
-<p>Sign up here: <a href="https://github.com/join">https://github.com/join</a></p>
-<p>Why?</p>
-<ul>
-<li>We will use it in the class to store our code</li>
-<li>It can be used to collaborate with others</li>
-<li>It can be used to showcase your work</li>
-</ul>
-<h3 id="3-watch-the-first-807-minutes-of-this-video-">3. Watch the first 8:07 minutes of this video 📽️</h3>
-<p>This <a href="https://www.youtube.com/watch?v=3fUbBnN_H2c">Git and GitHub Tutorial For Beginners</a> by <a href="https://amigoscode.com/">Amigoscode</a>.</p>
-<p>What you will learn:</p>
-<ul>
-<li>An overview of why Git and Github are so useful</li>
-</ul>
-<p>You can watch the rest if you want, but for the purpose of the class, the first eight minutes
-are sufficient.</p>
-<h3 id="4-read-this-">4. Read this 📚</h3>
-<p>Read this <a href="http://tutorials.codebar.io/version-control/introduction/tutorial.html">Introduction to Version Control and Git</a>
-by <a href="https://codebar.io/">CodeBar</a>.</p>
-<p>What you will learn:</p>
-<ul>
-<li>What is version control?</li>
-<li>Why do we use it?</li>
-<li>Overview of Git as a version control system</li>
-<li>Overview of GitHub as a place to store code</li>
-<li>Common terminology</li>
-</ul>
-<hr>
-<h2 id="class-curriculum">Class Curriculum</h2>
-<table>
-<thead>
-<tr>
-<th>Section content</th>
-<th>Expected time (mins)</th>
-<th>Pre - Requirements</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Review Learnings from Preparatory Materials</td>
-<td>15 minutes</td>
-<td>video + article</td>
-</tr>
-<tr>
-<td>Lesson Goals</td>
-<td>5-10 minutes</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>Make a local repository and first commits</td>
-<td>10-15 minutes</td>
-<td>git</td>
-</tr>
-<tr>
-<td>Create a GitHub repository and push commits</td>
-<td>10-15 minutes</td>
-<td>git and github</td>
-</tr>
-<tr>
-<td>Class break</td>
-<td>10 minutes</td>
-<td>❌</td>
-</tr>
-<tr>
-<td>Make a branch and open a pull request</td>
-<td>15-20 minutes</td>
-<td>git and github</td>
-</tr>
-<tr>
-<td>Fork and clone a GitHub repository</td>
-<td>10-15 minutes</td>
-<td>git and github</td>
-</tr>
-<tr>
-<td>Wrap-up and next class overview</td>
-<td>10-15 minutes</td>
-<td>❌</td>
-</tr>
-</tbody>
-</table>
-<h2 id="lesson-goal">Lesson Goal</h2>
-<p>Use Git and GitHub to make a <a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme">profile README</a> for your GitHub account.</p>
-<h2 id="1-create-a-local-repository">1. Create a local repository</h2>
-<p>First, create a new directory and give it the same name as your GitHub username (the reason for this will become
-clear later):</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>mkdir &lt;github-username&gt;
-</code></pre></div><p>Move into that directory</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">cd</span> &lt;github-username&gt;
-</code></pre></div><p>Initialise an empty git repository with the branch name, <code>main</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git init -b main
-</code></pre></div><p>Now you have an empty local repository 🎉</p>
-<h2 id="2-make-a-commit">2. Make a commit</h2>
-<p>Next, we want to make changes within this repository and save (or commit!) them.</p>
-<p>A commit is a way to save changes you’ve made to a repository. It is <strong>powerful</strong> because
-it allows you to keep snapshots of your repository at any given time.</p>
-<p>First, we create a new file:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>touch README.md
-</code></pre></div><p>This is a <a href="https://en.wikipedia.org/wiki/README">README</a> file using  <a href="https://en.wikipedia.org/wiki/Markdown">markdown</a> syntax.</p>
-<p>Next, we will add some text to this file to say hello to the world.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span><span class="nb">echo</span> <span class="s2">&#34;# Hello, my name is &lt;your name&gt; :)&#34;</span> &gt; README.md 
-</code></pre></div><p>Then view the status of the current git repository:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git status
-</code></pre></div><p>The README.md file will appear in the untracked files. We want to track this file and
-add it to the staging area so it will be included in the next commit:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git add .
-</code></pre></div><p>Then check the <code>status</code> again.</p>
-<p>Let's commit this file with a helpful commit message:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git commit -m <span class="s2">&#34;Initialise repository with a README&#34;</span>
-</code></pre></div><p>Finally, we can take a look at the log, to view metadata about our previous commits:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git log
-</code></pre></div><h2 id="3-create-a-remote-repository-on-github">3. Create a remote repository (on GitHub)</h2>
-<p>Sign in to GitHub: <a href="https://github.com">https://github.com</a></p>
-<p>On the top navigation bar, click the <code>+</code> button and select ‘New repository’</p>
-<p>Create a new repository: Give the repository the same name as your username, make sure it is ‘Public’
-then click ‘Create repository’.</p>
-<h2 id="4-push-the-contents-of-your-local-repository-to-the-remote">4. Push the contents of your local repository to the remote</h2>
-<p>Now we want to associate our local repository with the one we have created on GitHub
-and push the contents of our local repository to GitHub.</p>
-<p>Connect the local repository with the remote repository:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git remote add origin https://github.com/&lt;user&gt;/&lt;repo&gt;.git
-</code></pre></div><p>Verify that the remote was added:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git remote -v
-</code></pre></div><p>You should see the following output:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>origin	https://github.com/&lt;user&gt;/&lt;repo&gt;.git <span class="o">(</span>fetch<span class="o">)</span>
-<span class="ln">2</span>origin	https://github.com/&lt;user&gt;/&lt;repo&gt;.git <span class="o">(</span>push<span class="o">)</span>
-</code></pre></div><p>Finally push your changes to GitHub:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git push -u origin main
-</code></pre></div><p>Check your GitHub repository to see if it contains your README file, and look at your profile
-to see that it is displayed!</p>
-<p>Well done on sharing your first repository 🎉</p>
-<h2 id="5-create-a-branch">5. Create a branch</h2>
-<p>Now we want to make some changes to our README, but we don't want to commit them to the <code>main</code>
-branch yet. Therefore, we will use another branch.</p>
-<p>Create a new branch, called ‘add-more-detail’:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git checkout -b add-more-detail
-</code></pre></div><p>Open the <code>README.md</code> file in a text editor (e.g. Notepad or TextEdit) and make some changes.
-Here is a template you can use:</p>
-<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="ln">1</span><span class="gh"># Hello, my name is &lt;your name&gt; 👋
-</span><span class="ln">2</span><span class="gh"></span>
-<span class="ln">3</span>Pronouns: <span class="p">&lt;</span><span class="nt">your</span> <span class="na">pronouns</span><span class="p">&gt;</span>
-<span class="ln">4</span>Learning: command line, Git, HTML, CSS, Javascript, Python
-<span class="ln">5</span>Interests: <span class="p">&lt;</span><span class="nt">your</span> <span class="na">interests</span><span class="p">&gt;</span>
-</code></pre></div><p>You can be as creative as you want by adding text, emoji, images or gifs (and more!).</p>
-<p>Once you have made some changes it is time to add and commit them:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git add .
-<span class="ln">2</span>git commit -m <span class="s2">&#34;Add some new information&#34;</span>
-</code></pre></div><p>Then push the branch with the changes to the remote repository:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git push origin add-more-detail
-</code></pre></div><p>Take a look at your README profile - has it been updated?</p>
-<h2 id="6-create-a-pull-request">6. Create a pull request</h2>
-<p>Let's say we want to get feedback on the changes we've made. We can do this with a
-<code>Pull Request</code>.</p>
-<p>Go to GitHub and view your branch. Select 'Create new pull request'.</p>
-<p>Assign the person you are paired with to review your pull request.</p>
-<h3 id="reviewing-a-pull-request">Reviewing a pull request</h3>
-<p>If somebody has requested your feedback, you can use this as an opportunity to:</p>
-<ul>
-<li>Ask questions and provide feedback about the changes</li>
-<li>Approve the changes</li>
-<li>Request further changes</li>
-</ul>
-<p>Once you have reviewed the changes, click <code>Review changes</code> and then <code>Approve</code>.</p>
-<h3 id="merge-a-pull-request">Merge a pull request</h3>
-<p>Once your pull request has been reviewed, you can merge it so that the main branch
-is updated with your changes.</p>
-<p>On your pull request, go to the bottom of the page and select <code>Rebase and merge</code>.</p>
-<p>You can now go to your command line, <code>checkout</code> the main branch and <code>pull</code> the changes
-so that your local main branch is up to date:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git checkout main
-<span class="ln">2</span>git pull origin main
-</code></pre></div><p>Finally, take a look at your updated GitHub profile README and celebrate what you've achieved!</p>
-<p><img src="https://media.giphy.com/media/l378qdC4yO0YEv5Re/giphy.gif" alt="celebrate"></p>
-<h2 id="7-fork-and-clone-a-repository">7. Fork and clone a repository</h2>
-<p>Note 📝<br>
-This task is unrelated to the previous tasks, but has been included because these
-features are useful.</p>
-<p>A <code>fork</code> is a copy of someone else’s remote repository, sometimes you will make a
-fork to build on someone else's work.</p>
-<p>Navigate to <a href="https://github.com/octocat/Spoon-Knife">https://github.com/octocat/Spoon-Knife</a></p>
-<p>On the top-right, select 'Fork'.</p>
-<p>Once you have forked the repository, we can <code>clone</code> it to download a copy of the
-repository to your local machine. On the repository, select <code>Code</code> and copy the <code>HTTPS</code>
-link. Then navigate to your terminal and run:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="ln">1</span>git clone https://github.com/&lt;user&gt;/&lt;repo&gt;.git
-</code></pre></div><h2 id="8-follow-up-activity-make-improvements-to-your-github-profile-readme">8. Follow-up activity: make improvements to your GitHub Profile README</h2>
-<p>There are plenty of wonderful examples out there, take a look at the examples in this
-repository for inspiration: <a href="https://github.com/abhisheknaiidu/awesome-github-profile-readme">https://github.com/abhisheknaiidu/awesome-github-profile-readme</a></p>
-<h2 id="glossary">Glossary</h2>
-<table>
-<thead>
-<tr>
-<th>Term</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>repository</td>
-<td>(also known as repo) the place where code is stored.</td>
-</tr>
-<tr>
-<td>commit</td>
-<td>a snapshot of changes made to a repository</td>
-</tr>
-<tr>
-<td>branch</td>
-<td>a pointer to a commit</td>
-</tr>
-<tr>
-<td>remote</td>
-<td>a repository that is hosted by a web service</td>
-</tr>
-<tr>
-<td>origin</td>
-<td>the remote repository associated with a project</td>
-</tr>
-<tr>
-<td>head</td>
-<td>the last commit in the checked-out branch</td>
-</tr>
-<tr>
-<td>status</td>
-<td>the current state of the git repository</td>
-</tr>
-<tr>
-<td>pull</td>
-<td>get the latest changes from the remote repository on your local repo</td>
-</tr>
-<tr>
-<td>push</td>
-<td>push the latest changes from the local repository to the remote repo</td>
-</tr>
-<tr>
-<td>pull request</td>
-<td>(also known as a PR) lets you get feedback on your code changes</td>
-</tr>
-<tr>
-<td>staging area</td>
-<td>the intermediate area where a change is added before it is commit</td>
-</tr>
-</tbody>
-</table>
-<h2 id="extra-resources">Extra resources</h2>
-<p><img src="https://imgs.xkcd.com/comics/git.png" alt="xkcd - git"></p>
-
-<div class="tip">
-  <ul>
-<li><a href="https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/">Writing a good commit messages</a>, by FreeCodeCamp</li>
-<li><a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">Markdown cheatsheet</a></li>
-<li><a href="https://learngitbranching.js.org/">Learning git branching</a>, by pcottle</li>
-<li><a href="https://dangitgit.com/en">Dangit, git</a>, by @ksylor (available in multiple languages)</li>
-<li><a href="https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc">Learn git concepts, not Commands</a>, by Nico Riedmann</li>
-<li><a href="https://medium.com/@ashk3l/a-visual-introduction-to-git-9fdca5d3b43a">A visual introduction to Git</a>, by Ashley Keller</li>
-</ul>
-
-</div>
-
-<h2 id="next-class-preparation">Next class preparation</h2>
-<a href="../web" class="button mb-1 grid-4">Web Fundamentals</a>
+<a href="./git_and_github.md/" class="button">Let&#39;s learn about Git! 💻</a>
 
     <div class="pager pager_lean">
   
