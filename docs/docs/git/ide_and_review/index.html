@@ -14,12 +14,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/ide_and_review/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-03-17T23:01:15&#43;01:00" />
+<meta property="article:modified_time" content="2021-03-17T23:03:14&#43;01:00" />
 
 <meta itemprop="name" content="18/March - Using an IDE (Integrated development environment)">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2021-03-17T23:01:15&#43;01:00" />
-<meta itemprop="wordCount" content="1971">
+<meta itemprop="dateModified" content="2021-03-17T23:03:14&#43;01:00" />
+<meta itemprop="wordCount" content="2024">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="18/March - Using an IDE (Integrated development environment)"/>
 <meta name="twitter:description" content="Goals"/>
@@ -218,20 +218,24 @@
         <li><a href="#0-command-line-cheat-sheet">0. Command Line cheat sheet</a></li>
         <li><a href="#0-git-cheat-sheet">0. Git cheat sheet</a></li>
         <li><a href="#1-fork-and-clone-your-new-journal">1. Fork and clone your new Journal</a></li>
-        <li><a href="#3-opening-my-journal-with-the-editor">3. Opening my journal with the editor</a></li>
-        <li><a href="#4-checkout-a-new-branch">4. Checkout a new branch</a></li>
-        <li><a href="#5-installing-an-extension">5. Installing an extension</a></li>
-        <li><a href="#6-creating-a-new-folder">6. Creating a new folder</a></li>
-        <li><a href="#7-creating-a-new-markdown-file">7. Creating a new markdown file</a></li>
-        <li><a href="#8-copying-a-file">8. Copying a file</a></li>
-        <li><a href="#9-searching-for-text">9. Searching for text</a></li>
-        <li><a href="#10-adding-and-committing-some-changes">10. Adding and committing some changes</a></li>
-        <li><a href="#4-create-a-pull-request-pr-on-github">4. Create a pull request (PR) on GitHub</a></li>
+        <li><a href="#2-checkout-a-new-branch">2. Checkout a new branch</a></li>
+        <li><a href="#3-open-with-vscode-the-folder-you-have-just-created">3. Open with VSCode the folder you have just created</a></li>
+        <li><a href="#4-complete-the-tasks-in-the-readmemd-file-from-the-repository-you-have-just-created">4. Complete the tasks in the README.md file from the repository you have just created.</a></li>
+        <li><a href="#5-adding-and-committing-some-changes">5. Adding and committing some changes</a></li>
+        <li><a href="#6-create-a-pull-request-pr-on-github">6. Create a pull request (PR) on GitHub</a></li>
       </ul>
     </li>
-    <li><a href="#lets-swap-places">Let´s swap places</a></li>
+    <li><a href="#7-optional-lets-swap-places">7. (Optional) Let´s swap places</a></li>
     <li><a href="#extra-resources">Extra resources</a></li>
-    <li><a href="#next-class-preparation">Next class preparation</a></li>
+    <li><a href="#vscode-cheatsheet">VSCODE CHEATSHEET</a>
+      <ul>
+        <li><a href="#install-an-extension">Install an extension</a></li>
+        <li><a href="#creating-a-new-folder">Creating a new folder</a></li>
+        <li><a href="#creating-a-new-file">Creating a new file</a></li>
+        <li><a href="#copying-a-file">Copying a file</a></li>
+        <li><a href="#searching-for-text">Searching for text</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </section>
@@ -430,34 +434,19 @@
 <span class="ln">3</span>
 <span class="ln">4</span>nothing to commit, working tree clean
 </code></pre></div><p>If so, great! You have successfully forked and cloned this repository. If not, check in with someone in your group or raise your hand so one of the teachers to help before moving on to the next steps.</p>
-<h3 id="3-opening-my-journal-with-the-editor">3. Opening my journal with the editor</h3>
-<p>Now it is time to use our own terminal to open the repository/journal we have created.</p>
-<p>For that let´s open VsCode. Clicking on the executable file that we have downloaded and install should be enough and here we should be able to see the following folder</p>
-<h3 id="4-checkout-a-new-branch">4. Checkout a new branch</h3>
+<h3 id="2-checkout-a-new-branch">2. Checkout a new branch</h3>
 <p>One of the great things about Git is being able to work on the same repository as others at the same time. A typical way of doing this when working on a project is by creating and checking out a new branch (via <code>git checkout -b &lt;branch-name&gt;</code>), making changes and committing your work, and pushing this work to your separate branch. Once you are ready to publish your changes to the <code>main</code> branch, you can create a pull request (PR) to have others review your changes and merge them to the <code>main</code> branch.</p>
 <p>Even though you are working on your own repository alone (since you forked, this is your own repository), let's practice creating a new branch so we can make some changes there and eventually merge this back to the <code>main</code> branch. Let's call this branch <code>&lt;your-github-username&gt;/test-branch</code> (leave out the &lt;&gt;, for example, for me, I would call the branch <code>omarsotillofranco/journal1</code>):</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git checkout -b &lt;your-github-username&gt;/test-branch
 </code></pre></div><p>Check the status of the repository again before moving on to the next step, and make sure that you are on the correct branch. <em>(Hint: run <code>git status</code> which displays the branch you are on, and make sure this is what you expect.)</em></p>
-<h3 id="5-installing-an-extension">5. Installing an extension</h3>
-<p><a href="https://code.visualstudio.com/docs/introvideos/extend">Installing an extension</a></p>
-<h3 id="6-creating-a-new-folder">6. Creating a new folder</h3>
-<p>To create a folder we first need to click on the left sidebar the explorer icon.</p>
-<p>After that we click on the New Folder button and name it as we want. In this case we want to create a new folder which is called PARTNER_2.</p>
-<p>Inside this folder we have just created :=) we want to create a new folder called journal</p>
-<p><a href="https://www.youtube.com/watch?v=fEp5nWvujhI">https://www.youtube.com/watch?v=fEp5nWvujhI</a></p>
-<h3 id="7-creating-a-new-markdown-file">7. Creating a new markdown file</h3>
-<h3 id="8-copying-a-file">8. Copying a file</h3>
-<h3 id="9-searching-for-text">9. Searching for text</h3>
-<h3 id="10-adding-and-committing-some-changes">10. Adding and committing some changes</h3>
-<p>This activity should remind you a bit of the directory &quot;maze&quot; exploration activity that we did with Ergün last week.</p>
-<p>Let's go ahead and explore the contents of this repository. For these tasks, feel free to look at your notes, the cheat sheet above, or ask each other for help if you're not sure how to complete a task :)</p>
+<h3 id="3-open-with-vscode-the-folder-you-have-just-created">3. Open with VSCode the folder you have just created</h3>
+<p>Open VScode! :D once you are there let's click on file in the top left corner and click on <code>Open...</code>. Look for the the folder in your system you have just created (probably should be around <code>/home</code>) and click it.</p>
+<p>Your VSCode should show now on the left side the differents files and folders from the current scenario.</p>
+<h3 id="4-complete-the-tasks-in-the-readmemd-file-from-the-repository-you-have-just-created">4. Complete the tasks in the README.md file from the repository you have just created.</h3>
+<p>In the <a href="https://github.com/ReDI-School/spring-2021-intro-to-programming-md-journal/blob/main/README.md">README.md file</a> from the repo you have just copied there is a section called <code>## TASKS</code>. Go slowly one by one and complete them by marking them with a <code>X</code></p>
+<h3 id="5-adding-and-committing-some-changes">5. Adding and committing some changes</h3>
+<p>Once completed! let's make the world know about our recipes. This activity should remind you a bit of the directory &quot;maze&quot; exploration activity that we did with Ergün last week.</p>
 <ul>
-<li>
-<p>Print your current directory, to double check that you are in the right place :) The end of the path should be the name of the cloned repository.</p>
-</li>
-<li>
-<p>Check what files and directories are present in this repository.</p>
-</li>
 <li>
 <p>Check the status of the repository via <code>git status</code>. If you do not see something that says you deleted a file, please ask someone in your group or a teacher for help before moving on.</p>
 </li>
@@ -476,31 +465,46 @@
 </li>
 </ul>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="ln">1</span>git push origin &lt;current-branch&gt;
-</code></pre></div><h3 id="4-create-a-pull-request-pr-on-github">4. Create a pull request (PR) on GitHub</h3>
+</code></pre></div><h3 id="6-create-a-pull-request-pr-on-github">6. Create a pull request (PR) on GitHub</h3>
 <p>As we did at the end of last class, let's create a pull request to merge this <code>test-branch</code> to <code>main</code>.</p>
 <p>Go to GitHub and view your branch: on the left side, there should be a button with <code>main</code> and a down arrow -- click this and select your branch. At the top, if there is an option to &quot;Pull request&quot;, click that, otherwise click on the &quot;Pull request&quot; tab and then &quot;New pull request&quot;.</p>
 <p>Since this is a forked branch, we are given the option of submitting a pull request against the original repository that we forked from (listed under <code>base repository</code>). This is often how you can contribute to open source projects -- by forking the repository, making your changes, and then submitting a PR against the original repo for the maintainers of the project to accept or reject.</p>
 <p>For now, let's just PR within the fork, so change the <code>base repository</code> to be the forked repo. (The <code>base repository</code> and <code>head repository</code> should match, but the <code>base</code> branch should be <code>main</code>).</p>
-<p>Assign someone in your group to the PR 'it can be seen in the right section and approve and merge the changes into master.</p>
-<h2 id="lets-swap-places">Let´s swap places</h2>
+<p>Assign someone in your group to the PR 'it can be seen in the right section and approve and merge the changes into <code>main</code>.</p>
+<h2 id="7-optional-lets-swap-places">7. (Optional) Let´s swap places</h2>
 <p>Now it is time for your partner to repeat what you have done.</p>
-<p>BUT! instead of forking the repository we will clone your partner repository so both of you can contribute towards a shared journal.</p>
+<p>BUT! instead of forking the repository we will <strong>clone directly your partner repositor</strong>y so both of you can contribute towards a shared journal.</p>
 <p>For that let´s do the following:</p>
 <ul>
-<li>Ask your partner for an URL pointing to his journal repository that both of you have created.</li>
-<li>Let´s clone the repository (make sure the Pull Request opened is merged and that the main branch has the content you just created)</li>
+<li>Ask your partner for an URL pointing to his journal repository that both of you have created and existts in Github.</li>
+<li>Let´s <strong>clone</strong> the repository (make sure the Pull Request opened is merged and that the main branch has the content you just created)</li>
 <li>Add some new files, folders, images and after add, commit and push your changes. You can go back to section 3 and repeat the same instructions</li>
 </ul>
 <h2 id="extra-resources">Extra resources</h2>
 
 <div class="tip">
   <ul>
+<li><a href="https://learngitbranching.js.org/">Git online</a></li>
 <li><a href="https://www.youtube.com/watch?v=WPqXP_kLzpo">VSCode Crash course</a></li>
 </ul>
 
 </div>
 
-<h2 id="next-class-preparation">Next class preparation</h2>
+<h2 id="vscode-cheatsheet">VSCODE CHEATSHEET</h2>
+<h3 id="install-an-extension">Install an extension</h3>
+<p><a href="https://code.visualstudio.com/docs/introvideos/extend">Installing an extension</a></p>
+<h3 id="creating-a-new-folder">Creating a new folder</h3>
+<p>To create a folder we first need to click on the left sidebar the explorer icon. After that we click on the New Folder button and name it as we want.</p>
+<p><a href="https://www.youtube.com/watch?v=fEp5nWvujhI">https://www.youtube.com/watch?v=fEp5nWvujhI</a></p>
+<h3 id="creating-a-new-file">Creating a new file</h3>
+<p>To create a file we first need to click on the left sidebar the explorer icon. After that we click on the New File button and name it as we want.</p>
+<p><a href="https://www.youtube.com/watch?v=2QBYlfSQA6s">https://www.youtube.com/watch?v=2QBYlfSQA6s</a></p>
+<h3 id="copying-a-file">Copying a file</h3>
+<p>Right click the file and click on copy or select it a <code>Command/Control+c</code>.</p>
+<p>To paste it, we go over the folder where we want to paste it and we press <code>Command/Control+c</code></p>
+<h3 id="searching-for-text">Searching for text</h3>
+<p>Press <code>Command/Control+f</code> to search for something in the current opened file. To search in the whole folder click in the magnifying glass.</p>
+<h1 id="next-class-preparation">Next class preparation</h1>
 <a href="../../web" class="button mb-1 grid-4">Web Fundamentals</a>
 
     <div class="pager">

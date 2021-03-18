@@ -130,13 +130,7 @@ nothing to commit, working tree clean
 
 If so, great! You have successfully forked and cloned this repository. If not, check in with someone in your group or raise your hand so one of the teachers to help before moving on to the next steps.
 
-### 3. Opening my journal with the editor
-
-Now it is time to use our own terminal to open the repository/journal we have created.
-
-For that let´s open VsCode. Clicking on the executable file that we have downloaded and install should be enough and here we should be able to see the following folder
-
-### 4. Checkout a new branch
+### 2. Checkout a new branch
 
 One of the great things about Git is being able to work on the same repository as others at the same time. A typical way of doing this when working on a project is by creating and checking out a new branch (via `git checkout -b <branch-name>`), making changes and committing your work, and pushing this work to your separate branch. Once you are ready to publish your changes to the `main` branch, you can create a pull request (PR) to have others review your changes and merge them to the `main` branch.
 
@@ -148,31 +142,20 @@ git checkout -b <your-github-username>/test-branch
 
 Check the status of the repository again before moving on to the next step, and make sure that you are on the correct branch. _(Hint: run `git status` which displays the branch you are on, and make sure this is what you expect.)_
 
-### 5. Installing an extension
+### 3. Open with VSCode the folder you have just created
 
-[Installing an extension](https://code.visualstudio.com/docs/introvideos/extend)
+Open VScode! :D once you are there let's click on file in the top left corner and click on `Open...`. Look for the the folder in your system you have just created (probably should be around `/home`) and click it.
 
-### 6. Creating a new folder
+Your VSCode should show now on the left side the differents files and folders from the current scenario.
 
-To create a folder we first need to click on the left sidebar the explorer icon. 
+### 4. Complete the tasks in the README.md file from the repository you have just created.
 
-After that we click on the New Folder button and name it as we want. In this case we want to create a new folder which is called PARTNER_2.
+In the [README.md file](https://github.com/ReDI-School/spring-2021-intro-to-programming-md-journal/blob/main/README.md) from the repo you have just copied there is a section called `## TASKS`. Go slowly one by one and complete them by marking them with a `X`
 
-Inside this folder we have just created :=) we want to create a new folder called journal
+### 5. Adding and committing some changes
 
-https://www.youtube.com/watch?v=fEp5nWvujhI
+Once completed! let's make the world know about our recipes. This activity should remind you a bit of the directory "maze" exploration activity that we did with Ergün last week.
 
-### 7. Creating a new markdown file
-### 8. Copying a file
-### 9. Searching for text
-### 10. Adding and committing some changes
-
-This activity should remind you a bit of the directory "maze" exploration activity that we did with Ergün last week.
-
-Let's go ahead and explore the contents of this repository. For these tasks, feel free to look at your notes, the cheat sheet above, or ask each other for help if you're not sure how to complete a task :)
-
-- Print your current directory, to double check that you are in the right place :) The end of the path should be the name of the cloned repository.
-- Check what files and directories are present in this repository.
 - Check the status of the repository via `git status`. If you do not see something that says you deleted a file, please ask someone in your group or a teacher for help before moving on.
 - Stage the changes by running `git add .` or `git add --all` and check the status again to make sure the changes have shown up in your staging area. They should be green
 - Create a commit now to "save" your changes--in this case, the deleted file. Try to leave a helpful commit message like below, replacing <name-of-file> with the file you deleted:
@@ -183,14 +166,13 @@ Let's go ahead and explore the contents of this repository. For these tasks, fee
 
 - Check that the commit was successful by checking the status of the repository (`git status`) and checking the log (`git log`). You should see the commit message that you added at the top of the log, in addition to some previous commits from before you cloned the repository.
 
-
 - Let's go ahead and push these commits so far to the remote repository. Run the following, replacing `<current-branch>` with the branch you are working on (if you forget what it is called, you can run `git status` or `git branch` and copy the branch name from there!):
 
 ```sh
 git push origin <current-branch>
 ```
 
-### 4. Create a pull request (PR) on GitHub
+### 6. Create a pull request (PR) on GitHub
 
 As we did at the end of last class, let's create a pull request to merge this `test-branch` to `main`.
 
@@ -200,28 +182,49 @@ Since this is a forked branch, we are given the option of submitting a pull requ
 
 For now, let's just PR within the fork, so change the `base repository` to be the forked repo. (The `base repository` and `head repository` should match, but the `base` branch should be `main`).
 
-Assign someone in your group to the PR 'it can be seen in the right section and approve and merge the changes into master.
+Assign someone in your group to the PR 'it can be seen in the right section and approve and merge the changes into `main`.
 
-
-## Let´s swap places
+## 7. (Optional) Let´s swap places
 
 Now it is time for your partner to repeat what you have done. 
 
-BUT! instead of forking the repository we will clone your partner repository so both of you can contribute towards a shared journal.
+BUT! instead of forking the repository we will **clone directly your partner repositor**y so both of you can contribute towards a shared journal.
 
 For that let´s do the following:
-- Ask your partner for an URL pointing to his journal repository that both of you have created.
-- Let´s clone the repository (make sure the Pull Request opened is merged and that the main branch has the content you just created)
+- Ask your partner for an URL pointing to his journal repository that both of you have created and existts in Github.
+- Let´s **clone** the repository (make sure the Pull Request opened is merged and that the main branch has the content you just created)
 - Add some new files, folders, images and after add, commit and push your changes. You can go back to section 3 and repeat the same instructions
-
-
 
 ## Extra resources
 
 {{< tip >}}
+- [Git online](https://learngitbranching.js.org/)
 - [VSCode Crash course](https://www.youtube.com/watch?v=WPqXP_kLzpo)
 {{< /tip >}}
 
-## Next class preparation
+## VSCODE CHEATSHEET
+### Install an extension
+
+[Installing an extension](https://code.visualstudio.com/docs/introvideos/extend)
+### Creating a new folder
+
+To create a folder we first need to click on the left sidebar the explorer icon. After that we click on the New Folder button and name it as we want.
+
+https://www.youtube.com/watch?v=fEp5nWvujhI
+
+### Creating a new file
+To create a file we first need to click on the left sidebar the explorer icon. After that we click on the New File button and name it as we want. 
+
+https://www.youtube.com/watch?v=2QBYlfSQA6s
+
+### Copying a file
+Right click the file and click on copy or select it a `Command/Control+c`.
+
+To paste it, we go over the folder where we want to paste it and we press `Command/Control+c` 
+### Searching for text
+
+Press `Command/Control+f` to search for something in the current opened file. To search in the whole folder click in the magnifying glass.
+
+# Next class preparation
 
 {{< button "../../web" "Web Fundamentals" "mb-1 grid-4" >}}
