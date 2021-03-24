@@ -331,4 +331,4 @@ repository for inspiration: https://github.com/abhisheknaiidu/awesome-github-pro
 
 ## Next class preparation
 
-{{< button "./review_git_command_line.md/" "Review Git and Command Line; Web Overview" "mb-1 grid-4" >}}
+{{< button "../review_git_command_line/" "Review Git and Command Line; Web Overview" "mb-1 grid-4" >}}
