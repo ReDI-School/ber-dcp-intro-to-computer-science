@@ -47,7 +47,7 @@ These videos from Khan Academy's _Internet 101_ series will give you a high-leve
 
 Review the content from last class. Make sure that have completed the prerequisites from last class, including that your email is verified on GitHub. If you get stuck or feel confused about anything, no worries! Please write down any questions you have so that we can go over these in class.
 
-{{< button "./git_and_github.md/" "Review Previous Session: 11/March" >}}
+{{< button "../git_and_github/" "Review Previous Session: 11/March" >}}
 
 ---
 
@@ -239,4 +239,4 @@ If you still have time and want to continue playing around with Git, try to merg
 
 ## Next class preparation
 
-{{< button "../../web" "Web Fundamentals" "mb-1 grid-4" >}}
+{{< button "../ide_and_review/" "Using an IDE (Integrated Development Environment)" "mb-1 grid-4" >}}

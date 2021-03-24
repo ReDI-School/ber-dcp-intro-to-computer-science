@@ -10,4 +10,4 @@ weight: 1
 - Staging and commiting work
 - Setting up remote repository (GitHub) and pushing local commits
 
-{{< button "./git_and_github.md/" "Let's learn about Git! 💻" >}}
+{{< button "./git_and_github/" "Let's learn about Git! 💻" >}}

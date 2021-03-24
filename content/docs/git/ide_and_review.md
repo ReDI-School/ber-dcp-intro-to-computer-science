@@ -24,7 +24,7 @@ You can start playing with it if you want, during the class we will see how to w
 
 Review the content from last class. Make sure that have completed the prerequisites from last class, including that your email is verified on GitHub. If you get stuck or feel confused about anything, no worries! Please write down any questions you have so that we can go over these in class.
 
-{{< button "review_git_command_line.md/" "Review Previous Session: 16/March" >}}
+{{< button "../review_git_command_line/" "Review Previous Session: 16/March" >}}
 
 ---
 ## Class Curriculum
