@@ -6,15 +6,6 @@
     <description>Recent content in Berlin 2021 - Intro to Computer Science on Intro to Computer-Science Berlin 2021</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_html/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_html/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>02/March - Inspiration class </title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -77,6 +68,16 @@ Prerequisites 1. Watch these Videos These videos from Khan Academy&#39;s Interne
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/ide_and_review/</guid>
       <description>Prerequisites 1. Install VsCode Visual Studio Code is a freeware source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. Wikipedia
 During this course, while working with HTML and Pything we might end up working with an code editor to make easier interacting with files and folder. An editor can be considered the notebook of a programmer.</description>
+    </item>
+    
+    <item>
+      <title>25/March - Basic knowledge of HTML</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_html/</guid>
+      <description>Preparations 1. Review exercises from Version Control with Git and GitHub (11/March) Reivew the content from the Git and GitHub lecture. We&#39;ll use github to store the HTML files we create in this lecture.
+Review Version Control with Git and GitHub: 11/March 2. Review exercises from Using an IDE (Integrated development environment) (18/March) Review the content from last lecture on Using an IDE with VsCode. We&#39;ll use VsCode to work on creating HTML files in this lecture.</description>
     </item>
     
     <item>
