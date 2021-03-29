@@ -1,17 +1,17 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/Users/omarsotillofranco/dev/redi/ber-dcp-intro-to-computer-science",
+	"sourceRoot": "/Users/deliergky/Documents/redi/ber-dcp-intro-to-computer-science",
 	"sources": [
-		"/var/folders/5l/cx1wxstd7lb1_0t5g0g767rm0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210301150901-5c5213307e62/assets/sass/main.sass",
-		"../../../../../var/folders/5l/cx1wxstd7lb1_0t5g0g767rm0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210301150901-5c5213307e62/assets/sass/_variables.sass",
-		"../../../../../var/folders/5l/cx1wxstd7lb1_0t5g0g767rm0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210301150901-5c5213307e62/assets/sass/_base.sass",
-		"../../../../../var/folders/5l/cx1wxstd7lb1_0t5g0g767rm0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210301150901-5c5213307e62/assets/sass/_nav.sass",
-		"../../../../../var/folders/5l/cx1wxstd7lb1_0t5g0g767rm0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210301150901-5c5213307e62/assets/sass/_components.sass",
-		"../../../../../var/folders/5l/cx1wxstd7lb1_0t5g0g767rm0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210301150901-5c5213307e62/assets/sass/_utils.sass",
-		"../../../../../var/folders/5l/cx1wxstd7lb1_0t5g0g767rm0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210301150901-5c5213307e62/assets/sass/_syntax.sass",
-		"../../../../../var/folders/5l/cx1wxstd7lb1_0t5g0g767rm0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210301150901-5c5213307e62/assets/sass/_fonts.sass",
-		"../../../../../var/folders/5l/cx1wxstd7lb1_0t5g0g767rm0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210301150901-5c5213307e62/assets/sass/_chart.sass"
+		"/var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/main.sass",
+		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_variables.sass",
+		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_base.sass",
+		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_nav.sass",
+		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_components.sass",
+		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_utils.sass",
+		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_syntax.sass",
+		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_fonts.sass",
+		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_chart.sass"
 	],
 	"sourcesContent": [
 		"@import \"variables\";\n@import \"base\";\n@import \"nav\";\n@import \"components\";\n@import \"utils\";\n@import \"syntax\";\n@import \"fonts\";\n@import \"chart\";\n",
