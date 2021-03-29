@@ -14,12 +14,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_css/" /><meta property="article:section" content="docs" />
 
-
+<meta property="article:modified_time" content="2021-03-29T17:52:57&#43;02:00" />
 
 <meta itemprop="name" content="30/March - Basic knowledge of CSS (Cascading Style Sheet)">
 <meta itemprop="description" content="Goals">
-
-<meta itemprop="wordCount" content="881">
+<meta itemprop="dateModified" content="2021-03-29T17:52:57&#43;02:00" />
+<meta itemprop="wordCount" content="863">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="30/March - Basic knowledge of CSS (Cascading Style Sheet)"/>
 <meta name="twitter:description" content="Goals"/>
@@ -415,7 +415,7 @@
 <ol>
 <li>Element</li>
 </ol>
-<p>The first way to select an HTML element is by simply using the name, which is what we did above. Let’s see how it works:</p>
+<p>The first way to select an HTML element is by simply using the name:</p>
 <div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="ln">1</span><span class="nt">h1</span> <span class="p">{</span>  
 <span class="ln">2</span>    <span class="k">font-size</span><span class="p">:</span> <span class="mi">20</span><span class="kt">px</span><span class="p">;</span>  
 <span class="ln">3</span><span class="p">}</span>  
@@ -425,25 +425,24 @@
 <span class="ln">7</span><span class="nt">div</span> <span class="p">{</span>  
 <span class="ln">8</span>    <span class="k">margin</span><span class="p">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>  
 <span class="ln">9</span><span class="p">}</span>
-</code></pre></div><p>The example above is almost self-explanatory. We are selecting different elements like h1, p, div and giving them different style attributes. The font-size controls the size of the text, color sets the text color, and margin adds spacing around the element.</p>
+</code></pre></div><p>We are selecting different elements like h1, p, div and giving them different style attributes. The font-size controls the size of the text, color sets the text color, and margin adds spacing around the element.</p>
 <ol start="2">
 <li>Class</li>
 </ol>
 <p>Another way of selecting HTML elements is by using the class attribute. In HTML, we can assign different classes to our elements. Each element can have multiple classes, and each class can also be applied to multiple elements as well.</p>
-<p>Let’s see it in action:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;container&#39;</span><span class="p">&gt;</span>  
 <span class="ln">2</span>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span> This is heading <span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>  
 <span class="ln">3</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="ln">4</span>
 <span class="ln">5</span>
 <span class="ln">6</span>.container {  
-<span class="ln">7</span>    margin: 10px;  
+<span class="ln">7</span>    background-color: blue;  
 <span class="ln">8</span>}
-</code></pre></div><p>In the code above, we have assigned the class of container to the div element. In the stylesheet, we select our class using .className format and giving it a 10px margin.</p>
+</code></pre></div><p>In the code above, we have assigned the class of container to the div element. In the stylesheet, we select our class using .className format and giving it a blue background color.</p>
 <ol start="3">
 <li>ID</li>
 </ol>
-<p>Like classes, we can also use IDs to select HTML elements and apply styling to them. The only difference between class and ID is that one ID can be assigned to only one HTML element.</p>
+<p>Like classes, we can also use IDs to select HTML elements and apply styling to them. The only difference between class and ID is that one ID can be assigned to only one HTML element in one page.</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="ln">1</span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>  
 <span class="ln">2</span>    <span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&#39;para1&#39;</span><span class="p">&gt;</span> This is a paragraph <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>  
 <span class="ln">3</span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
