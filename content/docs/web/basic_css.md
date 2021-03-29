@@ -111,7 +111,7 @@ There are typically 3 ways we do that to include CSS in a HTML Page:
 
 1. Element
 
-The first way to select an HTML element is by simply using the name, which is what we did above. Let’s see how it works:
+The first way to select an HTML element is by simply using the name:
 ```css
 h1 {  
     font-size: 20px;  
@@ -124,13 +124,11 @@ div {
 }
 ```
 
-The example above is almost self-explanatory. We are selecting different elements like h1, p, div and giving them different style attributes. The font-size controls the size of the text, color sets the text color, and margin adds spacing around the element.
+We are selecting different elements like h1, p, div and giving them different style attributes. The font-size controls the size of the text, color sets the text color, and margin adds spacing around the element.
 
 2. Class
 
 Another way of selecting HTML elements is by using the class attribute. In HTML, we can assign different classes to our elements. Each element can have multiple classes, and each class can also be applied to multiple elements as well.
-
-Let’s see it in action:
 ```html
 <div class='container'>  
     <h1> This is heading </h1>  
@@ -138,14 +136,14 @@ Let’s see it in action:
 
 
 .container {  
-    margin: 10px;  
+    background-color: blue;  
 }
 ```
-In the code above, we have assigned the class of container to the div element. In the stylesheet, we select our class using .className format and giving it a 10px margin.
+In the code above, we have assigned the class of container to the div element. In the stylesheet, we select our class using .className format and giving it a blue background color.
 
 3. ID
 
-Like classes, we can also use IDs to select HTML elements and apply styling to them. The only difference between class and ID is that one ID can be assigned to only one HTML element.
+Like classes, we can also use IDs to select HTML elements and apply styling to them. The only difference between class and ID is that one ID can be assigned to only one HTML element in one page.
 ```html
 <div>  
     <p id='para1'> This is a paragraph </p>  
