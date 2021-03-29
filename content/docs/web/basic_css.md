@@ -144,6 +144,7 @@ In the code above, we have assigned the class of container to the div element. I
 3. ID
 
 Like classes, we can also use IDs to select HTML elements and apply styling to them. The only difference between class and ID is that one ID can be assigned to only one HTML element in one page.
+
 ```html
 <div>  
     <p id='para1'> This is a paragraph </p>  
