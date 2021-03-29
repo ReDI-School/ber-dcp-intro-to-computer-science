@@ -3,15 +3,15 @@
 	"file": "styles.css",
 	"sourceRoot": "/Users/deliergky/Documents/redi/ber-dcp-intro-to-computer-science",
 	"sources": [
-		"/var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/main.sass",
-		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_variables.sass",
-		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_base.sass",
-		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_nav.sass",
-		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_components.sass",
-		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_utils.sass",
-		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_syntax.sass",
-		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_fonts.sass",
-		"../../../../../var/folders/32/02rxtpzn2xv2w0myhc04w2gh0000gn/T/hugo_cache/modules/filecache/modules/pkg/mod/github.com/onweru/compose@v0.0.0-20210325144533-dec3f94f9dea/assets/sass/_chart.sass"
+		"themes/compose/assets/sass/main.sass",
+		"themes/compose/assets/sass/_variables.sass",
+		"themes/compose/assets/sass/_base.sass",
+		"themes/compose/assets/sass/_nav.sass",
+		"themes/compose/assets/sass/_components.sass",
+		"themes/compose/assets/sass/_utils.sass",
+		"themes/compose/assets/sass/_syntax.sass",
+		"themes/compose/assets/sass/_fonts.sass",
+		"themes/compose/assets/sass/_chart.sass"
 	],
 	"sourcesContent": [
 		"@import \"variables\";\n@import \"base\";\n@import \"nav\";\n@import \"components\";\n@import \"utils\";\n@import \"syntax\";\n@import \"fonts\";\n@import \"chart\";\n",
