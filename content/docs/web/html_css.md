@@ -40,14 +40,10 @@ you can adapt it to make the website for anything you want.
 
 ✏️ We will start working from the following repository: https://github.com/ReDI-School/ber-intro-to-cs-2021-html-css-website
 
-Clone the repo:
-
-```shell
-git clone https://github.com/ReDI-School/ber-intro-to-cs-2021-html-css-website
-```
+Fork the repository and then clone your fork of the repo. *Hint*: `git clone ...`
 
 Note: there is a branch corresponding to each section of the tutorial. If at any point you get stuck, you can
-check out the code for that section. These are the branch names:
+check out the completed code for that section. These are the branch names:
 
 ```
   1-starting-html
@@ -446,6 +442,6 @@ Here are some things you can do to continue your work:
 
 - Compile a list of questions: what didn't you understand? Share the questions in the team slack. Remember if you are unsure about something, then someone else probably is too. Sharing questions openly helps everyone learn, including the teachers and instructors.
 - Further customise the website by adding or removing sections, for example adding a section for photos or fun facts. 
-- Create a repository on GitHub and push your code.
+- Commit your changes and push your code to GitHub.
 - Publish your website on GitHub using [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site)
 
