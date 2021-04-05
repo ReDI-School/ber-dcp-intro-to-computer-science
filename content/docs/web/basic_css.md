@@ -1,7 +1,7 @@
 +++
 title = "30/March - Basic knowledge of CSS (Cascading Style Sheet)"
 description = "Goals"
-# weight = 10
+weight = 20
 +++
 
 ![basic-css-image](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png)
@@ -168,4 +168,4 @@ Like classes, we can also use IDs to select HTML elements and apply styling to t
 
 ## Next class preparation
 
-{{< button "../practice_basics/" "Practical lesson demonstrating HTML & CSS" "mb-1 grid-4" >}}
+{{< button "../html_css/" "Practical lesson demonstrating HTML & CSS" "mb-1 grid-4" >}}

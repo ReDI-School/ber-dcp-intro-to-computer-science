@@ -1,7 +1,7 @@
 +++
 title = "25/March - Basic knowledge of HTML"
 description = "Goals"
-# weight = 10
+weight = 10
 +++
 
 ![html-intro-image](https://cdn.lynda.com/course/170427/170427-637363828865101045-16x9.jpg)
