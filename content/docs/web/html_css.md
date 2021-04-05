@@ -1,7 +1,7 @@
 +++
 title = "01/April - Practical Demonstration of HTML and CSS"
 description = "Goals"
-# weight = 10
+weight = 30
 +++
 
 ![html-intro-image](http://www.gdiannarbor.com/events/inter-html-css/images/responsive-design.png)
@@ -444,4 +444,8 @@ Here are some things you can do to continue your work:
 - Further customise the website by adding or removing sections, for example adding a section for photos or fun facts. 
 - Commit your changes and push your code to GitHub.
 - Publish your website on GitHub using [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site)
+
+## Next class preparation
+
+{{< button "../basic_js/" "Basics of JavaScript" "mb-1 grid-4" >}}
 
