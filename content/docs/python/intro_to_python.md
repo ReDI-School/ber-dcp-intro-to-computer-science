@@ -50,7 +50,7 @@ Answers will be uncommented after class :)
 - How and in what fields is Python typically used?
   - Data science: Python has many libraries (including `pandas`) that are useful for doing data analysis or statistics. Can be very efficient in how fast it computes data, and is for many people easier to read compared with other programming languages.
   - Machine Learning, Deep Learning: Python notebooks and libraries (including `Tensorflow` and `keras`) make it easy and clear to create neural networks and train machine learning models for prediction and generation tasks.
-  - Running systems and infrastructure: SREs (Site and Reliability Engineers) often use python as a scripting language to quickly examine, configure, and maintain infrastructure systems. Compared with other languages, it takes little code/time to write and execute a function in Python.
+  - Running systems and infrastructure: SREs (Site Reliability Engineers) often use python as a scripting language to quickly examine, configure, and maintain infrastructure systems. Compared with other languages, it takes little code/time to write and execute a function in Python.
 
 - What examples of things you can do with Python?
   - Write programs of all kinds!
