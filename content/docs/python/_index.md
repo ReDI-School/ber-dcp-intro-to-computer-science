@@ -1,6 +1,13 @@
 ---
-Title: Introduction to Programing (Python)
-weight: 10
+title: "Programming in Python"
+weight: 1
 ---
 
-![](https://media1.giphy.com/media/kfR5iyQgmq7PoiFTAf/giphy.gif)
+Programming fundamentals in Python including:
+
+- Functions
+- Data types
+- Conditional logic (`if`, `elif`, `else` and boolean expressions)
+- Control flow (`while` and `for` loops)
+
+{{< button "./intro_to_python/" "Introduction to Python 💻" >}}
