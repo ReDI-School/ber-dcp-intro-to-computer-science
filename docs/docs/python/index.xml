@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction to Programing (Python) on Intro to Computer-Science Berlin 2021</title>
+    <title>Programming in Python on Intro to Computer-Science Berlin 2021</title>
     <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/</link>
-    <description>Recent content in Introduction to Programing (Python) on Intro to Computer-Science Berlin 2021</description>
+    <description>Recent content in Programming in Python on Intro to Computer-Science Berlin 2021</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>15/April - Introduction to Python</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/intro_to_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/intro_to_python/</guid>
+      <description>Pre Requisites None for today!
+ Class Curriculum    Section content Expected time (mins) Pre - Requirements     Check-in and questions from last class 5 minutes ❌   Lesson Goals 5 minutes ❌   Python Overview 15 minutes ❌   Hands-on Python exercise (in pairs) 45-60 minutes ❌   Break 10 minutes ❌   Synthesis of Python Concepts from Exercise 15-30 minutes ❌   (Possible) &amp;quot;Hello World&amp;quot; in Python Exercise 20 minutes ❌   Check-out 5 minutes ❌    Lesson Goal Have a high-level idea of what Python is and start getting comfortable reading and writing basic statements in this programming language.</description>
+    </item>
+    
   </channel>
 </rss>

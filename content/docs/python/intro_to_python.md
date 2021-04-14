@@ -156,11 +156,11 @@ One note about the code snippets below: in Python, we can write comments by usin
 
   ```python
   if CONDITION_A:
-     STATEMENT_A
+      STATEMENT_A
   elif: CONDITION_B:
-     STATEMENT_B
+      STATEMENT_B
   else:
-     STATEMENT_C
+      STATEMENT_C
   ```
 
   <!--
