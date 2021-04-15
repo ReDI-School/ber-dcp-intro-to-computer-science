@@ -33,20 +33,21 @@ Have a high-level idea of what Python is and start getting comfortable reading a
 
 ### Q&A Intro
 
-Answers will be posted here after class :)
-
 - What is Python?
-    <!-- Python is a high-level programming language -->
+
+  Python is a high-level programming language
+
 - What is a high-level programming language?
-  <!-- - "program": writing instructions for your computer to execute; this could be a simple "calculator" program that adds two numbers, it could be something that prints out values to your terminal or sends information to a remote server/web-page, etc.
+
+  - "program": writing instructions for your computer to execute; this could be a simple "calculator" program that adds two numbers, it could be something that prints out values to your terminal or sends information to a remote server/web-page, etc.
   - "programming language": the language (set of words used according to specific syntax rules) that lets you write a program that can be executed on a machine
-  - "high-level": there are different ways of interacting with the computer; at the lowest level, this is the binary code that computers can read and execute. Above that are different levels of closeness to machine-readable code: directly above is machine or *assembly* code that is slightly more readable but also *compiles* into this binary code for computers. There are more levels above this, and at the highest level (like Python), code words in human-readable languages (like English) represent large series of simple assembly steps. You can write some complex set of loops, etc. and the "Python interpreter" "interprets" these instructions in Python, turning them into something that the machine can comprehend. You don't have to worry about managing how your computer stores memory (more on this later), since Python takes care of this. -->
+  - "high-level": there are different ways of interacting with the computer; at the lowest level, this is the binary code that computers can read and execute. Above that are different levels of closeness to machine-readable code: directly above is machine or _assembly_ code that is slightly more readable but also _compiles_ into this binary code for computers. There are more levels above this, and at the highest level (like Python), code words in human-readable languages (like English) represent large series of simple assembly steps. You can write some complex set of loops, etc. and the "Python interpreter" "interprets" these instructions in Python, turning them into something that the machine can comprehend. You don't have to worry about managing how your computer stores memory (more on this later), since Python takes care of this.
 
 - What are terms that you may hear when discussing programs and programming languages?
 
-  - "abstraction"<!-- :something that has usually "hidden away" the inner complexities of a system; usually simplifies how we understand something. -->
-  - "under the hood"<!-- : the details of how something works when you look past the "layers of abstraction" (see above); digging into the numerous, smaller steps of how a program, application, etc. actually functions -->
-  - "black box"<!-- : a system whose inner-workings you do not understand; all you can see are the inputs and outputs. [ inputs -> BLACK_BOX -> outputs ] -->
+  - "abstraction": something that has usually "hidden away" the inner complexities of a system; usually simplifies how we understand something.
+  - "under the hood": the details of how something works when you look past the "layers of abstraction" (see above); digging into the numerous, smaller steps of how a program, application, etc. actually functions
+  - "black box": a system whose inner-workings you do not understand; all you can see are the inputs and outputs. [ inputs -> BLACK_BOX -> outputs ]
 
 - How and in what fields is Python typically used?
 
@@ -84,7 +85,7 @@ Refresher of some math operators that you will see:
 
 ## 2. Python Concepts - Sharing & Synthesizing
 
-We will go over many of these concepts in more detail in the coming weeks, so no problem if it takes a little time for them to make sense! (Notes will be added to these sections after class :))
+We will go over many of these concepts in more detail in the coming weeks, so no problem if it takes a little time for them to make sense!
 
 One note about the code snippets below: in Python, we can write comments by using the `#` symbol; anything after this symbol is not interpreted as code or executed. This can be a really convenient way to write notes to yourselves (or future developers!) when trying to understand code you wrote.
 
@@ -94,28 +95,31 @@ One note about the code snippets below: in Python, we can write comments by usin
 
 - What is a **data type**?
 - What are examples of different **data types** that you saw?
-  <!-- - strings (ex: `'asdf'`, `'hello my name is x'`, `'a'`, `'123'`)
+
+  - strings (ex: `'asdf'`, `'hello my name is x'`, `'a'`, `'123'`)
   - integers (ex: `1`, `-100`, `1383234`)
   - floats (floating point values) (ex: `1.0`, `-100.1234`, `0.0000003`, `1e5`)
   - booleans (ex: `True`, `False`)
   - lists (ex: `[3, 1, 'r', 'e']`, `[]`, `[3.2, 3, 4.5]`)
-  - functions (ex: `def my_function (a, b): ...`) -->
+  - functions (ex: `def my_function (a, b): ...`)
+
+  (more data types that weren't shown in this exercise will be discussed in later sessions)
 
 ### Variables
 
 - What is a **variable**? What's an example?
 
-  <!-- Some word (starting with a letter, and can contain letters, numbers, and underscore `_`) that represents some value. We set the value of a variable with `=`, for example: `test_var = 10` sets the **variable** `test_var` to be equal to the value of `10`. Setting the value of a variable is often called _assigning_ a variable. -->
+  Some word (starting with a letter, and can contain letters, numbers, and underscore `_`) that represents some value. We set the value of a variable with `=`, for example: `test_var = 10` sets the **variable** `test_var` to be equal to the value of `10`. Setting the value of a variable is often called _assigning_ a variable.
 
 ### Iterables (lists, strings, ...)
 
 - What does the `len` keyword do? i.e. `len('asdf')` or `len([1,2,3,4])`
 
-  <!-- `len` gets the length of any "iterable" -- any "thing" that is made up of other things that you can "iterate" or count through: list, string, tuple, dictionary, set... -->
+  `len` gets the length of any "iterable" -- any "thing" that is made up of other things that you can "iterate" or count through: list, string, tuple, dictionary, set...
 
 - What does the `[#]` syntax do?
 
-  <!-- This _indexes_ into an iterable and gets you the `#` value of it. Note that the "first" index is "0", because we 0-index in Python. For example:
+  This _indexes_ into an iterable and gets you the `#` value of it. Note that the "first" index is "0", because we 0-index in Python. For example:
 
   ```python
     a = 'asdf'
@@ -124,21 +128,21 @@ One note about the code snippets below: in Python, we can write comments by usin
     # outputs: -> 'a'
     b[3]
     # outputs: ->  4
-  ``` -->
+  ```
 
 ### Booleans and conditions
 
 - What does the `==` symbol mean? What about `!=`?
 
-  <!-- `==` is "equals", `!=` is "does not equal". -->
+  `==` is "equals", `!=` is "does not equal".
 
 - What is the difference between `=` and `==`?
 
-  <!-- `=` is for assigning some value to a variable, while `==` is for testing for equality between the two sides. -->
+  `=` is for assigning some value to a variable, while `==` is for testing for equality between the two sides.
 
 - What does the `if` keyword do?
 
-  <!-- This is a conditional statement: `if CONDITION:` means: "if `CONDITION` evaluates to `True`, then execute the code that follows directly after the statement" -->
+  This is a conditional statement: `if CONDITION:` means: "if `CONDITION` evaluates to `True`, then execute the code that follows directly after the statement"
 
 - How about an `if ... else` statement?
 
@@ -149,8 +153,7 @@ One note about the code snippets below: in Python, we can write comments by usin
       STATEMENT_B
   ```
 
-  <!--
-    In this example, "if `CONDITION_A` evaluates to `True`, then execute `STATEMENT_A`. Otherwise (if `CONDITION_A` evaluates to `False`), then execute `STATEMENT_B`. -->
+  In this example, "if `CONDITION_A` evaluates to `True`, then execute `STATEMENT_A`. Otherwise (if `CONDITION_A` evaluates to `False`), then execute `STATEMENT_B`. -->
 
 - How about `if ... elif ... else`?
 
@@ -163,8 +166,7 @@ One note about the code snippets below: in Python, we can write comments by usin
       STATEMENT_C
   ```
 
-  <!--
-    In this example, "if `CONDITION_A` evaluates to `True`, then execute `STATEMENT_A` only. Otherwise (if `CONDITION_A` evaluates to `False`), then check if `CONDITION_B` evaluates to `True` and if so, execute `STATEMENT_B` only. If both `CONDITION_A` and `CONDITION_B` evaluate to `False`, then execute `STATEMENT_C`. Note that here, we are only ever execute one of the `STATEMENT_`'s, even if multiple conditions evaluate to `True`. -->
+  In this example, "if `CONDITION_A` evaluates to `True`, then execute `STATEMENT_A` only. Otherwise (if `CONDITION_A` evaluates to `False`), then check if `CONDITION_B` evaluates to `True` and if so, execute `STATEMENT_B` only. If both `CONDITION_A` and `CONDITION_B` evaluate to `False`, then execute `STATEMENT_C`. Note that here, we are only ever execute one of the `STATEMENT_`'s, even if multiple conditions evaluate to `True`.
 
 ### Functions
 
@@ -175,14 +177,15 @@ One note about the code snippets below: in Python, we can write comments by usin
       return a
   ```
 
-  <!--
-    A **function** is a sequence of steps or tasks (written in a block of code), which may or may not take in _arguments_. Whenever we _call_ a function, we execute this defined set of steps (with any _arguments_ passed in). The above example function takes in some value and simply _returns_, or gives us back, this value when we _call_ it like so: `my_test_function(12) # evaluates to 12` -->
+  A **function** is a sequence of steps or tasks (written in a block of code), which may or may not take in _arguments_. Whenever we _call_ a function, we execute this defined set of steps (with any _arguments_ passed in). The above example function takes in some value and simply _returns_, or gives us back, this value when we _call_ it like so: `my_test_function(12) # evaluates to 12`
 
 ## 3. (if there is time) "Hello, World!" in Python
 
 It's something of a tradition in the Computer Science world when learning a new language to write code that outputs "Hello, World!". Check out [this Wikipedia article](https://en.wikipedia.org/wiki/%22Hello,_World!%22_program) for more information on why :).
 
 For today, go ahead and try that out in [this Python playground](https://trinket.io/python/f7ad7f9864), which will allow you to execute some test code by clicking on the Play button (triangle) on the top of the console window.
+
+Example solutions will be posted in a few days :)
 
 ### Task 0: write code that outputs "Hello, World!"
 
@@ -270,7 +273,7 @@ hello_world("Jose")
 ### Additional practice (all optional)
 
 - Modify your "greeter" using any of the concepts we discussed; perhaps include a conditional expression (i.e. only greet IF ...).
-- Try to write an evaluate any Python expressions that you saw in the silent teacher activity in the playground.
+- Try to write and evaluate any Python expressions that you saw in the silent teacher activity in the playground.
 - Write your own function to return or print some value.
 
 ## Extra resources and references from class
