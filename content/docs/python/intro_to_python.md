@@ -204,11 +204,11 @@ print("my name is", "Robot")
 
 {{< /tip >}}
 
-<!-- A Solution:
+A Solution:
 
 ```python
 print("Hello, World!")
-``` -->
+```
 
 ### Task 1: create and call a function that prints "Hello, World!"
 
@@ -216,7 +216,7 @@ print("Hello, World!")
 Tip: Modify the code you wrote in the previous task so that this happens within a function that you define.
 {{< /tip >}}
 
-<!-- A Solution:
+A Solution:
 
 ```python
 def hello_world():
@@ -224,18 +224,18 @@ def hello_world():
 
 # Let's call the function and print this
 print(hello_world())
-``` -->
+```
 
 ### Task 2: create a function that returns the string "Hello, World!". Call this function and print the output.
 
-<!-- A solution:
+A solution:
 
 ```python
 def hello_world():
     return "Hello, World!"
 
 print(hello_world())
-``` -->
+```
 
 ### Task 3: modify your function so you can greet a specific name: "Hello, Person"
 
@@ -246,7 +246,7 @@ my_hello_world("Noor")
 # expected output -> "Hello, Noor"
 ```
 
-<!-- A solution:
+A solution:
 
 ```python
 def hello_world(name):
@@ -268,7 +268,7 @@ hello_world("Noor")
 # output -> "Hello, Noor"
 hello_world("Jose")
 # output -> "Hello, Jose"
-``` -->
+```
 
 ### Additional practice (all optional)
 
