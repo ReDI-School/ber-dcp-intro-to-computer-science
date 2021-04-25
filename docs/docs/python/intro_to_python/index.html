@@ -14,12 +14,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/intro_to_python/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-04-14T22:06:57&#43;02:00" />
+<meta property="article:modified_time" content="2021-04-25T00:03:56&#43;02:00" />
 
 <meta itemprop="name" content="15/April - Introduction to Python">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2021-04-14T22:06:57&#43;02:00" />
-<meta itemprop="wordCount" content="1690">
+<meta itemprop="dateModified" content="2021-04-25T00:03:56&#43;02:00" />
+<meta itemprop="wordCount" content="1732">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="15/April - Introduction to Python"/>
 <meta name="twitter:description" content="Goals"/>
@@ -178,6 +178,31 @@
       </ul>
     </li>
     <li><a href="#extra-resources-and-references-from-class">Extra resources and references from class</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-27april---installing-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/installing_python/">27/April - Installing Python</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre Requisites</a>
+      <ul>
+        <li><a href="#python-installation-overview">Python Installation Overview</a>
+          <ul>
+            <li><a href="#google-colab">Google Colab</a></li>
+            <li><a href="#vscode">VSCode</a></li>
+            <li><a href="#pycharm-community-edition">PyCharm (Community Edition)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#0-lesson-goals">0. Lesson Goals</a></li>
+    <li><a href="#1-check-in">1. Check-In</a></li>
+    <li><a href="#2-short-review-of-each-installation-option">2. Short review of each installation option</a></li>
+    <li><a href="#3-troubleshooting-in-groups">3. Troubleshooting in Groups</a></li>
+    <li><a href="#4-hands-on-python-tasks">4. Hands-on Python Tasks</a>
+      <ul>
+        <li><a href="#task-0">Task 0</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </section>
@@ -613,63 +638,47 @@
 </code></pre></div>
 </div>
 
-<!-- A Solution:
-
-```python
-print("Hello, World!")
-``` -->
-<h3 id="task-1-create-and-call-a-function-that-prints-hello-world">Task 1: create and call a function that prints &quot;Hello, World!&quot;</h3>
+<p>A Solution:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
+</code></pre></div><h3 id="task-1-create-and-call-a-function-that-prints-hello-world">Task 1: create and call a function that prints &quot;Hello, World!&quot;</h3>
 
 <div class="tip">
   Tip: Modify the code you wrote in the previous task so that this happens within a function that you define.
 </div>
 
-<!-- A Solution:
-
-```python
-def hello_world():
-    print("Hello, World!")
-
-# Let's call the function and print this
-print(hello_world())
-``` -->
-<h3 id="task-2-create-a-function-that-returns-the-string-hello-world-call-this-function-and-print-the-output">Task 2: create a function that returns the string &quot;Hello, World!&quot;. Call this function and print the output.</h3>
-<!-- A solution:
-
-```python
-def hello_world():
-    return "Hello, World!"
-
-print(hello_world())
-``` -->
-<h3 id="task-3-modify-your-function-so-you-can-greet-a-specific-name-hello-person">Task 3: modify your function so you can greet a specific name: &quot;Hello, Person&quot;</h3>
+<p>A Solution:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+<span class="ln">2</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="c1"># Let&#39;s call the function and print this</span>
+<span class="ln">5</span><span class="k">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">())</span>
+</code></pre></div><h3 id="task-2-create-a-function-that-returns-the-string-hello-world-call-this-function-and-print-the-output">Task 2: create a function that returns the string &quot;Hello, World!&quot;. Call this function and print the output.</h3>
+<p>A solution:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+<span class="ln">2</span>    <span class="k">return</span> <span class="s2">&#34;Hello, World!&#34;</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="k">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">())</span>
+</code></pre></div><h3 id="task-3-modify-your-function-so-you-can-greet-a-specific-name-hello-person">Task 3: modify your function so you can greet a specific name: &quot;Hello, Person&quot;</h3>
 <p>In other words:</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">my_hello_world</span><span class="p">(</span><span class="s2">&#34;Noor&#34;</span><span class="p">)</span>
 <span class="ln">2</span><span class="c1"># expected output -&gt; &#34;Hello, Noor&#34;</span>
-</code></pre></div><!-- A solution:
-
-```python
-def hello_world(name):
-    return ("Hello,", name)
-
-print(hello_world("Noor"))
-# output -> "Hello, Noor"
-print(hello_world("Jose"))
-# output -> "Hello, Jose"
-```
-
-Another solution:
-
-```python
-def hello_world(name):
-    print("Hello,", name)
-
-hello_world("Noor")
-# output -> "Hello, Noor"
-hello_world("Jose")
-# output -> "Hello, Jose"
-``` -->
-<h3 id="additional-practice-all-optional">Additional practice (all optional)</h3>
+</code></pre></div><p>A solution:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="k">return</span> <span class="p">(</span><span class="s2">&#34;Hello,&#34;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="k">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Noor&#34;</span><span class="p">))</span>
+<span class="ln">5</span><span class="c1"># output -&gt; &#34;Hello, Noor&#34;</span>
+<span class="ln">6</span><span class="k">print</span><span class="p">(</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Jose&#34;</span><span class="p">))</span>
+<span class="ln">7</span><span class="c1"># output -&gt; &#34;Hello, Jose&#34;</span>
+</code></pre></div><p>Another solution:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hello,&#34;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Noor&#34;</span><span class="p">)</span>
+<span class="ln">5</span><span class="c1"># output -&gt; &#34;Hello, Noor&#34;</span>
+<span class="ln">6</span><span class="n">hello_world</span><span class="p">(</span><span class="s2">&#34;Jose&#34;</span><span class="p">)</span>
+<span class="ln">7</span><span class="c1"># output -&gt; &#34;Hello, Jose&#34;</span>
+</code></pre></div><h3 id="additional-practice-all-optional">Additional practice (all optional)</h3>
 <ul>
 <li>Modify your &quot;greeter&quot; using any of the concepts we discussed; perhaps include a conditional expression (i.e. only greet IF ...).</li>
 <li>Try to write and evaluate any Python expressions that you saw in the silent teacher activity in the playground.</li>

@@ -9,19 +9,19 @@
 <link rel="mask-icon" href='https://redi-school.github.io/favicons/safari-pinned-tab.svg'  color="#004750">
 <link rel="shortcut icon" href='https://redi-school.github.io/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://redi-school.github.io/favicons/browserconfig.xml'>
-<title>09/March/2021 - Command Line Basics Part 2 | Intro to Computer-Science Berlin 2021</title><meta property="og:title" content="09/March/2021 - Command Line Basics Part 2" />
+<title>27/April - Installing Python | Intro to Computer-Science Berlin 2021</title><meta property="og:title" content="27/April - Installing Python" />
 <meta property="og:description" content="Goals" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/command_line_part2/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/installing_python/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-03-08T22:45:57&#43;03:00" />
+<meta property="article:modified_time" content="2021-04-25T00:04:54&#43;02:00" />
 
-<meta itemprop="name" content="09/March/2021 - Command Line Basics Part 2">
+<meta itemprop="name" content="27/April - Installing Python">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2021-03-08T22:45:57&#43;03:00" />
-<meta itemprop="wordCount" content="1787">
+<meta itemprop="dateModified" content="2021-04-25T00:04:54&#43;02:00" />
+<meta itemprop="wordCount" content="1947">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="09/March/2021 - Command Line Basics Part 2"/>
+<meta name="twitter:title" content="27/April - Installing Python"/>
 <meta name="twitter:description" content="Goals"/>
 
 
@@ -130,7 +130,7 @@
     <li><a href="#next-class-preparation">Next class preparation</a></li>
   </ul>
 </nav>
-        <h3 class="section_link active"><a id="docs-09march2021---command-line-basics-part-2" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/command_line_part2/">09/March/2021 - Command Line Basics Part 2</a></h3><nav id="TableOfContents">
+        <h3 class="section_link"><a id="docs-09march2021---command-line-basics-part-2" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/command_line_part2/">09/March/2021 - Command Line Basics Part 2</a></h3><nav id="TableOfContents">
   <ul>
     <li><a href="#pre-requisites">Pre Requisites</a></li>
     <li><a href="#class-curriculum">Class Curriculum</a></li>
@@ -180,7 +180,7 @@
     <li><a href="#extra-resources-and-references-from-class">Extra resources and references from class</a></li>
   </ul>
 </nav>
-        <h3 class="section_link"><a id="docs-27april---installing-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/installing_python/">27/April - Installing Python</a></h3><nav id="TableOfContents">
+        <h3 class="section_link active"><a id="docs-27april---installing-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/installing_python/">27/April - Installing Python</a></h3><nav id="TableOfContents">
   <ul>
     <li><a href="#pre-requisites">Pre Requisites</a>
       <ul>
@@ -415,21 +415,123 @@
 </aside>
 
   <main class="content">
-    <h1>09/March/2021 - Command Line Basics Part 2</h1>
-<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/anatomy_of_command_line.png" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/anatomy_of_command_line.png">
-  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/anatomy_of_command_line.png" media="(prefers-color-scheme: dark)">
-  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/anatomy_of_command_line.png" alt="Anatomy of a command line">
-</picture>
-
+    <h1>27/April - Installing Python</h1><p><img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="python gif"></p>
 <h2 id="pre-requisites">Pre Requisites</h2>
 <ul>
+<li>Look into the three Python installation options below (under <code>Python Installation Overview</code>). Spend some time thinking about which option may make sense for you. VSCode or PyCharm will give you the most options and would enable you to continue practicing your command line and git/GitHub skills.</li>
+<li>Ideally, try getting set up with at least one of the options. We will then troubleshoot and go through this in class for folks who ran into any issues with their setup.</li>
+<li>(Optional practice) go through exercises on <a href="https://www.w3schools.com/python/exercise.asp?filename=exercise_syntax1">w3 schools for Python</a> through <code>Functions</code> section OR on particular areas that you would like to review. This is entirely optional but good practice! No need to go over <code>Lambda</code>, <code>Classes</code>, <code>Inheritance</code>, or <code>Modules</code> as we have not seen these yet.</li>
+</ul>
+<h3 id="python-installation-overview">Python Installation Overview</h3>
+<h4 id="google-colab">Google Colab</h4>
+<h5 id="overview">Overview</h5>
+<ul>
+<li>free, requires a google account (gmail)</li>
+<li>no need to install Python on your computer, as Colab comes with an interpreter built-in that can run your code</li>
+<li>easy to create a new document or create a &quot;copy&quot; of assignments that we create</li>
+<li>can use the UI to save copies to GitHub or to your Google Drive</li>
+<li>makes it easy to execute and write code in notebook &quot;cells&quot;; it's possible to mix code and text in a readable and clear way</li>
+<li>notebook-style is very common in the Data Science space, so if you think you may want to go in the direction of data science or analytics, this could be a great option
+<ul>
+<li>here's an <a href="https://colab.research.google.com/github/tensorflow/examples/blob/master/courses/udacity_intro_to_tensorflow_for_deep_learning/l01c01_introduction_to_colab_and_python.ipynb?hl=en#scrollTo=OVi775ZJ2bsy">example iPython Notebook</a> in Colab if you'd like to get a sense of what these are!</li>
+</ul>
+</li>
+<li>can be used for writing Python Notebooks (<code>.ipynb</code> only, no pure <code>.py</code> files)</li>
+<li>one of the options used in the Intro to Python course with ReDI school</li>
+<li>recommended if you don't feel as comfortable installing Python on your machine or had difficulties with this, you don't want to work on the command line or use git/GitHub, or you are particularly interested in learning data science/analysis in the future</li>
+</ul>
+<h5 id="setup-instructions">Setup instructions</h5>
+<ul>
+<li>Visit <a href="https://colab.research.google.com/">Google Colab</a>. You may need to login with your gmail account or else create a Google Account in order to use Google Colab.</li>
+<li>In the bottom right, click on <code>New Notebook</code>. This will create a new Python Notebook in your Google Drive. Some notes:
+<ul>
+<li>You can rename this file by clicking on the name (probably <code>Untitled0</code>) in the top left and renaming this. (See diagram below).</li>
+<li>(Note) If you want to save this Notebook in GitHub, you can create a repository in GitHub and initialize it with a <code>README</code> or other file. Then, in your Colab notebook, click <code>File &gt; Save Copy to GitHub</code>. You may need to authorize your account (let GitHub know that it's ok for Colab to write to your repositories on your behalf), but then you can select this repository, and Colab will save a copy to it with the current state. If you make changes that you want to commit, you can repeat this process.</li>
+</ul>
+</li>
+<li>In your notebook, click into the cell and write a Python statement of your choice (perhaps, a function to print <code>hello world</code> or add two numbers together). Then, click the play button (or use <code>Shift + Enter</code>) to execute this line of code. After a few seconds, the result of the expression should appear under the cell.
+<img src="../images/collab_setup_1.png" alt="diagram"></li>
+<li>Done! Optionally: check out the <a href="https://colab.research.google.com/notebooks/intro.ipynb#">Welcome to Colaboratory</a> notebook that Google has provided, and watch the <a href="https://www.youtube.com/watch?v=inN8seMm7UI">short introductory video</a> in it. This will just give you a sense of what you can do in Colab.</li>
+</ul>
+<h4 id="vscode">VSCode</h4>
+<ul>
+<li>free IDE that we have previously used in this class</li>
+<li>requires you to have installed a version of Python on your machine</li>
+<li>can be used for writing and executing Python Notebooks (like in Colab) as well as pure Python scripts and modules (<code>.ipynb</code> and <code>.py</code> files)</li>
+<li>can install extensions to add Python syntax-highlighting and coding tips</li>
+<li>will require you to continue practicing your command line and git/GitHub skills</li>
+<li>recommended if you feel comfortable installing Python, want to continue using the command line to navigate your file system and using git/GitHub as you develop your project, or you want to continue deepening your knowledge of one IDE rather than trying out a new platform</li>
+</ul>
+<h5 id="setup-instructions-1">Setup Instructions</h5>
+<ul>
 <li>
-<p>Create an account on <a href="https://repl.it/signup">repl.it</a></p>
+<p>Download and install Python <a href="https://www.python.org/downloads/">at this link</a> (latest version -- 3.9.4). Complete all of the installer steps.</p>
 </li>
 <li>
-<p>Optional( for Windows users only): <a href="https://www.youtube.com/watch?v=LLlfLpvQg04">How to Install Linux Terminal on Windows 10</a></p>
+<p>(Optional) in the installed Python folder, there should be an <code>IDLE</code> program. Double click or run this program, which opens a Python interactive shell. This will execute Python code statements. Try it out by printing something (hint: use the <code>print</code> function)</p>
+</li>
+<li>
+<p>In VSCode, install the following extensions by clicking on the extensions tab on the left, searching for the following extensions, and clicking &quot;Install&quot; (see diagram):</p>
+<ul>
+<li><code>Python</code></li>
+<li><code>MagicPython</code></li>
+<li><code>Visual Studio IntelliCode</code></li>
+<li>Another option: <code>Python Extension Pack</code> which includes all three of the above extensions plus a few more</li>
+</ul>
+<p><img src="../images/vscode_pyinstallation.png" alt="diagram"></p>
+</li>
+<li>
+<p>In VSCode in the <code>View</code> menu in the top left corner, click <code>Command Palette</code> (or use the shortcut <code>Command-Shift-P</code>) which should bring down a dropdown menu. Here, type <code>&quot;Python: Select Interpreter&quot;</code> and click on this option. This should bring up a list of all Python versions installed on your
+computer -- select <code>3.9.4</code>, the version you installed.
+<img src="../images/vscode_pyinstallation_2.png" alt="diagram"></p>
+</li>
+<li>
+<p>(Optional) test that this works! Create a new project or a new file with the <code>.py</code> ending (for example: <code>hello_world.py</code>). Have this file output <code>&quot;Hello World!&quot;</code> (hint: use the <code>print</code> function). Click on the green play button in the top right corner to run the code. This should open the terminal in VSCode and print out the output. If you run into errors, try restarting VSCode to make sure all changes were in place, and then if you run into the same issue, Google this error or ask a teacher or peer in class!</p>
 </li>
 </ul>
+<h4 id="pycharm-community-edition">PyCharm (Community Edition)</h4>
+<ul>
+<li>Community Edition is free, upgrading to the Professional Edition is not necessary for the purposes of this course</li>
+<li>an IDE (integrated development environment) designed for Python</li>
+<li>requires you to have installed a version of Python on your machine</li>
+<li>built-in awesome features that help you write and execute Python code (function signature help + completion, syntax highlighting)</li>
+<li>can manage different Python virtual environments for you (different versions of Python, different additional packages specific to projects, etc.)</li>
+<li>can be used for writing and executing Python Notebooks (like in Colab) as well as pure Python scripts and modules (<code>.ipynb</code> and <code>.py</code> files)</li>
+<li>will require you to continue practicing your command line and git/GitHub skills</li>
+<li>one of the options used in the Intro to Python course with ReDI school</li>
+<li>recommended if you feel comfortable installing Python, want to continue using the command line to navigate your file system and using git/GitHub as you develop your project, or you think you may want to continue learning Python after this course</li>
+</ul>
+<h5 id="setup-instructions-2">Setup Instructions</h5>
+<ul>
+<li>
+<p>Download and install Python <a href="https://www.python.org/downloads/">at this link</a> (latest version -- 3.9.4). Complete all of the installer steps.</p>
+</li>
+<li>
+<p>(Optional) in the installed Python folder, there should be an <code>IDLE</code> program. Double click or run this program, which opens a Python interactive shell. This will execute Python code statements. Try it out by printing something (hint: use the <code>print</code> function)</p>
+</li>
+<li>
+<p>In PyCharm, can select different Python interpreters for each project. Since this is our first project, we need to add and setup a first interpreter. (In the future, you can select this interpreter again, or set up a new one in a similar way.)</p>
+</li>
+<li>
+<p>Open PyCharm and click on <code>New Project</code>. Choose a location for the new project; your normal coding folder is a good idea, as this will create a new directory within it.</p>
+</li>
+<li>
+<p>PyCharm will now ask you to configure your interpreter. Click on <code>Previously configured interpreter</code>, then on the three dots to the right of the select.
+<img src="../images/py_installation_3.png" alt="diagram">
+<em>(Note) you can also use PyCharm to create Virtual Environments. This is a more advanced topic and is out of scope for today, but feel free to look into this and reach out if you would like to know more!</em></p>
+</li>
+<li>
+<p>Select <code>System Installation</code> and select the path to your <code>Python 3.9</code> installation. Make sure that this is the path to the version of Python you just installed (3.9), <strong>not any other version that was already installed on your computer</strong>.
+<img src="../images/py_installation_4.png" alt="diagram"></p>
+</li>
+<li>
+<p>Click <code>Create</code></p>
+</li>
+<li>
+<p>PyCharm may have already created a test <code>main.py</code> file for you. (If not, go ahead and create a file like <code>hello_world.py</code> and have it print out <code>hello world</code> or something else!) Then press the green play button in the top right corner to run this code.</p>
+</li>
+</ul>
+<hr>
 <h2 id="class-curriculum">Class Curriculum</h2>
 <table>
 <thead>
@@ -441,411 +543,88 @@
 </thead>
 <tbody>
 <tr>
-<td>Digital Career Support Team</td>
-<td>10-15 minutes</td>
+<td>Lesson Goals</td>
+<td>5 minutes</td>
 <td>❌</td>
 </tr>
 <tr>
-<td>Recap <a href="../command_line_part1">Session 1</a></td>
-<td>15-20 minutes</td>
-<td>❌</td>
+<td>Check-in on pre-reqs and questions from last class</td>
+<td>10 minutes</td>
+<td>Read and attempt installation instructions</td>
 </tr>
 <tr>
-<td>Navigation of Linux file system</td>
-<td>5-10 minutes</td>
-<td>❌</td>
+<td>Short review/demo of each installation option</td>
+<td>20 minutes</td>
+<td>Read and attempt installation instructions</td>
 </tr>
 <tr>
-<td>Create, view, manipulate files &amp; folders</td>
-<td>5-10 minutes</td>
-<td>❌</td>
+<td>Troubleshooting installation in groups</td>
+<td>5-30 minutes</td>
+<td>Read and attempt installation instructions</td>
 </tr>
 <tr>
-<td>Class break</td>
+<td>Break</td>
 <td>10 minutes</td>
 <td>❌</td>
 </tr>
 <tr>
-<td>Group project: Creating a journal/diary</td>
-<td>20-25 minutes</td>
-<td>repl.it account</td>
-</tr>
-<tr>
-<td>Installing software &amp; package managers</td>
-<td>10-15 minutes</td>
+<td>Hands-on Python exercises (in pairs)</td>
+<td>rest of class</td>
 <td>❌</td>
 </tr>
 <tr>
-<td>Summary &amp; Next class overview</td>
-<td>10 minutes</td>
+<td>Check-out</td>
+<td>5 minutes</td>
 <td>❌</td>
 </tr>
 </tbody>
 </table>
-<h2 id="recap-session-1command_line_part1">Recap <a href="../command_line_part1">Session 1</a></h2>
+<h2 id="0-lesson-goals">0. Lesson Goals</h2>
 <ul>
-<li>Questions
+<li>Have a working development environment on Python.</li>
+<li>Continue writing code in Python.</li>
+</ul>
+<h2 id="1-check-in">1. Check-In</h2>
 <ul>
-<li>Linux and Windows are ...</li>
-<li>To create a directory in linux we use the command: ...</li>
-<li>To create a file in linux we use the command: ...</li>
-<li>Commands like above/before expect us to provide also an ...</li>
+<li>What was particularly challenging last class? Are there any remaining questions from last class?</li>
+<li>Were there any challenges understanding the pre-requisites for today's class?</li>
+</ul>
+<h2 id="2-short-review-of-each-installation-option">2. Short review of each installation option</h2>
+<ul>
+<li>Colab, PyCharm, VSCode</li>
+<li>We will also take a look at a Python Notebook (<code>.ipynb</code>) vs. normal Python file <code>.py</code>. What is the difference between these two formats? How do we run each of these?
+<ul>
+<li>Notebooks are made up of &quot;cells&quot; which allow you to execute blocks of code. Cells can also contain Markdown or text, so these can be useful for demoing information or for storing plots, charts, and doing data analysis. Notebooks are commonly used in the Data Science and Machine Learning fields.</li>
+<li><code>.py</code> files are Python files, and can be executed by a Python interpreter via <code>path/to/python/installation filename.py</code> where you replace <code>path/to/python/installation</code> with the path to the location that you installed Python on your machine and <code>filename.py</code> with the name of your Python file. Your interpreter will also look for a <code>main.py</code> in your module or the statement: <code>if __name__ == '__main__':</code> in a file to know where to begin running your code. This is where you can tell the interpreter to start calling your functions.</li>
 </ul>
 </li>
+<li>We will take a look at the <code>IDLE</code> Python terminal that comes with your Python installation and how you can interactively execute lines of code here. (There are other Python terminals that you can install or use, such as <code>ipython</code>.) This can be useful for testing out your logic and syntax as you are writing a longer program as well!</li>
 </ul>
-<h2 id="navigating-through-the-linux-file-system">Navigating through the Linux File System</h2>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/# <span class="nb">pwd</span>
-<span class="ln"> 2</span>/
-<span class="ln"> 3</span>root@abc40003dc7a:/# <span class="nb">cd</span> home/
-<span class="ln"> 4</span>root@abc40003dc7a:/home# <span class="nb">pwd</span>
-<span class="ln"> 5</span>/home
-<span class="ln"> 6</span>root@abc40003dc7a:/home# <span class="nb">cd</span> deliergky/
-<span class="ln"> 7</span>root@abc40003dc7a:/home/deliergky# <span class="nb">pwd</span>
-<span class="ln"> 8</span>/home/deliergky
-<span class="ln"> 9</span>root@abc40003dc7a:/home/deliergky# <span class="nb">cd</span> ..
-<span class="ln">10</span>root@abc40003dc7a:/home# <span class="nb">pwd</span>
-<span class="ln">11</span>/home
-<span class="ln">12</span>root@abc40003dc7a:/home# <span class="nb">cd</span> ..
-<span class="ln">13</span>root@abc40003dc7a:/# <span class="nb">pwd</span>
-<span class="ln">14</span>/
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# <span class="nb">pwd</span>
-<span class="ln">2</span>/home/deliergky
-<span class="ln">3</span>root@abc40003dc7a:/home/deliergky# <span class="nb">cd</span> ~
-<span class="ln">4</span>root@abc40003dc7a:~# <span class="nb">pwd</span>
-<span class="ln">5</span>/root
-</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>$ ls -an
-<span class="ln"> 2</span>total <span class="m">88</span>
-<span class="ln"> 3</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 17:48 .
-<span class="ln"> 4</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 17:48 ..
-<span class="ln"> 5</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:47 bin
-<span class="ln"> 6</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Apr <span class="m">24</span>  <span class="m">2018</span> boot
-<span class="ln"> 7</span>drwxr-xr-x   <span class="m">5</span> <span class="m">0</span> <span class="m">0</span>  <span class="m">360</span> Mar  <span class="m">8</span> 17:48 dev
-<span class="ln"> 8</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:29 etc
-<span class="ln"> 9</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:31 home
-<span class="ln">10</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 17:59 lib
-<span class="ln">11</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:46 lib64
-<span class="ln">12</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:43 media
-<span class="ln">13</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:43 mnt
-<span class="ln">14</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:43 opt
-<span class="ln">15</span>dr-xr-xr-x <span class="m">127</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 17:48 proc
-<span class="ln">16</span>drwx------   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:47 root
-<span class="ln">17</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">4</span> 02:24 run
-<span class="ln">18</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">4</span> 02:24 sbin
-<span class="ln">19</span>drwxr-xr-x   <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:43 srv
-<span class="ln">20</span>dr-xr-xr-x  <span class="m">13</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 17:48 sys
-<span class="ln">21</span>drwxrwxrwt   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:04 tmp
-<span class="ln">22</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:43 usr
-<span class="ln">23</span>drwxr-xr-x   <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Feb <span class="m">22</span> 22:47 var
-</code></pre></div><h2 id="create-view-manipulate-files--folders">Create, view, manipulate files &amp; folders</h2>
-<section class="grid-2"  >
-
-<div><ul>
-<li><em>Create</em> a <em>file</em>:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# mkdir -p 2021/03
-</code></pre></div><ul>
-<li><em>Create</em> a <em>folder</em>:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# touch 2021/03/08.log
-</code></pre></div><ul>
-<li><em>Copy</em> a <em>file</em>:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# cp 2021/03/09.log 2021/03/10.log
-<span class="ln">2</span>root@abc40003dc7a:/home/deliergky# cat 2021/03/10.log
-<span class="ln">3</span>Learning something cool @ReDI
-</code></pre></div><ul>
-<li><em>Copy</em> a <em>folder</em>:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/home/deliergky# cp -r 2021/03/ 2021/04
-<span class="ln"> 2</span>root@abc40003dc7a:/home/deliergky# ls -an 2021/04/
-<span class="ln"> 3</span>total <span class="m">16</span>
-<span class="ln"> 4</span>drwxr-xr-x <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:58 .
-<span class="ln"> 5</span>drwxr-xr-x <span class="m">4</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:58 ..
-<span class="ln"> 6</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:58 07.log
-<span class="ln"> 7</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:58 08.log
-<span class="ln"> 8</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>   <span class="m">30</span> Mar  <span class="m">8</span> 18:58 09.log
-<span class="ln"> 9</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>   <span class="m">30</span> Mar  <span class="m">8</span> 18:58 11.log
-<span class="ln">10</span>root@abc40003dc7a:/home/deliergky#
-</code></pre></div><ul>
-<li><em>Delete/Remove</em> a <em>file</em>:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# rm 2021/04/09.log
-<span class="ln">2</span>root@abc40003dc7a:/home/deliergky# ls -an 2021/04/
-<span class="ln">3</span>total <span class="m">12</span>
-<span class="ln">4</span>drwxr-xr-x <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 19:01 .
-<span class="ln">5</span>drwxr-xr-x <span class="m">4</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:58 ..
-<span class="ln">6</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:58 07.log
-<span class="ln">7</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:58 08.log
-<span class="ln">8</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>   <span class="m">30</span> Mar  <span class="m">8</span> 18:58 11.log
-<span class="ln">9</span>root@abc40003dc7a:/home/deliergky#
-</code></pre></div><ul>
-<li><em>Delete/Remove</em> a <em>folder</em>:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# rm 2021/04/
-<span class="ln">2</span>rm: cannot remove <span class="s1">&#39;2021/04/&#39;</span>: Is a directory
-<span class="ln">3</span>root@abc40003dc7a:/home/deliergky# rm -r 2021/04/
-<span class="ln">4</span>root@abc40003dc7a:/home/deliergky#
-</code></pre></div></div>
-
-<div><ul>
-<li><em>View</em> a <em>file</em>:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# cat 2021/03/08.log
-<span class="ln">2</span>International Women<span class="s1">&#39;s Day (March 8) is a global day celebrating the social, economic, cultural, and political achievements of women. The day also marks a call to action for accelerating women&#39;</span>s equality.
-</code></pre></div><ul>
-<li><em>List</em> a <em>folder's</em> content:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# ls -an 2021/03/
-<span class="ln">2</span>total <span class="m">12</span>
-<span class="ln">3</span>drwxr-xr-x <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:35 .
-<span class="ln">4</span>drwxr-xr-x <span class="m">3</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:31 ..
-<span class="ln">5</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:35 07.log
-<span class="ln">6</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>  <span class="m">204</span> Mar  <span class="m">8</span> 18:41 08.log
-<span class="ln">7</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:34 09.log
-</code></pre></div><ul>
-<li><em>Update</em> a <em>file's</em> content:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# <span class="nb">echo</span> <span class="s2">&#34;Learning something cool @ReDI&#34;</span> &gt; 2021/03/09.log
-<span class="ln">2</span>root@abc40003dc7a:/home/deliergky# cat 2021/03/09.log
-<span class="ln">3</span>Learning something cool @ReDI
-</code></pre></div><ul>
-<li><em>Rename</em> a <em>file</em>:</li>
-</ul>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/home/deliergky# mv 2021/03/10.log 2021/03/11.log
-<span class="ln">2</span>root@abc40003dc7a:/home/deliergky# ls -an 2021/03/
-<span class="ln">3</span>total <span class="m">16</span>
-<span class="ln">4</span>drwxr-xr-x <span class="m">2</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:49 .
-<span class="ln">5</span>drwxr-xr-x <span class="m">3</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4096</span> Mar  <span class="m">8</span> 18:31 ..
-<span class="ln">6</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:35 07.log
-<span class="ln">7</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>    <span class="m">0</span> Mar  <span class="m">8</span> 18:44 08.log
-<span class="ln">8</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>   <span class="m">30</span> Mar  <span class="m">8</span> 18:47 09.log
-<span class="ln">9</span>-rw-r--r-- <span class="m">1</span> <span class="m">0</span> <span class="m">0</span>   <span class="m">30</span> Mar  <span class="m">8</span> 18:48 11.log
-</code></pre></div></div>
-
-</section>
-
-<h2 id="group-project-creating-a-journaldiary">Group project: Creating a journal/diary</h2>
-<section class="grid-2"  >
-<div><p>Let's create a simple diary in the following format: <code>2021/03/09.log</code></p>
-<p>Where:</p>
-<ul>
-<li><code>2021</code> represents the year and is a folder</li>
-<li><code>03</code> represents the month and is a folder</li>
-<li><code>09.log</code> represents the day and is a file</li>
-</ul>
-<p>Add also some content to the files ;-)</p>
-</div>
-
-<div><div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/home/deliergky# ls -alR 2021/
-<span class="ln"> 2</span>2021/:
-<span class="ln"> 3</span>total <span class="m">20</span>
-<span class="ln"> 4</span>drwxr-xr-x <span class="m">5</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 .
-<span class="ln"> 5</span>drwxr-xr-x <span class="m">3</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 18:31 ..
-<span class="ln"> 6</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 18:49 <span class="m">03</span>
-<span class="ln"> 7</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 <span class="m">04</span>
-<span class="ln"> 8</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 <span class="m">05</span>
-<span class="ln"> 9</span>
-<span class="ln">10</span>2021/03:
-<span class="ln">11</span>total <span class="m">16</span>
-<span class="ln">12</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 18:49 .
-<span class="ln">13</span>drwxr-xr-x <span class="m">5</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 ..
-<span class="ln">14</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 18:35 07.log
-<span class="ln">15</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 18:44 08.log
-<span class="ln">16</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 18:47 09.log
-<span class="ln">17</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 18:48 11.log
-<span class="ln">18</span>
-<span class="ln">19</span>2021/04:
-<span class="ln">20</span>total <span class="m">16</span>
-<span class="ln">21</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 .
-<span class="ln">22</span>drwxr-xr-x <span class="m">5</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 ..
-<span class="ln">23</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 19:05 07.log
-<span class="ln">24</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 19:05 08.log
-<span class="ln">25</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 19:05 09.log
-<span class="ln">26</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 19:05 11.log
-<span class="ln">27</span>
-<span class="ln">28</span>2021/05:
-<span class="ln">29</span>total <span class="m">16</span>
-<span class="ln">30</span>drwxr-xr-x <span class="m">2</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 .
-<span class="ln">31</span>drwxr-xr-x <span class="m">5</span> root root <span class="m">4096</span> Mar  <span class="m">8</span> 19:05 ..
-<span class="ln">32</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 19:05 07.log
-<span class="ln">33</span>-rw-r--r-- <span class="m">1</span> root root    <span class="m">0</span> Mar  <span class="m">8</span> 19:05 08.log
-<span class="ln">34</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 19:05 09.log
-<span class="ln">35</span>-rw-r--r-- <span class="m">1</span> root root   <span class="m">30</span> Mar  <span class="m">8</span> 19:05 11.log
-</code></pre></div></div>
-
-</section>
-
-<h2 id="installing-software--package-managers">Installing software &amp; package managers</h2>
-
-<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/linux-package-manager-explanation.webp" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/linux-package-manager-explanation.webp">
-  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/linux-package-manager-explanation.webp" media="(prefers-color-scheme: dark)">
-  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/linux-package-manager-explanation.webp" alt="Linux package managers">
-</picture>
-
-<ul>
-<li>
-<p>Package: collections of files that are bundled together and can be installed and removed as a group</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/# apt show golang
-<span class="ln"> 2</span>Package: golang
-<span class="ln"> 3</span>Version: 2:1.10~4ubuntu1
-<span class="ln"> 4</span>Priority: optional
-<span class="ln"> 5</span>Section: devel
-<span class="ln"> 6</span>Source: golang-defaults
-<span class="ln"> 7</span>Origin: Ubuntu
-<span class="ln"> 8</span>Maintainer: Ubuntu Developers &lt;ubuntu-devel-discuss@lists.ubuntu.com&gt;
-<span class="ln"> 9</span>Original-Maintainer: Go Compiler Team &lt;pkg-golang-devel@lists.alioth.debian.org&gt;
-<span class="ln">10</span>Bugs: https://bugs.launchpad.net/ubuntu/+filebug
-<span class="ln">11</span>Installed-Size: 11.3 kB
-<span class="ln">12</span>Depends: golang-1.10, golang-doc <span class="o">(</span>&gt;<span class="o">=</span> 2:1.10~4ubuntu1<span class="o">)</span>, golang-go <span class="o">(</span>&gt;<span class="o">=</span> 2:1.10~4ubuntu1<span class="o">)</span>, golang-src <span class="o">(</span>&gt;<span class="o">=</span> 2:1.10~4ubuntu1<span class="o">)</span>
-<span class="ln">13</span>Homepage: https://golang.org
-<span class="ln">14</span>Supported: 5y
-<span class="ln">15</span>Download-Size: <span class="m">2896</span> B
-<span class="ln">16</span>APT-Sources: http://archive.ubuntu.com/ubuntu bionic/main amd64 Packages
-<span class="ln">17</span>Description: Go programming language compiler - metapackage
-</code></pre></div></li>
-<li>
-<p>Keeps track of what software is installed</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/# apt list golang
-<span class="ln">2</span>Listing... Done
-<span class="ln">3</span>golang/bionic,now 2:1.10~4ubuntu1 amd64 <span class="o">[</span>installed<span class="o">]</span>
-</code></pre></div></li>
-<li>
-<p>Allows you to easily install new software</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/# apt-get install golang
-<span class="ln"> 2</span>Reading package lists... Done
-<span class="ln"> 3</span>Building dependency tree
-<span class="ln"> 4</span>Reading state information... Done
-<span class="ln"> 5</span>The following additional packages will be installed:
-<span class="ln"> 6</span>binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dirmngr dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base gnupg gnupg-l10n
-<span class="ln"> 7</span>gnupg-utils golang-1.10 golang-1.10-doc golang-1.10-go golang-1.10-race-detector-runtime golang-1.10-src golang-doc golang-go golang-race-detector-runtime
-<span class="ln"> 8</span>golang-src gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan4
-<span class="ln"> 9</span>libasn1-8-heimdal libassuan0 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libfakeroot libfile-fcntllock-perl
-<span class="ln">10</span>libgcc-7-dev libgdbm-compat4 libgdbm5 libglib2.0-0 libglib2.0-data libgomp1 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
-<span class="ln">11</span>libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1 libkrb5-26-heimdal libksba8 libldap-2.4-2 libldap-common liblocale-gettext-perl liblsan0
-<span class="ln">12</span>libmpc3 libmpfr6 libmpx2 libnpth0 libperl5.26 libquadmath0 libreadline7 libroken18-heimdal libsasl2-2 libsasl2-modules libsasl2-modules-db libsqlite3-0
-<span class="ln">13</span>libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev netbase patch perl perl-modules-5.26
-<span class="ln">14</span>pinentry-curses pkg-config readline-common shared-mime-info xdg-user-dirs xz-utils
-<span class="ln">15</span>Suggested packages:
-<span class="ln">16</span>binutils-doc cpp-doc gcc-7-locales dbus-user-session libpam-systemd pinentry-gnome3 tor debian-keyring g++-multilib g++-7-multilib gcc-7-doc
-<span class="ln">17</span>libstdc++6-7-dbg gcc-multilib autoconf automake libtool flex bison gdb gcc-doc gcc-7-multilib libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg
-<span class="ln">18</span>libasan4-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx2-dbg libquadmath0-dbg parcimonie xloadimage bzr ca-certificates git mercurial
-<span class="ln">19</span>subversion scdaemon glibc-doc gdbm-l10n libsasl2-modules-gssapi-mit <span class="p">|</span> libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
-<span class="ln">20</span>libsasl2-modules-sql libstdc++-7-doc make-doc man-browser ed diffutils-doc perl-doc libterm-readline-gnu-perl <span class="p">|</span> libterm-readline-perl-perl pinentry-doc
-<span class="ln">21</span>readline-doc
-<span class="ln">22</span>The following NEW packages will be installed:
-<span class="ln">23</span>binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dirmngr dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base gnupg gnupg-l10n
-<span class="ln">24</span>gnupg-utils golang golang-1.10 golang-1.10-doc golang-1.10-go golang-1.10-race-detector-runtime golang-1.10-src golang-doc golang-go
-<span class="ln">25</span>golang-race-detector-runtime golang-src gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl libalgorithm-diff-xs-perl
-<span class="ln">26</span>libalgorithm-merge-perl libasan4 libasn1-8-heimdal libassuan0 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libfakeroot
-<span class="ln">27</span>libfile-fcntllock-perl libgcc-7-dev libgdbm-compat4 libgdbm5 libglib2.0-0 libglib2.0-data libgomp1 libgssapi3-heimdal libhcrypto4-heimdal
-<span class="ln">28</span>libheimbase1-heimdal libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1 libkrb5-26-heimdal libksba8 libldap-2.4-2 libldap-common
-<span class="ln">29</span>liblocale-gettext-perl liblsan0 libmpc3 libmpfr6 libmpx2 libnpth0 libperl5.26 libquadmath0 libreadline7 libroken18-heimdal libsasl2-2 libsasl2-modules
-<span class="ln">30</span>libsasl2-modules-db libsqlite3-0 libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev netbase
-<span class="ln">31</span>patch perl perl-modules-5.26 pinentry-curses pkg-config readline-common shared-mime-info xdg-user-dirs xz-utils
-<span class="ln">32</span><span class="m">0</span> upgraded, <span class="m">100</span> newly installed, <span class="m">0</span> to remove and <span class="m">0</span> not upgraded.
-<span class="ln">33</span>Need to get <span class="m">110</span> MB of archives.
-<span class="ln">34</span>After this operation, <span class="m">496</span> MB of additional disk space will be used.
-<span class="ln">35</span>Do you want to <span class="k">continue</span>? <span class="o">[</span>Y/n<span class="o">]</span>
-</code></pre></div></li>
-<li>
-<p>Upgrade software to newer versions,</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/# apt-get upgrade golang
-<span class="ln">2</span>Reading package lists... Done
-<span class="ln">3</span>Building dependency tree
-<span class="ln">4</span>Reading state information... Done
-<span class="ln">5</span>golang is already the newest version <span class="o">(</span>2:1.10~4ubuntu1<span class="o">)</span>.
-<span class="ln">6</span>Calculating upgrade... Done
-<span class="ln">7</span><span class="m">0</span> upgraded, <span class="m">0</span> newly installed, <span class="m">0</span> to remove and <span class="m">0</span> not upgraded.
-</code></pre></div></li>
-<li>
-<p>Remove software that you previously installed</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln"> 1</span>root@abc40003dc7a:/# apt-get remove golang
-<span class="ln"> 2</span>Reading package lists... Done
-<span class="ln"> 3</span>Building dependency tree
-<span class="ln"> 4</span>Reading state information... Done
-<span class="ln"> 5</span>The following packages were automatically installed and are no longer required:
-<span class="ln"> 6</span>binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dirmngr dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base gnupg gnupg-l10n
-<span class="ln"> 7</span>gnupg-utils golang-1.10 golang-1.10-doc golang-1.10-go golang-1.10-race-detector-runtime golang-1.10-src golang-doc golang-go golang-race-detector-runtime
-<span class="ln"> 8</span>golang-src gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan4
-<span class="ln"> 9</span>libasn1-8-heimdal libassuan0 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libfakeroot libfile-fcntllock-perl
-<span class="ln">10</span>libgcc-7-dev libgdbm-compat4 libgdbm5 libglib2.0-0 libglib2.0-data libgomp1 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
-<span class="ln">11</span>libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1 libkrb5-26-heimdal libksba8 libldap-2.4-2 libldap-common liblocale-gettext-perl liblsan0
-<span class="ln">12</span>libmpc3 libmpfr6 libmpx2 libnpth0 libperl5.26 libquadmath0 libreadline7 libroken18-heimdal libsasl2-2 libsasl2-modules libsasl2-modules-db libsqlite3-0
-<span class="ln">13</span>libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev netbase patch perl perl-modules-5.26
-<span class="ln">14</span>pinentry-curses pkg-config readline-common shared-mime-info xdg-user-dirs xz-utils
-<span class="ln">15</span>Use <span class="s1">&#39;apt autoremove&#39;</span> to remove them.
-<span class="ln">16</span>The following packages will be REMOVED:
-<span class="ln">17</span>golang
-<span class="ln">18</span><span class="m">0</span> upgraded, <span class="m">0</span> newly installed, <span class="m">1</span> to remove and <span class="m">0</span> not upgraded.
-<span class="ln">19</span>After this operation, 11.3 kB disk space will be freed.
-<span class="ln">20</span>Do you want to <span class="k">continue</span>? <span class="o">[</span>Y/n<span class="o">]</span> Y
-<span class="ln">21</span><span class="o">(</span>Reading database ... <span class="m">21037</span> files and directories currently installed.<span class="o">)</span>
-<span class="ln">22</span>Removing golang <span class="o">(</span>2:1.10~4ubuntu1<span class="o">)</span> ... 
-</code></pre></div></li>
-<li>
-<p>Downloaded from software repositories(repos, sources, feeds)</p>
-<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="ln">1</span>root@abc40003dc7a:/# apt-get update
-<span class="ln">2</span>Get:1 http://archive.ubuntu.com/ubuntu bionic InRelease <span class="o">[</span><span class="m">242</span> kB<span class="o">]</span>
-<span class="ln">3</span>Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease <span class="o">[</span>88.7 kB<span class="o">]</span>
-<span class="ln">4</span>Get:3 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages <span class="o">[</span>24.5 kB<span class="o">]</span>
-<span class="ln">5</span>Get:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease <span class="o">[</span>88.7 kB<span class="o">]</span>
-<span class="ln">6</span>...
-<span class="ln">7</span>Fetched 22.0 MB in 27s <span class="o">(</span><span class="m">810</span> kB/s<span class="o">)</span>
-<span class="ln">8</span>Reading package lists... Done
-</code></pre></div></li>
-<li>
-<p>Varies by Operating System &amp; Distribution</p>
-<ul>
-<li>
-<p>MacOS: <code>brew install golang</code>, AppStore</p>
-</li>
-<li>
-<p>Windows: PackageManagement, Chocalatey...</p>
-
-<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/windows-package-management.png" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/windows-package-management.png">
-  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/windows-package-management.png" media="(prefers-color-scheme: dark)">
-  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/windows-package-management.png" alt="Windows package management">
-</picture>
-
-</li>
-<li>
-<p>Linux: <code>yum</code>, <code>apt-get</code>, <code>zypper</code></p>
-
-<picture class="nav_logo" data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/packages-by-distro.jpg" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/packages-by-distro.jpg">
-  <source srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/packages-by-distro.jpg" media="(prefers-color-scheme: dark)">
-  <img srcset="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/packages-by-distro.jpg" alt="Linux package managers">
-</picture>
-
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="extra-resources">Extra resources</h2>
-
-<div class="tip">
-  <ul>
-<li><a href="https://www.youtube.com/watch?v=460IxkYmZxQ">Linux Filesystem Hierarchy - Part 1</a></li>
-<li><a href="https://www.youtube.com/watch?v=WMaWG5ZRht4">Linux Filesystem Hierarchy - Part 2</a></li>
-<li><a href="https://www.youtube.com/watch?v=BFMyUgF6I8Y">Briana's Bash Tutorial: How to Use the Command Line in Linux, Windows, and Mac</a></li>
-<li><a href="https://www.digitalocean.com/community/tutorials/a-linux-command-line-primer">A linux command line primer</a></li>
-<li><a href="https://www.learnenough.com/command-line-tutorial/basics">Learn Enough Command Line to Be Dangerous</a></li>
-<li><a href="https://ryanstutorials.net/linuxtutorial/cheatsheet.php">Linux command line basic cheat sheet</a></li>
-<li><a href="https://www.freecodecamp.org/news/the-linux-commands-handbook/">The Linux Command Handbook</a></li>
-<li><a href="https://devopedia.org/package-manager">Package Managers</a></li>
-<li><a href="https://summarynetworks.com/ses/what-is-a-package-manager-in-linux/">What is a package manager in Linux</a></li>
-</ul>
-
-</div>
-
-<h2 id="next-class-preparation">Next class preparation</h2>
-<a href="../../git" class="button mb-1 grid-4">Version Control with GIT</a>
+<h2 id="3-troubleshooting-in-groups">3. Troubleshooting in Groups</h2>
+<p>We will split up into groups based on whether folks have Python installed or are having issues so that we can troubleshoot and get everyone set up as quickly as possible :)</p>
+<p>Groups that are done with installation can start working on the Python problems from the following section.</p>
+<h2 id="4-hands-on-python-tasks">4. Hands-on Python Tasks</h2>
+<p>Work in groups to solve the following tasks in your new Python Dev setup. You are not expected to get through all of these in class, and they range from easier to harder.</p>
+<p>Note: if you are writing in Colab or a Python Notebook, then try to keep each task in a separate code cell. If you are writing in a pure Python file, consider wrapping each task in a function and call these functions in the <code>if __name__ == '__main__':</code> block to test out your code. This might look something like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="c1"># in your file:</span>
+<span class="ln"> 2</span><span class="k">def</span> <span class="nf">task_0</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="ln"> 3</span>    <span class="c1"># code to solve task 1</span>
+<span class="ln"> 4</span>    <span class="o">...</span>
+<span class="ln"> 5</span>
+<span class="ln"> 6</span>    <span class="k">return</span> <span class="n">answer_to_task_0</span>
+<span class="ln"> 7</span>
+<span class="ln"> 8</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ln"> 9</span>    <span class="k">print</span><span class="p">(</span><span class="n">task_0</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># prints output of task_0</span>
+<span class="ln">10</span>
+</code></pre></div><h3 id="task-0">Task 0</h3>
+<p>Coming soon! :)</p>
 
     <div class="pager">
   
   <div class="pager_item prev">
     
-    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/command/command_line_part1/" class="pager_link button" title="04/March - Operating Systems &amp; Command Line Basics">
-      <span class="pager_label">04/March - Operating Systems &amp; Command Line Basics</span>
+    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/ide_and_review/" class="pager_link button" title="18/March - Using an IDE (Integrated development environment)">
+      <span class="pager_label">18/March - Using an IDE (Integrated development environment)</span>
     </a>
   </div>
   
@@ -853,8 +632,8 @@
   
   <div class="pager_item next">
     
-    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github/" class="pager_link button" title="11/March - Version Control with Git and GitHub">
-      <span class="pager_label">11/March - Version Control with Git and GitHub</span>
+    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/search/" class="pager_link button" title="Search">
+      <span class="pager_label">Search</span>
     </a>
   </div>
   
