@@ -19,7 +19,7 @@
 <meta itemprop="name" content="27/April - Installing Python">
 <meta itemprop="description" content="Goals">
 <meta itemprop="dateModified" content="2021-04-25T00:04:54&#43;02:00" />
-<meta itemprop="wordCount" content="1947">
+<meta itemprop="wordCount" content="3476">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="27/April - Installing Python"/>
 <meta name="twitter:description" content="Goals"/>
@@ -198,11 +198,25 @@
     <li><a href="#1-check-in">1. Check-In</a></li>
     <li><a href="#2-short-review-of-each-installation-option">2. Short review of each installation option</a></li>
     <li><a href="#3-troubleshooting-in-groups">3. Troubleshooting in Groups</a></li>
-    <li><a href="#4-hands-on-python-tasks">4. Hands-on Python Tasks</a>
+    <li><a href="#4-for-and-while-loops">4. for and while loops</a>
       <ul>
-        <li><a href="#task-0">Task 0</a></li>
+        <li><a href="#while-loops">while loops</a></li>
+        <li><a href="#for-loops">for loops</a></li>
       </ul>
     </li>
+    <li><a href="#5-hands-on-python-tasks">5. Hands-on Python Tasks</a>
+      <ul>
+        <li><a href="#task-0-warmup">Task 0 (warmup)</a></li>
+        <li><a href="#task-1">Task 1</a></li>
+        <li><a href="#task-2">Task 2</a></li>
+        <li><a href="#task-3-parts-1-2">Task 3 (parts 1, 2)</a></li>
+        <li><a href="#task-4">Task 4</a></li>
+        <li><a href="#task-5">Task 5</a></li>
+        <li><a href="#challenge-task-6-parts-1-2">(Challenge) Task 6 (parts 1, 2)</a></li>
+        <li><a href="#challenge-task-7-parts-1-2-3">(Challenge) Task 7 (parts 1, 2, 3)</a></li>
+      </ul>
+    </li>
+    <li><a href="#additional-resources">Additional Resources</a></li>
   </ul>
 </nav>
       </section>
@@ -568,6 +582,11 @@ computer -- select <code>3.9.4</code>, the version you installed.
 <td>❌</td>
 </tr>
 <tr>
+<td>Overview of loops (for, while)</td>
+<td>10-15 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
 <td>Hands-on Python exercises (in pairs)</td>
 <td>rest of class</td>
 <td>❌</td>
@@ -603,22 +622,239 @@ computer -- select <code>3.9.4</code>, the version you installed.
 <h2 id="3-troubleshooting-in-groups">3. Troubleshooting in Groups</h2>
 <p>We will split up into groups based on whether folks have Python installed or are having issues so that we can troubleshoot and get everyone set up as quickly as possible :)</p>
 <p>Groups that are done with installation can start working on the Python problems from the following section.</p>
-<h2 id="4-hands-on-python-tasks">4. Hands-on Python Tasks</h2>
+<h2 id="4-for-and-while-loops">4. for and while loops</h2>
+<p>Loops are a tool that help us execute a block of code a specified amount of times or based on a condition. In Python, there are two loops: <code>for</code> and <code>while</code> loops.</p>
+<h3 id="while-loops">while loops</h3>
+<p><code>while</code> loops allow us to execute a block of code as long as the condition evaluates to <code>True</code>.</p>
+<p><img src="../images/loop_diagram.png" alt="loop diagram"></p>
+<p><em>Please excuse the ugly diagram :)</em></p>
+<p>Syntax:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">while</span> <span class="n">condition</span><span class="p">:</span>
+<span class="ln">2</span>    <span class="c1"># do things</span>
+</code></pre></div><p>Examples:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># This is called an &#34;infinite loop&#34; since the condition is always True!!</span>
+<span class="ln">2</span><span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+<span class="ln">3</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;I&#39;m an infinite loop! I won&#39;t stop unless I&#39;m forced to!&#34;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="ln"> 2</span><span class="k">while</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+<span class="ln"> 3</span>	<span class="k">print</span><span class="p">(</span><span class="s2">&#34;hello #&#34;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
+<span class="ln"> 4</span>	<span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="ln"> 5</span>    <span class="c1"># outputs:</span>
+<span class="ln"> 6</span>    <span class="c1"># hello # 0</span>
+<span class="ln"> 7</span>    <span class="c1"># hello # 1</span>
+<span class="ln"> 8</span>    <span class="c1"># hello # 2</span>
+<span class="ln"> 9</span>    <span class="c1"># hello # 3</span>
+<span class="ln">10</span>    <span class="c1"># hello # 4</span>
+<span class="ln">11</span>    <span class="c1"># hello # 5</span>
+<span class="ln">12</span>    <span class="c1"># hello # 6</span>
+<span class="ln">13</span>    <span class="c1"># hello # 7</span>
+<span class="ln">14</span>    <span class="c1"># hello # 8</span>
+<span class="ln">15</span>    <span class="c1"># hello # 9</span>
+<span class="ln">16</span>
+</code></pre></div><h3 id="for-loops">for loops</h3>
+<p><code>for</code> loops provide a way to go through each value (or set of values) in an iterable (e.g. a list, string, dictionary, etc.) and execute a block of code that uses that value.</p>
+<p>Syntax:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">for</span> <span class="n">variable</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="ow">in</span> <span class="n">iterable</span><span class="p">:</span>
+<span class="ln">2</span>    <span class="c1"># do things</span>
+</code></pre></div><p>Examples: (feel free to try executing these in your IDLE terminal, notebook cell, VSCode, or PyCharm :)</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
+<span class="ln">2</span>    <span class="k">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+<span class="ln">3</span>    <span class="c1"># outputs:</span>
+<span class="ln">4</span>    <span class="c1"># 1</span>
+<span class="ln">5</span>    <span class="c1"># 2</span>
+<span class="ln">6</span>    <span class="c1"># 3</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="s1">&#39;word&#39;</span><span class="p">:</span>
+<span class="ln">2</span>    <span class="n">new_word</span> <span class="o">=</span> <span class="n">letter</span> <span class="o">+</span> <span class="s1">&#39;!!&#39;</span>
+<span class="ln">3</span>    <span class="k">print</span><span class="p">(</span><span class="n">new_word</span><span class="p">)</span>
+<span class="ln">4</span>    <span class="c1"># outputs:</span>
+<span class="ln">5</span>    <span class="c1"># w!!</span>
+<span class="ln">6</span>    <span class="c1"># o!!</span>
+<span class="ln">7</span>    <span class="c1"># r!!</span>
+<span class="ln">8</span>    <span class="c1"># d!!</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># python</span>
+<span class="ln">2</span><span class="k">for</span> <span class="n">num</span><span class="p">,</span> <span class="n">letter</span> <span class="ow">in</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)]:</span>
+<span class="ln">3</span>    <span class="c1"># Here, we convert number to string using `str` before concatenating with another string</span>
+<span class="ln">4</span>    <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="n">letter</span><span class="p">)</span>
+<span class="ln">5</span>    <span class="c1"># outputs:</span>
+<span class="ln">6</span>    <span class="c1"># 1a</span>
+<span class="ln">7</span>    <span class="c1"># 2b</span>
+<span class="ln">8</span>
+</code></pre></div><p>With <code>for</code> loops, it can also be useful to use the <code>range</code> operator in Python which creates an iterable of numbers. The syntax of this is <code>range(start, end, step)</code>, but you will also see this as just <code>range(start, end)</code> or <code>range(end)</code> (in this last case, the <code>start</code> is assumed to be 0). Note that the <code>end</code> value is not included (in other words, &quot;numbers starting with <code>start</code> up until (not through) <code>end</code>&quot;). Here are some examples:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="ln">3</span>    <span class="c1"># outputs:</span>
+<span class="ln">4</span>    <span class="c1"># 0</span>
+<span class="ln">5</span>    <span class="c1"># 1</span>
+<span class="ln">6</span>    <span class="c1"># 2</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>  <span class="c1"># we can create a list out of a `range`</span>
+<span class="ln">2</span><span class="c1"># [1, 2, 3]</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>  <span class="c1"># here, the step (space between values) is 3</span>
+<span class="ln">2</span><span class="c1"># [-1, 2, 5, 8]</span>
+</code></pre></div><h2 id="5-hands-on-python-tasks">5. Hands-on Python Tasks</h2>
 <p>Work in groups to solve the following tasks in your new Python Dev setup. You are not expected to get through all of these in class, and they range from easier to harder.</p>
-<p>Note: if you are writing in Colab or a Python Notebook, then try to keep each task in a separate code cell. If you are writing in a pure Python file, consider wrapping each task in a function and call these functions in the <code>if __name__ == '__main__':</code> block to test out your code. This might look something like:</p>
+<p>Optionaally, you may send in a link to a GitHub repository with your solutions (if working in VSCode or PyCharm) or share your notebook (if working in Colab) if you would like feedback on your work :) I will also release solutions later.</p>
+<p>Note: if you are writing in Colab or a Python Notebook, then try to keep each task in a separate code cell. If you are writing in a pure Python file, consider wrapping each task in a function (that is, write a function to solve the task) and call these functions in the <code>if __name__ == '__main__':</code> block to test out your code. This might look something like:</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="c1"># in your file:</span>
-<span class="ln"> 2</span><span class="k">def</span> <span class="nf">task_0</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="ln"> 2</span><span class="k">def</span> <span class="nf">task_n</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
 <span class="ln"> 3</span>    <span class="c1"># code to solve task 1</span>
 <span class="ln"> 4</span>    <span class="o">...</span>
 <span class="ln"> 5</span>
-<span class="ln"> 6</span>    <span class="k">return</span> <span class="n">answer_to_task_0</span>
+<span class="ln"> 6</span>    <span class="k">return</span> <span class="n">answer_to_task_n</span>
 <span class="ln"> 7</span>
 <span class="ln"> 8</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-<span class="ln"> 9</span>    <span class="k">print</span><span class="p">(</span><span class="n">task_0</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># prints output of task_0</span>
+<span class="ln"> 9</span>    <span class="k">print</span><span class="p">(</span><span class="n">task_n</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># prints output of task_n</span>
 <span class="ln">10</span>
-</code></pre></div><h3 id="task-0">Task 0</h3>
-<p>Coming soon! :)</p>
+</code></pre></div><p>Note: it can be helpful to test out your functions by making sure that the functions return what you expect for a few different inputs. Make sure to try out a variety of inputs including some &quot;edge cases&quot;, or cases that are trickier and can cause problems. These edge cases often have to do with &quot;0&quot; or empty-inputs.
+(Optional): In Python, you can also write <code>assert</code> statements, where you would state what you believe the function to output to be, and it fails if this is not the case.</p>
+<p>Let's use an example task 0 to illustrate all the points above.</p>
+<h3 id="task-0-warmup">Task 0 (warmup)</h3>
+<p>Write a function called <code>add_10</code> that takes in an <em>integer</em>, adds 10, and returns this value.
+Test out these steps and make sure you feel comfortable with the process. The following tasks won't have a walk through, but you should follow the same rough process.</p>
+<p>Steps:</p>
+<ol>
+<li>Write out your <em>function skeleton</em>, or the empty function with the name and parameters. (Note: <code>n</code> is commonly used to denote a number, but you can also write more descriptive variable names):</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">add_10</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="c1"># TODO: add logic to add 10</span>
+<span class="ln">3</span>    <span class="k">return</span> <span class="s2">&#34;Not implemented&#34;</span>
+</code></pre></div><ol start="2">
+<li>Let's call this function somewhere so we can see what it's outputting.
+In a <code>.py</code> file:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ln">2</span>    <span class="c1"># the text is not required, but it helps me see what I called to get the output</span>
+<span class="ln">3</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;add_10(3): &#34;</span><span class="p">,</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># for now, this returns &#34;add_10(3): Not implemented&#34;</span>
+<span class="ln">4</span>
+</code></pre></div><ol start="3">
+<li>Let's add in some logic and check the values that it is outputting. If these values don't match your expectations (which often happens in programming), then take another look and try to understand what's going wrong. You can add <code>print</code> statements in your code as well to tell you what the values of different variables and conditions are while you are running your code. You should feel encouraged to look things up when you run into issues as well.</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">add_10</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ln">5</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;add_10(3): &#34;</span><span class="p">,</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># this should now print &#34;add_10(3): 13&#34;</span>
+<span class="ln">6</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;add_10(-10): &#34;</span><span class="p">,</span> <span class="n">add_10</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">))</span>  <span class="c1"># this should now print &#34;add_10(-10): 0&#34;</span>
+<span class="ln">7</span>
+</code></pre></div><ol start="4">
+<li>Optional: you can also use <code>assert</code> statements to confirm your expectations. This is a way of writing simple &quot;test cases&quot; to make sure your logic works. This looks something like:</li>
+</ol>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">add_10</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="ln">2</span>    <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="ln">3</span>
+<span class="ln">4</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ln">5</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">13</span>
+<span class="ln">6</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="ln">7</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="ln">8</span>
+</code></pre></div><p>What happens if the assert statement is wrong? (Hint: try out something like <code>assert add_10(3) == 5</code> which we expect to fail and see what happens.)</p>
+<p>You can also add this in to a test function to organize your code:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="k">def</span> <span class="nf">add_10</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="ln"> 2</span>    <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">10</span>
+<span class="ln"> 3</span>
+<span class="ln"> 4</span><span class="k">def</span> <span class="nf">test_add_10</span><span class="p">():</span>
+<span class="ln"> 5</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">==</span> <span class="mi">13</span>
+<span class="ln"> 6</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="ln"> 7</span>    <span class="k">assert</span> <span class="n">add_10</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="o">==</span> <span class="mi">10</span>
+<span class="ln"> 8</span>
+<span class="ln"> 9</span>
+<span class="ln">10</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="ln">11</span>    <span class="n">test_add_10</span><span class="p">()</span>  <span class="c1"># expect no output if all assertions passed</span>
+<span class="ln">12</span>
+</code></pre></div><h3 id="task-1">Task 1</h3>
+<p>Write a function called <code>longer_string</code> that takes in two <em>strings</em> and returns the longer of the two. If they are the same length, return the first string.</p>
+<h3 id="task-2">Task 2</h3>
+<p>Write a function called <code>is_odd</code> that takes in an <em>integer</em> and returns <code>True</code> if the number is odd and <code>False</code> otherwise.</p>
 
+<div class="tip">
+  Hint: look up (Google) what the modulo (<code>%</code>) operator in Python is and use it to determine if a number is odd or even.
+</div>
+
+<h3 id="task-3-parts-1-2">Task 3 (parts 1, 2)</h3>
+<p>Write a function called <code>hello_world_n</code> that takes in an integer <code>n</code> and prints &quot;Hello, world!&quot; <code>n</code> times.</p>
+<ol>
+<li>do this using a <code>for</code> loop</li>
+<li>do this using a <code>while</code> loop</li>
+</ol>
+<h3 id="task-4">Task 4</h3>
+<p>Write a function called <code>sum_list</code> that takes in a list of integers (i.e. <code>[3, 0, 10, 4, 5, 3]</code>) and returns the sum of them. Do not use the <code>sum</code> function in your logic, but you can use this to test your logic! (Hint: <code>assert sum(lst) == ...</code>)</p>
+<h3 id="task-5">Task 5</h3>
+<p>Write a function that takes in a list of integers (i.e. <code>[3, 0, 10, 4, 5, 3]</code>) and prints the value of each element greater than 4.
+For example:</p>
+<ul>
+<li>
+<p>input: <code>[3, 0, 10, 4, 5, 3]</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># output:</span>
+<span class="ln">2</span><span class="c1"># 10</span>
+<span class="ln">3</span><span class="c1"># 5</span>
+</code></pre></div></li>
+<li>
+<p>input: <code>[4, 5, 6, 6, 5, 4]</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># output:</span>
+<span class="ln">2</span><span class="c1"># 5</span>
+<span class="ln">3</span><span class="c1"># 6</span>
+<span class="ln">4</span><span class="c1"># 6</span>
+<span class="ln">5</span><span class="c1"># 5</span>
+</code></pre></div></li>
+<li>
+<p>input: <code>[4, 3, 2, 1]</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># no output</span>
+</code></pre></div></li>
+</ul>
+
+<div class="tip">
+  <p>Optional Challenge: change your function to take in a second parameter, <code>min_val</code>. Now, print all values in the list greater than this value.</p>
+<p>Example input: <code>[4, 3, 2, 1]</code>, <code>2</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span>    <span class="c1"># output:</span>
+<span class="ln">2</span>    <span class="c1"># 4</span>
+<span class="ln">3</span>    <span class="c1"># 3</span>
+</code></pre></div>
+</div>
+
+<h3 id="challenge-task-6-parts-1-2">(Challenge) Task 6 (parts 1, 2)</h3>
+<p><em>Note: this one is optional and meant to be challenging! :)</em></p>
+<p>Like with task 4, do not use the Python function <code>max</code> in your function, but you can use this to test it out!</p>
+<ol>
+<li>Write a function that takes in a list of integers (i.e. <code>[3, 0, 10, 4, 5, 3]</code>) and returns largest value in the list.</li>
+<li>Write a function that takes in a list of strings (i.e. <code>['a', 'asdf', '']</code>) and returns the longest string in the list.</li>
+</ol>
+<h3 id="challenge-task-7-parts-1-2-3">(Challenge) Task 7 (parts 1, 2, 3)</h3>
+<p><em>Note: this one is optional and meant to be challenging! :)</em></p>
+<ol>
+<li>
+<p>Write a function that takes in an integer and prints all numbers below it that are divisible by 3. (Hint: recall Task 2 -- how can you check if a number is divisible by 3?)</p>
+<p>Example input: <code>12</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># output:</span>
+<span class="ln">2</span><span class="c1"># 0</span>
+<span class="ln">3</span><span class="c1"># 3</span>
+<span class="ln">4</span><span class="c1"># 6</span>
+<span class="ln">5</span><span class="c1"># 9</span>
+</code></pre></div></li>
+</ol>
+<ol start="2">
+<li>
+<p>Modify the function to return how many numbers are divisible by 3, in addition to printing each number. (i.e. the returned value for the example input above would be <code>4</code> (0, 3, 6, 9)).</p>
+</li>
+<li>
+<p>Modify this function to make it general -- if the function takes in <code>n</code> and <code>k</code>, find out how many numbers less than <code>n</code> are divisible by <code>k</code>.</p>
+<p>Example input: <code>8</code>, <code>2</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="c1"># output:</span>
+<span class="ln">2</span><span class="c1"># 0</span>
+<span class="ln">3</span><span class="c1"># 2</span>
+<span class="ln">4</span><span class="c1"># 4</span>
+<span class="ln">5</span><span class="c1"># 6</span>
+<span class="ln">6</span><span class="c1"># returns 4</span>
+</code></pre></div></li>
+</ol>
+<h2 id="additional-resources">Additional Resources</h2>
+<ul>
+<li><a href="https://www.w3schools.com/python/python_while_loops.asp">W3 schools Python while loops</a></li>
+<li><a href="https://www.w3schools.com/python/python_for_loops.asp">W3 schools Python for loops</a></li>
+<li><a href="https://www.tutorialspoint.com/python3/python_loops.htm">Tutorialspoint loops in Python</a></li>
+<li><a href="https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php">additional practice problems on loops and conditions (note: some are challenging!)</a></li>
+<li><a href="https://www.practicepython.org/">additional practice problems (note: challenging!)</a></li>
+</ul>
+<pre><code>
+</code></pre>
     <div class="pager">
   
   <div class="pager_item prev">
