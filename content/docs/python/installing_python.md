@@ -448,7 +448,3 @@ _Note: this one is optional and meant to be challenging! :)_
 - [Tutorialspoint loops in Python](https://www.tutorialspoint.com/python3/python_loops.htm)
 - [additional practice problems on loops and conditions (note: some are challenging!)](https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php)
 - [additional practice problems (note: challenging!)](https://www.practicepython.org/)
-
-```
-
-```
