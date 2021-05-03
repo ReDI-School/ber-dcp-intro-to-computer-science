@@ -6,3 +6,6 @@ check:
 
 build:
 	hugo
+
+update-submodules:
+	git submodule update --init --recursive
