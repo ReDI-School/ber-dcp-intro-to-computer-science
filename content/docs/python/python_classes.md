@@ -300,7 +300,7 @@ class Dog(Pet):
     print("Wooof! Woof! I am a dog!")
 
 class Turtle(Pet):
-  def bark(self):
+  def hide(self):
     print("Hide! I'm shy! I am a turtle!")
 
 class Bird(Pet):
