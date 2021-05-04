@@ -1,5 +1,5 @@
 ---
-title: 'Version Control with Git and GitHub'
+title: '2 - Version Control with Git and GitHub'
 weight: 1
 ---
 
