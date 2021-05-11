@@ -202,7 +202,7 @@ i. First, we want to create an introduction for the player to start the story. P
 def introduction_text(name):
     print("") 
     print(
-        "It's a beautiful summer's day in Berlin, and you are stuck in Alexanderplatz :("
+        "It's a beautiful summer's day in Berlin, and you are stuck in Hermannplatz :("
     )
     print(
         "You don't want to be here. It is too noisy, there is too much traffic and all this concrete makes it uncomfortably warm"
@@ -235,7 +235,7 @@ objects to it.
   def introduction_text(name):
     print("") 
     print(
-        "It's a beautiful summer's day in Berlin, and you are stuck in Alexanderplatz :("
+        "It's a beautiful summer's day in Berlin, and you are stuck in Hermannplatz :("
     )
     print(
         "You don't want to be here. It is too noisy, there is too much traffic and all this concrete makes it uncomfortably warm"
@@ -333,10 +333,10 @@ Each story will have some obstacles, and depending on the player's choice when e
 
 ### Walk
 
-There is one obstacle when walking. Since it is a long walk from Alexanderplatz, if
+There is one obstacle when walking. Since it is a long walk from Hermannplatz, if
 the player leaves too late it will be dark when they arrive. 
 
-i. Write code to ask the player the following question: `"What time do you leave Alexanderplatz? a. Before 14:00 b. After 14:00\n"`. Assign their input to a variable
+i. Write code to ask the player the following question: `"What time do you leave Hermannplatz? a. Before 14:00 b. After 14:00\n"`. Assign their input to a variable
 called `choice`.
 
 ii. If the `choice` is `a`, print the following message: `"You are very tired when you get to the lake and fall asleep.\n While you are asleep a wild boar runs off with your belongings 🐗"`
@@ -352,7 +352,7 @@ Question: what happpens if the choice is neither a nor b?
   ```python
     def encounter_obstacles(self):
         choice = input(
-            "What time do you leave Alexanderplatz? a. Before 14:00 b. After 14:00\n"
+            "What time do you leave Hermannplatz? a. Before 14:00 b. After 14:00\n"
         )
         if choice == "a":
             print(
