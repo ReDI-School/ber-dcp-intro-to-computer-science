@@ -14,12 +14,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-05-11T17:29:39&#43;02:00" />
+<meta property="article:modified_time" content="2021-05-11T18:20:19&#43;02:00" />
 
 <meta itemprop="name" content="11/May - Adventures in Python">
 <meta itemprop="description" content="Building a Python Project">
-<meta itemprop="dateModified" content="2021-05-11T17:29:39&#43;02:00" />
-<meta itemprop="wordCount" content="2443">
+<meta itemprop="dateModified" content="2021-05-11T18:20:19&#43;02:00" />
+<meta itemprop="wordCount" content="2442">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="11/May - Adventures in Python"/>
 <meta name="twitter:description" content="Building a Python Project"/>
@@ -800,8 +800,8 @@ called <code>choice</code>.</p>
 <p>There are two obstacles that the player can encounter while cycling: the cobblestones of Berlin and seeing your friends having fun in Neukölln.</p>
 <p>i. Write code to ask the player the following question: <code>&quot;You are cycling past the Landwehr canal and spot your friend in a boat on the canal.\nWhat do you do? a. Stop and join the boat party or b. wave and continue\n&quot;</code>. Assign their input to a variable
 called <code>choice</code>.</p>
-<p>ii. If the <code>choice</code> is <code>a</code>, do nothing and let the program continue.</p>
-<p>iii. If the <code>choice</code> is <code>b</code>, print the following message: <code>&quot;Who needs the lake? Put on some sunglasses and bob along the canal all day.🚣&quot;</code> and <code>exit</code> the program.</p>
+<p>ii. If the <code>choice</code> is <code>a</code>, print the following message: <code>&quot;Who needs the lake? Put on some sunglasses and bob along the canal all day.🚣&quot;</code> and <code>exit</code> the program.</p>
+<p>iii. If the <code>choice</code> is <code>b</code>, do nothing and let the program continue.</p>
 <p>iv. Write code to ask the player the following question: <code>&quot;Uh oh, another cobble stone road gives you a flat tire.\nWhat do you do? a. Fix it b. Go home\n&quot;</code>. Assign their input to a variable
 called <code>choice</code>.</p>
 <p>v. If the <code>choice</code> is <code>a</code>, do nothing and let the program continue.</p>
@@ -812,12 +812,12 @@ called <code>choice</code>.</p>
 <span class="ln"> 2</span>      <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span>
 <span class="ln"> 3</span>          <span class="s2">&#34;You are cycling past the Landwehr canal and spot your best friend in a boat on the canal.</span><span class="se">\n</span><span class="s2">What do you do? a. Stop and join the boat party or b. wave and continue</span><span class="se">\n</span><span class="s2">&#34;</span>
 <span class="ln"> 4</span>      <span class="p">)</span>
-<span class="ln"> 5</span>      <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&#34;b&#34;</span><span class="p">:</span>
+<span class="ln"> 5</span>      <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&#34;a&#34;</span><span class="p">:</span>
 <span class="ln"> 6</span>          <span class="k">print</span><span class="p">(</span>
 <span class="ln"> 7</span>              <span class="s2">&#34;Who needs the lake? Put on some sunglasses and bob along the canal all day.🚣&#34;</span>
 <span class="ln"> 8</span>          <span class="p">)</span>
 <span class="ln"> 9</span>          <span class="nb">exit</span><span class="p">()</span>
-<span class="ln">10</span>      <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&#34;a&#34;</span><span class="p">:</span>
+<span class="ln">10</span>      <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&#34;b&#34;</span><span class="p">:</span>
 <span class="ln">11</span>          <span class="k">pass</span>
 <span class="ln">12</span>
 <span class="ln">13</span>      <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span>
@@ -836,19 +836,19 @@ called <code>choice</code>.</p>
 at Erkner.</p>
 <p>i. Write code to ask the player the following question: <code>&quot;You miss your stop and end up in Erkner. What do you do? a. Stay there b. Get back on the s-bahn\n&quot;</code>. Assign their input to a variable
 called <code>choice</code>.</p>
-<p>ii. v. If the <code>choice</code> is <code>a</code>, do nothing and let the program continue.</p>
-<p>iii. If the <code>choice</code> is <code>b</code>, print the following message: <code>&quot;Great! Spend the rest of the day exploring the sights and sounds around Erker!&quot;</code> and <code>exit</code> the program.</p>
+<p>ii. If the <code>choice</code> is <code>a</code>, print the following message: <code>&quot;Great! Spend the rest of the day exploring the sights and sounds around Erker!&quot;</code> and <code>exit</code> the program.</p>
+<p>iii. If the <code>choice</code> is <code>b</code>, do nothing and let the program continue.</p>
 <details>
   <summary> SOLUTION - WALK OBSTACLES  </summary>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span>  <span class="k">def</span> <span class="nf">encounter_obstacles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="ln"> 2</span>      <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span>
 <span class="ln"> 3</span>          <span class="s2">&#34;You miss your stop and end up in Erkner. What do you do? a. Stay there b. Get back on the s-bahn</span><span class="se">\n</span><span class="s2">&#34;</span>
 <span class="ln"> 4</span>      <span class="p">)</span>
-<span class="ln"> 5</span>      <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&#34;b&#34;</span><span class="p">:</span>
+<span class="ln"> 5</span>      <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&#34;a&#34;</span><span class="p">:</span>
 <span class="ln"> 6</span>          <span class="k">print</span><span class="p">(</span>
 <span class="ln"> 7</span>              <span class="s2">&#34;Great! Spend the rest of the day exploring the sights and sounds around Erker!&#34;</span>
 <span class="ln"> 8</span>          <span class="p">)</span>
-<span class="ln"> 9</span>      <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&#34;a&#34;</span><span class="p">:</span>
+<span class="ln"> 9</span>      <span class="k">elif</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&#34;b&#34;</span><span class="p">:</span>
 <span class="ln">10</span>          <span class="k">pass</span>
 </code></pre></div></details>
 <h2 id="7-run-the-program">7. Run the program</h2>
