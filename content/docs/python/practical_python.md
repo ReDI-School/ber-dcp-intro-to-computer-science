@@ -373,9 +373,9 @@ There are two obstacles that the player can encounter while cycling: the cobbles
 i. Write code to ask the player the following question: `"You are cycling past the Landwehr canal and spot your friend in a boat on the canal.\nWhat do you do? a. Stop and join the boat party or b. wave and continue\n"`. Assign their input to a variable
 called `choice`.
 
-ii. If the `choice` is `a`, do nothing and let the program continue.
+ii. If the `choice` is `a`, print the following message: `"Who needs the lake? Put on some sunglasses and bob along the canal all day.🚣"` and `exit` the program.
 
-iii. If the `choice` is `b`, print the following message: `"Who needs the lake? Put on some sunglasses and bob along the canal all day.🚣"` and `exit` the program.
+iii. If the `choice` is `b`, do nothing and let the program continue.
 
 iv. Write code to ask the player the following question: `"Uh oh, another cobble stone road gives you a flat tire.\nWhat do you do? a. Fix it b. Go home\n"`. Assign their input to a variable
 called `choice`.
@@ -393,12 +393,12 @@ vi. If the `choice` is `b`, print the following message: `"That's all the advent
         choice = input(
             "You are cycling past the Landwehr canal and spot your best friend in a boat on the canal.\nWhat do you do? a. Stop and join the boat party or b. wave and continue\n"
         )
-        if choice == "b":
+        if choice == "a":
             print(
                 "Who needs the lake? Put on some sunglasses and bob along the canal all day.🚣"
             )
             exit()
-        if choice == "a":
+        if choice == "b":
             pass
 
         choice = input(
@@ -422,9 +422,10 @@ at Erkner.
 i. Write code to ask the player the following question: `"You miss your stop and end up in Erkner. What do you do? a. Stay there b. Get back on the s-bahn\n"`. Assign their input to a variable
 called `choice`.
 
-ii. v. If the `choice` is `a`, do nothing and let the program continue.
+ii. If the `choice` is `a`, print the following message: `"Great! Spend the rest of the day exploring the sights and sounds around Erker!"` and `exit` the program.
 
-iii. If the `choice` is `b`, print the following message: `"Great! Spend the rest of the day exploring the sights and sounds around Erker!"` and `exit` the program.
+iii. If the `choice` is `b`, do nothing and let the program continue.
+
 
 <details>
 
@@ -435,11 +436,11 @@ iii. If the `choice` is `b`, print the following message: `"Great! Spend the res
         choice = input(
             "You miss your stop and end up in Erkner. What do you do? a. Stay there b. Get back on the s-bahn\n"
         )
-        if choice == "b":
+        if choice == "a":
             print(
                 "Great! Spend the rest of the day exploring the sights and sounds around Erker!"
             )
-        if choice == "a":
+        elif choice == "b":
             pass
   ```
 </details>
