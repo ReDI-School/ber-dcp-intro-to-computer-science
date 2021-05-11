@@ -14,11 +14,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-05-08T12:56:35&#43;02:00" />
+<meta property="article:modified_time" content="2021-05-11T17:29:39&#43;02:00" />
 
 <meta itemprop="name" content="11/May - Adventures in Python">
 <meta itemprop="description" content="Building a Python Project">
-<meta itemprop="dateModified" content="2021-05-08T12:56:35&#43;02:00" />
+<meta itemprop="dateModified" content="2021-05-11T17:29:39&#43;02:00" />
 <meta itemprop="wordCount" content="2443">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="11/May - Adventures in Python"/>
@@ -680,7 +680,7 @@ name, introduce the story with some opening text and ask the player which mode o
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="k">def</span> <span class="nf">introduction_text</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
 <span class="ln"> 2</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span> 
 <span class="ln"> 3</span>    <span class="k">print</span><span class="p">(</span>
-<span class="ln"> 4</span>        <span class="s2">&#34;It&#39;s a beautiful summer&#39;s day in Berlin, and you are stuck in Alexanderplatz :(&#34;</span>
+<span class="ln"> 4</span>        <span class="s2">&#34;It&#39;s a beautiful summer&#39;s day in Berlin, and you are stuck in Hermannplatz :(&#34;</span>
 <span class="ln"> 5</span>    <span class="p">)</span>
 <span class="ln"> 6</span>    <span class="k">print</span><span class="p">(</span>
 <span class="ln"> 7</span>        <span class="s2">&#34;You don&#39;t want to be here. It is too noisy, there is too much traffic and all this concrete makes it uncomfortably warm&#34;</span>
@@ -702,7 +702,7 @@ objects to it.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="k">def</span> <span class="nf">introduction_text</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
 <span class="ln"> 2</span>  <span class="k">print</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span> 
 <span class="ln"> 3</span>  <span class="k">print</span><span class="p">(</span>
-<span class="ln"> 4</span>      <span class="s2">&#34;It&#39;s a beautiful summer&#39;s day in Berlin, and you are stuck in Alexanderplatz :(&#34;</span>
+<span class="ln"> 4</span>      <span class="s2">&#34;It&#39;s a beautiful summer&#39;s day in Berlin, and you are stuck in Hermannplatz :(&#34;</span>
 <span class="ln"> 5</span>  <span class="p">)</span>
 <span class="ln"> 6</span>  <span class="k">print</span><span class="p">(</span>
 <span class="ln"> 7</span>      <span class="s2">&#34;You don&#39;t want to be here. It is too noisy, there is too much traffic and all this concrete makes it uncomfortably warm&#34;</span>
@@ -773,9 +773,9 @@ When this happens, we will print a message to the player and the game will end.<
 <h2 id="6-fill-in-the-obstacles-of-the-story">6. Fill in the obstacles of the story</h2>
 <p>Each story will have some obstacles, and depending on the player's choice when encountering these obstacles, the character will or will not make it to the lake.</p>
 <h3 id="walk">Walk</h3>
-<p>There is one obstacle when walking. Since it is a long walk from Alexanderplatz, if
+<p>There is one obstacle when walking. Since it is a long walk from Hermannplatz, if
 the player leaves too late it will be dark when they arrive.</p>
-<p>i. Write code to ask the player the following question: <code>&quot;What time do you leave Alexanderplatz? a. Before 14:00 b. After 14:00\n&quot;</code>. Assign their input to a variable
+<p>i. Write code to ask the player the following question: <code>&quot;What time do you leave Hermannplatz? a. Before 14:00 b. After 14:00\n&quot;</code>. Assign their input to a variable
 called <code>choice</code>.</p>
 <p>ii. If the <code>choice</code> is <code>a</code>, print the following message: <code>&quot;You are very tired when you get to the lake and fall asleep.\n While you are asleep a wild boar runs off with your belongings 🐗&quot;</code></p>
 <p>iii. If the <code>choice</code> is <code>b</code>, print the following message: <code>&quot;Oh no, it is too late. By the time you reach the lake, it is already dark and time to go home. 🌉 :(&quot;</code> and <code>exit</code> the program.</p>
@@ -784,7 +784,7 @@ called <code>choice</code>.</p>
   <summary> SOLUTION - WALK OBSTACLES  </summary>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span>  <span class="k">def</span> <span class="nf">encounter_obstacles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="ln"> 2</span>      <span class="n">choice</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span>
-<span class="ln"> 3</span>          <span class="s2">&#34;What time do you leave Alexanderplatz? a. Before 14:00 b. After 14:00</span><span class="se">\n</span><span class="s2">&#34;</span>
+<span class="ln"> 3</span>          <span class="s2">&#34;What time do you leave Hermannplatz? a. Before 14:00 b. After 14:00</span><span class="se">\n</span><span class="s2">&#34;</span>
 <span class="ln"> 4</span>      <span class="p">)</span>
 <span class="ln"> 5</span>      <span class="k">if</span> <span class="n">choice</span> <span class="o">==</span> <span class="s2">&#34;a&#34;</span><span class="p">:</span>
 <span class="ln"> 6</span>          <span class="k">print</span><span class="p">(</span>
