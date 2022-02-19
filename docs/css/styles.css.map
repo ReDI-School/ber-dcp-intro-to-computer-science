@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/Users/eelanagaraj/redi-school/ber-dcp-intro-to-computer-science",
+	"sourceRoot": "/Users/eelanagaraj/redi-school/intro-to-cs-content-fresh",
 	"sources": [
 		"themes/compose/assets/sass/main.sass",
 		"themes/compose/assets/sass/_variables.sass",

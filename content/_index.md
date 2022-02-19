@@ -11,7 +11,7 @@ title = "Berlin 2021 - Intro to Computer Science"
 {{< block "grid-2" >}}
 {{< column >}}
 
-# Welcome to **Intro to Computer-Science Autumn 2021** course Berlin 🇩🇪 
+# Welcome to **Intro to Computer-Science Autumn 2021** course Berlin 🇩🇪
 
 Here you will find most of the content for our courses, prerequisites for each class, summaries of the classes and extra content so you can work on your own.
 
@@ -22,7 +22,7 @@ Here you will find most of the content for our courses, prerequisites for each c
 {{< column >}}
 ![Margaret Hamilton](https://upload.wikimedia.org/wikipedia/commons/2/2e/Margaret_Hamilton.gif)
 
-[Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)) - She sent rockets to the moon 🚀
+[Margaret Hamilton](<https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)>) - She sent rockets to the moon 🚀
 
 {{< /column >}}
 {{< /block >}}

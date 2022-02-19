@@ -1,46 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3 - Web development on Intro to Computer-Science Berlin 2021</title>
+    <title>4 - Introduction to Web Development on Intro to Computer-Science Berlin 2021</title>
     <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/</link>
-    <description>Recent content in 3 - Web development on Intro to Computer-Science Berlin 2021</description>
+    <description>Recent content in 4 - Introduction to Web Development on Intro to Computer-Science Berlin 2021</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>25/March - Basic knowledge of HTML</title>
+      <title>04/October - Basic knowledge of HTML</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_html/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_html/</guid>
-      <description>Preparations 1. Review exercises from Version Control with Git and GitHub (11/March) Reivew the content from the Git and GitHub lecture. We&#39;ll use github to store the HTML files we create in this lecture.
-Review Version Control with Git and GitHub: 11/March 2. Review exercises from Using an IDE (Integrated development environment) (18/March) Review the content from last lecture on Using an IDE with VsCode. We&#39;ll use VsCode to work on creating HTML files in this lecture.</description>
+      <description>Preparations 1. Review exercises from Version Control with Git and GitHub (21/September) Reivew the content from the Git and GitHub lecture. We&#39;ll use github to store the HTML files we create in this lecture.
+Review Version Control with Git and GitHub: 21/September 2. Review exercises from Using an IDE (Integrated development environment) (30/September) Review the content from last lecture on Using an IDE with VsCode. We&#39;ll use VsCode to work on creating HTML files in this lecture.</description>
     </item>
     
     <item>
-      <title>30/March - Basic knowledge of CSS (Cascading Style Sheet)</title>
+      <title>07/October - Basic knowledge of CSS (Cascading Style Sheet)</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_css/</guid>
       <description>Preparations 1. Watch these Videos  Why Is CSS So Weird? - Theory &amp;amp; history Learn CSS in 20 Minutes - Practice Learn CSS Flexbox 15 Minutes - Practice Learn CSS Grid 20 Minutes - Practice  2. HTML class practice repository on Github We&#39;ll continue to apply some style to the journal we started building in our previous session Basic HTML
- https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Lesson Agenda and Goals 5 minutes ❌   Live demo on basic CSS 25 minutes Preparations section   Kahoot on basics of html and css 15 minutes Preparations section   Review CSS Activity task as a whole class 10 minutes ❌   Class break 10 minutes ❌   CSS Activity (in smaller groups) 45-60 minutes VsCode and Git installed    Lesson Goal Understand what CSS is, why we use it and how we can apply it to style HTML pages</description>
+ https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Lesson Agenda and Goals 5 minutes ❌   Questions from last session 15 minutes ❌   Live demo on basic CSS 25 minutes Preparations section   Review CSS Activity task as a whole class 10 minutes ❌   Class break 10 minutes ❌   CSS Activity (in smaller groups) 45-60 minutes VsCode and Git installed    Lesson Goal Understand what CSS is, why we use it and how we can apply it to style HTML pages</description>
     </item>
     
     <item>
-      <title>01/April - Practical Demonstration of HTML and CSS</title>
+      <title>12/October - Practical Demonstration of HTML and CSS</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/html_css/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/html_css/</guid>
-      <description>Prerequisites  Decide who to build a website for: you? your pet? someone else? Pick a simple background image for your website. You can choose a landscape photo you&#39;ve taken or search for images that are free to use e.g. from Unsplash or search Ecosia and filter by license  Class Curriculum    Section content Expected time (mins) Pre - Requirements     Kahoot on previous material 15 minutes ❌   Lesson Agenda and Goals 5 minutes ❌   HTML/CSS Activity (in smaller groups) 35 minutes VsCode and Git installed   Class break 10 minutes ❌   HTML/CSS Activity (in smaller groups) 40 minutes VsCode and Git installed   Questions and Review 10 minutes VsCode and Git installed    Lesson Goal Practice using HTML and CSS to build a website.</description>
-    </item>
-    
-    <item>
-      <title>06/April - Basic knowledge of Javascript</title>
-      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_js/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_js/</guid>
-      <description>Preparations  📽️ Learn JavaScript - Full Course for Beginners - Watch as much as you can 📚 Javascript basics   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Lesson Agenda and Goals 5 minutes ❌   Live demo on basic JS 45 minutes Preparations section   Review of the Activity task as a whole class 10 minutes ❌   Class break 10 minutes ❌   JS Activity (in smaller groups) 45-60 minutes VsCode and Git installed    Lesson Goal To gain familiarity with what JavaScript is, what it can do, and how it fits into a web site.</description>
+      <description>Prerequisites  Review the CSS course content, and watch this video (if you haven&#39;t already): Learn CSS in 20 Minutes Review the HTML course content, check out this video (start at 7:30 and end at 49:35 unless you&#39;d like to learn about semantic tags :-) ) Decide who to build a website for (you? your pet? someone else?). Pick a simple background image for your website. You can choose a landscape photo you’ve taken or search for images that are free to use e.</description>
     </item>
     
     <item>
@@ -51,6 +42,15 @@ Review Version Control with Git and GitHub: 11/March 2. Review exercises from Us
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/practice_html_css_js/</guid>
       <description>Preparations  Class Curriculum    Section content Expected time (mins) Pre - Requirements     Intro to Lesson 5 minutes ❌   Practical Activity (in smaller groups) 40-50 minutes VsCode and Git installed   Checkout 5 minutes ❌    Lesson Goal Practice what we&#39;ve learned so far!
 We&#39;re going to make use of the command line, HTML, CSS and Javascript to create a web page that displays the time and date!</description>
+    </item>
+    
+    <item>
+      <title>14/October - Basic knowledge of Javascript</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_js/</guid>
+      <description>Preparations  A short intro to JavaScript Detailed video from AmigosCode starting from Beginners going all the way to advanced - watch from 12:15 till 56:23 and from 1:10:15 till 1:16:03 📚 An intro to JavaScript from Mozilla A small number guessing game   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Lesson Agenda and Goals 5 minutes ❌   Live demo on basic JS 45 minutes Preparations section   Review of the Activity task as a whole class 10 minutes ❌   Class break 10 minutes ❌   JS Activity (in smaller groups) 45-60 minutes VsCode and Git installed    Lesson Goal To gain familiarity with what JavaScript is, what it can do, and how it fits into a web site.</description>
     </item>
     
   </channel>

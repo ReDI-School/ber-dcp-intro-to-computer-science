@@ -14,7 +14,7 @@ publishDir = "docs"
 
 #  menu items
 [[menu.main]]
-  name = "Courses"
+  name = "Course Overview"
   weight = 2
   url = "docs/"
 
