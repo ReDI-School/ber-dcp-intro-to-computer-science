@@ -1,5 +1,5 @@
 +++
-title = "02/March - Inspiration class "
+title = "14/Sept - Inspiration class "
 description = "Goals"
 # weight = 10
 +++

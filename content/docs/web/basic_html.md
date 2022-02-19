@@ -1,5 +1,5 @@
 +++
-title = "25/March - Basic knowledge of HTML"
+title = "04/October - Basic knowledge of HTML"
 description = "Goals"
 weight = 10
 +++
@@ -9,17 +9,17 @@ weight = 10
 
 ## Preparations
 
-### 1. Review exercises from Version Control with Git and GitHub (11/March)
+### 1. Review exercises from Version Control with Git and GitHub (21/September)
 
 Reivew the content from the `Git and GitHub` lecture. We'll use github to store the HTML files we create in this lecture.
 
-{{< button "../../git/git_and_github/" "Review Version Control with Git and GitHub: 11/March" >}}
+{{< button "../../git/git_and_github/" "Review Version Control with Git and GitHub: 21/September" >}}
 
-### 2. Review exercises from Using an IDE (Integrated development environment) (18/March)
+### 2. Review exercises from Using an IDE (Integrated development environment) (30/September)
 
 Review the content from last lecture on `Using an IDE with VsCode`. We'll use VsCode to work on creating HTML files in this lecture.
 
-{{< button "../../git/ide_and_review/" "Review Using an IDE with VsCode: 18/March" >}}
+{{< button "../../git/ide/" "Review Using an IDE with VsCode: 30/September" >}}
 
 ### 3. Read through the following HTML tutorials from the W3Schools
 

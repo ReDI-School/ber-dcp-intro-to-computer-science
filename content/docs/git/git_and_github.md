@@ -1,12 +1,10 @@
 +++
-title = "11/March - Version Control with Git and GitHub"
+title = "21/September - Version Control with Git and GitHub"
 description = "Goals"
 # weight = 10
 +++
 
 ![gif of computer](https://media.giphy.com/media/3oFzlWBadh6GNv3rdS/giphy.gif)
-
-## Pre Requisites
 
 ### 1. Install Git 💾
 
@@ -99,7 +97,11 @@ cd <github-username>
 Initialise an empty git repository with the branch name, `main`:
 
 ```shell
-git init -b main
+git init
+```
+
+```shell
+git checkout -b main
 ```
 
 Now you have an empty local repository 🎉
@@ -328,7 +330,3 @@ repository for inspiration: https://github.com/abhisheknaiidu/awesome-github-pro
 - [Learn git concepts, not Commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc), by Nico Riedmann
 - [A visual introduction to Git](https://medium.com/@ashk3l/a-visual-introduction-to-git-9fdca5d3b43a), by Ashley Keller
   {{< /tip >}}
-
-## Next class preparation
-
-{{< button "../review_git_command_line/" "Review Git and Command Line; Web Overview" "mb-1 grid-4" >}}

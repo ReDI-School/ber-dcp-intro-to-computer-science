@@ -1,5 +1,5 @@
 +++
-title = "04/March - Operating Systems & Command Line Basics"
+title = "14/Sept - Operating Systems & Command Line Basics"
 description = "Goals"
 # weight = 10
 +++

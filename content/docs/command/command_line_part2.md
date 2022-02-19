@@ -1,5 +1,5 @@
 +++
-title = "09/March/2021 - Command Line Basics Part 2"
+title = "16/September/2021 - Command Line Basics Part 2"
 description = "Goals"
 # weight = 10
 +++
@@ -8,373 +8,183 @@ description = "Goals"
 
 ## Pre Requisites
 
-- Create an account on [repl.it](https://repl.it/signup)
-
-- Optional( for Windows users only): [How to Install Linux Terminal on Windows 10](https://www.youtube.com/watch?v=LLlfLpvQg04)
+- Watch this video on [files and file Systems](https://www.youtube.com/watch?v=KN8YgJnShPM)
+  - If this video was difficult to understand or you are unfamiliar with navigating the file system on your computer currently, we recommend that you watch [this video](https://www.youtube.com/watch?v=k-EID5_2D9U) and [this followup video](https://www.youtube.com/watch?v=DGd48PGbnBs)
+- Watch this video until 8:30 on [file paths](https://www.youtube.com/watch?v=BMT3JUWmqYY)
+- (Optional): watch this video on the [history of keyboards and the command line interface](https://www.youtube.com/watch?v=4RPtJ9UyHS0)
+- (Optional - for Windows users only): [install the Cmder console emulator](https://cmder.net/) (easier) or [set up the windows subsystem for linux](https://www.youtube.com/watch?v=LLlfLpvQg04)
 
 ## Class Curriculum
 
-| Section content                             | Expected time (mins) | Pre - Requirements |
-| ------------------------------------------- | -------------------- | ------------------ |
-| Digital Career Support Team                 | 10-15 minutes        | ❌                  |
-| Recap [Session 1](../command_line_part1)    | 15-20 minutes        | ❌                  |
-| Navigation of Linux file system             | 5-10 minutes         | ❌                  |
-| Create, view, manipulate files & folders    | 5-10 minutes         | ❌                  |
-| Class break                                 | 10 minutes           | ❌                  |
-| Group project: Creating a journal/diary     | 20-25 minutes        | repl.it account     |
-| Installing software & package managers      | 10-15 minutes        | ❌                  |
-| Summary & Next class overview               | 10 minutes           | ❌                  |
+| Section content                                              | Expected time (mins) | Pre - Requirements                |
+| ------------------------------------------------------------ | -------------------- | --------------------------------- |
+| Kahoot                                                       | 15 minutes           | videos                            |
+| Questions from Kahoot + [Session 1](../command_line_part1)   | 15 minutes           | ❌                                |
+| Useful Terms/Concepts                                        | 5-10 minutes         | videos                            |
+| Navigate file system and working with files & folders (demo) | 10-15 minutes        | ❌                                |
+| Quick overview of package managers                           | 5-10 minutes         | ❌                                |
+| Class break                                                  | 10 minutes           | ❌                                |
+| Command line practice in groups                              | 40-50 minutes        | local terminal OR repl.it account |
+| Summary & Next class overview                                | 5 minutes            | ❌                                |
 
-## Recap [Session 1](../command_line_part1)
-- Questions
-  - Linux and Windows are ...
-  - To create a directory in linux we use the command: ...
-  - To create a file in linux we use the command: ...
-  - Commands like above/before expect us to provide also an ... 
-  
-## Navigating through the Linux File System
+## Useful Terms/Concepts
 
-```bash
-root@abc40003dc7a:/# pwd
-/
-root@abc40003dc7a:/# cd home/
-root@abc40003dc7a:/home# pwd
-/home
-root@abc40003dc7a:/home# cd deliergky/
-root@abc40003dc7a:/home/deliergky# pwd
-/home/deliergky
-root@abc40003dc7a:/home/deliergky# cd ..
-root@abc40003dc7a:/home# pwd
-/home
-root@abc40003dc7a:/home# cd ..
-root@abc40003dc7a:/# pwd
-/
-```
+- **File**: data, usually organized according to some specific _file format_ (e.g. `txt`, `mp3`, `docx`)
+- **Directory**: what we think of as a folder that contains files and other folders; in Linux systems, this is just a file that stores information about the length and location of other files, similar to a table of contents
+- **File system**: the part of an operating system that stores and keeps track of files
+- **File permissions**: define which users/groups are allowed to read/write/execute certain files. If a user has the following permissions, they can:
+  - **Read**: view the contents of the file
+  - **Write**: modify the contents of the file
+  - **Execute**: run the program (remember: programs are also treated as "files" in Linux systems and are permissioned using the same terms!)
 
-```bash
-root@abc40003dc7a:/home/deliergky# pwd
-/home/deliergky
-root@abc40003dc7a:/home/deliergky# cd ~
-root@abc40003dc7a:~# pwd
-/root
-```
+## Navigate file system and working with files & folders (demo) | 10-15 minutes
 
-```bash
-$ ls -an
-total 88
-drwxr-xr-x   1 0 0 4096 Mar  8 17:48 .
-drwxr-xr-x   1 0 0 4096 Mar  8 17:48 ..
-drwxr-xr-x   2 0 0 4096 Feb 22 22:47 bin
-drwxr-xr-x   2 0 0 4096 Apr 24  2018 boot
-drwxr-xr-x   5 0 0  360 Mar  8 17:48 dev
-drwxr-xr-x   1 0 0 4096 Mar  8 18:29 etc
-drwxr-xr-x   1 0 0 4096 Mar  8 18:31 home
-drwxr-xr-x   1 0 0 4096 Mar  8 17:59 lib
-drwxr-xr-x   2 0 0 4096 Feb 22 22:46 lib64
-drwxr-xr-x   2 0 0 4096 Feb 22 22:43 media
-drwxr-xr-x   2 0 0 4096 Feb 22 22:43 mnt
-drwxr-xr-x   2 0 0 4096 Feb 22 22:43 opt
-dr-xr-xr-x 127 0 0    0 Mar  8 17:48 proc
-drwx------   2 0 0 4096 Feb 22 22:47 root
-drwxr-xr-x   1 0 0 4096 Mar  4 02:24 run
-drwxr-xr-x   1 0 0 4096 Mar  4 02:24 sbin
-drwxr-xr-x   2 0 0 4096 Feb 22 22:43 srv
-dr-xr-xr-x  13 0 0    0 Mar  8 17:48 sys
-drwxrwxrwt   1 0 0 4096 Mar  8 18:04 tmp
-drwxr-xr-x   1 0 0 4096 Feb 22 22:43 usr
-drwxr-xr-x   1 0 0 4096 Feb 22 22:47 var
-```
+### Why use the command line?
 
-## Create, view, manipulate files & folders
-{{< block "grid-2" >}}
+- once familiar with it, faster and easier to navigate the file system
+- offers many powerful tools (especially, but not limited to, text and file manipulation)
+- possible to group together commands and automate repeatable workflows
+- helpful (often required) when working on virtual machines or infrastructure in the cloud
 
-{{< column >}}
+### Demo
 
-- *Create* a *file*:
-```bash
-root@abc40003dc7a:/home/deliergky# mkdir -p 2021/03
-```
+Let's go through how to navigate the file system and work with files and folders. We will do this both via the command line using the commands listed in the cheat sheet below and then using the GUI (Graphical User Interface). Please refer to this cheat sheet when working through the exercises in groups later!
 
-- *Create* a *folder*:
-```bash
-root@abc40003dc7a:/home/deliergky# touch 2021/03/08.log
-```
+### Command Line cheat sheet
 
-- *Copy* a *file*:
-```bash
-root@abc40003dc7a:/home/deliergky# cp 2021/03/09.log 2021/03/10.log
-root@abc40003dc7a:/home/deliergky# cat 2021/03/10.log
-Learning something cool @ReDI
-```
+{{< tip >}}
+Remember that you can look up what a command does by using the `man` (manual-pages) command on Mac and Linux, or `help` command on Windows cmd. For example: `man echo` would give you information on what the `echo` command does and how to use it.
+{{< /tip >}}
 
-- *Copy* a *folder*:
-```bash
-root@abc40003dc7a:/home/deliergky# cp -r 2021/03/ 2021/04
-root@abc40003dc7a:/home/deliergky# ls -an 2021/04/
-total 16
-drwxr-xr-x 2 0 0 4096 Mar  8 18:58 .
-drwxr-xr-x 4 0 0 4096 Mar  8 18:58 ..
--rw-r--r-- 1 0 0    0 Mar  8 18:58 07.log
--rw-r--r-- 1 0 0    0 Mar  8 18:58 08.log
--rw-r--r-- 1 0 0   30 Mar  8 18:58 09.log
--rw-r--r-- 1 0 0   30 Mar  8 18:58 11.log
-root@abc40003dc7a:/home/deliergky#
-```
+| command | what it does                                                                                                                                                                                                                           |
+| ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `pwd`   | print working directory (print the path to where I currently am in the file system)                                                                                                                                                    |
+| `cd`    | change directory (this moves you, the viewer of the terminal, to a new location in the file system). You may use an absolute file path or a relative path where `.` is the current working directory and `..` is the parent directory. |
+| `ls`    | list the contents of the directory                                                                                                                                                                                                     |
+| `mkdir` | make a directory                                                                                                                                                                                                                       |
+| `touch` | create a new file                                                                                                                                                                                                                      |
+| `rm`    | delete a file (note: to delete a directory, add the option `-r` or `-d`)                                                                                                                                                               |
+| `cp`    | copy a file (note: to copy a directory you probably need to add an option (like `-r`))                                                                                                                                                 |
+| `mv`    | move a file or directory to a new location (note: this can also be useful for changing the name of a file/directory)                                                                                                                   |
+| `echo`  | print some text; often used in conjunction with other commands                                                                                                                                                                         |
+| `cat`   | print the contents of the file                                                                                                                                                                                                         |
+| `>`     | this is an operator: `X > Y` will redirect (send) the outputs of command `X` to `Y`; if `Y` exists, it this will _overwrite_ the existing file.                                                                                        |
+| `>>`    | this is an operator similar to the above: `X >> Y` will send the outputs of command `X` to `Y`; if `Y` exists, it this will _append_ to the existing file.                                                                             |
 
-- *Delete/Remove* a *file*:
-```bash
-root@abc40003dc7a:/home/deliergky# rm 2021/04/09.log
-root@abc40003dc7a:/home/deliergky# ls -an 2021/04/
-total 12
-drwxr-xr-x 2 0 0 4096 Mar  8 19:01 .
-drwxr-xr-x 4 0 0 4096 Mar  8 18:58 ..
--rw-r--r-- 1 0 0    0 Mar  8 18:58 07.log
--rw-r--r-- 1 0 0    0 Mar  8 18:58 08.log
--rw-r--r-- 1 0 0   30 Mar  8 18:58 11.log
-root@abc40003dc7a:/home/deliergky#
-```
-
-- *Delete/Remove* a *folder*:
-```bash
-root@abc40003dc7a:/home/deliergky# rm 2021/04/
-rm: cannot remove '2021/04/': Is a directory
-root@abc40003dc7a:/home/deliergky# rm -r 2021/04/
-root@abc40003dc7a:/home/deliergky#
-```
-
-{{< /column >}}
-{{< column >}}
-
-- *View* a *file*:
-```bash
-root@abc40003dc7a:/home/deliergky# cat 2021/03/08.log
-International Women's Day (March 8) is a global day celebrating the social, economic, cultural, and political achievements of women. The day also marks a call to action for accelerating women's equality.
-```
-
-- *List* a *folder's* content:
-```bash
-root@abc40003dc7a:/home/deliergky# ls -an 2021/03/
-total 12
-drwxr-xr-x 2 0 0 4096 Mar  8 18:35 .
-drwxr-xr-x 3 0 0 4096 Mar  8 18:31 ..
--rw-r--r-- 1 0 0    0 Mar  8 18:35 07.log
--rw-r--r-- 1 0 0  204 Mar  8 18:41 08.log
--rw-r--r-- 1 0 0    0 Mar  8 18:34 09.log
-```
-
-- *Update* a *file's* content:
-```bash
-root@abc40003dc7a:/home/deliergky# echo "Learning something cool @ReDI" > 2021/03/09.log
-root@abc40003dc7a:/home/deliergky# cat 2021/03/09.log
-Learning something cool @ReDI
-```
-
-- *Rename* a *file*:
-```bash
-root@abc40003dc7a:/home/deliergky# mv 2021/03/10.log 2021/03/11.log
-root@abc40003dc7a:/home/deliergky# ls -an 2021/03/
-total 16
-drwxr-xr-x 2 0 0 4096 Mar  8 18:49 .
-drwxr-xr-x 3 0 0 4096 Mar  8 18:31 ..
--rw-r--r-- 1 0 0    0 Mar  8 18:35 07.log
--rw-r--r-- 1 0 0    0 Mar  8 18:44 08.log
--rw-r--r-- 1 0 0   30 Mar  8 18:47 09.log
--rw-r--r-- 1 0 0   30 Mar  8 18:48 11.log
-```
-{{< /column >}}
-{{< /block >}}
-
-## Group project: Creating a journal/diary
-{{< block "grid-2" >}}
-{{< column >}}
-Let's create a simple diary in the following format: `2021/03/09.log`
-
-Where:
-
-- `2021` represents the year and is a folder
-- `03` represents the month and is a folder
-- `09.log` represents the day and is a file 
-
-Add also some content to the files ;-) 
-
-{{< /column >}}
-{{< column >}}
-```bash
-root@abc40003dc7a:/home/deliergky# ls -alR 2021/
-2021/:
-total 20
-drwxr-xr-x 5 root root 4096 Mar  8 19:05 .
-drwxr-xr-x 3 root root 4096 Mar  8 18:31 ..
-drwxr-xr-x 2 root root 4096 Mar  8 18:49 03
-drwxr-xr-x 2 root root 4096 Mar  8 19:05 04
-drwxr-xr-x 2 root root 4096 Mar  8 19:05 05
-
-2021/03:
-total 16
-drwxr-xr-x 2 root root 4096 Mar  8 18:49 .
-drwxr-xr-x 5 root root 4096 Mar  8 19:05 ..
--rw-r--r-- 1 root root    0 Mar  8 18:35 07.log
--rw-r--r-- 1 root root    0 Mar  8 18:44 08.log
--rw-r--r-- 1 root root   30 Mar  8 18:47 09.log
--rw-r--r-- 1 root root   30 Mar  8 18:48 11.log
-
-2021/04:
-total 16
-drwxr-xr-x 2 root root 4096 Mar  8 19:05 .
-drwxr-xr-x 5 root root 4096 Mar  8 19:05 ..
--rw-r--r-- 1 root root    0 Mar  8 19:05 07.log
--rw-r--r-- 1 root root    0 Mar  8 19:05 08.log
--rw-r--r-- 1 root root   30 Mar  8 19:05 09.log
--rw-r--r-- 1 root root   30 Mar  8 19:05 11.log
-
-2021/05:
-total 16
-drwxr-xr-x 2 root root 4096 Mar  8 19:05 .
-drwxr-xr-x 5 root root 4096 Mar  8 19:05 ..
--rw-r--r-- 1 root root    0 Mar  8 19:05 07.log
--rw-r--r-- 1 root root    0 Mar  8 19:05 08.log
--rw-r--r-- 1 root root   30 Mar  8 19:05 09.log
--rw-r--r-- 1 root root   30 Mar  8 19:05 11.log
-```
-{{< /column >}}
-{{< /block >}}
-  
-## Installing software & package managers
+## Quick overview of package managers
 
 {{< picture "linux-package-manager-explanation.webp" "linux-package-manager-explanation.webp" "Linux package managers" >}}
 
-- Package: collections of files that are bundled together and can be installed and removed as a group
+Packages are collections of files that are bundled together and can be installed and removed as a group
 
-    ```bash
-    root@abc40003dc7a:/# apt show golang
-    Package: golang
-    Version: 2:1.10~4ubuntu1
-    Priority: optional
-    Section: devel
-    Source: golang-defaults
-    Origin: Ubuntu
-    Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-    Original-Maintainer: Go Compiler Team <pkg-golang-devel@lists.alioth.debian.org>
-    Bugs: https://bugs.launchpad.net/ubuntu/+filebug
-    Installed-Size: 11.3 kB
-    Depends: golang-1.10, golang-doc (>= 2:1.10~4ubuntu1), golang-go (>= 2:1.10~4ubuntu1), golang-src (>= 2:1.10~4ubuntu1)
-    Homepage: https://golang.org
-    Supported: 5y
-    Download-Size: 2896 B
-    APT-Sources: http://archive.ubuntu.com/ubuntu bionic/main amd64 Packages
-    Description: Go programming language compiler - metapackage
-    ```
+Package managers allow you to:
 
-- Keeps track of what software is installed
+- keep track of what software is installed
+- easily install new software
+- upgrade existing software to newer versions
+- remove or uninstall software.
 
-    ```bash
-    root@abc40003dc7a:/# apt list golang
-    Listing... Done
-    golang/bionic,now 2:1.10~4ubuntu1 amd64 [installed]
-    ```
+There are different package managers available for different Operating Systems and Distributions. Here are some examples:
 
-- Allows you to easily install new software
+- MacOS: homebrew, AppStore
+- Windows: PackageManagement, Chocalatey...
 
-    ```bash
-    root@abc40003dc7a:/# apt-get install golang
-    Reading package lists... Done
-    Building dependency tree
-    Reading state information... Done
-    The following additional packages will be installed:
-    binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dirmngr dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base gnupg gnupg-l10n
-    gnupg-utils golang-1.10 golang-1.10-doc golang-1.10-go golang-1.10-race-detector-runtime golang-1.10-src golang-doc golang-go golang-race-detector-runtime
-    golang-src gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan4
-    libasn1-8-heimdal libassuan0 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libfakeroot libfile-fcntllock-perl
-    libgcc-7-dev libgdbm-compat4 libgdbm5 libglib2.0-0 libglib2.0-data libgomp1 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
-    libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1 libkrb5-26-heimdal libksba8 libldap-2.4-2 libldap-common liblocale-gettext-perl liblsan0
-    libmpc3 libmpfr6 libmpx2 libnpth0 libperl5.26 libquadmath0 libreadline7 libroken18-heimdal libsasl2-2 libsasl2-modules libsasl2-modules-db libsqlite3-0
-    libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev netbase patch perl perl-modules-5.26
-    pinentry-curses pkg-config readline-common shared-mime-info xdg-user-dirs xz-utils
-    Suggested packages:
-    binutils-doc cpp-doc gcc-7-locales dbus-user-session libpam-systemd pinentry-gnome3 tor debian-keyring g++-multilib g++-7-multilib gcc-7-doc
-    libstdc++6-7-dbg gcc-multilib autoconf automake libtool flex bison gdb gcc-doc gcc-7-multilib libgcc1-dbg libgomp1-dbg libitm1-dbg libatomic1-dbg
-    libasan4-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx2-dbg libquadmath0-dbg parcimonie xloadimage bzr ca-certificates git mercurial
-    subversion scdaemon glibc-doc gdbm-l10n libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap libsasl2-modules-otp
-    libsasl2-modules-sql libstdc++-7-doc make-doc man-browser ed diffutils-doc perl-doc libterm-readline-gnu-perl | libterm-readline-perl-perl pinentry-doc
-    readline-doc
-    The following NEW packages will be installed:
-    binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dirmngr dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base gnupg gnupg-l10n
-    gnupg-utils golang golang-1.10 golang-1.10-doc golang-1.10-go golang-1.10-race-detector-runtime golang-1.10-src golang-doc golang-go
-    golang-race-detector-runtime golang-src gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl libalgorithm-diff-xs-perl
-    libalgorithm-merge-perl libasan4 libasn1-8-heimdal libassuan0 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libfakeroot
-    libfile-fcntllock-perl libgcc-7-dev libgdbm-compat4 libgdbm5 libglib2.0-0 libglib2.0-data libgomp1 libgssapi3-heimdal libhcrypto4-heimdal
-    libheimbase1-heimdal libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1 libkrb5-26-heimdal libksba8 libldap-2.4-2 libldap-common
-    liblocale-gettext-perl liblsan0 libmpc3 libmpfr6 libmpx2 libnpth0 libperl5.26 libquadmath0 libreadline7 libroken18-heimdal libsasl2-2 libsasl2-modules
-    libsasl2-modules-db libsqlite3-0 libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev netbase
-    patch perl perl-modules-5.26 pinentry-curses pkg-config readline-common shared-mime-info xdg-user-dirs xz-utils
-    0 upgraded, 100 newly installed, 0 to remove and 0 not upgraded.
-    Need to get 110 MB of archives.
-    After this operation, 496 MB of additional disk space will be used.
-    Do you want to continue? [Y/n]
-    ```
+  {{< picture "windows-package-management.png" "windows-package-management.png" "Windows package management" >}}
 
-- Upgrade software to newer versions,
+- Linux: `yum`, `apt-get`, `zypper`
 
-    ```bash
-    root@abc40003dc7a:/# apt-get upgrade golang
-    Reading package lists... Done
-    Building dependency tree
-    Reading state information... Done
-    golang is already the newest version (2:1.10~4ubuntu1).
-    Calculating upgrade... Done
-    0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-    ```
-- Remove software that you previously installed
+  {{< picture "packages-by-distro.jpg" "packages-by-distro.jpg" "Linux package managers" >}}
 
-    ```bash
-    root@abc40003dc7a:/# apt-get remove golang
-    Reading package lists... Done
-    Building dependency tree
-    Reading state information... Done
-    The following packages were automatically installed and are no longer required:
-    binutils binutils-common binutils-x86-64-linux-gnu build-essential cpp cpp-7 dirmngr dpkg-dev fakeroot g++ g++-7 gcc gcc-7 gcc-7-base gnupg gnupg-l10n
-    gnupg-utils golang-1.10 golang-1.10-doc golang-1.10-go golang-1.10-race-detector-runtime golang-1.10-src golang-doc golang-go golang-race-detector-runtime
-    golang-src gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl libasan4
-    libasn1-8-heimdal libassuan0 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5 libdpkg-perl libfakeroot libfile-fcntllock-perl
-    libgcc-7-dev libgdbm-compat4 libgdbm5 libglib2.0-0 libglib2.0-data libgomp1 libgssapi3-heimdal libhcrypto4-heimdal libheimbase1-heimdal
-    libheimntlm0-heimdal libhx509-5-heimdal libicu60 libisl19 libitm1 libkrb5-26-heimdal libksba8 libldap-2.4-2 libldap-common liblocale-gettext-perl liblsan0
-    libmpc3 libmpfr6 libmpx2 libnpth0 libperl5.26 libquadmath0 libreadline7 libroken18-heimdal libsasl2-2 libsasl2-modules libsasl2-modules-db libsqlite3-0
-    libssl1.1 libstdc++-7-dev libtsan0 libubsan0 libwind0-heimdal libxml2 linux-libc-dev make manpages manpages-dev netbase patch perl perl-modules-5.26
-    pinentry-curses pkg-config readline-common shared-mime-info xdg-user-dirs xz-utils
-    Use 'apt autoremove' to remove them.
-    The following packages will be REMOVED:
-    golang
-    0 upgraded, 0 newly installed, 1 to remove and 0 not upgraded.
-    After this operation, 11.3 kB disk space will be freed.
-    Do you want to continue? [Y/n] Y
-    (Reading database ... 21037 files and directories currently installed.)
-    Removing golang (2:1.10~4ubuntu1) ... 
-    ```
-- Downloaded from software repositories(repos, sources, feeds)
+## Tasks for group work
 
-    ```bash
-    root@abc40003dc7a:/# apt-get update
-    Get:1 http://archive.ubuntu.com/ubuntu bionic InRelease [242 kB]
-    Get:2 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
-    Get:3 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [24.5 kB]
-    Get:4 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
-    ...
-    Fetched 22.0 MB in 27s (810 kB/s)
-    Reading package lists... Done
-    ```
-- Varies by Operating System & Distribution
+Work through the tasks with your partner/group. We recommend that one of you shares your screen and you discuss as a group how to proceed with each of the tasks. Each group member should be following along. It is totally fine if you don't complete all the tasks; make sure you understand how to do each task and ask questions if anything does not make sense! Complete any remaining tasks for homework.
 
-    - MacOS: `brew install golang`, AppStore
-    - Windows: PackageManagement, Chocalatey...
+### 0. Open a terminal window
 
-        {{< picture "windows-package-management.png" "windows-package-management.png" "Windows package management" >}}
+Open a terminal window or Repl, where you can practice using the command line.
 
-    - Linux: `yum`, `apt-get`, `zypper`
+On Mac, you can do this by searching for "Terminal" in your Applications folder or using the keyboard shortcut "Command + Space" and then typing in "Terminal".
 
-        {{< picture "packages-by-distro.jpg" "packages-by-distro.jpg" "Linux package managers" >}}
+On Windows, open Cmder if you installed this as part of the prerequisites, or if you installed the Linux subsystem for windows, you can run WSL or follow the instructions described in the video. Alternatively, you can use Cygwin or the gitbash shell to practice Linux commands, or if nothing is available or working on your machine, please use Repl for today.
+
+If you are running into any challenges with this, reach out to one of the teachers.
+
+### 1. Move to the parent directory and back
+
+- Print your working directory
+- Move into the parent directory, if there is one.
+- Move back into the directory you came from.
+
+Hint: if your original working directory path looked something like `folder1/folder2/folder3`, then for this task, you want to move to `folder1/folder2` and then back to `folder1/folder2/folder3`.
+
+### 2. Create a redi folder
+
+Let's create a folder to store the work from this session.
+
+- Navigate to the place where you would like this folder to be located. The current working directory is fine, but you can also navigate to your desktop or another folder where you keep course work.
+- Create a new directory (folder) titled `redi-2021-09-16`
+- Move into this new directory and print your working directory. Double check that your working directory now includes `redi-2021-09-16`.
+
+### 3. Create some files
+
+Now let's create some files to go in this new directory.
+
+- Create an empty file called "test1.txt" using the `touch` command.
+- Create a second file called "hello.txt" which contains the phrase: "hello, my name is YOUR_NAME_HERE!". (Replace YOUR_NAME_HERE with your name :)) Hint: use the `echo` command and the `>` operator to do this.
+- List the files that are in the directory, and make sure that it looks something like:
+
+  ```bash
+  test1.txt hello.txt
+  ```
+
+- Append the line "How are you doing?" to the file "hello.txt"
+- Print the contents of the file and make sure that it looks something like:
+
+  ```txt
+  hello! my name is YOUR_NAME_HERE!
+  How are you doing?
+  ```
+
+### 4. Move these files into a new directory
+
+Let's organize the directory that we are in by putting some of the files in a new location.
+
+- Create a folder (directory) called `test-files` in the `redi-2021-09-16` folder
+- List the contents of the directory that you are in and make sure that it looks something like:
+  ```bash
+  test1.txt hello.txt test-files
+  ```
+- Move `test1.txt` into the `test-files` directory.
+- List the contents of `test-files` and make sure it contains only `test1.txt`, and list the contents of `redi-2021-09-16` to confirm that `test1.txt` has been moved.
+
+### 5. Copy files and directories
+
+- Copy of `hello.txt` into the `test-files` directory. (Hint: this can be done in one command by copying the file to the proper location, or by creating a copy and then moving the file.)
+- Rename the original `hello.txt` to `original-hello.txt`. (Hint: "renaming" is the same as moving a file to a new file path.)
+- Make a copy of the `test-files` directory named `test-files-copy`.
+- List the contents of `test-files-copy` and make sure that it contains both `test1.txt` and `original-hello.txt`.
+
+### 6. Delete files and directories
+
+Be careful with this one! Please double check the command with one of the teachers before removing anything, since **anything removed via `rm` cannot be retrieved**!!
+
+- In the `test-files-copy`, delete the `test1.txt` file.
+- Confirm that `test-files-copy` contains only `original-hello.txt`.
+- Delete the entire `test-files-copy` directory.
+- List the contents of the `redi-2021-09-16` directory and make sure that the `test-files-copy` directory is gone, but that the original `test-files` directory and other files are still present.
+
+### (Optional) 7. Additional Practice
+
+These are additional challenge tasks that are meant to be extra challenging, in case the previous tasks went by more quickly than expected! :)
+
+- Use the man-pages and Google to understand how to use the `grep` command. Use this command to search for occurrences of the text "my name is" in the `redi-2021-09-16` directory. (Hint: you can use the `-r` option to do this)
+- Create a journal/diary as a group with the following structure: the `journal` folder should contain `year` folders on the first level. Within a `year` folder are `month` folders, which contain text files for each individual day. A file path for one of these may look like: `.../journal/2021/09/16.txt`. Create a few entries that have some text!
+- Take a look at some of the extra resources :)
 
 ## Extra resources
+
 {{< tip >}}
+
 - [Linux Filesystem Hierarchy - Part 1](https://www.youtube.com/watch?v=460IxkYmZxQ)
 - [Linux Filesystem Hierarchy - Part 2](https://www.youtube.com/watch?v=WMaWG5ZRht4)
 - [Briana's Bash Tutorial: How to Use the Command Line in Linux, Windows, and Mac](https://www.youtube.com/watch?v=BFMyUgF6I8Y)
@@ -384,9 +194,9 @@ drwxr-xr-x 5 root root 4096 Mar  8 19:05 ..
 - [The Linux Command Handbook](https://www.freecodecamp.org/news/the-linux-commands-handbook/)
 - [Package Managers](https://devopedia.org/package-manager)
 - [What is a package manager in Linux](https://summarynetworks.com/ses/what-is-a-package-manager-in-linux/)
-{{< /tip >}}
+  {{< /tip >}}
 
 ## Next class preparation
 
+Coming soon!
 {{< button "../../git" "Version Control with GIT" "mb-1 grid-4" >}}
-

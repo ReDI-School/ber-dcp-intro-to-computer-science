@@ -1,461 +1,362 @@
 +++
-title = "11/May - Adventures in Python"
-description = "Building a Python Project"
+title = "11/16/November - Practical Python Session"
+description = "Goals"
 # weight = 10
 +++
 
 ![python gif](https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif)
 
-## Prerequisites
+## Pre Requisites
 
-- \[Optional\]:  Finish the materials from the [previous  lesson](./python_classes_practical.md)
+- Review the course content from last class, and try to continue going through the exercises! If you get stuck on any of them, no problem -- make a note of this so we can review these tasks at the beginning of class on Thursday.
+
+  {{< button "../installing_python/" "Review 02/November - Installing Python" >}}
+
+- (Optional) create a repository (local and remote) to gather your Python exercises from last class. Add and commit the file to the repository, and then push these to GitHub.
+- (Optional practice) go through exercises on [w3 schools for Python](https://www.w3schools.com/python/exercise.asp?filename=exercise_syntax1) through `Functions` section OR on particular areas that you would like to review. This is entirely optional but good practice! No need to go over `Lambda`, `Classes`, `Inheritance`, or `Modules` as we have not seen these yet.
 
 ---
 
 ## Class Curriculum
 
-| Section content                                        | Expected time (mins) | Pre - Requirements |
-| ------------------------------------------------------ | -------------------- | ------------------ |
-| Lesson Goals                                           | 5 minutes            | ❌                 |
-| Check-in on  questions from last class                 | 5 minutes            | ❌                 |
-| Kahoot                                                 | 10 - 15 minutes      | ❌                 |
-| Exercises in groups                                    | 40 minutes           | ❌                 |
-| Break                                                  | 10 minutes           | ❌                 |
-| Exercises in groups                                    | 50 minutes           | ❌                 |
-| Check-out                                              | 10 minutes           | ❌                 |
+| Section content                                                     | Expected time (mins) | Pre - Requirements |
+| ------------------------------------------------------------------- | -------------------- | ------------------ |
+| Lesson Goals                                                        | 5 minutes            | ❌                 |
+| Questions from last class & review of a few exercises               | 10-15 minutes        | ❌                 |
+| Overview of loops (for, while)                                      | 10-15 minutes        | ❌                 |
+| Hands-on Python exercises (in small groups)                         | 20 minutes           | ❌                 |
+| Break (in-person troubleshooting of Python installations if needed) | 10 minutes           | ❌                 |
+| Continue hands-on Python exercises (in small groups)                | rest of class        | ❌                 |
+| Check-out                                                           | 5 minutes            | ❌                 |
 
-## Check-In
+## 0. Lesson Goals
 
-- What was particularly challenging last class? Are there any remaining questions from last class?
+- Have a working development environment on Python.
+- Build familiarity with the concepts of data types, functions, and control flow (loops, conditionals)
+- Continue writing code in Python
 
-## Kahoot
+## 1. Check-In
 
-Let's do [a Kahoot](https://create.kahoot.it/details/c5827f0b-a774-4602-babe-b0ea5b10aba0) to check our understanding of the concepts we've learned so far.
+- Are there any remaining questions from last class?
+- What exercises were the most challenging? (Respond in the chat)
 
-## Lesson Goals
+## 2. for and while loops
 
-Build a text adventure game in Python and practice:
+Loops are a tool that help us execute a block of code a specified amount of times or based on a condition. In Python, there are two loops: `for` and `while` loops.
 
-- Object-oriented programming concepts
-- Flow control
-- Methods and functions
+### while loops
 
-## Introduction
+`while` loops allow us to execute a block of code as long as the condition evaluates to `True`.
 
-We are going to use Python to create a text adventure which runs on the command line.
+![loop diagram](../images/loop_diagram.png)
 
-The `story` will follow you as the main `character`, and your attempt to travel out of
-Berlin to visit Müggelsee on a sunny day.
+_Please excuse the ugly diagram :)_
 
-You will have to choose a mode of `transport` and will encounter different `obstacles`
-on your way to the lake. The modes of transport that you can choose are walking,
-bicycle or S-Bahn.
-
-Based on the choices you make, the game will have a different outcome.
-
-DEMO
-
-## 1. Setup project
-
-- Create a new folder called `python_adventures`
-- In the folder, create a new file called, `adventure.py`
-
-## 2. Classes and Objects 
-
-Brainstorm what you would want to represent as objects in order to create a story which contains a 
-character and different modes of transport.
-
-- What classes can you come up with?
-- What instance attributes could they have?
-- What class methods could they have?
-
-<br>
-<br>
-
-<details>
-
-  <summary> SOLUTION </summary>
- 
-  There are many ways that you could solve this, which means there is no exact right or wrong answer.
-  However, for the purpose of this exercise, we will create the following:
-  1. A `Story` class, with three methods: `start`, `middle`, `end`.
-  2. A `Character` class, with two instance attributes: `name` and `transportation`.
-  3. A `Transportation` class, with two instance attributes: `speed` and `description`, and with one method: `encounter_obstacles`
-  4. Since we have three methods of transportation, we will have three subclasses of transportation: `Walk`, `Bicycle` and `SBahn`.
-</details>
-
-<br>
-<br>
-
-i. Go ahead and create these classes and methods in `adventure.py`. 
-For now, leave the methods empty.
-
-<details>
-
-  <summary> SOLUTION - Story Class </summary>
-
-  ```python
-  class Story:
-    def __init__(self):
-        pass
-
-    def start(self):
-      pass
-
-    def middle(self, character, transportation):
-      pass
-
-    def end(self, character):
-      pass
-
-    new_story = Story()
-    new_story.start()
-  ```
-</details>
-
-<details>
-
-  <summary> SOLUTION - Character Class </summary>
-
-  ```python
-  class Character:
-    def __init__(self, name, transportation):
-        self.name = name
-        self.transportation = transportation
-  ```
-</details>
-
-When defining the `Bicycle`, `Walk` and `SBahn` classes, you can already set the following `name`, `speed`, and `description`:
-
-**Walk**  
-name: `"walking"`  
-speed: `"slow"`  
-description: `"It is a long and tiring walk, but scenic.🚶"`  
-
-**Bicycle**  
-name: `"bicycle"`  
-speed: `"average"`  
-description: `"Efficient and green - cycling is a great way to explore! 🚲"`  
-
-**S-Bahn**  
-name: `"S-Bahn"`  
-speed: `"fast"`  
-description: `"The S-Bahn is busy with people getting out of the city today, but you can read a book, listen to music and gaze out the window. 🚉"`  
-
-<details>
-
-  <summary> SOLUTION - Transportation Classes </summary>
-
-  ```python
-class Transportation:
-    def __init__(self, name, speed, description, obstacles):
-        self.name = name
-        self.speed = speed
-        self.description = description
-
-    def encounter_obstacles(self):
-        pass
-
-
-class Walk(Transportation):
-    def __init__(self):
-        self.name = "walking"
-        self.speed = "slow"
-        self.description = "It is a long and tiring walk, but scenic.🚶"
-
-    def encounter_obstacles(self):
-        pass
-
-
-class SBahn(Transportation):
-    def __init__(self):
-        self.name = "sbahn"
-        self.speed = "fast"
-        self.description = "The S-Bahn is busy with people getting out of the city today, but you can read a book, listen to music and gaze out the window. 🚉"
-
-    def encounter_obstacles(self):
-        pass
-
-
-class Bicycle(Transportation):
-    def __init__(self):
-        self.name = "bicycle"
-        self.speed = "average"
-        self.description = "Efficient and green - cycling is a great way to explore! 🚲"
-
-    def encounter_obstacles(self):
-        pass
-  ```
-</details>
-
-ii. At the end of the file, create a `new_story` object from the `Story` class. Call
-the `start` method on new story, so that a new story is created when the program is run. 
-
-## 3. Create the story introduction
-
-The introduction of the story will always be the same. We should ask the player for their
-name, introduce the story with some opening text and ask the player which mode of transport they would like to take.
-
-i. First, we want to create an introduction for the player to start the story. Please copy and paste the following function into `python_adventure.py`. This function should be kept outside of any class. (Ordinarily you should not copy and paste from tutorials, but in this case there is a lot of text which is not useful for you to type out):
+Syntax:
 
 ```python
-def introduction_text(name):
-    print("") 
-    print(
-        "It's a beautiful summer's day in Berlin, and you are stuck in Hermannplatz :("
-    )
-    print(
-        "You don't want to be here. It is too noisy, there is too much traffic and all this concrete makes it uncomfortably warm"
-    )
-    print("The lakes are calling...")
-    print("") # The purpose of this print statement is to make the CLI output easier to read
-    print(f"Well {name}, today we go to Müggelsee!")
-    print("")
+while condition:
+    # do things
 ```
 
-ii. Go to the `start()` method of the `Story` class. Using the `input()` method, ask the player what their name is. Assign their input to a variable, `name`.
+Examples:
 
-iii. In the next line of `start()`, call the function `introduction_text` and pass in the `name` variable as an argument.
+```python
+# This is called an "infinite loop" since the condition is always True!!
+while True:
+    print("I'm an infinite loop! I won't stop unless I'm forced to!")
+```
 
-iv. In the next line of `start()`, ask the user how they plan to travel to the lake using the string `"The only question is, how should we go to the lake? a. walking, b. bicycle or c. sbahn\n"`. Assign the input to a variable called `choice`.
+```python
+count = 0
+while count < 10:
+    print("hello #", count)
+    # increment the value of `count`
+    count += 1
+    # outputs:
+    # hello # 0
+    # hello # 1
+    # hello # 2
+    # hello # 3
+    # hello # 4
+    # hello # 5
+    # hello # 6
+    # hello # 7
+    # hello # 8
+    # hello # 9
 
-v. In the next part of `start()`, we will be using an `if, elif, else` statement to check the `choice`. If it is `a`, create a new variable called `transportation` and assign the object `Walk()` to it, if choice is `b` assign the object `Bicycle()` to `transportation`, otherwise if the choice is `c` assign the object `SBahn()` to `transportation`.  Use the `else` branch to catch the scenario where a player inputs none of these options by printing a message to the player and `exiting`.
+```
 
-vi. In the next part of start, we want to create a `Character` object, using the `name` and `transportation` choice that the player has given us already.
+Check-in question: can someone explain what's going on in each of these examples?
 
-vii. Finally, to complete this method, we will want to call the method to start
-the next part of the story `middle`, and pass the `character` and `transportation`
-objects to it.
+### for loops
 
-<details>
+`for` loops provide a way to go through each value (or set of values) in an iterable (e.g. a list, string, dictionary, etc.) and execute a block of code that uses that value.
 
-  <summary> SOLUTION - START  </summary>
+Syntax:
+
+```python
+for variable(s) in iterable:
+    # do things
+```
+
+Examples: (feel free to try executing these in your IDLE terminal, notebook cell (in Colab), VSCode, or PyCharm :)
+
+```python
+for num in [1, 2, 3]:
+    print(num)
+    # outputs:
+    # 1
+    # 2
+    # 3
+```
+
+```python
+for letter in 'word':
+    new_word = letter + '!!'
+    print(new_word)
+    # outputs:
+    # w!!
+    # o!!
+    # r!!
+    # d!!
+```
+
+```python
+# python
+for num, letter in [(1, 'a'), (2, 'b')]:
+    # Here, we convert number to string using `str` before concatenating with another string
+    print(str(num) + letter)
+    # outputs:
+    # 1a
+    # 2b
+
+```
+
+With `for` loops, it can also be useful to use the `range` operator in Python which creates an iterable of numbers. The syntax of this is `range(start, end, step)`, but you will also see this as just `range(start, end)` or `range(end)` (in this last case, the `start` is assumed to be 0). Note that the `end` value is not included (in other words, "numbers starting with `start` up until (not through) `end`"). Here are some examples:
+
+```python
+for i in range(3):
+    print(i)
+    # outputs:
+    # 0
+    # 1
+    # 2
+```
+
+```python
+list(range(1, 4))  # we can create a list out of a `range`
+# [1, 2, 3]
+```
+
+```python
+list(range(-1, 9, 3))  # here, the step (space between values) is 3
+# [-1, 2, 5, 8]
+```
+
+## 3. Hands-on Python Tasks
+
+**Work in groups** to solve the following tasks in your Python Dev setup. As a group exercise, we expect you to discuss with your group members to **solve the problems together**. This may mean having one person share their screen and talking through the code you will write together, and making sure you all understand before moving on to the next task. You are **not expected** to get through all of these in class, and they range from easier to harder. We will continue working on these exercises in the next session as well.
+
+To build on the skills that we have learned earlier in the semester, if working in VSCode or PyCharm, please create a new repository and commit your changes as you go. You can check out the reference sheets to help remember the necessary git and command line commands. [Click here for the cheat sheet](../../references)
+
+Optionally, you may send in a link to a GitHub repository with your solutions (if working in VSCode or PyCharm) or share your notebook (if working in Colab) if you would like feedback on your work :)
+
+Note: if you are writing in Colab or a Python Notebook, then try to keep each task in a separate code cell. If you are writing in a pure Python file, consider wrapping each task in a function (that is, write a function to solve the task) and call these functions in the `if __name__ == '__main__':` block to test out your code. This might look something like:
+
+```python
+# in your file:
+def task_n(a, b):
+    # code to solve task 1
+    ...
+
+    return answer_to_task_n
+
+if __name__ == '__main__':
+    print(task_n(1, 2))  # prints output of task_n
+
+```
+
+Note: it can be helpful to test out your functions by making sure that the functions return what you expect for a few different inputs. Make sure to try out a variety of inputs including some "edge cases", or cases that are trickier and can cause problems. These edge cases often have to do with "0" or empty-inputs.
+(Optional): In Python, you can also write `assert` statements, where you would state what you believe the function to output to be, and it fails if this is not the case.
+
+Let's use an example task 0 to illustrate all the points above.
+
+### Task 0 (warmup)
+
+Write a function called `add_10` that takes in an _integer_, adds 10, and returns this value.
+Test out these steps and make sure you feel comfortable with the process. The following tasks won't have a walk through, but you should follow the same rough process.
+
+Steps:
+
+1. Write out your _function skeleton_, or the empty function with the name and parameters. (Note: `n` is commonly used to denote a number, but you can also write more descriptive variable names):
+
+```python
+def add_10(n):
+    # TODO: add logic to add 10
+    return "Not implemented"
+```
+
+2. Let's call this function somewhere so we can see what it's outputting.
+   In a `.py` file:
+
+```python
+if __name__ == '__main__':
+    # the text is not required, but it helps me see what I called to get the output
+    print("add_10(3): ", add_10(3))  # for now, this returns "add_10(3): Not implemented"
+
+```
+
+3. Let's add in some logic and check the values that it is outputting. If these values don't match your expectations (which often happens in programming), then take another look and try to understand what's going wrong. You can add `print` statements in your code as well to tell you what the values of different variables and conditions are while you are running your code. You should feel encouraged to look things up when you run into issues as well.
+
+```python
+def add_10(n):
+    return n + 10
+
+if __name__ == '__main__':
+    print("add_10(3): ", add_10(3))  # this should now print "add_10(3): 13"
+    print("add_10(-10): ", add_10(-10))  # this should now print "add_10(-10): 0"
+
+```
+
+4. Optional: you can also use `assert` statements to confirm your expectations. This is a way of writing simple "test cases" to make sure your logic works. This looks something like:
+
+```python
+def add_10(n):
+    return n + 10
+
+if __name__ == '__main__':
+    assert add_10(3) == 13
+    assert add_10(-10) == 0
+    assert add_10(0) == 10
+
+```
+
+What happens if the assert statement is wrong? (Hint: try out something like `assert add_10(3) == 5` which we expect to fail and see what happens.)
+
+You can also add this in to a test function to organize your code:
+
+```python
+def add_10(n):
+    return n + 10
+
+def test_add_10():
+    assert add_10(3) == 13
+    assert add_10(-10) == 0
+    assert add_10(0) == 10
+
+
+if __name__ == '__main__':
+    test_add_10()  # expect no output if all assertions passed
+
+```
+
+### Task 1
+
+Write a function called `longer_string` that takes in two _strings_ and returns the longer of the two. If they are the same length, return the first string.
+
+### Task 2
+
+Write a function called `is_odd` that takes in an _integer_ and returns `True` if the number is odd and `False` otherwise.
+
+{{< tip >}}
+Hint: look up (Google) what the modulo (`%`) operator in Python is and use it to determine if a number is odd or even.
+{{< /tip >}}
+
+### Task 3 (parts 1, 2)
+
+Write a function called `hello_world_n` that takes in an integer `n` and prints "Hello, world!" `n` times.
+
+1. do this using a `for` loop
+2. do this using a `while` loop
+
+### Task 4
+
+Write a function called `sum_list` that takes in a list of integers (i.e. `[3, 0, 10, 4, 5, 3]`) and returns the sum of them. Do not use the `sum` function in your logic, but you can use this to test your logic! (Hint: `assert sum(lst) == ...`)
+
+### Task 5
+
+Write a function that takes in a list of integers (i.e. `[3, 0, 10, 4, 5, 3]`) and prints the value of each element greater than 4.
+For example:
+
+- input: `[3, 0, 10, 4, 5, 3]`
+  ```python
+  # output:
+  # 10
+  # 5
+  ```
+- input: `[4, 5, 6, 6, 5, 4]`
 
   ```python
-  def introduction_text(name):
-    print("") 
-    print(
-        "It's a beautiful summer's day in Berlin, and you are stuck in Hermannplatz :("
-    )
-    print(
-        "You don't want to be here. It is too noisy, there is too much traffic and all this concrete makes it uncomfortably warm"
-    )
-    print("The lakes are calling...")
-    print("")
-    print(f"Well {name}, today we go to Müggelsee!")
-    print("")
-    
-  class Story:
-    def __init__(self):
-        pass
-
-    def start(self):
-        name = input("What is your name?\n")
-        introduction_text(name)
-
-        choice = input(
-            "The only question is, how should we go to the lake? a. walking, b. bicycle or c. sbahn\n"
-        )
-        if choice == "a":
-            transportation = Walk()
-        elif choice == "b":
-            transportation = Bicycle()
-        elif choice == "c":
-            transportation = SBahn()
-        else:
-            print("You have not selected a valid option!")
-            exit()
-
-        character = Character(name, transportation)
-
-        self.middle(character, transportation)
+  # output:
+  # 5
+  # 6
+  # 6
+  # 5
   ```
-</details>
 
-Run the program and see what happens
-
-## 4. The middle of the story
-
-The middle or content of the story will vary depending on the mode of transportation
-that the user takes. We will use the `middle()` method as a way to begin this in the same
-way for each mode of transport, and then use the `encounter_obstacles()` method of
-each transport type to create a different storyline.
-
-i. To begin the `middle()` of the story, we print a message to the player to confirm their choice of transport and share some details about it. In the first line of `middle()`, print the following message to the player: `"Travelling by {transportation.name} is {transportation.speed}. {transportation.description}\n"` (Hint: you will need to use an [f-string](https://datagy.io/python-f-strings/)).
-
-ii. Next call the `encounter_obstacles()` method of the `transportation` object that
-you passed into `middle()` method. 
-
-iii. Lastly, call the `end()` method which will trigger the end of the story.
-
-We haven't yet created any obstacles for the player, we will do this in Section 6.
-
-<details>
-
-  <summary> SOLUTION - MIDDLE  </summary>
+- input: `[4, 3, 2, 1]`
 
   ```python
-     def middle(self, character, transportation):
-        print(
-            f"Travelling by {transportation.name} is {transportation.speed}. {transportation.description}\n"
-        )
-        transportation.encounter_obstacles()
-        self.end(character)
+  # no output
   ```
-</details>
 
-Run the program and see what happens!
+{{< tip >}}
+Optional Challenge: change your function to take in a second parameter, `min_val`. Now, print all values in the list greater than this value.
 
-## 5. End of the story
+Example input: `[4, 3, 2, 1]`, `2`
 
-We will reach the end of the story when the player's character has reached the lake.
-When this happens, we will print a message to the player and the game will end.
+```python
+    # output:
+    # 4
+    # 3
+```
 
-i. Print a message to the player, which says: `"Yay, {character.name}! You reached the lake by {character.transportation.name}. Time to swim and spend the rest of the day snoozing in the sun ⛵"`
+{{< /tip >}}
 
-<details>
+### (Challenge) Task 6 (parts 1, 2)
 
-  <summary> SOLUTION - END  </summary>
+_Note: this one is optional and meant to be challenging! :)_
 
-  ```python
-    def end(self, character):
-        print(
-            f"Yay, {character.name}! You reached the lake by {character.transportation.name}. Time to swim and spend the rest of the day snoozing in the sun ⛵"
-        )
-  ```
-</details>
+Like with task 4, do not use the Python function `max` in your function, but you can use this to test it out!
 
-Run the program and see what happens!
+1. Write a function that takes in a list of integers (i.e. `[3, 0, 10, 4, 5, 3]`) and returns largest value in the list.
+2. Write a function that takes in a list of strings (i.e. `['a', 'asdf', '']`) and returns the longest string in the list.
 
-## 6. Fill in the obstacles of the story
+### (Challenge) Task 7 (parts 1, 2, 3)
 
-Each story will have some obstacles, and depending on the player's choice when encountering these obstacles, the character will or will not make it to the lake.
+_Note: this one is optional and meant to be challenging! :)_
 
-### Walk
+1. Write a function that takes in an integer and prints all numbers below it that are divisible by 3. (Hint: recall Task 2 -- how can you check if a number is divisible by 3?)
 
-There is one obstacle when walking. Since it is a long walk from Hermannplatz, if
-the player leaves too late it will be dark when they arrive. 
+   Example input: `12`
 
-i. Write code to ask the player the following question: `"What time do you leave Hermannplatz? a. Before 14:00 b. After 14:00\n"`. Assign their input to a variable
-called `choice`.
+   ```python
+   # output:
+   # 0
+   # 3
+   # 6
+   # 9
+   ```
 
-ii. If the `choice` is `a`, print the following message: `"You are very tired when you get to the lake and fall asleep.\n While you are asleep a wild boar runs off with your belongings 🐗"`
+2) Modify the function to return how many numbers are divisible by 3, in addition to printing each number. (i.e. the returned value for the example input above would be `4` (0, 3, 6, 9)).
+3) Modify this function to make it general -- if the function takes in `n` and `k`, find out how many numbers less than `n` are divisible by `k`.
 
-iii. If the `choice` is `b`, print the following message: `"Oh no, it is too late. By the time you reach the lake, it is already dark and time to go home. 🌉 :("` and `exit` the program.
+   Example input: `8`, `2`
 
-Question: what happpens if the choice is neither a nor b?
+   ```python
+   # output:
+   # 0
+   # 2
+   # 4
+   # 6
+   # returns 4
+   ```
 
-<details>
+## Additional Resources
 
-  <summary> SOLUTION - WALK OBSTACLES  </summary>
-
-  ```python
-    def encounter_obstacles(self):
-        choice = input(
-            "What time do you leave Hermannplatz? a. Before 14:00 b. After 14:00\n"
-        )
-        if choice == "a":
-            print(
-                "You are very tired when you get to the lake and fall asleep.\n While you are asleep a wild boar runs off with your belongings 🐗"
-            )
-        if choice == "b":
-            print(
-                "Oh no, it is too late. By the time you reach the lake, it is already dark and time to go home. 🌉 :("
-            )
-            exit()
-  ```
-</details>
-
-## Bicycle 
-
-There are two obstacles that the player can encounter while cycling: the cobblestones of Berlin and seeing your friends having fun in Neukölln.
-
-i. Write code to ask the player the following question: `"You are cycling past the Landwehr canal and spot your friend in a boat on the canal.\nWhat do you do? a. Stop and join the boat party or b. wave and continue\n"`. Assign their input to a variable
-called `choice`.
-
-ii. If the `choice` is `a`, print the following message: `"Who needs the lake? Put on some sunglasses and bob along the canal all day.🚣"` and `exit` the program.
-
-iii. If the `choice` is `b`, do nothing and let the program continue.
-
-iv. Write code to ask the player the following question: `"Uh oh, another cobble stone road gives you a flat tire.\nWhat do you do? a. Fix it b. Go home\n"`. Assign their input to a variable
-called `choice`.
-
-v. If the `choice` is `a`, do nothing and let the program continue.
-
-vi. If the `choice` is `b`, print the following message: `"That's all the adventure for today! The lake will have to wait for another day"` and `exit` the program.
-
-<details>
-
-  <summary> SOLUTION - BICYCLE OBSTACLES  </summary>
-
-  ```python
-    def encounter_obstacles(self):
-        choice = input(
-            "You are cycling past the Landwehr canal and spot your best friend in a boat on the canal.\nWhat do you do? a. Stop and join the boat party or b. wave and continue\n"
-        )
-        if choice == "a":
-            print(
-                "Who needs the lake? Put on some sunglasses and bob along the canal all day.🚣"
-            )
-            exit()
-        if choice == "b":
-            pass
-
-        choice = input(
-            "Uh oh, another cobble stone road gives you a flat tire.\nWhat do you do? a. Fix it b. Go home\n"
-        )
-        if choice == "a":
-            pass
-        if choice == "b":
-            print(
-                "That's all the adventure for today! The lake will have to wait for another day"
-            )
-            exit()
-  ```
-</details>
-
-## S-Bahn
-
-There is one obstacle when on the S-Bahn: the player misses there stops and ends up
-at Erkner.
-
-i. Write code to ask the player the following question: `"You miss your stop and end up in Erkner. What do you do? a. Stay there b. Get back on the s-bahn\n"`. Assign their input to a variable
-called `choice`.
-
-ii. If the `choice` is `a`, print the following message: `"Great! Spend the rest of the day exploring the sights and sounds around Erker!"` and `exit` the program.
-
-iii. If the `choice` is `b`, do nothing and let the program continue.
-
-
-<details>
-
-  <summary> SOLUTION - WALK OBSTACLES  </summary>
-
-  ```python
-    def encounter_obstacles(self):
-        choice = input(
-            "You miss your stop and end up in Erkner. What do you do? a. Stay there b. Get back on the s-bahn\n"
-        )
-        if choice == "a":
-            print(
-                "Great! Spend the rest of the day exploring the sights and sounds around Erker!"
-            )
-        elif choice == "b":
-            pass
-  ```
-</details>
-
-
-## 7. Run the program
-
-Ta-da, you have finished developing the program! Now trying playing the game.
-
-## 8. Follow-up ideas
-
-- Add another mode of transport that the player can take
-- Add more obstacles and choices for the player for each mode of transport
-- Use the things you've learned to make an entirely different story
-
-## Continue Learning
-
-- Get involved with the Python Community. Organisations and meetups: [PyLadies Berlin](https://www.meetup.com/PyLadies-Berlin), [PyBerlin](https://www.meetup.com/PyBerlin/) and [more](https://www.python.berlin/). 
+- [W3 schools Python while loops](https://www.w3schools.com/python/python_while_loops.asp)
+- [W3 schools Python for loops](https://www.w3schools.com/python/python_for_loops.asp)
+- [Tutorialspoint loops in Python](https://www.tutorialspoint.com/python3/python_loops.htm)
+- [additional practice problems on loops and conditions (note: some are challenging!)](https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php)
+- [additional practice problems (note: challenging!)](https://www.practicepython.org/)

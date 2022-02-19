@@ -11,13 +11,9 @@ title = "Berlin 2021 - Intro to Computer Science"
 {{< block "grid-2" >}}
 {{< column >}}
 
-# Welcome to **Intro to Computer-Science 2021** course Berlin 🇩🇪 
+# Welcome to **Intro to Computer-Science Autumn 2021** course Berlin 🇩🇪 
 
 Here you will find most of the content for our courses, prerequisites for each class, summaries of the classes and extra content so you can work on your own.
-
-{{< tip "warning" >}}
-This is a work in process document for the course of 2021 in Berlin.
-{{< /tip >}}
 
 {{< button "docs/" "Get started with the course 🚀" >}}
 

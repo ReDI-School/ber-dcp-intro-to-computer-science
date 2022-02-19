@@ -1,5 +1,5 @@
 +++
-title = "18/March - Using an IDE (Integrated development environment)"
+title = "30/September - Using an IDE (Integrated development environment)"
 description = "Goals"
 # weight = 10
 +++
@@ -20,24 +20,25 @@ To install VSCode please download it by clicking on the Download button of the n
 
 You can start playing with it if you want, during the class we will see how to work with it.
 
-### 2. Review exercises from Tuesday (16/March)
+### 2. Review exercises from Tuesday (21/September)
 
 Review the content from last class. Make sure that have completed the prerequisites from last class, including that your email is verified on GitHub. If you get stuck or feel confused about anything, no worries! Please write down any questions you have so that we can go over these in class.
 
-{{< button "../review_git_command_line/" "Review Previous Session: 16/March" >}}
+{{< button "../git_and_github/" "Review Previous Session: 21/September" >}}
+
+### 3. Watch the Visual Studio Code basics
+
+- [VS Basics](https://code.visualstudio.com/docs/introvideos/basics)
 
 ---
 ## Class Curriculum
 
 | Section content                          | Expected time (mins) | Pre - Requirements |
 | ---------------------------------------- | -------------------- | ------------------ |
-| Little quiz with Kahoot  | 10        | ❌             |
-| Recap of what we did last class + questions? | 10 minutes            |❌                 |
 | Learning Markdown | 20 minutes        |     ❌         |
-| Learners form         | 10 minutes        | review last class  |
-| Class break                              | 7-10 minutes           | ❌                 |
-| Creating our own Journal in Github                 | 45 minutes             | VSCode installed  |
-| Real life example                 | 10 minutes             | VSCode installed  |
+| Creating our own Journal in Github                 | 60 minutes             | VSCode installed  |
+| Break | 10 minutes | |
+| Working through git commands with our Journal                 | 30 minutes             | VSCode installed  |
 
 ## Lesson Goals
 
@@ -81,6 +82,8 @@ Remember that you can look up what a command does by using the `man` (manual-pag
 
 These are some of the most famous commands you need.
 
+Where you see <...>, you will have to replace the whole thing with the expected input. For example, git add <directory> would become git add ./docs/
+
 | command | what it does                                                                                                                               |
 | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | `git clone <repo>`  | Clone repo located at <repo> onto local machine. Original repo can be located on the local filesystem or on a remote machine via HTTP or SSH.                                                                                                           |
@@ -91,26 +94,45 @@ These are some of the most famous commands you need.
 | `git log`    | Display the entire commit history using the default format. For customization see additional options.                                |
 
 
+### 0. Markdown Cheat Sheet
+
+| Element | Markdown Syntax
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Heading 1 | # H1
+| Heading 2 | ## H2
+| Heading 1 | ### H3
+| Bold | \*\*bold text**
+| Italic | \*italicized text*
+| Blockquote | > blockquote
+| Ordered List | 1. First item 2. Second item 3. Third item
+| Unordered List | - First item - Second item - Third item
+| Code | \`code`
+| Link | \[title](https://www.example.com)
+| Image | \![alt text]\(image.jpg)
+
+[Additional Markdown commands](https://www.markdownguide.org/cheat-sheet/)
+
+
 ### 1. Fork and clone your new Journal
 
 First, navigate to the directory where you want to clone the journal. (If you don't already have a designated folder for class materials, create a directory for this and navigate into it.) Cloning a repository means creating a local copy of another repository, usually one that is stored on a remote server like GitHub.
 
-Fork [this repository](https://github.com/ReDI-School/spring-2021-intro-to-programming-md-journal). In the top right corner, click `Fork`. You may be prompted with a question like "Where should we fork this repository to?" If so, click your GitHub username; this will create a copy of the repository to your account.
+Fork [this repository](https://github.com/ReDI-School/autumn-2021-intro-to-programming-md-journal). In the top right corner, click `Fork`. You may be prompted with a question like "Where should we fork this repository to?" If so, click your GitHub username; this will create a copy of the repository to your account.
 
 You should then be automatically taken to the main page of this repository. 
 
-On the upper right side, click `Code` (in green) and copy the `HTTPS` link. Then in your terminal run `git clone <link-you-copied>`. For example, this should look something like the following (with `github-username` replaced with your own github username):
+On the upper right side, click `Code` (in green) and copy the `SSH` link. Then in your terminal run `git clone <link-you-copied>`. For example, this should look something like the following:
 
 ```sh
-git clone https://github.com/ReDI-School/spring-2021-intro-to-programming-md-journal
+git clone git@github.com:ReDI-School/autumn-2021-intro-to-programming-md-journal.git
 ```
 
 Check that this directory now exists. _(Hint: list the contents of the directory you are in, and make sure you see the cloned folder.)_
 
-Move into that directory (small hint -> write `cd spring` and then press the key `TAB` and it will autocomplete):
+Move into that directory (small hint -> write `cd autumn` and then press the key `TAB` and it will autocomplete):
 
 ```sh
-cd spring-2021-intro-to-programming-md-journal
+cd autumn-2021-intro-to-programming-md-journal
 ```
 
 Check the status of the git repository:
@@ -134,7 +156,7 @@ If so, great! You have successfully forked and cloned this repository. If not, c
 
 One of the great things about Git is being able to work on the same repository as others at the same time. A typical way of doing this when working on a project is by creating and checking out a new branch (via `git checkout -b <branch-name>`), making changes and committing your work, and pushing this work to your separate branch. Once you are ready to publish your changes to the `main` branch, you can create a pull request (PR) to have others review your changes and merge them to the `main` branch.
 
-Even though you are working on your own repository alone (since you forked, this is your own repository), let's practice creating a new branch so we can make some changes there and eventually merge this back to the `main` branch. Let's call this branch `<your-github-username>/test-branch` (leave out the <>, for example, for me, I would call the branch `omarsotillofranco/journal1`):
+Even though you are working on your own repository alone (since you forked, this is your own repository), let's practice creating a new branch so we can make some changes there and eventually merge this back to the `main` branch. Let's call this branch `<your-github-username>/test-branch` (leave out the <>, for example, for me, I would call the branch `marcshaw/journal1`):
 
 ```sh
 git checkout -b <your-github-username>/test-branch
@@ -150,11 +172,11 @@ Your VSCode should show now on the left side the differents files and folders fr
 
 ### 4. Complete the tasks in the README.md file from the repository you have just created.
 
-In the [README.md file](https://github.com/ReDI-School/spring-2021-intro-to-programming-md-journal/blob/main/README.md) from the repo you have just copied there is a section called `## TASKS`. Go slowly one by one and complete them by marking them with a `X`
+In the [README.md file](https://github.com/ReDI-School/autumn-2021-intro-to-programming-md-journal/blob/main/README.md) from the repo you have just copied there is a section called `## TASKS`. Go slowly one by one and complete them by marking them with a `X`
 
 ### 5. Adding and committing some changes
 
-Once completed! let's make the world know about our recipes. This activity should remind you a bit of the directory "maze" exploration activity that we did with Ergün last week.
+Once completed! let's make the world know about our recipes.
 
 - Check the status of the repository via `git status`. If you do not see something that says you deleted a file, please ask someone in your group or a teacher for help before moving on.
 - Stage the changes by running `git add .` or `git add --all` and check the status again to make sure the changes have shown up in your staging area. They should be green
@@ -200,6 +222,7 @@ For that let´s do the following:
 {{< tip >}}
 - [Git online](https://learngitbranching.js.org/)
 - [VSCode Crash course](https://www.youtube.com/watch?v=WPqXP_kLzpo)
+- [VS Basics](https://code.visualstudio.com/docs/introvideos/basics)
 {{< /tip >}}
 
 ## VSCODE CHEATSHEET
@@ -224,7 +247,3 @@ To paste it, we go over the folder where we want to paste it and we press `Comma
 ### Searching for text
 
 Press `Command/Control+f` to search for something in the current opened file. To search in the whole folder click in the magnifying glass.
-
-# Next class preparation
-
-{{< button "../../web" "Web Fundamentals" "mb-1 grid-4" >}}

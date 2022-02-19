@@ -1,5 +1,5 @@
 +++
-title = "04/May - Object-oriented Python"
+title = "18/November - Object-oriented Python"
 description = "Goals"
 # weight = 10
 +++
@@ -26,9 +26,8 @@ description = "Goals"
 | Object-oriented Programming                            | 10 minutes           | ❌                                         |
 | Pillars of object-oriented programming                 | 10 minutes           | ❌                                         |
 | Break                                                  | 10 minutes           | ❌                                         |
-| Pillars of object-oriented programming                 | 10 minutes           | ❌                                         |
 | Task: Extend the pet clinic example                    | 20 minutes           | ❌
-| Bonus Task: Implement a REDI School Management System  | 20 minutes           | ❌
+| Bonus Task: Implement a REDI Course Management System  | 20 minutes           | ❌
 | Check-out                                              | 10 minutes           | ❌
 
 ## 0. Lesson Goals
@@ -44,6 +43,7 @@ description = "Goals"
 ## 1. Check-In
 
 - What was particularly challenging last class? Are there any remaining questions from last class?
+- What exercises were the most challenging? (Respond in the chat)
 
 ## 2. Procedural Programming
 
@@ -51,7 +51,7 @@ Procedural programming involves writing sequential code which is executed from t
 You are not allowed to switch steps otherwise the program will fail to run.
 You can think of procedural programming like the process of boiling some spaghetti.
 
-![Spaghetti](https://www.seriouseats.com/2021/02/20210202-spaghetti-puttanesca-melissa-hom-8-625x469.jpg)
+![Spaghetti](https://utopia.de/app/uploads/2020/01/spaghetti-kochen-cc0-pixabay-aneps080203-200109.jpg)
 - You get a clean pot
 - You pour some water into the pot
 - You switch on the cooker
@@ -373,4 +373,3 @@ bird_one.fly()
 
 - [Python Classes/Objects](https://www.w3schools.com/python/python_classes.asp)
 - [Python Inheritance](https://www.w3schools.com/python/python_inheritance.asp)
-
