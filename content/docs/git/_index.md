@@ -4,10 +4,10 @@ weight: 1
 ---
 
 - Git terminology
-- Working with a local repository on the command line
+- Working with a local repository
 - Creating, initializing, and cloning a repository
 - Basics of branching
-- Staging and commiting work
+- Staging and committing work
 - Setting up remote repository (GitHub) and pushing local commits
 
 {{< button "./git_and_github/" "Let's learn about Git! 💻" >}}

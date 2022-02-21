@@ -6,6 +6,7 @@ enableRobotsTXT = true
 # theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of this repo
 theme = "compose"
 enableGitInfo = true
+ignoreFiles = ['./content/docs/past_content_hidden/*']
 disableKinds = ["taxonomy", "taxonomyTerm"]
 publishDir = "docs"
 
