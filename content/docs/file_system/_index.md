@@ -1,5 +1,5 @@
 ---
-title: '1 - File System'
+title: '1 - File System Basics'
 weight: 1
 ---
 
