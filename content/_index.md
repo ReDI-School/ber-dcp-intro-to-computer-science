@@ -1,5 +1,5 @@
 +++
-title = "Berlin 2021 - Intro to Computer Science"
+title = "Berlin 2022 - Intro to Computer Science"
 # define chart data here
 [data]
   colors = ["#627c62", "#11819b", "#ef7f1a", "#4e1154"] # chart colors
@@ -11,7 +11,9 @@ title = "Berlin 2021 - Intro to Computer Science"
 {{< block "grid-2" >}}
 {{< column >}}
 
-# Welcome to **Intro to Computer-Science Autumn 2021** course Berlin 🇩🇪
+# Intro to Computer Science
+
+Spring 2022, Berlin 🇩🇪
 
 Here you will find most of the content for our courses, prerequisites for each class, summaries of the classes and extra content so you can work on your own.
 
