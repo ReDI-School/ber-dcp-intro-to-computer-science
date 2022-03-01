@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.81.0" />
+<link rel="apple-touch-icon" sizes="180x180" href='https://redi-school.github.io/favicons/apple-touch-icon.png'>
+<link rel="icon" type="image/png" sizes="32x32" href='https://redi-school.github.io/favicons/favicon-32x32.png'>
+<link rel="icon" type="image/png" sizes="16x16" href='https://redi-school.github.io/favicons/favicon-16x16.png'>
+<link rel="manifest" href='https://redi-school.github.io/favicons/site.webmanifest'>
+<link rel="mask-icon" href='https://redi-school.github.io/favicons/safari-pinned-tab.svg'  color="#004750">
+<link rel="shortcut icon" href='https://redi-school.github.io/favicons/favicon.ico'>
+<meta name="msapplication-config" content='https://redi-school.github.io/favicons/browserconfig.xml'>
+<title>14/Sept - Operating Systems &amp; Command Line Basics | Intro to Computer-Science Berlin 2021</title><meta property="og:title" content="14/Sept - Operating Systems &amp; Command Line Basics" />
+<meta property="og:description" content="Goals" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/file_system/command_line_part1/" /><meta property="article:section" content="docs" />
+
+
+
+<meta itemprop="name" content="14/Sept - Operating Systems &amp; Command Line Basics">
+<meta itemprop="description" content="Goals">
+
+<meta itemprop="wordCount" content="266">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="14/Sept - Operating Systems &amp; Command Line Basics"/>
+<meta name="twitter:description" content="Goals"/>
+
+
+<link rel="stylesheet" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/css/styles.691e1175b9b265f22727d90637a62963a8bc963d776a8fbeed95a74e87f589a5943592899c51a62f56754edc55745c52af817c925bdbb1947cec7af4897c6e73.css" integrity="sha512-aR4RdbmyZfInJ9kGN6YpY6i8lj13ao&#43;&#43;7ZWnTof1iaWUNZKJnFGmL1Z1TtxVdFxSr4F8klvbsZR87Hr0iXxucw==">
+
+
+
+  <meta name="description" content="Goals">
+
+</head>
+  
+    
+  
+<body class="page-page"data-code="7" data-lines="false" >
+  <header class="nav_header">
+<nav class="wrap nav menu">
+	<a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/" class="nav_brand">
+		<picture data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/E048.svg" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/E048.svg">
+			
+			<source srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/E048.svg' media="(prefers-color-scheme: dark)">
+			
+			<img srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/E048.svg' alt = 'Intro to Computer-Science Berlin 2021 Logo'>
+		</picture>
+		<label class="nav_toggle toggle" title='Site Menu' role="button">
+			<svg class="icon icon_harmburger">
+  <use xlink:href="#harmburger"></use>
+</svg>
+		</label>
+	</a>
+	<ul class="nav_body">
+		<li class="nav-item">
+<div class="search">
+  <label for="find" class="search_label"><svg class="icon icon_search">
+  <use xlink:href="#search"></use>
+</svg>
+  </label>
+  <input type="search" class="search_field" placeholder='Search the docs' id="find" autocomplete="off">
+  <div class="search_results results"></div>
+</div>
+
+
+
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/"><span>Course Overview</span></a>
+		</li>
+		
+		<li class="nav-item nav_repo">
+			<a class="nav-link" href="https://github.com/ReDI-School/ber-dcp-intro-to-computer-science" target="_blank">
+				
+					<picture data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/GitHubMarkLight.svg" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/GitHubMarkDark.svg">
+						
+							<source srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/GitHubMarkDark.svg' media="(prefers-color-scheme: dark)">
+						
+						<img srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/GitHubMarkLight.svg' alt = 'GitHub Repo'>
+					</picture>
+				
+			</a>
+		</li>
+		<li class="nav-item">
+<div class = 'color_mode'>
+  <label for = 'mode'>
+    <picture data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/icons/sun.svg" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/icons/moon.svg">
+      
+        <source srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/icons/moon.svg' media="(prefers-color-scheme: dark)">
+      
+      <img srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/icons/sun.svg' alt = 'Light/Dark Mode Icon' class="color_icon">
+    </picture>
+  </label>
+  <input type = 'checkbox' class = 'color_choice' id = 'mode' title="Toggle Dark Mode">
+</div>
+</li>
+	</ul>
+</nav>
+
+  </header>
+  <div class="main wrap pt-4"><div class="grid-auto"><aside class="aside menu">
+  <div>
+    <label class="aside_toggle toggle" title='Docs Menu' role="button">Docs Menu <svg class="icon icon_harmburger">
+  <use xlink:href="#harmburger"></use>
+</svg></label>
+  </div>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/" class="group">Welcome to the course 🎉</a></h2>
+      <section class="" id="docs-welcome-to-the-course-">
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/file_system/" class="group">1 - File System</a></h2>
+      <section class="" id="docs-1---file-system">
+        <h3 class="section_link"><a id="docs-14sept---inspiration-class" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/file_system/intro/">14/Sept - Inspiration class </a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre Requisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link active"><a id="docs-14sept---operating-systems--command-line-basics" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/file_system/command_line_part1/">14/Sept - Operating Systems &amp; Command Line Basics</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre Requisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#operating-system-os-basics">Operating system (OS) basics</a></li>
+    <li><a href="#principle-of-abstraction">Principle of abstraction</a></li>
+    <li><a href="#the-linux-command-line">The Linux command line</a></li>
+    <li><a href="#job-opportunities">Job opportunities</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-16september2021---command-line-basics-part-2" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/file_system/command_line_part2/">16/September/2021 - Command Line Basics Part 2</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre Requisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#useful-termsconcepts">Useful Terms/Concepts</a></li>
+    <li><a href="#navigate-file-system-and-working-with-files--folders-demo--10-15-minutes">Navigate file system and working with files &amp; folders (demo) | 10-15 minutes</a>
+      <ul>
+        <li><a href="#why-use-the-command-line">Why use the command line?</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#command-line-cheat-sheet">Command Line cheat sheet</a></li>
+      </ul>
+    </li>
+    <li><a href="#quick-overview-of-package-managers">Quick overview of package managers</a></li>
+    <li><a href="#tasks-for-group-work">Tasks for group work</a>
+      <ul>
+        <li><a href="#0-open-a-terminal-window">0. Open a terminal window</a></li>
+        <li><a href="#1-move-to-the-parent-directory-and-back">1. Move to the parent directory and back</a></li>
+        <li><a href="#2-create-a-redi-folder">2. Create a redi folder</a></li>
+        <li><a href="#3-create-some-files">3. Create some files</a></li>
+        <li><a href="#4-move-these-files-into-a-new-directory">4. Move these files into a new directory</a></li>
+        <li><a href="#5-copy-files-and-directories">5. Copy files and directories</a></li>
+        <li><a href="#6-delete-files-and-directories">6. Delete files and directories</a></li>
+        <li><a href="#optional-7-additional-practice">(Optional) 7. Additional Practice</a></li>
+      </ul>
+    </li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/" class="group">2 - Version Control with Git and GitHub</a></h2>
+      <section class="" id="docs-2---version-control-with-git-and-github">
+        <h3 class="section_link"><a id="docs-16march---review-git-and-command-line-intro-to-the-internet" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/review_git_command_line/">16/March - Review Git and Command Line; Intro to the Internet</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#1-watch-these-videos">1. Watch these Videos</a></li>
+        <li><a href="#2-review-exercises-from-thursday-11march">2. Review exercises from Thursday (11/March)</a></li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goals">Lesson Goals</a></li>
+    <li><a href="#git-and-command-line-review">Git and Command Line Review</a>
+      <ul>
+        <li><a href="#0-command-line-cheat-sheet">0. Command Line cheat sheet</a></li>
+        <li><a href="#1-fork-and-clone-repository">1. Fork and clone repository</a></li>
+        <li><a href="#2-checkout-a-new-branch">2. Checkout a new branch</a></li>
+        <li><a href="#3-making-and-committing-some-changes">3. Making and committing some changes</a></li>
+        <li><a href="#4-create-a-pull-request-pr-on-github">4. Create a pull request (PR) on GitHub</a></li>
+        <li><a href="#5-optional-advanced-git-practice">5. [Optional] Advanced Git practice</a></li>
+      </ul>
+    </li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-21september---version-control-with-git-and-github" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github/">21/September - Version Control with Git and GitHub</a></h3><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-install-git-">1. Install Git 💾</a></li>
+        <li><a href="#2-sign-up-to-github-">2. Sign up to GitHub 🚀</a></li>
+        <li><a href="#3-watch-the-first-807-minutes-of-this-video-">3. Watch the first 8:07 minutes of this video 📽️</a></li>
+        <li><a href="#4-read-this-">4. Read this 📚</a></li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#1-create-a-local-repository">1. Create a local repository</a></li>
+    <li><a href="#2-make-a-commit">2. Make a commit</a></li>
+    <li><a href="#3-create-a-remote-repository-on-github">3. Create a remote repository (on GitHub)</a></li>
+    <li><a href="#4-push-the-contents-of-your-local-repository-to-the-remote">4. Push the contents of your local repository to the remote</a></li>
+    <li><a href="#5-create-a-branch">5. Create a branch</a></li>
+    <li><a href="#6-create-a-pull-request">6. Create a pull request</a>
+      <ul>
+        <li><a href="#reviewing-a-pull-request">Reviewing a pull request</a></li>
+        <li><a href="#merge-a-pull-request">Merge a pull request</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-fork-and-clone-a-repository">7. Fork and clone a repository</a></li>
+    <li><a href="#8-follow-up-activity-make-improvements-to-your-github-profile-readme">8. Follow-up activity: make improvements to your GitHub Profile README</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-30september---using-an-ide-integrated-development-environment" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/ide/">30/September - Using an IDE (Integrated development environment)</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#1-install-vscode">1. Install VsCode</a></li>
+        <li><a href="#2-review-exercises-from-tuesday-21september">2. Review exercises from Tuesday (21/September)</a></li>
+        <li><a href="#3-watch-the-visual-studio-code-basics">3. Watch the Visual Studio Code basics</a></li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goals">Lesson Goals</a></li>
+    <li><a href="#learning-markdown">Learning Markdown</a></li>
+    <li><a href="#creating-your-own-journal">Creating your own journal!</a>
+      <ul>
+        <li><a href="#0-command-line-cheat-sheet">0. Command Line cheat sheet</a></li>
+        <li><a href="#0-git-cheat-sheet">0. Git cheat sheet</a></li>
+        <li><a href="#0-markdown-cheat-sheet">0. Markdown Cheat Sheet</a></li>
+        <li><a href="#1-fork-and-clone-your-new-journal">1. Fork and clone your new Journal</a></li>
+        <li><a href="#2-checkout-a-new-branch">2. Checkout a new branch</a></li>
+        <li><a href="#3-open-with-vscode-the-folder-you-have-just-created">3. Open with VSCode the folder you have just created</a></li>
+        <li><a href="#4-complete-the-tasks-in-the-readmemd-file-from-the-repository-you-have-just-created">4. Complete the tasks in the README.md file from the repository you have just created.</a></li>
+        <li><a href="#5-adding-and-committing-some-changes">5. Adding and committing some changes</a></li>
+        <li><a href="#6-create-a-pull-request-pr-on-github">6. Create a pull request (PR) on GitHub</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-optional-lets-swap-places">7. (Optional) Let´s swap places</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#vscode-cheatsheet">VSCODE CHEATSHEET</a>
+      <ul>
+        <li><a href="#install-an-extension">Install an extension</a></li>
+        <li><a href="#creating-a-new-folder">Creating a new folder</a></li>
+        <li><a href="#creating-a-new-file">Creating a new file</a></li>
+        <li><a href="#copying-a-file">Copying a file</a></li>
+        <li><a href="#searching-for-text">Searching for text</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/" class="group">3 - Programming in Python</a></h2>
+      <section class="" id="docs-3---programming-in-python">
+        <h3 class="section_link"><a id="docs-0204november---installing-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/installing_python/">02/04/November - Installing Python</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre Requisites</a>
+      <ul>
+        <li><a href="#python-installation-overview">Python Installation Overview</a>
+          <ul>
+            <li><a href="#google-colab">Google Colab</a></li>
+            <li><a href="#vscode">VSCode</a></li>
+            <li><a href="#pycharm-community-edition">PyCharm (Community Edition)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#0-lesson-goals">0. Lesson Goals</a></li>
+    <li><a href="#1-check-in">1. Check-In</a></li>
+    <li><a href="#2-short-review-of-each-installation-option">2. Short review of each installation option</a></li>
+    <li><a href="#3-troubleshooting-in-groups">3. Troubleshooting in Groups</a></li>
+    <li><a href="#4-hands-on-python-tasks">4. Hands-on Python Tasks</a>
+      <ul>
+        <li><a href="#setup">Setup</a>
+          <ul>
+            <li><a href="#google-colab-1">Google Colab</a></li>
+            <li><a href="#vscode-1">VSCode</a></li>
+            <li><a href="#pycharm">PyCharm</a></li>
+            <li><a href="#backup-option">Backup Option</a></li>
+          </ul>
+        </li>
+        <li><a href="#task-0---comments">Task 0 - Comments</a></li>
+        <li><a href="#task-1---declare-variables">Task 1 - Declare variables</a></li>
+        <li><a href="#task-2---assign-the-value-of-one-variable-to-another">Task 2 - Assign the value of one variable to another</a></li>
+        <li><a href="#task-3---adding">Task 3 - Adding</a></li>
+        <li><a href="#task-4---subtracting">Task 4 - Subtracting</a></li>
+        <li><a href="#task-5---multiplying">Task 5 - Multiplying</a></li>
+        <li><a href="#task-6---dividing">Task 6 - Dividing</a></li>
+        <li><a href="#task-7---modulo-remainder">Task 7 - Modulo (remainder)</a></li>
+        <li><a href="#task-8---string-variables">Task 8 - String variables</a></li>
+        <li><a href="#task-9---string-lengths">Task 9 - String lengths</a></li>
+        <li><a href="#task-10---strings-as-iterables">Task 10 - Strings as iterables</a></li>
+        <li><a href="#task-11---slicing-strings">Task 11 - Slicing strings</a></li>
+        <li><a href="#task-12---lists">Task 12 - Lists</a></li>
+        <li><a href="#task-13---appending-and-removing-elements-from-a-list">Task 13 - Appending and removing elements from a list</a></li>
+        <li><a href="#task-14---dictionaries">Task 14 - Dictionaries</a></li>
+        <li><a href="#task-15---booleans">Task 15 - Booleans</a></li>
+        <li><a href="#task-16---comparisons">Task 16 - Comparisons</a></li>
+        <li><a href="#task-17---control-flow">Task 17 - Control Flow</a></li>
+        <li><a href="#task-18---functions">Task 18 - Functions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-1116november---practical-python-session" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/">11/16/November - Practical Python Session</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre Requisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#0-lesson-goals">0. Lesson Goals</a></li>
+    <li><a href="#1-check-in">1. Check-In</a></li>
+    <li><a href="#2-for-and-while-loops">2. for and while loops</a>
+      <ul>
+        <li><a href="#while-loops">while loops</a></li>
+        <li><a href="#for-loops">for loops</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-hands-on-python-tasks">3. Hands-on Python Tasks</a>
+      <ul>
+        <li><a href="#task-0-warmup">Task 0 (warmup)</a></li>
+        <li><a href="#task-1">Task 1</a></li>
+        <li><a href="#task-2">Task 2</a></li>
+        <li><a href="#task-3-parts-1-2">Task 3 (parts 1, 2)</a></li>
+        <li><a href="#task-4">Task 4</a></li>
+        <li><a href="#task-5">Task 5</a></li>
+        <li><a href="#challenge-task-6-parts-1-2">(Challenge) Task 6 (parts 1, 2)</a></li>
+        <li><a href="#challenge-task-7-parts-1-2-3">(Challenge) Task 7 (parts 1, 2, 3)</a></li>
+      </ul>
+    </li>
+    <li><a href="#additional-resources">Additional Resources</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-18november---object-oriented-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes/">18/November - Object-oriented Python</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#0-lesson-goals">0. Lesson Goals</a></li>
+    <li><a href="#1-check-in">1. Check-In</a></li>
+    <li><a href="#2-procedural-programming">2. Procedural Programming</a></li>
+    <li><a href="#3-object-oriented-programming">3. Object-Oriented Programming</a></li>
+    <li><a href="#4-pillars-of-object-oriented-programming-in-python">4. Pillars of Object-Oriented Programming in Python</a>
+      <ul>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#objects">Objects</a></li>
+        <li><a href="#constructor-functions">Constructor functions</a></li>
+        <li><a href="#object-methods">Object Methods</a></li>
+        <li><a href="#class-inheritance">Class inheritance</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-task-extend-the-pet-clinic-example">5. Task: Extend the pet Clinic Example</a></li>
+    <li><a href="#6-bonus-task-implement-a-redi-school-management-system">6. Bonus Task: Implement a REDI School Management System</a></li>
+    <li><a href="#additional-resources">Additional Resources</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-23november---object-oriented-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes_practical/">23/November - Object-oriented Python</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#0-lesson-goals">0. Lesson Goals</a></li>
+    <li><a href="#1-check-in">1. Check-In</a></li>
+    <li><a href="#2-kahoot">2. Kahoot</a></li>
+    <li><a href="#3-exercises-part-1">3. Exercises (part 1)</a></li>
+    <li><a href="#4-exercises-part-2">4. Exercises (part 2)</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-25november---project-overview--adventures-in-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/adventures_in_python/">25/November - Project Overview &amp; Adventures in Python</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#check-in">Check-In</a></li>
+    <li><a href="#lesson-goals">Lesson Goals</a></li>
+    <li><a href="#final-project-overview">Final Project Overview</a></li>
+    <li><a href="#kahoot-python-classes-review">Kahoot: Python Classes Review</a></li>
+    <li><a href="#python-activity">Python Activity</a>
+      <ul>
+        <li><a href="#0-introduction">0. Introduction</a></li>
+        <li><a href="#1-setup-project">1. Setup project</a></li>
+        <li><a href="#2-classes-and-objects">2. Classes and Objects</a></li>
+        <li><a href="#3-create-the-story-introduction">3. Create the story introduction</a></li>
+        <li><a href="#4-the-middle-of-the-story">4. The middle of the story</a></li>
+        <li><a href="#5-end-of-the-story">5. End of the story</a></li>
+        <li><a href="#6-fill-in-the-obstacles-of-the-story">6. Fill in the obstacles of the story</a>
+          <ul>
+            <li><a href="#walk">Walk</a></li>
+            <li><a href="#bicycle">Bicycle</a></li>
+            <li><a href="#s-bahn">S-Bahn</a></li>
+          </ul>
+        </li>
+        <li><a href="#7-run-the-program">7. Run the program</a></li>
+        <li><a href="#8-follow-up-ideas">8. Follow-up ideas</a></li>
+        <li><a href="#continue-learning">Continue Learning</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-26october---introduction-to-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/intro_to_python/">26/October - Introduction to Python</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre Requisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#0-python-overview">0. Python Overview</a>
+      <ul>
+        <li><a href="#qa-intro">Q&amp;A Intro</a></li>
+      </ul>
+    </li>
+    <li><a href="#1-hands-on-python-activity">1. Hands-on Python Activity</a></li>
+    <li><a href="#2-python-concepts---sharing--synthesizing">2. Python Concepts - Sharing &amp; Synthesizing</a>
+      <ul>
+        <li><a href="#data-types">Data Types</a></li>
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#iterables-lists-strings-">Iterables (lists, strings, ...)</a></li>
+        <li><a href="#booleans-and-conditions">Booleans and conditions</a></li>
+        <li><a href="#functions">Functions</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-if-there-is-time-hello-world-in-python">3. (if there is time) &quot;Hello, World!&quot; in Python</a>
+      <ul>
+        <li><a href="#task-0-write-code-that-outputs-hello-world">Task 0: write code that outputs &quot;Hello, World!&quot;</a></li>
+        <li><a href="#task-1-create-and-call-a-function-that-prints-hello-world">Task 1: create and call a function that prints &quot;Hello, World!&quot;</a></li>
+        <li><a href="#task-2-create-a-function-that-returns-the-string-hello-world-call-this-function-and-print-the-output">Task 2: create a function that returns the string &quot;Hello, World!&quot;. Call this function and print the output.</a></li>
+        <li><a href="#task-3-modify-your-function-so-you-can-greet-a-specific-name-hello-person">Task 3: modify your function so you can greet a specific name: &quot;Hello, Person&quot;</a></li>
+        <li><a href="#additional-practice-all-optional">Additional practice (all optional)</a></li>
+      </ul>
+    </li>
+    <li><a href="#extra-resources-and-references-from-class">Extra resources and references from class</a></li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/" class="group">4 - Introduction to Web Development</a></h2>
+      <section class="" id="docs-4---introduction-to-web-development">
+        <h3 class="section_link"><a id="docs-04october---basic-knowledge-of-html" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_html/">04/October - Basic knowledge of HTML</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparations">Preparations</a>
+      <ul>
+        <li><a href="#1-review-exercises-from-version-control-with-git-and-github-21september">1. Review exercises from Version Control with Git and GitHub (21/September)</a></li>
+        <li><a href="#2-review-exercises-from-using-an-ide-integrated-development-environment-30september">2. Review exercises from Using an IDE (Integrated development environment) (30/September)</a></li>
+        <li><a href="#3-read-through-the-following-html-tutorials-from-the-w3schools">3. Read through the following HTML tutorials from the W3Schools</a></li>
+        <li><a href="#4-watch-these-videos">4. Watch these Videos</a></li>
+        <li><a href="#5-html-class-practice-repository-on-github">5. HTML class practice repository on Github</a></li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#html---what-is-it">HTML - What is it?</a></li>
+    <li><a href="#structure-of-html-documents">Structure of HTML Documents</a></li>
+    <li><a href="#important-html-tags">Important HTML Tags</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-07october---basic-knowledge-of-css-cascading-style-sheet" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_css/">07/October - Basic knowledge of CSS (Cascading Style Sheet)</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparations">Preparations</a>
+      <ul>
+        <li><a href="#1-watch-these-videos">1. Watch these Videos</a></li>
+        <li><a href="#2-html-class-practice-repository-on-github">2. HTML class practice repository on Github</a></li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#css---what-is-it">CSS - What is it?</a></li>
+    <li><a href="#css-rule">CSS Rule</a></li>
+    <li><a href="#how-does-css-actually-work">How does CSS Actually Work</a></li>
+    <li><a href="#how-css-is-structured">How CSS is structured</a></li>
+    <li><a href="#css-selectors">CSS Selectors</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-12october---practical-demonstration-of-html-and-css" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/html_css/">12/October - Practical Demonstration of HTML and CSS</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#legend">Legend</a></li>
+    <li><a href="#0-set-up-the-repository">0. Set up the repository</a></li>
+    <li><a href="#1-adding-some-html-to-start">1. Adding some HTML to start</a></li>
+    <li><a href="#2-navigation-bar-navbar">2. Navigation Bar (navbar)</a>
+      <ul>
+        <li><a href="#content-html">Content (HTML)</a></li>
+        <li><a href="#styling-css">Styling (CSS)</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-adding-an-introduction-header">3. Adding an introduction header</a>
+      <ul>
+        <li><a href="#content-html-1">Content (HTML)</a></li>
+        <li><a href="#styling-css-1">Styling (CSS)</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-about-section">4. About section</a>
+      <ul>
+        <li><a href="#content-html-2">Content (HTML)</a></li>
+        <li><a href="#styling-css-2">Styling (CSS)</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-contact-section">5. Contact section</a>
+      <ul>
+        <li><a href="#content-html-3">Content (HTML)</a></li>
+        <li><a href="#styling-css-3">Styling (CSS)</a></li>
+      </ul>
+    </li>
+    <li><a href="#6-follow-up">6. Follow-up</a></li>
+    <li><a href="#next-class-preparation--homework">Next class preparation &amp; Homework</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-13april---practice-javascript-html-and-css" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/practice_html_css_js/">13/April - Practice Javascript, HTML and CSS</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparations">Preparations</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#1-set-up-a-new-repository">1. Set up a new repository</a></li>
+    <li><a href="#2-create-the-html-files">2. Create the HTML files</a></li>
+    <li><a href="#3-create-the-css-files">3. Create the CSS Files</a></li>
+    <li><a href="#4-introduce-javascript-to-find-the-date-and-time">4. Introduce Javascript to find the date and time</a></li>
+    <li><a href="#5-push-to-github">5. Push to Github</a></li>
+    <li><a href="#learning-more-html-css-or-javascript">Learning more HTML, CSS or Javascript</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-14october---basic-knowledge-of-javascript" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_js/">14/October - Basic knowledge of Javascript</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparations">Preparations</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#hint-about-using-code-snippets">Hint about using code snippets</a></li>
+    <li><a href="#javascript---what-is-it">Javascript - What is it?</a></li>
+    <li><a href="#what-can-javascript-do">What can JavaScript do</a></li>
+    <li><a href="#how-do-you-add-javascript-to-your-page">How do you add JavaScript to your page</a></li>
+    <li><a href="#ways-of-loading-js-scripts">Ways of loading JS scripts</a></li>
+    <li><a href="#basic-js-guide">Basic JS Guide</a>
+      <ul>
+        <li><a href="#functions">Functions</a></li>
+        <li><a href="#variables">Variables</a></li>
+        <li><a href="#data-types">Data Types</a></li>
+        <li><a href="#operators">Operators</a></li>
+        <li><a href="#comments">Comments</a></li>
+        <li><a href="#ifelse-statement">If...else statement</a></li>
+        <li><a href="#events">Events</a></li>
+      </ul>
+    </li>
+    <li><a href="#activity">Activity</a></li>
+    <li><a href="#extra-resources">Extra resources</a></li>
+    <li><a href="#next-class-preparation">Next class preparation</a></li>
+  </ul>
+</nav>
+      </section>
+  </section>
+  <section class="section aside_inner">
+    <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/references/" class="group">References &amp; Cheat Sheets</a></h2>
+  </section>
+      </section>
+  </section>
+</aside>
+
+  <main class="content">
+    <h1>14/Sept - Operating Systems &amp; Command Line Basics</h1><p><img src="https://external-preview.redd.it/xkDEPvZx_lcEKXke2t9UniK-4zD_BrbM3Oy-HMIsaSE.jpg?auto=webp&amp;s=e3268a6044c48c375dc7f254d34b60bea5e40f2a" alt="Trinity in Matrix Reloaded"></p>
+<h2 id="pre-requisites">Pre Requisites</h2>
+<p>Create an account on <a href="https://repl.it/signup">repl.it</a></p>
+<ul>
+<li><a href="https://repl.it/signup">https://repl.it/signup</a></li>
+</ul>
+<h2 id="class-curriculum">Class Curriculum</h2>
+<table>
+<thead>
+<tr>
+<th>Section content</th>
+<th>Expected time (mins)</th>
+<th>Pre - Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operating system (OS) basics</td>
+<td>20-25 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Principle of abstraction</td>
+<td>5-10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Graphical &amp; command line interfaces to OS</td>
+<td>5-10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Linux file system hierarchy</td>
+<td>5-10 minutes</td>
+<td>repl.it account</td>
+</tr>
+<tr>
+<td>Class break</td>
+<td>10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>The Linux command line</td>
+<td>35-40 minutes</td>
+<td>repl.it account</td>
+</tr>
+<tr>
+<td>Job opportunities</td>
+<td>5-10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Next class overview</td>
+<td>5 minutes</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="operating-system-os-basics">Operating system (OS) basics</h2>
+<ul>
+<li>Questions
+<ul>
+<li>Can you think of any operating systems in nature?</li>
+<li>Can you think of any operating systems in society?</li>
+<li>What are some operating systems you've used?</li>
+</ul>
+</li>
+</ul>
+<h2 id="principle-of-abstraction">Principle of abstraction</h2>
+<ul>
+<li>Questions:
+<ul>
+<li>Can you think of other examples of the Principle of abstraction in:
+<ul>
+<li>Society</li>
+<li>Science &amp; Technology</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-linux-command-line">The Linux command line</h2>
+<ul>
+<li>Questions:
+<ul>
+<li>Create an account on repl.it</li>
+<li>Click <code>+ New Repl</code> on the top-left side of the page</li>
+<li>Select <code>Bash</code> from the <code>Language</code> drop-down menu</li>
+<li>Click <code>create repl</code></li>
+<li>Explore the following commands in your bash command line interface on repl.it:
+<ul>
+<li>echo</li>
+<li>pwd</li>
+<li>ls</li>
+<li>cd</li>
+<li>cat</li>
+<li>cp</li>
+<li>mv</li>
+<li>mkdir</li>
+<li>touch</li>
+<li>find</li>
+<li>grep</li>
+<li>history</li>
+<li>date</li>
+<li>whoami</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="job-opportunities">Job opportunities</h2>
+<ul>
+<li>Systems Administrator</li>
+<li>DevOps Engineer</li>
+<li>Site Reliability Engineer</li>
+<li>Questions:
+<ul>
+<li>Can you think of any other career opportunities?</li>
+</ul>
+</li>
+</ul>
+<h2 id="extra-resources">Extra resources</h2>
+
+<div class="tip">
+  <ul>
+<li><a href="https://docs.google.com/presentation/d/1tDpO3sOITdGojJxEB0IbvBubtcKeHeQlgihLSer15AA/edit?usp=sharing">Presentation</a></li>
+<li><a href="https://www.youtube.com/watch?v=fkGCLIQx1MI">Computer Basics: Understanding Operating Systems</a></li>
+<li><a href="https://www.youtube.com/watch?v=26QPDBe-NB8">Operating Systems: Crash Course Computer Science #18</a></li>
+<li><a href="https://www.youtube.com/watch?v=oxuRxtrO2Ag">Beginner's Guide to the Bash Terminal</a></li>
+<li><a href="https://www.youtube.com/watch?v=_y-5nZAbgt4">What Is Abstraction in Computer Science</a></li>
+<li><a href="https://www.youtube.com/watch?v=FfT8OfMpARM">How to use the Command Line Terminal On Your Mac</a></li>
+<li><a href="https://www.youtube.com/watch?v=LLlfLpvQg04">How to Install Linux Terminal on Windows 10</a></li>
+<li><a href="https://www.youtube.com/watch?v=Ic2GhUnlN38">Jobs: Linux &amp; Career Opportunities</a></li>
+<li><a href="https://www.youtube.com/watch?v=-Tz-HYeWyzY">Jobs: Inside Site Reliability Engineering</a></li>
+<li><a href="https://www.youtube.com/watch?v=NyCyknm_n8M">Jobs: Career Switch to IT</a></li>
+</ul>
+
+</div>
+
+<h2 id="next-class-preparation">Next class preparation</h2>
+<a href="../command_line_part2" class="button mb-1 grid-4">Command Line Basics Part 2</a>
+
+    <div class="pager">
+  
+  <div class="pager_item prev">
+    
+    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/file_system/intro/" class="pager_link button" title="14/Sept - Inspiration class ">
+      <span class="pager_label">14/Sept - Inspiration class </span>
+    </a>
+  </div>
+  
+
+  
+  <div class="pager_item next">
+    
+    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/review_git_command_line/" class="pager_link button" title="16/March - Review Git and Command Line; Intro to the Internet">
+      <span class="pager_label">16/March - Review Git and Command Line; Intro to the Internet</span>
+    </a>
+  </div>
+  
+</div>
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" id="next">
+    <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999" id="search">
+    <path d="M508.874 478.708L360.142 329.976c28.21-34.827 45.191-79.103 45.191-127.309C405.333 90.917 314.416 0 202.666 0S0 90.917 0 202.667s90.917 202.667 202.667 202.667c48.206 0 92.482-16.982 127.309-45.191l148.732 148.732c4.167 4.165 10.919 4.165 15.086 0l15.081-15.082c4.165-4.166 4.165-10.92-.001-15.085zM202.667 362.667c-88.229 0-160-71.771-160-160s71.771-160 160-160 160 71.771 160 160-71.771 160-160 160z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 179" id="harmburger">
+    <path d="M1 10C1 4.477 5.477 0 11 0h220c5.523 0 10 4.477 10 10s-4.477 10-10 10H11C5.477 20 1 15.523 1 10zm0 80c0-5.523 4.477-10 10-10h220c5.523 0 10 4.477 10 10s-4.477 10-10 10H11c-5.523 0-10-4.477-10-10zm9 69c-5.523 0-10 4.477-10 10s4.477 10 10 10h220c5.523 0 10-4.477 10-10s-4.477-10-10-10H10z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401.998 401.998" id="sort">
+    <path d="M73.092 164.452h255.813c4.949 0 9.233-1.807 12.848-5.424 3.613-3.616 5.427-7.898 5.427-12.847s-1.813-9.229-5.427-12.85L213.846 5.424C210.232 1.812 205.951 0 200.999 0s-9.233 1.812-12.85 5.424L60.242 133.331c-3.617 3.617-5.424 7.901-5.424 12.85 0 4.948 1.807 9.231 5.424 12.847 3.621 3.617 7.902 5.424 12.85 5.424zm255.813 73.097H73.092c-4.952 0-9.233 1.808-12.85 5.421-3.617 3.617-5.424 7.898-5.424 12.847s1.807 9.233 5.424 12.848L188.149 396.57c3.621 3.617 7.902 5.428 12.85 5.428s9.233-1.811 12.847-5.428l127.907-127.906c3.613-3.614 5.427-7.898 5.427-12.848 0-4.948-1.813-9.229-5.427-12.847-3.614-3.616-7.899-5.42-12.848-5.42z"></path>
+  </symbol>
+</svg>
+
+<svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.001 18.001" id="twitter">
+    <path d="M15.891 4.013c.808-.496 1.343-1.173 1.605-2.034a8.68 8.68 0 0 1-2.351.861c-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819-3.076-.105-5.622-1.381-7.628-3.837-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 0 0 2.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841a3.652 3.652 0 0 0 2.152.743C4.148 14.173 2.625 14.69.902 14.69c-.422 0-.721-.006-.902-.038 1.697 1.102 3.586 1.649 5.676 1.649 2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.77 10.77 0 0 0 1.172-4.892v-.468a7.788 7.788 0 0 0 1.84-1.921 8.142 8.142 0 0 1-2.11.593z"
+      ></path>
+  </symbol>
+  <symbol aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="mail">
+    <path  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="calendar">
+    <path d="M452 40h-24V0h-40v40H124V0H84v40H60C26.916 40 0 66.916 0 100v352c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60V100c0-33.084-26.916-60-60-60zm20 412c0 11.028-8.972 20-20 20H60c-11.028 0-20-8.972-20-20V188h432v264zm0-304H40v-48c0-11.028 8.972-20 20-20h24v40h40V80h264v40h40V80h24c11.028 0 20 8.972 20 20v48z"></path>
+    <path d="M76 230h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 310h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 390h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80-80h40v40h-40z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="github">
+    <path d="M255.968 5.329C114.624 5.329 0 120.401 0 262.353c0 113.536 73.344 209.856 175.104 243.872 12.8 2.368 17.472-5.568 17.472-12.384 0-6.112-.224-22.272-.352-43.712-71.2 15.52-86.24-34.464-86.24-34.464-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.824 39.2 26.496 39.2 26.496 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.608 8.928-27.936 16.256-34.368-56.832-6.496-116.608-28.544-116.608-127.008 0-28.064 9.984-51.008 26.368-68.992-2.656-6.496-11.424-32.64 2.496-68 0 0 21.504-6.912 70.4 26.336 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.248 70.336-26.336 70.336-26.336 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.936 17.376 23.616 17.376 47.584 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.352C438.72 472.145 512 375.857 512 262.353 512 120.401 397.376 5.329 255.968 5.329z"></path>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="rss">
+    <circle cx="3.429" cy="20.571" r="3.429"></circle>
+    <path d="M11.429 24h4.57C15.999 15.179 8.821 8.001 0 8v4.572c6.302.001 11.429 5.126 11.429 11.428z"></path>
+    <path d="M24 24C24 10.766 13.234 0 0 0v4.571c10.714 0 19.43 8.714 19.43 19.429z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="linkedin">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h362c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zM181 406h-60V196h60zm0-240h-60v-60h60zm210 240h-60V286c0-16.54-13.46-30-30-30s-30 13.46-30 30v120h-60V196h60v11.309C286.719 202.422 296.93 196 316 196c40.691.043 75 36.547 75 79.688zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" id="arrow">
+    <path d="M604.501 440.509L325.398 134.956c-5.331-5.357-12.423-7.627-19.386-7.27-6.989-.357-14.056 1.913-19.387 7.27L7.499 440.509c-9.999 10.024-9.999 26.298 0 36.323s26.223 10.024 36.222 0l262.293-287.164L568.28 476.832c9.999 10.024 26.222 10.024 36.221 0 9.999-10.023 9.999-26.298 0-36.323z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="carly">
+    <path d="M504.971 239.029L448 182.059V84c0-46.317-37.682-84-84-84h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c19.851 0 36 16.149 36 36v108c0 6.365 2.529 12.47 7.029 16.971L454.059 256l-47.029 47.029A24.002 24.002 0 0 0 400 320v108c0 19.851-16.149 36-36 36h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c46.318 0 84-37.683 84-84v-98.059l56.971-56.971c9.372-9.372 9.372-24.568 0-33.941zM112 192V84c0-19.851 16.149-36 36-36h44c13.255 0 24-10.745 24-24S205.255 0 192 0h-44c-46.318 0-84 37.683-84 84v98.059l-56.971 56.97c-9.373 9.373-9.373 24.568 0 33.941L64 329.941V428c0 46.317 37.682 84 84 84h44c13.255 0 24-10.745 24-24s-10.745-24-24-24h-44c-19.851 0-36-16.149-36-36V320c0-6.365-2.529-12.47-7.029-16.971L57.941 256l47.029-47.029A24.002 24.002 0 0 0 112 192z"></path>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="copy">
+    <path d="M23 2.75A2.75 2.75 0 0 0 20.25 0H8.75A2.75 2.75 0 0 0 6 2.75v13.5A2.75 2.75 0 0 0 8.75 19h11.5A2.75 2.75 0 0 0 23 16.25zM18.25 14.5h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5z"></path>
+    <path d="M8.75 20.5a4.255 4.255 0 0 1-4.25-4.25V2.75c0-.086.02-.166.025-.25H3.75A2.752 2.752 0 0 0 1 5.25v16A2.752 2.752 0 0 0 3.75 24h12a2.752 2.752 0 0 0 2.75-2.75v-.75z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001" id="closeme">
+    <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0 0 14.143 5.857 19.94 19.94 0 0 0 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="open-menu">
+    <path d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0-160H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0 320H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="youtube">
+    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="stackoverflow">
+    <path d="M21 27v-8h3v11H0V19h3v8h18z"></path><path d="M17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zm3.7 14.7L10.6 6.4l1.7-2 10.2 8.5-1.7 2zM7.2 12.3l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm-1.8 6.8l13.56 1.96.17-2.38-13.26-2.55-.47 2.97zM19 25H5v-3h14v3z"></path>
+  </symbol>
+</svg>
+
+  </main>
+</div>
+
+  </div>
+<footer class="pt-2 pb-2">
+  <div class="wrap">
+    <p>&copy; <span class="year">2022</span></p>
+  </div>
+</footer>
+
+
+<svg width="0" height="0" class="hidden">
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" id="next">
+    <path d="M484.14 226.886L306.46 49.202c-5.072-5.072-11.832-7.856-19.04-7.856-7.216 0-13.972 2.788-19.044 7.856l-16.132 16.136c-5.068 5.064-7.86 11.828-7.86 19.04 0 7.208 2.792 14.2 7.86 19.264L355.9 207.526H26.58C11.732 207.526 0 219.15 0 234.002v22.812c0 14.852 11.732 27.648 26.58 27.648h330.496L252.248 388.926c-5.068 5.072-7.86 11.652-7.86 18.864 0 7.204 2.792 13.88 7.86 18.948l16.132 16.084c5.072 5.072 11.828 7.836 19.044 7.836 7.208 0 13.968-2.8 19.04-7.872l177.68-177.68c5.084-5.088 7.88-11.88 7.86-19.1.016-7.244-2.776-14.04-7.864-19.12z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.999 511.999" id="search">
+    <path d="M508.874 478.708L360.142 329.976c28.21-34.827 45.191-79.103 45.191-127.309C405.333 90.917 314.416 0 202.666 0S0 90.917 0 202.667s90.917 202.667 202.667 202.667c48.206 0 92.482-16.982 127.309-45.191l148.732 148.732c4.167 4.165 10.919 4.165 15.086 0l15.081-15.082c4.165-4.166 4.165-10.92-.001-15.085zM202.667 362.667c-88.229 0-160-71.771-160-160s71.771-160 160-160 160 71.771 160 160-71.771 160-160 160z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 179" id="harmburger">
+    <path d="M1 10C1 4.477 5.477 0 11 0h220c5.523 0 10 4.477 10 10s-4.477 10-10 10H11C5.477 20 1 15.523 1 10zm0 80c0-5.523 4.477-10 10-10h220c5.523 0 10 4.477 10 10s-4.477 10-10 10H11c-5.523 0-10-4.477-10-10zm9 69c-5.523 0-10 4.477-10 10s4.477 10 10 10h220c5.523 0 10-4.477 10-10s-4.477-10-10-10H10z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 401.998 401.998" id="sort">
+    <path d="M73.092 164.452h255.813c4.949 0 9.233-1.807 12.848-5.424 3.613-3.616 5.427-7.898 5.427-12.847s-1.813-9.229-5.427-12.85L213.846 5.424C210.232 1.812 205.951 0 200.999 0s-9.233 1.812-12.85 5.424L60.242 133.331c-3.617 3.617-5.424 7.901-5.424 12.85 0 4.948 1.807 9.231 5.424 12.847 3.621 3.617 7.902 5.424 12.85 5.424zm255.813 73.097H73.092c-4.952 0-9.233 1.808-12.85 5.421-3.617 3.617-5.424 7.898-5.424 12.847s1.807 9.233 5.424 12.848L188.149 396.57c3.621 3.617 7.902 5.428 12.85 5.428s9.233-1.811 12.847-5.428l127.907-127.906c3.613-3.614 5.427-7.898 5.427-12.848 0-4.948-1.813-9.229-5.427-12.847-3.614-3.616-7.899-5.42-12.848-5.42z"></path>
+  </symbol>
+</svg>
+
+<svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="facebook">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.001 18.001" id="twitter">
+    <path d="M15.891 4.013c.808-.496 1.343-1.173 1.605-2.034a8.68 8.68 0 0 1-2.351.861c-.703-.756-1.593-1.14-2.66-1.14-1.043 0-1.924.366-2.643 1.078a3.56 3.56 0 0 0-1.076 2.605c0 .309.039.585.117.819-3.076-.105-5.622-1.381-7.628-3.837-.34.601-.51 1.213-.51 1.846 0 1.301.549 2.332 1.645 3.089-.625-.053-1.176-.211-1.645-.47 0 .929.273 1.705.82 2.388a3.623 3.623 0 0 0 2.115 1.291c-.312.08-.641.118-.979.118-.312 0-.533-.026-.664-.083.23.757.664 1.371 1.291 1.841a3.652 3.652 0 0 0 2.152.743C4.148 14.173 2.625 14.69.902 14.69c-.422 0-.721-.006-.902-.038 1.697 1.102 3.586 1.649 5.676 1.649 2.139 0 4.029-.542 5.674-1.626 1.645-1.078 2.859-2.408 3.639-3.974a10.77 10.77 0 0 0 1.172-4.892v-.468a7.788 7.788 0 0 0 1.84-1.921 8.142 8.142 0 0 1-2.11.593z"
+      ></path>
+  </symbol>
+  <symbol aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="mail">
+    <path  d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="calendar">
+    <path d="M452 40h-24V0h-40v40H124V0H84v40H60C26.916 40 0 66.916 0 100v352c0 33.084 26.916 60 60 60h392c33.084 0 60-26.916 60-60V100c0-33.084-26.916-60-60-60zm20 412c0 11.028-8.972 20-20 20H60c-11.028 0-20-8.972-20-20V188h432v264zm0-304H40v-48c0-11.028 8.972-20 20-20h24v40h40V80h264v40h40V80h24c11.028 0 20 8.972 20 20v48z"></path>
+    <path d="M76 230h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 310h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zM76 390h40v40H76zm80 0h40v40h-40zm80 0h40v40h-40zm80 0h40v40h-40zm80-80h40v40h-40z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="github">
+    <path d="M255.968 5.329C114.624 5.329 0 120.401 0 262.353c0 113.536 73.344 209.856 175.104 243.872 12.8 2.368 17.472-5.568 17.472-12.384 0-6.112-.224-22.272-.352-43.712-71.2 15.52-86.24-34.464-86.24-34.464-11.616-29.696-28.416-37.6-28.416-37.6-23.264-15.936 1.728-15.616 1.728-15.616 25.696 1.824 39.2 26.496 39.2 26.496 22.848 39.264 59.936 27.936 74.528 21.344 2.304-16.608 8.928-27.936 16.256-34.368-56.832-6.496-116.608-28.544-116.608-127.008 0-28.064 9.984-51.008 26.368-68.992-2.656-6.496-11.424-32.64 2.496-68 0 0 21.504-6.912 70.4 26.336 20.416-5.696 42.304-8.544 64.096-8.64 21.728.128 43.648 2.944 64.096 8.672 48.864-33.248 70.336-26.336 70.336-26.336 13.952 35.392 5.184 61.504 2.56 68 16.416 17.984 26.304 40.928 26.304 68.992 0 98.72-59.84 120.448-116.864 126.816 9.184 7.936 17.376 23.616 17.376 47.584 0 34.368-.32 62.08-.32 70.496 0 6.88 4.608 14.88 17.6 12.352C438.72 472.145 512 375.857 512 262.353 512 120.401 397.376 5.329 255.968 5.329z"></path>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="rss">
+    <circle cx="3.429" cy="20.571" r="3.429"></circle>
+    <path d="M11.429 24h4.57C15.999 15.179 8.821 8.001 0 8v4.572c6.302.001 11.429 5.126 11.429 11.428z"></path>
+    <path d="M24 24C24 10.766 13.234 0 0 0v4.571c10.714 0 19.43 8.714 19.43 19.429z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="linkedin">
+    <path d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h362c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75zM181 406h-60V196h60zm0-240h-60v-60h60zm210 240h-60V286c0-16.54-13.46-30-30-30s-30 13.46-30 30v120h-60V196h60v11.309C286.719 202.422 296.93 196 316 196c40.691.043 75 36.547 75 79.688zm0 0"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612" id="arrow">
+    <path d="M604.501 440.509L325.398 134.956c-5.331-5.357-12.423-7.627-19.386-7.27-6.989-.357-14.056 1.913-19.387 7.27L7.499 440.509c-9.999 10.024-9.999 26.298 0 36.323s26.223 10.024 36.222 0l262.293-287.164L568.28 476.832c9.999 10.024 26.222 10.024 36.221 0 9.999-10.023 9.999-26.298 0-36.323z"></path>
+  </symbol>
+  <symbol viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" id="carly">
+    <path d="M504.971 239.029L448 182.059V84c0-46.317-37.682-84-84-84h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c19.851 0 36 16.149 36 36v108c0 6.365 2.529 12.47 7.029 16.971L454.059 256l-47.029 47.029A24.002 24.002 0 0 0 400 320v108c0 19.851-16.149 36-36 36h-44c-13.255 0-24 10.745-24 24s10.745 24 24 24h44c46.318 0 84-37.683 84-84v-98.059l56.971-56.971c9.372-9.372 9.372-24.568 0-33.941zM112 192V84c0-19.851 16.149-36 36-36h44c13.255 0 24-10.745 24-24S205.255 0 192 0h-44c-46.318 0-84 37.683-84 84v98.059l-56.971 56.97c-9.373 9.373-9.373 24.568 0 33.941L64 329.941V428c0 46.317 37.682 84 84 84h44c13.255 0 24-10.745 24-24s-10.745-24-24-24h-44c-19.851 0-36-16.149-36-36V320c0-6.365-2.529-12.47-7.029-16.971L57.941 256l47.029-47.029A24.002 24.002 0 0 0 112 192z"></path>
+  </symbol>
+  <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="copy">
+    <path d="M23 2.75A2.75 2.75 0 0 0 20.25 0H8.75A2.75 2.75 0 0 0 6 2.75v13.5A2.75 2.75 0 0 0 8.75 19h11.5A2.75 2.75 0 0 0 23 16.25zM18.25 14.5h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5zm0-3h-7.5a.75.75 0 0 1 0-1.5h7.5a.75.75 0 0 1 0 1.5z"></path>
+    <path d="M8.75 20.5a4.255 4.255 0 0 1-4.25-4.25V2.75c0-.086.02-.166.025-.25H3.75A2.752 2.752 0 0 0 1 5.25v16A2.752 2.752 0 0 0 3.75 24h12a2.752 2.752 0 0 0 2.75-2.75v-.75z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.001 512.001" id="closeme">
+    <path d="M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0 0 14.143 5.857 19.94 19.94 0 0 0 14.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="open-menu">
+    <path d="M492 236H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0-160H20C8.954 76 0 84.954 0 96s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20zm0 320H20c-11.046 0-20 8.954-20 20s8.954 20 20 20h472c11.046 0 20-8.954 20-20s-8.954-20-20-20z"></path>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="instagram">
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="youtube">
+    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="stackoverflow">
+    <path d="M21 27v-8h3v11H0V19h3v8h18z"></path><path d="M17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zm3.7 14.7L10.6 6.4l1.7-2 10.2 8.5-1.7 2zM7.2 12.3l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm-1.8 6.8l13.56 1.96.17-2.38-13.26-2.55-.47 2.97zM19 25H5v-3h14v3z"></path>
+  </symbol>
+</svg>
+
+<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.33c39fe654e5e9b532b7271f379ff81ca53f8a89d4196f93e38499ebba177cfa4246ff9481f84fba0e9cdc09b7c49a83f9f1b4c8a5165125c3992f1f8136fd78.js"></script>
+
+</body>
+</html>

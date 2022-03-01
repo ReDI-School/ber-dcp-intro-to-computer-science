@@ -1,11 +1,12 @@
 baseURL = "https://redi-school.github.io/ber-dcp-intro-to-computer-science/"
-title = "Intro to Computer-Science Berlin 2021"
+title = "Intro to Computer-Science Berlin"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
 # theme = ["github.com/onweru/compose"] # edit this if you'ld rather use a fork of this repo
 theme = "compose"
 enableGitInfo = true
+ignoreFiles = ['./content/docs/past_content_hidden/*']
 disableKinds = ["taxonomy", "taxonomyTerm"]
 publishDir = "docs"
 
@@ -14,7 +15,7 @@ publishDir = "docs"
 
 #  menu items
 [[menu.main]]
-  name = "Courses"
+  name = "Course Overview"
   weight = 2
   url = "docs/"
 

@@ -1,5 +1,5 @@
 +++
-title = "Berlin 2021 - Intro to Computer Science"
+title = "Berlin 2022 - Intro to Computer Science"
 # define chart data here
 [data]
   colors = ["#627c62", "#11819b", "#ef7f1a", "#4e1154"] # chart colors
@@ -11,13 +11,11 @@ title = "Berlin 2021 - Intro to Computer Science"
 {{< block "grid-2" >}}
 {{< column >}}
 
-# Welcome to **Intro to Computer-Science 2021** course Berlin 🇩🇪 
+# Intro to Computer Science
+
+Spring 2022, Berlin 🇩🇪
 
 Here you will find most of the content for our courses, prerequisites for each class, summaries of the classes and extra content so you can work on your own.
-
-{{< tip "warning" >}}
-This is a work in process document for the course of 2021 in Berlin.
-{{< /tip >}}
 
 {{< button "docs/" "Get started with the course 🚀" >}}
 
@@ -26,7 +24,7 @@ This is a work in process document for the course of 2021 in Berlin.
 {{< column >}}
 ![Margaret Hamilton](https://upload.wikimedia.org/wikipedia/commons/2/2e/Margaret_Hamilton.gif)
 
-[Margaret Hamilton](https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)) - She sent rockets to the moon 🚀
+[Margaret Hamilton](<https://en.wikipedia.org/wiki/Margaret_Hamilton_(software_engineer)>) - She sent rockets to the moon 🚀
 
 {{< /column >}}
 {{< /block >}}
