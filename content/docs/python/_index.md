@@ -11,4 +11,4 @@ Programming fundamentals in Python including:
 - Control flow (`while` and `for` loops)
 - Classes and objects
 
-{{< button "./intro_to_python/" "Introduction to Python 💻" >}}
+<!-- {{< button "./intro_to_python/" "Introduction to Python 💻" >}} -->
