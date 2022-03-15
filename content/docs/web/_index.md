@@ -10,4 +10,4 @@ weight: 1
 - Practical lesson demonstrating HTML, CSS & JavaScript
 - Job Opportunities (frontend dev)
 
-{{< button "./basic_html/" "Basic knowledge of HTML 💻" >}}
+<!-- {{< button "./basic_html/" "Basic knowledge of HTML 💻" >}} -->

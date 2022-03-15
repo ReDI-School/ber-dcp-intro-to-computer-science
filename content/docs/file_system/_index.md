@@ -9,4 +9,4 @@ weight: 1
 - Working with files: Create, View, Manipulate
 - Command line overview
 
-{{< button "./intro/" "Let's learn about the computer's file system! 💻" >}}
+<!-- {{< button "./intro/" "Let's learn about the computer's file system! 💻" >}} -->
