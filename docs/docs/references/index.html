@@ -10,19 +10,21 @@
 <link rel="shortcut icon" href='https://redi-school.github.io/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://redi-school.github.io/favicons/browserconfig.xml'>
 <title>References &amp; Cheat Sheets | Intro to Computer-Science Berlin</title><meta property="og:title" content="References &amp; Cheat Sheets" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Goals" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/references/" />
 
 <meta itemprop="name" content="References &amp; Cheat Sheets">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="Goals"><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="References &amp; Cheat Sheets"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Goals"/>
 
 
 <link rel="stylesheet" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/css/styles.691e1175b9b265f22727d90637a62963a8bc963d776a8fbeed95a74e87f589a5943592899c51a62f56754edc55745c52af817c925bdbb1947cec7af4897c6e73.css" integrity="sha512-aR4RdbmyZfInJ9kGN6YpY6i8lj13ao&#43;&#43;7ZWnTof1iaWUNZKJnFGmL1Z1TtxVdFxSr4F8klvbsZR87Hr0iXxucw==">
 
 
+
+  <meta name="description" content="Goals">
 
 </head>
   
@@ -155,14 +157,36 @@
 
   <main class="content">
     <h1>References &amp; Cheat Sheets</h1><p>This section contains cheat sheets and glossaries on some of the topics we have covered for quick reference.</p>
-<h1 id="table-of-contents">Table of Contents</h1>
-<ol>
-<li><a href="#command-line">Command Line</a></li>
-<li><a href="#git">git</a></li>
-<li><a href="#html">HTML</a></li>
-</ol>
-<h1 id="command-line">Command Line</h1>
-<h2 id="useful-commands">Useful commands</h2>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#command-line">Command Line</a>
+<ul>
+<li><a href="#useful-commands">Useful commands</a></li>
+</ul>
+</li>
+<li><a href="#git--github-desktop">git &amp; GitHub Desktop</a>
+<ul>
+<li><a href="#glossary">Glossary</a></li>
+<li><a href="#working-with-github-desktop">Working with GitHub Desktop</a>
+<ul>
+<li><a href="#starting-a-brand-new-project">Starting a brand new project</a></li>
+<li><a href="#joining-or-copying-an-existing-project">Joining or copying an existing project</a></li>
+<li><a href="#making-changes">Making changes</a></li>
+</ul>
+</li>
+<li><a href="#commands-command-line-git">Commands (Command Line Git)</a></li>
+</ul>
+</li>
+<li><a href="#html">HTML</a>
+<ul>
+<li><a href="#important-html-tags">Important HTML Tags</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="command-line">Command Line</h2>
+<h3 id="useful-commands">Useful commands</h3>
 <table>
 <thead>
 <tr>
@@ -225,8 +249,8 @@
 </tr>
 </tbody>
 </table>
-<h1 id="git">git</h1>
-<h2 id="glossary">Glossary</h2>
+<h2 id="git--github-desktop">git &amp; GitHub Desktop</h2>
+<h3 id="glossary">Glossary</h3>
 <table>
 <thead>
 <tr>
@@ -240,8 +264,12 @@
 <td>(also known as repo) the place where code is stored.</td>
 </tr>
 <tr>
+<td>commit</td>
+<td>a snapshot of changes made to a repository</td>
+</tr>
+<tr>
 <td>branch</td>
-<td>a pointer to a commit</td>
+<td>a pointer to a commit; a way to create a separate version of the files</td>
 </tr>
 <tr>
 <td>remote</td>
@@ -253,19 +281,99 @@
 </tr>
 <tr>
 <td>head</td>
-<td>the last commit in the checked-out branch</td>
+<td>the last commit in the current branch</td>
 </tr>
 <tr>
-<td>staging area</td>
-<td>the intermediate area where a change is added before it is committed</td>
+<td>status</td>
+<td>the current state of the git repository</td>
+</tr>
+<tr>
+<td>pull</td>
+<td>get the latest changes from the remote repository on your local repo</td>
+</tr>
+<tr>
+<td>push</td>
+<td>push the latest changes from the local repository to the remote repo</td>
 </tr>
 <tr>
 <td>pull request</td>
-<td>(also known as a PR) lets you get feedback on your code changes in GitHub</td>
+<td>(also known as a PR) lets you get feedback on your code changes</td>
+</tr>
+<tr>
+<td>staging area</td>
+<td>the intermediate area where a change is added before it is commit</td>
 </tr>
 </tbody>
 </table>
-<h2 id="commands">Commands</h2>
+<h3 id="working-with-github-desktop">Working with GitHub Desktop</h3>
+<p>Common ways of using GitHub Desktop based on scenarios that you may run into.</p>
+<h4 id="starting-a-brand-new-project">Starting a brand new project</h4>
+<p><em>Scenario: you are just starting on your project, and want to create a repository to store your future work.</em></p>
+<p>In this case, we want to create a new repository, which is basically just an empty directory plus some additional hidden files so that <code>git</code> knows that this is a repository and it should watch out for changes.</p>
+<ol>
+<li>
+<p>In GitHub Desktop, select <code>File &gt; New Repository</code> or expand <code>Current Repository</code> and click <code>Add &gt; Create New Repository</code>.</p>
+</li>
+<li>
+<p>Fill in the fields in the popup, including the <code>Name</code>. Some notes:</p>
+<ul>
+<li><code>Name</code>: name of the new directory that will be created and contain your new project.</li>
+<li><code>Local Path</code>: points to a directory (folder) where the new repository will live. If you have a directory where you keep your work for this class (recommended), make sure to point <code>Local Path</code> to this directory.</li>
+<li><code>Initialize your repository with a README</code>: a README is just a file describing the repository's purpose and use.</li>
+<li><code>Git Ignore</code>: you can ignore this one for now. This lets <code>git</code> know if it should ignore changes from certain files.</li>
+<li><code>License</code>: you can ignore this one for now. The License describes how others can use and build on your project.</li>
+</ul>
+</li>
+<li>
+<p>Click <code>Create Repository</code>.</p>
+</li>
+<li>
+<p>If you want to make this repository available on GitHub (the remote), click <code>Publish Repository</code>. In the popup, you can select whether or not the repository should be private (only you + others specifically added to the reopsitory can see it) or not (everyone can see it), and then click on <code>Publish Repository</code>.</p>
+</li>
+</ol>
+<h4 id="joining-or-copying-an-existing-project">Joining or copying an existing project</h4>
+<p><em>Scenario A: your project partner already created a repository and you want to create a local copy so you can collaborate on this.</em></p>
+<p><em>Scenario B: your computer crashed. Luckily, your project is stored on GitHub, and you want to make a new local copy of this.</em></p>
+<p>In these situations, we want to <code>clone</code> an existing repository, which means create a local copy of the repository in your file system (i.e. you can edit these even when not connected to the internet).</p>
+<ol>
+<li>In GitHub Desktop, clone an existing repository by either selecting <code>File &gt; Clone Repository</code> or expand <code>Current Repository</code> and click <code>Add &gt; Clone Repository</code>.</li>
+<li>If the repository already exists under your own GitHub remote, you can find it under <code>GitHub.com</code>, otherwise, you may need to enter the repository URL after selecting the <code>URL</code> tab.</li>
+</ol>
+<p><em>Scenario C: you want to create a remote copy of starter code used for class activities and projects, which you can then copy locally.</em>
+<em>Scenario D: you want to contribute to an open source project that you find interesting.</em></p>
+<p>In these cases, you additionally may need to <code>fork</code> the project, or create a copy of the repository that <em>you own</em> in GitHub. After completing steps 1 &amp; 2 above:</p>
+<ol>
+<li>
+<p>In GitHub desktop, create a new branch.</p>
+</li>
+<li>
+<p>Click <code>Publish Branch</code>. A popup should appear asking something like, &quot;Do you want to fork this repository?&quot; Click <code>Fork This Repository</code>.</p>
+</li>
+<li>
+<p>Another popup will appear like &quot;How are you planning to use this fork?&quot;:</p>
+<ul>
+<li>For most of our class activities (<code>Scenario C</code> above), select &quot;For my own purposes&quot;</li>
+<li>For contributing to open source projects or projects owned by others (<code>Scenario D</code> above), select &quot;To contribute to the parent project&quot;</li>
+</ul>
+</li>
+</ol>
+<p>You can find more information in the <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop">GitHub Desktop Docs here</a>.</p>
+<h4 id="making-changes">Making changes</h4>
+<p><em>Scenario: you have a great idea for a new feature to add to your project.</em></p>
+<ol>
+<li>Make sure that your <code>Current Branch</code> is <code>main</code> (or the repository default branch). Click on <code>Fetch Origin</code>, which updates your <code>main</code> branch so that you have all the latest changes that you and your project partners have merged.</li>
+<li>Create a new branch, which will contain your new version of the project with the new feature. In GitHub Desktop, do this by clicking on <code>Current Branch &gt; New Branch</code> or <code>Branch &gt; New Branch</code>. Give your branch (version) a useful and descriptive name, ideally about the changes/feature you want to make in this version.</li>
+<li>Change the files in your local repository. You can use a text editor or IDE (Integrated Development Environment) to do this.</li>
+<li>Add the files to your staging area (changes that will be included in the next commit you make). In GitHub Desktop, this means making sure that the box is checked next to the file name on the left-hand side.</li>
+<li>Create a commit, or a saved snapshot of the files. To do this in GitHub Desktop, add a <code>Summary</code> (and optional <code>Description</code>) of the changes you have made so far and then click the <code>Commit to &lt;branch-name&gt;</code> button. Generally, commit often while working on a new feature!</li>
+<li>Push these changes to the remote repository; in other words, publish the changes made on this branch to GitHub. In GitHub Desktop, do this by clicking on <code>Publish branch</code>.</li>
+<li>Repeat steps 3-6 as needed, until you are done making changes (i.e. your feature is done).</li>
+<li>(<em>If you are working by yourself on this project, you can skip this step!</em>) Create a pull request (PR) on GitHub so that your other project collaborators can look over the changes and leave any feedback. To do this, go to the GitHub page for the repository and view your branch: on the left side, there should be a button with <code>main</code> and a down arrow -- click this and select your branch. At the top, if there is an option to &quot;Pull request&quot;, click that, otherwise click on the &quot;Pull request&quot; tab and then &quot;New pull request&quot;.</li>
+<li>Merge the changes from your new branch to the <code>main</code> branch, which means combine your new changes with the <code>main</code> branch (including any new changes that have been added to <code>main</code> in the meantime). If you created a PR (step 8), you can merge the PR directly in GitHub. Otherwise, switch to the <code>main</code> branch in GitHub Desktop. Then, click on <code>Current Branch &gt; Choose a branch to merge into main</code> or <code>Branch &gt; Merge into current branch</code>and select your feature branch.</li>
+<li>Delete your old feature branch if you don't need it anymore.</li>
+</ol>
+<p>You can find more information on managing branches and commits in <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch">this section of the GitHub Desktop Docs</a>.</p>
+<h3 id="commands-command-line-git">Commands (Command Line Git)</h3>
 <p>Note: you can add the <code>--help</code> flag behind any of these commands to find out more information about them including the arguments/options that can be passed in.</p>
 <table>
 <thead>
@@ -309,8 +417,8 @@
 </tr>
 </tbody>
 </table>
-<h1 id="html">HTML</h1>
-<h2 id="important-html-tags">Important HTML Tags</h2>
+<h2 id="html">HTML</h2>
+<h3 id="important-html-tags">Important HTML Tags</h3>
 <table>
 <thead>
 <tr>

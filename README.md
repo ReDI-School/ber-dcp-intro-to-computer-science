@@ -18,6 +18,8 @@ To add material for a session:
   - moving rather than copy/pasting allows the pages to be hidden and still have useful git history
   - copying may be preferred when restructuring large parts of the course (i.e. merging two old lessons, writing your own material); ideally add comments to the top of the doc explaining if so
 - make any changes desired (i.e. update the dates, add or change exercises, make corrections)
+- add any necessary tables or content to the `References & Cheat Sheets` section (i.e. new glossaries, tables, references that would be nice to have in one place for quick reference)
+  - (Optional but recommended:) using the VSCode Markdown All in One extension to automatically generate and update the Table of Contents
 - test your changes on a local development server with `make server`
 - before pushing to github build the site with `make build`
 
