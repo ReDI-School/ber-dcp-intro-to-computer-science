@@ -131,6 +131,10 @@ Please complete these prerequisites before class, so we can spend as much time a
 
 We will practice these during the class activities today -- it's ok if it doesn't all make sense at the start. The [GitHub Desktop Docs](https://docs.github.com/en/desktop) are also a great resource!
 
+{{< picture "git_branch.png" "git_branch.png" "Version Control with Git" >}}
+
+This image illustrates the concept of branches (starting a new version with changes), commits (snapshots of these changes/versions), and merges (merging versions). This image was modified from [https://www.nobledesktop.com/learn/git/git-branches](https://www.nobledesktop.com/learn/git/git-branches).
+
 #### Starting a brand new project
 
 _Scenario: you are just starting on your project, and want to create a repository to store your future work._
