@@ -9,26 +9,33 @@
 <link rel="mask-icon" href='https://redi-school.github.io/favicons/safari-pinned-tab.svg'  color="#004750">
 <link rel="shortcut icon" href='https://redi-school.github.io/favicons/favicon.ico'>
 <meta name="msapplication-config" content='https://redi-school.github.io/favicons/browserconfig.xml'>
-<title>1 - File System Basics | Intro to Computer-Science Berlin</title><meta property="og:title" content="1 - File System Basics" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/file_system/" />
+<title>22/March - Version Control with Git and GitHub | Intro to Computer-Science Berlin</title><meta property="og:title" content="22/March - Version Control with Git and GitHub" />
+<meta property="og:description" content="Goals" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github_desktop/" /><meta property="article:section" content="docs" />
 
-<meta itemprop="name" content="1 - File System Basics">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="1 - File System Basics"/>
-<meta name="twitter:description" content=""/>
+<meta property="article:modified_time" content="2022-03-19T20:12:13&#43;00:00" />
+
+<meta itemprop="name" content="22/March - Version Control with Git and GitHub">
+<meta itemprop="description" content="Goals">
+<meta itemprop="dateModified" content="2022-03-19T20:12:13&#43;00:00" />
+<meta itemprop="wordCount" content="3063">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="22/March - Version Control with Git and GitHub"/>
+<meta name="twitter:description" content="Goals"/>
 
 
 <link rel="stylesheet" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/css/styles.691e1175b9b265f22727d90637a62963a8bc963d776a8fbeed95a74e87f589a5943592899c51a62f56754edc55745c52af817c925bdbb1947cec7af4897c6e73.css" integrity="sha512-aR4RdbmyZfInJ9kGN6YpY6i8lj13ao&#43;&#43;7ZWnTof1iaWUNZKJnFGmL1Z1TtxVdFxSr4F8klvbsZR87Hr0iXxucw==">
 
 
 
+  <meta name="description" content="Goals">
+
 </head>
   
     
   
-<body class="page-section"data-code="7" data-lines="false" >
+<body class="page-page"data-code="7" data-lines="false" >
   <header class="nav_header">
 <nav class="wrap nav menu">
 	<a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/" class="nav_brand">
@@ -101,12 +108,12 @@
     <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/" class="group">Welcome to the course 🎉</a></h2>
       <section class="" id="docs-welcome-to-the-course-">
   <section class="section aside_inner">
-    <h2 class="section_title active"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/file_system/" class="group">1 - File System Basics</a></h2>
+    <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/file_system/" class="group">1 - File System Basics</a></h2>
   </section>
   <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/" class="group">2 - Version Control with Git and GitHub</a></h2>
       <section class="" id="docs-2---version-control-with-git-and-github">
-        <h3 class="section_link"><a id="docs-22march---version-control-with-git-and-github" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github_desktop/">22/March - Version Control with Git and GitHub</a></h3><nav id="TableOfContents">
+        <h3 class="section_link active"><a id="docs-22march---version-control-with-git-and-github" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github_desktop/">22/March - Version Control with Git and GitHub</a></h3><nav id="TableOfContents">
   <ul>
     <li><a href="#prerequisites">Prerequisites</a></li>
     <li><a href="#class-curriculum">Class Curriculum</a></li>
@@ -154,18 +161,370 @@
 </aside>
 
   <main class="content">
-    <h1>1 - File System Basics</h1><ul>
-<li>Basics of operating systems</li>
-<li>Linux file system hierarchy</li>
-<li>Navigation of Linux file system</li>
-<li>Working with files: Create, View, Manipulate</li>
-<li>Command line overview</li>
+    <h1>22/March - Version Control with Git and GitHub</h1><!-- 2022 - created by combining previous `git_and_github.md` and `review_git_command_line.md`,
+and adding GitHub Desktop option -->
+<p><img src="https://imgs.xkcd.com/comics/git.png" alt="xkcd - git"></p>
+<h2 id="prerequisites">Prerequisites</h2>
+
+<div class="tip">
+  <p>Please complete these prerequisites before class, so we can spend as much time as possible on troubleshooting and practice! :)</p>
+<p>✨ Remember, reach out on the class slack channel if you run into any issues or have questions!</p>
+
+</div>
+
+<ul>
+<li>
+<p>Homework videos from last class posted on slack on the internet, reposted here:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=Sfzo4xm5eX8">How the Internet Works in 4 Minutes</a> - 4:03</li>
+<li><a href="https://youtu.be/MwxMsaFFycg">IP addresses and DNS</a> - 6:45</li>
+<li><a href="https://youtu.be/aD_yi5VjF78">Packets, Routers, and Reliability</a> - 6:25</li>
+<li><a href="https://youtu.be/1K64fWX5z4U">HTTP and HTML</a> - 7:07</li>
+<li><em>(Optional)</em> <a href="https://youtu.be/iV-YqG70wbQ">Wires, cables, and WiFi</a>
+This video is for those who want more details on how information is broken up and transported through the wires that make up the internet, the differences between fiber optics/radio/copper cables, and how WiFI is different than wired internet. It's very interesting but not required :)</li>
 </ul>
-<!-- <a href="./intro/" class="button">Let&#39;s learn about the computer&#39;s file system! 💻</a> -->
+</li>
+<li>
+<p>Install GitHub Desktop</p>
+<p>If you are running Mac or Windows on your computer, please install the GitHub Desktop app by following the instructions <a href="https://desktop.github.com/">at this link</a>.</p>
+<p>If you are using Linux, please reach out to the teachers and let us know, since GitHub Desktop is not available for Linux. You can instead follow the instructions <a href="https://github.com/git-guides/install-git#install-git-on-linux">here</a> to install git on Linux.</p>
+<p>Note: GitHub desktop should also automatically install <code>git</code> on the command line. If this does not happen by default and you would like to practice using command line <code>git</code> (<em>warning: more challenging!</em>), you can follow the instructions for your OS <a href="https://github.com/git-guides/install-git">here</a>.</p>
+</li>
+<li>
+<p>Sign up and sign in to GitHub 🚀</p>
+<p>Open GitHub Desktop. If you are prompted to sign in or create an account, click the prompt to create an account if you don't already have one, otherwise sign in. Both options should open up a GitHub webpage.</p>
+<p>If you are not prompted to create an account upon opening GitHub Desktop, sign up here: <a href="https://github.com/join">https://github.com/join</a></p>
+<p>You can then follow the instructions <a href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github">linked here</a> to sign into (authenticate) your account.</p>
+<p><em>Why?</em> In this class, we will use git/GitHub Desktop to...</p>
+<ul>
+<li>store our code</li>
+<li>collaborate with each other on assignments and projects</li>
+<li>share and showcase our work</li>
+</ul>
+</li>
+<li>
+<p>Install Visual Studio Code (VSCode) and configure GitHub Desktop to use this
+Download and install here: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+<p>After you have downloaded this, follow the instructions <a href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/configuring-and-customizing-github-desktop/configuring-a-default-editor">linked here</a> to configure Visual Studio Code as the default text editor for GitHub Desktop.</p>
+<p><em>What is this?</em>
+VSCode is an Integrated Development Environment (IDE), which can be used for developing and testing software. Today, we will use this to view and edit text files, and in the future we will use this for editing and writing code.</p>
+</li>
+<li>
+<p>(Optional but highly recommended if you have time!) watch this video: <a href="https://www.youtube.com/watch?v=8Dd7KRpKeaE">Git and GitHub explained for Beginners</a>. You can skip the section on ignoring files (11:38-15:38).</p>
+</li>
+<li>
+<p>(Optional) if you are unfamiliar with the concept of files and file systems, discussed last class, please watch the following videos as well:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=KN8YgJnShPM">files and file systems</a>
+<ul>
+<li>If this video was difficult to understand or you are unfamiliar with navigating the file system on your computer currently, we recommend that you watch <a href="https://www.youtube.com/watch?v=k-EID5_2D9U">this video</a> and <a href="https://www.youtube.com/watch?v=DGd48PGbnBs">this followup video</a></li>
+</ul>
+</li>
+<li>this video until 8:30 on <a href="https://www.youtube.com/watch?v=BMT3JUWmqYY">file paths</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="class-curriculum">Class Curriculum</h2>
+<table>
+<thead>
+<tr>
+<th>Section content</th>
+<th>Expected time (mins)</th>
+<th>Pre - Requirements</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lesson Goals</td>
+<td>5 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Review and questions from last class</td>
+<td>20 minutes</td>
+<td>videos</td>
+</tr>
+<tr>
+<td>Overview of Version Control and GitHub</td>
+<td>15-20 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Demo of GitHub and an Open Source Project</td>
+<td>5 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Demo of Tasks Today</td>
+<td>5-10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Class break</td>
+<td>10 minutes</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>GitHub Practice in Groups</td>
+<td>30-45 minutes</td>
+<td>GitHub Desktop and account</td>
+</tr>
+<tr>
+<td>Wrap-up</td>
+<td>5-10 minutes</td>
+<td>❌</td>
+</tr>
+</tbody>
+</table>
+<h2 id="0-lesson-goals">0. Lesson Goals</h2>
+<ul>
+<li>Review information about the internet and files</li>
+<li>Use the GitHub Desktop tutorial to create a repository, branch, commit, and pull request</li>
+<li>Practice the Fork &amp; Clone workflow that we will use throughout this class for sharing tasks</li>
+</ul>
+<h2 id="1-review-and-questions-from-last-class-intro-to-the-internet">1. Review and Questions from Last Class (Intro to the Internet)</h2>
+<ul>
+<li>Kahoot! Go to <a href="www.kahoot.it">www.kahoot.it</a> and enter the game PIN from the session.</li>
+<li>Any questions on the content from last class?</li>
+</ul>
+<h2 id="2-overview-of-version-control-and-github">2. Overview of Version Control and GitHub</h2>
+<h3 id="what-is-version-control-and-why-is-it-useful">What is Version Control and why is it useful?</h3>
+<ul>
+<li>System for managing changes to files (including programs, text files, image files, etc.)
+<ul>
+<li>Version Control Systems for software (including <code>git</code>) help us understand changes made: what was the change? who made it? when? why?</li>
+</ul>
+</li>
+<li>May display a revision history or information about past edits</li>
+<li>Why is it useful?
+<ul>
+<li>Safely storing and accessing past versions of files
+<ul>
+<li>maybe something is now broken, and you want to use an older version that worked</li>
+<li>you don't want to lose your work on a project if your computer crashes</li>
+</ul>
+</li>
+<li>Collaborating on documents with others: modifying the same document can be tricky without a way of resolving conflicting changes</li>
+</ul>
+</li>
+<li>Some examples involving Version Control Systems:
+<ul>
+<li>Google Docs containing a document revision history</li>
+<li>Microsoft Office restoring an older version of a file if the program crashes with unsaved work</li>
+<li>Storing a code project in a GitHub repository :)</li>
+</ul>
+</li>
+<li>What are some examples from the teachers' experience?</li>
+</ul>
+<h3 id="what-are-git-and-github">What are Git and GitHub?</h3>
+<ul>
+<li><code>git</code>: Version Control System for tracking and storing files, developed by the creater of Linux (Linus Torvalds); free, open source, and widely used in the software engineering industry</li>
+<li>GitHub: internet service that allows you to store and collaborate on collections of files stored as <code>git</code> repositories</li>
+</ul>
+<h3 id="why-github-desktop">Why GitHub Desktop?</h3>
+<ul>
+<li><code>git</code> is a powerful tool but can be confusing and intimidating at first</li>
+<li>GitHub Desktop is an open-source tool that is more accessible to new developers and does not require comfort using the command line</li>
+<li>GitHub Desktop is relies on &quot;best practice&quot; workflows, which should help instill good habits when learning</li>
+<li>GitHub Desktop has nice visualizations of what is happening within commits, merges, etc. which will help build your understanding of <code>git</code></li>
+<li>Skills learned while using GitHub desktop can be applied later to using <code>git</code> on the command line for more advanced, custom use in the future :)</li>
+</ul>
+<h3 id="working-with-git--github">Working with Git &amp; GitHub</h3>
+<p>We will practice these during the class activities today -- it's ok if it doesn't all make sense at the start. The <a href="https://docs.github.com/en/desktop">GitHub Desktop Docs</a> are also a great resource!</p>
+<h4 id="starting-a-brand-new-project">Starting a brand new project</h4>
+<p><em>Scenario: you are just starting on your project, and want to create a repository to store your future work.</em></p>
+<p>In this case, we want to create a new repository, which is basically just an empty directory plus some additional hidden files so that <code>git</code> knows that this is a repository and it should watch out for changes.</p>
+<ol>
+<li>
+<p>In GitHub Desktop, select <code>File &gt; New Repository</code> or expand <code>Current Repository</code> and click <code>Add &gt; Create New Repository</code>.</p>
+</li>
+<li>
+<p>Fill in the fields in the popup, including the <code>Name</code>. Some notes:</p>
+<ul>
+<li><code>Name</code>: name of the new directory that will be created and contain your new project.</li>
+<li><code>Local Path</code>: points to a directory (folder) where the new repository will live. If you have a directory where you keep your work for this class (recommended), make sure to point <code>Local Path</code> to this directory.</li>
+<li><code>Initialize your repository with a README</code>: a README is just a file describing the repository's purpose and use.</li>
+<li><code>Git Ignore</code>: you can ignore this one for now. This lets <code>git</code> know if it should ignore changes from certain files.</li>
+<li><code>License</code>: you can ignore this one for now. The License describes how others can use and build on your project.</li>
+</ul>
+</li>
+<li>
+<p>Click <code>Create Repository</code>.</p>
+</li>
+<li>
+<p>If you want to make this repository available on GitHub (the remote), click <code>Publish Repository</code>. In the popup, you can select whether or not the repository should be private (only you + others specifically added to the reopsitory can see it) or not (everyone can see it), and then click on <code>Publish Repository</code>.</p>
+</li>
+</ol>
+<h4 id="joining-or-copying-an-existing-project">Joining or copying an existing project</h4>
+<p><em>Scenario A: your project partner already created a repository and you want to create a local copy so you can collaborate on this.</em></p>
+<p><em>Scenario B: your computer crashed. Luckily, your project is stored on GitHub, and you want to make a new local copy of this.</em></p>
+<p>In these situations, we want to <code>clone</code> an existing repository, which means create a local copy of the repository in your file system (i.e. you can edit these even when not connected to the internet).</p>
+<ol>
+<li>In GitHub Desktop, clone an existing repository by either selecting <code>File &gt; Clone Repository</code> or expand <code>Current Repository</code> and click <code>Add &gt; Clone Repository</code>.</li>
+<li>If the repository already exists under your own GitHub remote, you can find it under <code>GitHub.com</code>, otherwise, you may need to enter the repository URL after selecting the <code>URL</code> tab.</li>
+</ol>
+<p><em>Scenario C: you want to create a remote copy of starter code used for class activities and projects, which you can then copy locally.</em>
+<em>Scenario D: you want to contribute to an open source project that you find interesting.</em></p>
+<p>In these cases, you additionally may need to <code>fork</code> the project, or create a copy of the repository that <em>you own</em> in GitHub. After completing steps 1 &amp; 2 above:</p>
+<ol>
+<li>
+<p>In GitHub desktop, create a new branch.</p>
+</li>
+<li>
+<p>Click <code>Publish Branch</code>. A popup should appear asking something like, &quot;Do you want to fork this repository?&quot; Click <code>Fork This Repository</code>.</p>
+</li>
+<li>
+<p>Another popup will appear like &quot;How are you planning to use this fork?&quot;:</p>
+<ul>
+<li>For most of our class activities (<code>Scenario C</code> above), select &quot;For my own purposes&quot;</li>
+<li>For contributing to open source projects or projects owned by others (<code>Scenario D</code> above), select &quot;To contribute to the parent project&quot;</li>
+</ul>
+</li>
+</ol>
+<p>You can find more information in the <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop">GitHub Desktop Docs here</a>.</p>
+<h4 id="making-changes">Making changes</h4>
+<p><em>Scenario: you have a great idea for a new feature to add to your project.</em></p>
+<ol>
+<li>Make sure that your <code>Current Branch</code> is <code>main</code> (or the repository default branch). Click on <code>Fetch Origin</code>, which updates your <code>main</code> branch so that you have all the latest changes that you and your project partners have merged.</li>
+<li>Create a new branch, which will contain your new version of the project with the new feature. In GitHub Desktop, do this by clicking on <code>Current Branch &gt; New Branch</code> or <code>Branch &gt; New Branch</code>. Give your branch (version) a useful and descriptive name, ideally about the changes/feature you want to make in this version.</li>
+<li>Change the files in your local repository. You can use a text editor or IDE (Integrated Development Environment) to do this.</li>
+<li>Add the files to your staging area (changes that will be included in the next commit you make). In GitHub Desktop, this means making sure that the box is checked next to the file name on the left-hand side.</li>
+<li>Create a commit, or a saved snapshot of the files. To do this in GitHub Desktop, add a <code>Summary</code> (and optional <code>Description</code>) of the changes you have made so far and then click the <code>Commit to &lt;branch-name&gt;</code> button. Generally, commit often while working on a new feature!</li>
+<li>Push these changes to the remote repository; in other words, publish the changes made on this branch to GitHub. In GitHub Desktop, do this by clicking on <code>Publish branch</code>.</li>
+<li>Repeat steps 3-6 as needed, until you are done making changes (i.e. your feature is done).</li>
+<li>(<em>If you are working by yourself on this project, you can skip this step!</em>) Create a pull request (PR) on GitHub so that your other project collaborators can look over the changes and leave any feedback. To do this, go to the GitHub page for the repository and view your branch: on the left side, there should be a button with <code>main</code> and a down arrow -- click this and select your branch. At the top, if there is an option to &quot;Pull request&quot;, click that, otherwise click on the &quot;Pull request&quot; tab and then &quot;New pull request&quot;.</li>
+<li>Merge the changes from your new branch to the <code>main</code> branch, which means combine your new changes with the <code>main</code> branch (including any new changes that have been added to <code>main</code> in the meantime). If you created a PR (step 8), you can merge the PR directly in GitHub. Otherwise, switch to the <code>main</code> branch in GitHub Desktop. Then, click on <code>Current Branch &gt; Choose a branch to merge into main</code> or <code>Branch &gt; Merge into current branch</code>and select your feature branch.</li>
+<li>Delete your old feature branch if you don't need it anymore.</li>
+</ol>
+<p>You can find more information on managing branches and commits in <a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch">this section of the GitHub Desktop Docs</a>.</p>
+<h3 id="glossary">Glossary</h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>repository</td>
+<td>(also known as repo) the place where code is stored.</td>
+</tr>
+<tr>
+<td>commit</td>
+<td>a snapshot of changes made to a repository</td>
+</tr>
+<tr>
+<td>branch</td>
+<td>a pointer to a commit; a way to create a separate version of the files</td>
+</tr>
+<tr>
+<td>remote</td>
+<td>a repository that is hosted by a web service</td>
+</tr>
+<tr>
+<td>origin</td>
+<td>the remote repository associated with a project</td>
+</tr>
+<tr>
+<td>head</td>
+<td>the last commit in the current branch</td>
+</tr>
+<tr>
+<td>status</td>
+<td>the current state of the git repository</td>
+</tr>
+<tr>
+<td>pull</td>
+<td>get the latest changes from the remote repository on your local repo</td>
+</tr>
+<tr>
+<td>push</td>
+<td>push the latest changes from the local repository to the remote repo</td>
+</tr>
+<tr>
+<td>pull request</td>
+<td>(also known as a PR) lets you get feedback on your code changes</td>
+</tr>
+<tr>
+<td>staging area</td>
+<td>the intermediate area where a change is added before it is commit</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-practice-with-github">3. Practice with GitHub</h2>
+<p>Use the instructions on workflows above as well as the <a href="https://docs.github.com/en/desktop/">GitHub Desktop Documentation</a> to work through these tasks in groups. Within the steps, there will be some observational questions about the process. Make sure to discuss and move forward together as a group.</p>
+<p>Before beginning, we recommend that you create a directory (folder) like <code>redi-code</code> or <code>intro-cs-22</code> (or another name of your choice) on your computer where you can store all of your repositories and code for this class!</p>
+<h3 id="task-github-desktop-tutorial">Task: GitHub Desktop Tutorial</h3>
+<p>In GitHub Desktop, select <code>Create a Tutorial Repository</code>, and follow through the steps of the tutorial. Make sure to read the explanations provided throughout the guide!</p>
+<p>For more help on completing the tutorial including pictures, <a href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/creating-your-first-repository-using-github-desktop">check the docs here</a>.</p>
+<h3 id="task-creating-a-repository-and-making-changes">Task: Creating a Repository and Making Changes</h3>
+<ol>
+<li>Create a new repository called <code>test-repo-03-22</code>. See the instructions above for <a href="#starting-a-brand-new-project">starting a brand new project</a>. Initialize the project with a <code>README</code>.</li>
+<li>Open the repository in VSCode (or another text editor).</li>
+<li>In VSCode, add some text to the <code>README.md</code> file.</li>
+<li>In GitHub Desktop, can you see the changes that you made to the <code>README.md</code> file? If not, check in with your group and/or a teacher. Once you have seen the changes, add a message to the <code>Summary</code> field at the bottom left-hand corner and create a commit, saving a snapshot of this new version.</li>
+<li>Publish this repository to a remote repository on GitHub. You can choose to make it public by unchecking the <code>Keep this code private</code> button if you'd like to share the repository page with the teachers!</li>
+<li>Check the repository page on GitHub. There should be a button in GitHub Desktop to <code>Open the repository page on GitHub in your browser</code> which will take you to this page. If you cannot find this page or the repository does not exist under your GitHub account, ask your group members and/or a teacher.</li>
+<li>In VSCode, create a new file called <code>new-file.txt</code> and write some text.</li>
+<li>In GitHub Desktop, what does this new file look like?</li>
+<li>Add a descriptive message and create a new commit. Publish these changes to GitHub.</li>
+</ol>
+<p>Congratulations! You have created a new repository locally and pushed these changes to GitHub!</p>
+<h3 id="task-working-with-an-existing-repository-fork--clone">Task: Working with an Existing Repository (Fork &amp; Clone)</h3>
+<ol>
+<li>Fork and make a local copy of this repository: <a href="https://github.com/ReDI-School/intro-to-cs-git-review">https://github.com/ReDI-School/intro-to-cs-git-review</a>. See the instructions above for <a href="#joining-or-copying-an-existing-project">joining or copying an existing project</a> for more details, and make sure to follow the additional steps to fork the repository!</li>
+<li>Open the files in the repository in VSCode (or another text editor if you weren't able to install VSCode). If you configured VSCode as your default editor, you can do this easily by going to <code>Repository &gt; Open in Visual Studio Code</code>.</li>
+<li>Time to make some changes! Review the instructions above for <a href="#making-changes">making changes</a> if needed to help with the following steps :)</li>
+<li>In GitHub Desktop, create a new branch called <code>test-branch</code> to contain the new changes.</li>
+<li>In the <code>some-files</code> directory in the repository, delete the file that is empty (has no contents). (<em>Hint: open and look through the files in VSCode to find the empty files.</em>).</li>
+<li>In GitHub Desktop, how can you tell that the file has been deleted? Create a commit to &quot;save&quot; your changes. Give it the following message (<code>summary</code>): <code>&quot;Delete file &lt;name-of-file&gt;&quot;</code>, replacing <code>&lt;name-of-file&gt;</code> with the name of the deleted file.</li>
+<li>One of the non-empty files has the contents: <code>&quot;Hello, I'm a file! What's your name?&quot;</code>. Modify this file that answers the question with your name (or one of your choosing)!</li>
+<li>Can you tell that a file has been modified? If not, ask someone in your group or a teacher for help before moving on. If so, in the same way as above, create another commit with a descriptive message of your choice.</li>
+<li>Publish your two commits to the remote repository on GitHub.</li>
+<li><code>c.txt</code> seems to be out of place. Move this file into the <code>some-files</code> directory. In VSCode, you can do this by dragging the file into the desired directory. What does this change look like in GitHub Desktop? Create a commit for this change.</li>
+<li>Delete the <code>delete-me</code> directory. Create a commit for this change.</li>
+<li>Publish your remaining two commits to the remote repository on GitHub.</li>
+<li>Let's go ahead and create a pull request (PR) to merge <code>test-branch</code> to <code>main</code>. Assign someone in your group and one of your teachers as reviewers for the PR.</li>
+<li>(Optional) review any other PRs that you are tagged on.</li>
+<li>(Optional) once you have received an approving review on your PR, you can merge the PR!</li>
+</ol>
+<h2 id="extra-resources">Extra resources</h2>
+
+<div class="tip">
+  <ul>
+<li><a href="https://github.com/git-guides">GitHub's Git Guides</a>: lots of useful guides explaining the different commands and components of <code>git</code>
+<ul>
+<li><a href="https://docs.github.com/en/get-started/using-git/about-git">About Git</a>: more information about version control and <code>git</code></li>
+</ul>
+</li>
+<li><a href="https://training.github.com/downloads/github-git-cheat-sheet/">GitHub's Git Cheatsheet</a>: contains a useful glossary and cheatsheet of basic <code>git</code> commands and concepts</li>
+<li><a href="https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/">Writing a good commit messages</a>, by FreeCodeCamp</li>
+<li><a href="https://medium.com/@ashk3l/a-visual-introduction-to-git-9fdca5d3b43a">A visual introduction to Git</a>, by Ashley Keller</li>
+<li><a href="http://tutorials.codebar.io/version-control/introduction/tutorial.html">Introduction to Version Control and Git</a>: more information on version control and why we use it as well as an overview of Git and GitHub</li>
+</ul>
+
+</div>
+
+<h2 id="homework">Homework</h2>
+<ul>
+<li>Finish the exercises from class. Optionally: send a link to the GitHub page of your repository to the teachers, and tag a teacher on your pull request (PR).</li>
+<li>(Optional): make additional changes to the repository you created in the second task in class.</li>
+<li>(Optional): go through the <a href="https://lab.github.com/githubtraining/introduction-to-github">GitHub collaboration tutorial</a>.</li>
+<li>Review the extra resources and reach out to the class slack channel if you have any questions!</li>
+</ul>
 
     <div class="pager pager_lean">
   
 
+  
+  <div class="pager_item next">
+    
+    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/search/" class="pager_link button" title="Search">
+      <span class="pager_label">Search</span>
+    </a>
+  </div>
   
 </div>
 <svg width="0" height="0" class="hidden">

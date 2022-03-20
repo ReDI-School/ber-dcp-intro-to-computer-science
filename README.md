@@ -14,8 +14,9 @@ Markdown files in the `content` folder will be built into the site except for `c
 
 To add material for a session:
 
-- **move** the relevant page from the `past_content_hidden` into the appropriate `content/docs/*` subcategory
+- copy or move the relevant page from the `past_content_hidden` into the appropriate `content/docs/*` subcategory
   - moving rather than copy/pasting allows the pages to be hidden and still have useful git history
+  - copying may be preferred when restructuring large parts of the course (i.e. merging two old lessons, writing your own material); ideally add comments to the top of the doc explaining if so
 - make any changes desired (i.e. update the dates, add or change exercises, make corrections)
 - test your changes on a local development server with `make server`
 - before pushing to github build the site with `make build`
