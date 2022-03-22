@@ -79,16 +79,22 @@ Please complete these prerequisites before class, so we can spend as much time a
 | GitHub Practice in Groups                 | 30-45 minutes        | GitHub Desktop and account |
 | Wrap-up                                   | 5-10 minutes         | ❌                         |
 
+---
+
 ## 0. Lesson Goals
 
 - Review information about the internet and files
 - Use the GitHub Desktop tutorial to create a repository, branch, commit, and pull request
 - Practice the Fork & Clone workflow that we will use throughout this class for sharing tasks
 
+---
+
 ## 1. Review and Questions from Last Class (Intro to the Internet)
 
 - Kahoot! Go to [www.kahoot.it](www.kahoot.it) and enter the game PIN from the session.
 - Any questions on the content from last class?
+
+---
 
 ## 2. Overview of Version Control and GitHub
 
@@ -124,6 +130,10 @@ Please complete these prerequisites before class, so we can spend as much time a
 ### Working with Git & GitHub
 
 We will practice these during the class activities today -- it's ok if it doesn't all make sense at the start. The [GitHub Desktop Docs](https://docs.github.com/en/desktop) are also a great resource!
+
+{{< picture "git_branch.png" "git_branch.png" "Version Control with Git" >}}
+
+This image illustrates the concept of branches (starting a new version with changes), commits (snapshots of these changes/versions), and merges (merging versions). This image was modified from [https://www.nobledesktop.com/learn/git/git-branches](https://www.nobledesktop.com/learn/git/git-branches).
 
 #### Starting a brand new project
 
@@ -201,6 +211,8 @@ You can find more information on managing branches and commits in [this section 
 | pull request | (also known as a PR) lets you get feedback on your code changes        |
 | staging area | the intermediate area where a change is added before it is commit      |
 
+---
+
 ## 3. Practice with GitHub
 
 Use the instructions on workflows above as well as the [GitHub Desktop Documentation](https://docs.github.com/en/desktop/) to work through these tasks in groups. Within the steps, there will be some observational questions about the process. Make sure to discuss and move forward together as a group.
@@ -245,6 +257,8 @@ Congratulations! You have created a new repository locally and pushed these chan
 14. (Optional) review any other PRs that you are tagged on.
 15. (Optional) once you have received an approving review on your PR, you can merge the PR!
 
+---
+
 ## Extra resources
 
 {{< tip >}}
@@ -257,6 +271,8 @@ Congratulations! You have created a new repository locally and pushed these chan
 - [Introduction to Version Control and Git](http://tutorials.codebar.io/version-control/introduction/tutorial.html): more information on version control and why we use it as well as an overview of Git and GitHub
 
   {{< /tip >}}
+
+---
 
 ## Homework
 
