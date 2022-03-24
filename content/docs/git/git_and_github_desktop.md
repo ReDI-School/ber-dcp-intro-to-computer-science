@@ -133,7 +133,7 @@ We will practice these during the class activities today -- it's ok if it doesn'
 
 {{< picture "git_branch.png" "git_branch.png" "Version Control with Git" >}}
 
-This image illustrates the concept of branches (starting a new version with changes), commits (snapshots of these changes/versions), and merges (merging versions). This image was modified from [https://www.nobledesktop.com/learn/git/git-branches](https://www.nobledesktop.com/learn/git/git-branches).
+This image illustrates the concept of branches (starting a new version with changes), commits (snapshots of these changes/versions), and merges (combining changes from different versions). This image was modified from [https://www.nobledesktop.com/learn/git/git-branches](https://www.nobledesktop.com/learn/git/git-branches).
 
 #### Starting a brand new project
 
