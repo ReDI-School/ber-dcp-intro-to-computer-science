@@ -1,5 +1,5 @@
 +++
-title = "26/October - Introduction to Python"
+title = "24/March - Introduction to Python"
 description = "Goals"
 # weight = 10
 +++
@@ -35,33 +35,33 @@ Have a high-level idea of what Python is and start getting comfortable reading a
 
 - What is Python?
 
-  Python is a high-level programming language
+  <!-- Python is a high-level programming language -->
 
 - What is a high-level programming language?
 
-  - "program": writing instructions for your computer to execute; this could be a simple "calculator" program that adds two numbers, it could be something that prints out values to your terminal or sends information to a remote server/web-page, etc.
+  <!-- - "program": writing instructions for your computer to execute; this could be a simple "calculator" program that adds two numbers, it could be something that prints out values to your terminal or sends information to a remote server/web-page, etc.
   - "programming language": the language (set of words used according to specific syntax rules) that lets you write a program that can be executed on a machine
-  - "high-level": there are different ways of interacting with the computer; at the lowest level, this is the binary code that computers can read and execute. Above that are different levels of closeness to machine-readable code: directly above is machine or _assembly_ code that is slightly more readable but also _compiles_ into this binary code for computers. There are more levels above this, and at the highest level (like Python), code words in human-readable languages (like English) represent large series of simple assembly steps. You can write some complex set of loops, etc. and the "Python interpreter" "interprets" these instructions in Python, turning them into something that the machine can comprehend. You don't have to worry about managing how your computer stores memory (more on this later), since Python takes care of this.
+  - "high-level": there are different ways of interacting with the computer; at the lowest level, this is the binary code that computers can read and execute. Above that are different levels of closeness to machine-readable code: directly above is machine or _assembly_ code that is slightly more readable but also _compiles_ into this binary code for computers. There are more levels above this, and at the highest level (like Python), code words in human-readable languages (like English) represent large series of simple assembly steps. You can write some complex set of loops, etc. and the "Python interpreter" "interprets" these instructions in Python, turning them into something that the machine can comprehend. You don't have to worry about managing how your computer stores memory (more on this later), since Python takes care of this. -->
 
 - What are terms that you may hear when discussing programs and programming languages?
-
+<!--
   - "abstraction": something that has usually "hidden away" the inner complexities of a system; usually simplifies how we understand something.
   - "under the hood": the details of how something works when you look past the "layers of abstraction" (see above); digging into the numerous, smaller steps of how a program, application, etc. actually functions
-  - "black box": a system whose inner-workings you do not understand; all you can see are the inputs and outputs. [ inputs -> BLACK_BOX -> outputs ]
+  - "black box": a system whose inner-workings you do not understand; all you can see are the inputs and outputs. [ inputs -> BLACK_BOX -> outputs ] -->
 
 - How and in what fields is Python typically used?
 
-  - Data science: Python has many libraries (including `pandas`) that are useful for doing data analysis or statistics. Can be very efficient in how fast it computes data, and is for many people easier to read compared with other programming languages.
+  <!-- - Data science: Python has many libraries (including `pandas`) that are useful for doing data analysis or statistics. Can be very efficient in how fast it computes data, and is for many people easier to read compared with other programming languages.
   - Machine Learning, Deep Learning: Python notebooks and libraries (including `TensorFlow` and `keras`) make it easy and clear to create neural networks and train machine learning models for prediction and generation tasks.
-  - Running systems and infrastructure: SREs (Site Reliability Engineers) often use python as a scripting language to quickly examine, configure, and maintain infrastructure systems. Compared with other languages, it takes little code/time to write and execute a function in Python.
+  - Running systems and infrastructure: SREs (Site Reliability Engineers) often use python as a scripting language to quickly examine, configure, and maintain infrastructure systems. Compared with other languages, it takes little code/time to write and execute a function in Python. -->
 
 - What examples of things you can do with Python?
-
+<!--
   - Write programs of all kinds!
   - Write a backend server for your web application, to process (receive, send) HTTP requests
   - Use pandas to analyze a data set
   - Create and train a neural network or other machine learning/deep learning model
-  - ???
+  - ??? -->
 
 - What questions do you have so far?
 
@@ -204,11 +204,11 @@ print("my name is", "Robot")
 
 {{< /tip >}}
 
-A Solution:
+<!-- A Solution:
 
 ```python
 print("Hello, World!")
-```
+``` -->
 
 ### Task 1: create and call a function that prints "Hello, World!"
 
@@ -216,7 +216,7 @@ print("Hello, World!")
 Tip: Modify the code you wrote in the previous task so that this happens within a function that you define.
 {{< /tip >}}
 
-A Solution:
+<!-- A Solution:
 
 ```python
 def hello_world():
@@ -224,7 +224,7 @@ def hello_world():
 
 # Let's call the function
 hello_world()
-```
+``` -->
 
 ### Task 2: create a function that returns the string "Hello, World!". Call this function and print the output.
 
@@ -246,7 +246,7 @@ my_hello_world("Noor")
 # expected output -> "Hello, Noor"
 ```
 
-A solution:
+<!-- A solution:
 
 ```python
 def hello_world(name):
@@ -268,7 +268,7 @@ hello_world("Noor")
 # output -> "Hello, Noor"
 hello_world("Jose")
 # output -> "Hello, Jose"
-```
+``` -->
 
 ### Additional practice (all optional)
 
