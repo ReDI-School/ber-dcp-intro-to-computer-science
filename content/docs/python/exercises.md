@@ -1,6 +1,6 @@
 +++
 title = "24/March - Exercises"
-description = "Quick exercises to play with programming fondamentals"
+description = "Quick exercises to play with programming fundamentals"
 +++
 
 
@@ -90,7 +90,7 @@ If it's to hard, you can have a look [here](https://stackoverflow.com/questions/
 
 ## Variables
 
-If you don't remember exactly what a variable is, have a look at the [course page](http://localhost:1313/ber-dcp-intro-to-computer-science/docs/python/intro_to_python/).
+If you don't remember exactly what a variable is, have a look at the [course page](https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/intro_to_python/).
 
 **1) Which type for a variable ?**
 
@@ -120,7 +120,7 @@ As you can see in the piece of code written above, a variable can be edited as m
 
 ## Iterables
 
-If you don't remember exactly what an iterable is, have a look at the [course page](http://localhost:1313/ber-dcp-intro-to-computer-science/docs/python/intro_to_python/).
+If you don't remember exactly what an iterable is, have a look at the [course page](https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/intro_to_python/).
 
 ```python
 tab = ["a", 123, 'google', True]
@@ -155,8 +155,8 @@ A function/method is an object that take inputs (parameters) and give you back o
 Try it by yourself !
 
 #### Small challenge
-Create a fonction called `minutes_to_date(minutes)`that that translates minutes in this format YYear:DDay:HHours:MMinutes
-
+Create a function called `minutes_to_date(minutes)`that that translates minutes in this format YYear:DDay:HHours:MMinutes
+http://localhost:1313/ber-dcp-intro-to-computer-science/
 - Give the result of minute_to_date(123234987)
 
 {{< tip >}}
