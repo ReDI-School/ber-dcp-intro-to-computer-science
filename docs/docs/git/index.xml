@@ -4,11 +4,7 @@
     <title>2 - Version Control with Git and GitHub on Intro to Computer-Science Berlin</title>
     <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/</link>
     <description>Recent content in 2 - Version Control with Git and GitHub on Intro to Computer-Science Berlin</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>22/March - Version Control with Git and GitHub</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github_desktop/</link>
@@ -17,7 +13,7 @@
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github_desktop/</guid>
       <description>Prerequisites Please complete these prerequisites before class, so we can spend as much time as possible on troubleshooting and practice! :)
 ✨ Remember, reach out on the class slack channel if you run into any issues or have questions!
-   Homework videos from last class posted on slack on the internet, reposted here:
+  Homework videos from last class posted on slack on the internet, reposted here:
  How the Internet Works in 4 Minutes - 4:03 IP addresses and DNS - 6:45 Packets, Routers, and Reliability - 6:25 HTTP and HTML - 7:07 (Optional) Wires, cables, and WiFi This video is for those who want more details on how information is broken up and transported through the wires that make up the internet, the differences between fiber optics/radio/copper cables, and how WiFI is different than wired internet.</description>
     </item>
     
