@@ -1,5 +1,5 @@
 +++
-title = "02/04/November - Installing Python"
+title = "31/03/2022 - Installing Python"
 description = "Goals"
 # weight = 10
 +++
@@ -8,7 +8,7 @@ description = "Goals"
 
 ## Pre Requisites
 
-- Review the course content from last class and bring any questions you have ! We will answer these questions at the beginning of class. (_Remember, if you have a question, so does someone else in the class, so please feel free to ask :)_ ) {{< button "../intro_to_python/" "Review 26/October - Introduction to Python" >}}
+- Review the course content from last class and bring any questions you have ! We will answer these questions at the beginning of class. (_Remember, if you have a question, so does someone else in the class, so please feel free to ask :)_ ) {{< button "../intro_to_python/" "Review 24/March - Introduction to Python" >}}
 - Read through the `Python Installation Overview` section below. Spend some time thinking about which option may make sense for you. VSCode or PyCharm will give you the most options and would enable you to continue practicing your command line and git/GitHub skills.
 - Try getting set up with at least one of the options, but don't spend more than 1-2 hours on this if you run into a lot of unexpected problems. We will troubleshoot at the beginning of this session as well as in person at the ReDI school on Thursday for those who have issues installing.
 
