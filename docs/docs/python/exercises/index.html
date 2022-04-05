@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.81.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.96.0" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://redi-school.github.io/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://redi-school.github.io/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://redi-school.github.io/favicons/favicon-16x16.png'>
@@ -14,12 +14,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/exercises/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2022-03-28T18:02:30&#43;02:00" />
+<meta property="article:modified_time" content="2022-03-28T18:02:30+02:00" />
 
 <meta itemprop="name" content="24/March - Exercises">
 <meta itemprop="description" content="Quick exercises to play with programming fundamentals">
-<meta itemprop="dateModified" content="2022-03-28T18:02:30&#43;02:00" />
-<meta itemprop="wordCount" content="916">
+<meta itemprop="dateModified" content="2022-03-28T18:02:30+02:00" />
+<meta itemprop="wordCount" content="911">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="24/March - Exercises"/>
 <meta name="twitter:description" content="Quick exercises to play with programming fundamentals"/>
@@ -150,6 +150,33 @@
   <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/" class="group">3 - Programming in Python</a></h2>
       <section class="" id="docs-3---programming-in-python">
+        <h3 class="section_link"><a id="docs-05april---practical-python-session" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/">05/April - Practical Python Session</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#pre-requisites">Pre Requisites</a></li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#0-lesson-goals">0. Lesson Goals</a></li>
+    <li><a href="#1-check-in">1. Check-In</a></li>
+    <li><a href="#2-for-and-while-loops">2. for and while loops</a>
+      <ul>
+        <li><a href="#while-loops">while loops</a></li>
+        <li><a href="#for-loops">for loops</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-hands-on-python-tasks">3. Hands-on Python Tasks</a>
+      <ul>
+        <li><a href="#task-0-warmup">Task 0 (warmup)</a></li>
+        <li><a href="#task-1">Task 1</a></li>
+        <li><a href="#task-2">Task 2</a></li>
+        <li><a href="#task-3-parts-1-2">Task 3 (parts 1, 2)</a></li>
+        <li><a href="#task-4">Task 4</a></li>
+        <li><a href="#task-5">Task 5</a></li>
+        <li><a href="#challenge-task-6-parts-1-2">(Challenge) Task 6 (parts 1, 2)</a></li>
+        <li><a href="#challenge-task-7-parts-1-2-3">(Challenge) Task 7 (parts 1, 2, 3)</a></li>
+      </ul>
+    </li>
+    <li><a href="#additional-resources">Additional Resources</a></li>
+  </ul>
+</nav>
         <h3 class="section_link active"><a id="docs-24march---exercises" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/exercises/">24/March - Exercises</a></h3><nav id="TableOfContents">
   <ul>
     <li><a href="#quick-recap-of-the-last-session">Quick recap of the last session</a></li>
@@ -288,9 +315,9 @@
 <p>There are <strong>two ways to run python code</strong>.
 Either we write python commands we want to execute in a file we've created (with the .py extension) or we can directly write commands in a python interpreter.</p>
 <p>On <a href="https://replit.com/languages/python3">replit.com</a>, you have on the left side a python file in which you can write. On the right side, you have the python interpreter in which you can directly write code and execute it. Write a line of python code just in front of the small arrow <code>&gt;</code> and press enter to see the result.</p>
-<div class="highlight"><pre class="chroma"><code class="language-Python" data-lang="Python"><span class="ln">1</span><span class="o">&gt;</span> <span class="k">print</span><span class="p">(</span> <span class="s2">&#34;hello world&#34;</span><span class="p">)</span>
-<span class="ln">2</span><span class="c1"># output: =&gt; &#34;hello world&#34;</span>
-</code></pre></div><h2 id="data-types">Data Types</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="ln">1</span><span class="cl"><span class="o">&gt;</span> <span class="nb">print</span><span class="p">(</span> <span class="s2">&#34;hello world&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"># output: =&gt; &#34;hello world&#34;</span>
+</span></span></code></pre></div><h2 id="data-types">Data Types</h2>
 <p>The notion of <strong>type</strong> in many programming languages is an essential aspect. It caracterises an object. Here is the definition given by <a href="https://en.wikipedia.org/wiki/Data_type">Wikipedia</a>:</p>
 <p><em>&quot; A data type or simply type is an attribute of data which tells the compiler or interpreter how the programmer intends to use the data &quot;</em></p>
 <p>By reading this definition, we understand that <em>types</em> imply sets of rules that the interpreter and the programmer have to follow. In Python, all objects have at least one <strong>type</strong>. If you feel confortable with the concept, you can have a look at <a href="%22https://en.wikipedia.org/wiki/Python_(programming_language)#/media/File:Python_3._The_standard_type_hierarchy.png%22">this graph</a> which represents the type hiarchy.</p>
@@ -308,15 +335,15 @@ Either we write python commands we want to execute in a file we've created (with
 <p><strong>1) Find the type of your data :</strong></p>
 <p>You can use the keyword <em>type()</em> to know the type of an object.</p>
 <p><ins>Example</ins>  :</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="s2">&#34;hello&#34;</span><span class="p">)</span>
-<span class="ln">2</span><span class="c1"># outputs: -&gt; &lt;str&gt;</span>
-</code></pre></div><p>Try to diplay the other common types given just above and observe the output.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="s2">&#34;hello&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"># outputs: -&gt; &lt;str&gt;</span>
+</span></span></code></pre></div><p>Try to diplay the other common types given just above and observe the output.</p>
 <p><strong>2) Operations on types and between types</strong></p>
 <p>Try <code>+</code> operator on integers, lists, strings and see what happens. When you add two strings or lists together, it is called <strong>concatenation</strong>.</p>
 <p><ins>Example</ins>  :</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hey&#34;</span><span class="o">+</span><span class="s2">&#34; guys&#34;</span><span class="o">+</span> <span class="s2">&#34;!&#34;</span><span class="p">)</span>
-<span class="ln">2</span><span class="c1"># outputs: -&gt; Hey guys !</span>
-</code></pre></div><p>Now try to add a string with an integer. Is it working ?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hey&#34;</span><span class="o">+</span><span class="s2">&#34; guys&#34;</span><span class="o">+</span> <span class="s2">&#34;!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"># outputs: -&gt; Hey guys !</span>
+</span></span></code></pre></div><p>Now try to add a string with an integer. Is it working ?</p>
 <p><strong>3) Data conversion</strong></p>
 <p>a) Give the result of the addition <code>3.5+2.5</code> in type <code>int</code> (and not a float).</p>
 <p>b) Add <code>&quot;Hey, I'm&quot;</code> and <code>int(24)</code> together to create one string with <code>&quot;Hey, I'm 24&quot;</code>. Make it work !</p>
@@ -330,15 +357,14 @@ Either we write python commands we want to execute in a file we've created (with
 <p><strong>1) Which type for a variable ?</strong></p>
 <p>When you <strong>assigned</strong> an object to a variable, the variable gets the type of this object.</p>
 <p>What is the type and the value of <code>a</code> at the end of the program ?</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="ln">2</span><span class="n">b</span> <span class="o">=</span> <span class="s2">&#34; world &#34;</span>
-<span class="ln">3</span>
-<span class="ln">4</span><span class="n">a</span> <span class="o">+=</span> <span class="mi">2</span>           
-<span class="ln">5</span><span class="n">a</span> <span class="o">=</span> <span class="s2">&#34;hello&#34;</span>
-<span class="ln">6</span>
-<span class="ln">7</span><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
-<span class="ln">8</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="s2">&#34; world &#34;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="n">a</span> <span class="o">+=</span> <span class="mi">2</span>           
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="s2">&#34;hello&#34;</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span>
+</span></span></code></pre></div>
 <div class="tip">
   a+=1 is equivalent to  a=a+1
 </div>
@@ -347,8 +373,8 @@ Either we write python commands we want to execute in a file we've created (with
 <p>As you can see in the piece of code written above, a variable can be edited as many time as you wish. Its type can change in a single piece of code... (However, it's not recommended to change the type of a variable in the same program. It can be confusing for the programmer).</p>
 <h2 id="iterables">Iterables</h2>
 <p>If you don't remember exactly what an iterable is, have a look at the <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/intro_to_python/">course page</a>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;a&#34;</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">]</span>
-</code></pre></div><ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;a&#34;</span><span class="p">,</span> <span class="mi">123</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
+</span></span></code></pre></div><ol>
 <li>
 <p>Give me the third element of the list. Which type is it ?</p>
 </li>
@@ -360,8 +386,8 @@ Either we write python commands we want to execute in a file we've created (with
 </li>
 </ol>
 <p>Consider the new list :</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">google_tab</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="bp">True</span><span class="p">]</span>
-</code></pre></div><ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">google_tab</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;google&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
+</span></span></code></pre></div><ol>
 <li>Could you give in one line a way to get google_tab without all the <code>google</code> strings ?
 
 <div class="tip">
@@ -372,9 +398,9 @@ Either we write python commands we want to execute in a file we've created (with
 <h2 id="functions-or-methods">Functions or methods</h2>
 <p>A function/method is an object that take inputs (parameters) and give you back outputs. (You can draw a pararel with mathematical functions.) You know some functions that have already been implemented by Python for us!</p>
 <p><em>len</em> and <em>print</em> are both build-in methods. You can verify it by using the method : <em>type</em></p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span>
-<span class="ln">2</span><span class="c1"># outputs: -&gt; &lt;class &#39;builtin_function_or_method&#39;&gt;</span>
-</code></pre></div><p>Try it by yourself !</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="nb">len</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"># outputs: -&gt; &lt;class &#39;builtin_function_or_method&#39;&gt;</span>
+</span></span></code></pre></div><p>Try it by yourself !</p>
 <h4 id="small-challenge">Small challenge</h4>
 <p>Create a function called <code>minutes_to_date(minutes)</code>that that translates minutes in this format YYear:DDay:HHours:MMinutes
 http://localhost:1313/ber-dcp-intro-to-computer-science/</p>
@@ -383,10 +409,10 @@ http://localhost:1313/ber-dcp-intro-to-computer-science/</p>
 </ul>
 
 <div class="tip">
-  <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">def</span> <span class="nf">minutes_to_date</span><span class="p">(</span><span class="n">minutes</span><span class="p">):</span>
-<span class="ln">2</span>  <span class="c1"># Write your function that translates the minutes variable into a new one called new_date.</span>
-<span class="ln">3</span>  <span class="k">return</span> <span class="n">new_date</span>
-</code></pre></div>
+  <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">def</span> <span class="nf">minutes_to_date</span><span class="p">(</span><span class="n">minutes</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="c1"># Write your function that translates the minutes variable into a new one called new_date.</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">  <span class="k">return</span> <span class="n">new_date</span>
+</span></span></code></pre></div>
 </div>
 
 
@@ -556,7 +582,7 @@ http://localhost:1313/ber-dcp-intro-to-computer-science/</p>
   </symbol>
 </svg>
 
-<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.33c39fe654e5e9b532b7271f379ff81ca53f8a89d4196f93e38499ebba177cfa4246ff9481f84fba0e9cdc09b7c49a83f9f1b4c8a5165125c3992f1f8136fd78.js"></script>
+<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.baf8ea058bdf6dac3915ba3489c9c4542d42aca6d9fa52e63d306f15bc6ce7d0b96cde14576d86c00f5ff62b57b13d42e9fa529d4eed59ec024fe8e90445a020.js"></script>
 
 </body>
 </html>
