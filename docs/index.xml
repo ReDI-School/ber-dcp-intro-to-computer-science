@@ -6,6 +6,16 @@
     <description>Recent content in Berlin 2022 - Intro to Computer Science on Intro to Computer-Science Berlin</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>05/April - Practical Python Session</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/</guid>
+      <description>Pre Requisites   Review the course content from last class, and try to continue going through the exercises! If you get stuck on any of them, no problem -- make a note of this so we can review these tasks at the beginning of class on Thursday.
+Review 31/March - Installing Python   (Optional) create a repository (local and remote) to gather your Python exercises from last class. Add and commit the file to the repository, and then push these to GitHub.</description>
+    </item>
+    
+    <item>
       <title>22/March - Version Control with Git and GitHub</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github_desktop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -13,7 +23,7 @@
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github_desktop/</guid>
       <description>Prerequisites Please complete these prerequisites before class, so we can spend as much time as possible on troubleshooting and practice! :)
 ✨ Remember, reach out on the class slack channel if you run into any issues or have questions!
-  Homework videos from last class posted on slack on the internet, reposted here:
+   Homework videos from last class posted on slack on the internet, reposted here:
  How the Internet Works in 4 Minutes - 4:03 IP addresses and DNS - 6:45 Packets, Routers, and Reliability - 6:25 HTTP and HTML - 7:07 (Optional) Wires, cables, and WiFi This video is for those who want more details on how information is broken up and transported through the wires that make up the internet, the differences between fiber optics/radio/copper cables, and how WiFI is different than wired internet.</description>
     </item>
     
@@ -23,7 +33,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/exercises/</guid>
-      <description>Small exercises to play with fundamental concepts The purpose of this page and these exercises is to familiarise you with basic programming concepts and to get you to ask questions. Write down all your questions so that we can answer them in the next session. If you have difficulties, please let us know on Slack. Good luck ;)All the exercises can be done by using this Website. You don&#39;t necesseraly need to create an account.</description>
+      <description>Small exercises to play with fundamental concepts The purpose of this page and these exercises is to familiarise you with basic programming concepts and to get you to ask questions. Write down all your questions so that we can answer them in the next session. If you have difficulties, please let us know on Slack. Good luck ;)  All the exercises can be done by using this Website. You don&#39;t necesseraly need to create an account.</description>
     </item>
     
     <item>
