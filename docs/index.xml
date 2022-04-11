@@ -4,7 +4,11 @@
     <title>Berlin 2022 - Intro to Computer Science on Intro to Computer-Science Berlin</title>
     <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/</link>
     <description>Recent content in Berlin 2022 - Intro to Computer Science on Intro to Computer-Science Berlin</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>05/April - Practical Python Session</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/</link>
@@ -13,6 +17,15 @@
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/</guid>
       <description>Pre Requisites   Review the course content from last class, and try to continue going through the exercises! If you get stuck on any of them, no problem -- make a note of this so we can review these tasks at the beginning of class on Thursday.
 Review 31/March - Installing Python   (Optional) create a repository (local and remote) to gather your Python exercises from last class. Add and commit the file to the repository, and then push these to GitHub.</description>
+    </item>
+    
+    <item>
+      <title>12/April - Object-oriented Python</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes/</guid>
+      <description>Prerequisites  You have completely set up one of the three Python development options  VsCode PyCharm Google Colab Notebook   You have solved the tasks from the last class   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Lesson Goals 5 minutes ❌   Check-in on pre-reqs and questions from last class 15 minutes ❌   Procedural programming 10 minutes ❌   Object-oriented Programming 10 minutes ❌   Pillars of object-oriented programming 10 minutes ❌   Break 10 minutes ❌   Task: Extend the pet clinic example 20 minutes ❌   Bonus Task: Implement a REDI Course Management System 20 minutes ❌   Check-out 10 minutes ❌    0.</description>
     </item>
     
     <item>
@@ -28,11 +41,11 @@ Review 31/March - Installing Python   (Optional) create a repository (local and 
     </item>
     
     <item>
-      <title>24/March - Exercises</title>
-      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/exercises/</link>
+      <title>24/March - Exercises : intro to Python</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/exercises_intro_to_python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/exercises/</guid>
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/exercises_intro_to_python/</guid>
       <description>Small exercises to play with fundamental concepts The purpose of this page and these exercises is to familiarise you with basic programming concepts and to get you to ask questions. Write down all your questions so that we can answer them in the next session. If you have difficulties, please let us know on Slack. Good luck ;)  All the exercises can be done by using this Website. You don&#39;t necesseraly need to create an account.</description>
     </item>
     

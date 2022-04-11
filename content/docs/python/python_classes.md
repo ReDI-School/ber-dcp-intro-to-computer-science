@@ -366,7 +366,7 @@ def does_challenger_win(challenger, world):
 
     """
     if challenger['position'] == 1:
-        challenger['collected_treasure'] += 1
+        challenger['collected_treasures'] += 1
         return True
     else:
         return False
@@ -382,7 +382,6 @@ def set_mood_challenger(challenger, new_mood):
     """
     challenger['mood'] = new_mood
     return True
-
 
 def set_position_challenger(challenger, new_pos):
     """
@@ -417,10 +416,10 @@ def print_challenger(challenger):
         Return : the name of the challenger
 
     """
-    return challenger['name']
+    print(challenger['name'])
 
 
-def interview_challengers_podium(challengers):
+def interview_challengers_podium(sport_commentator, challengers):
     """
 
         Desc : interviews the first three challengers and asks them their mood after the competition. The answer of this question is printed.
@@ -432,7 +431,7 @@ def interview_challengers_podium(challengers):
     pass
 
 
-def announce_challengers(challengers):
+def announce_challengers(sport_commentator, challengers):
     """
 
         Desc : announces(print) the challenger
@@ -440,15 +439,27 @@ def announce_challengers(challengers):
         Return : True
 
     """
-    print("The name of the challenger number one is {}".format(print_challenger(challengers[0])))
-    print("The name of the challenger number two is {}".format(print_challenger(challengers[1])))
-    print("The name of the challenger number three is {}".format(print_challenger(challengers[2])))
-    print("The name of the challenger number four is {}".format(print_challenger(challengers[3])))
+    print("[{}]:'The name of the challenger number one is {}'".format(sport_commentator['name'], challengers[0]['name']))
+    print("[{}]:'The name of the challenger number one is {}'".format(sport_commentator['name'], challengers[1]['name']))
+    print("[{}]:'The name of the challenger number one is {}'".format(sport_commentator['name'], challengers[2]['name']))
+    print("[{}]:'The name of the challenger number one is {}'".format(sport_commentator['name'], challengers[3]['name']))
     # TO BE REFACTORED (use a for...loop that depends dynamicaly on the number of challengers)
     return 1
 
 
-def announce_winner(challengers):
+def annouce_winner(sport_commentator, winner):
+    """
+
+        Desc : announces the winner
+        Params : challengers
+        Return : True
+
+    """
+    print("[{}]:'And the winner is {}'".format(sport_commentator['name'], winner['name']))
+    return True
+
+
+def find_winner(challengers):
     """
 
         Desc : finds the challenger who has collected the most treasure and prints and returns the winner
@@ -459,7 +470,7 @@ def announce_winner(challengers):
     # TODO : case when there is a draw
     hyp_winner = challengers[0]
     for challenger in challengers:
-        if challenger['collected_treasure'] > hyp_winner['collected_treasure']:
+        if challenger['collected_treasures'] > hyp_winner['collected_treasures']:
             hyp_winner = challenger
     return hyp_winner
 
@@ -473,23 +484,23 @@ if __name__ == '__main__':
     moods = ["happy", "anxious", "impatient", "desappointed", "amazed"]
 
     # Note to the programmer : if you want to add challengers to the game you must follow the following rules :
-    # a challenger is a challenger IF AND ONLY IF he/she has a name, an age, a mood, a position and a collected_treasure
+    # a challenger is a challenger IF AND ONLY IF he/she has a name, an age, a mood, a position and a collected_treasures
 
-    challenger_1 = {'name': "Antoine", 'age': 23, 'mood': moods[0], 'position': 0, 'collected_treasure': 0}
-    challenger_2 = {'name':"Thomas", 'age': 18, 'mood': moods[1], 'position': 0, 'collected_treasure': 0}
-    challenger_3 = {'name':"Julia", 'age': 28, 'mood': moods[0], 'position': 0, 'collected_treasure': 0}
-    challenger_4 = {'name':"Richard", 'age': 40, 'mood': moods[2], 'position': 0, 'collected_treasure': 0}
+    challenger_1 = {'name': "Antoine", 'age': 23, 'mood': moods[0], 'position': 0, 'collected_treasures': 0}
+    challenger_2 = {'name': "Thomas", 'age': 18, 'mood': moods[1], 'position': 0, 'collected_treasures': 0}
+    challenger_3 = {'name': "Julia", 'age': 28, 'mood': moods[0], 'position': 0, 'collected_treasures': 0}
+    challenger_4 = {'name': "Richard", 'age': 40, 'mood': moods[2], 'position': 0, 'collected_treasures': 0}
 
     challengers = [challenger_1, challenger_2, challenger_3, challenger_4]
 
-    sport_commmentator = {'name': "Kathrine", 'age':68, 'voice_ton':"calm" }
+    sport_commentator = {'name': "Kathrine", 'age':68 }
 
     world_2D = [0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1]
 
     n_turns = 8
 
     # Part two : game execution
-    announce_challengers(challengers)
+    announce_challengers(sport_commentator, challengers)
 
     print("The game is starting...")
 
@@ -498,8 +509,9 @@ if __name__ == '__main__':
             change_position_challenger(challenger, world_2D)
             does_challenger_win(challenger, world_2D)
 
-    winner = announce_winner(challengers)
-    print(winner)
+    winner = find_winner(challengers)
+    annouce_winner(sport_commentator, winner)
+
 
     for challenger in challengers:
         if challenger == winner:
@@ -507,10 +519,32 @@ if __name__ == '__main__':
         else:
             set_mood_challenger(challenger, moods[3])
 
-    interview_challengers_podium(challengers)
+    interview_challengers_podium(sport_commentator, challengers)
 ```
 
-Guide lines:
+## Guide lines and TODO:
+
+**<ins>First step</ins> : work only with the story**
+- Write down objects that you would like to build in this problem.
+- Attach to these objects data and functionalities
+
+{{< tip >}}
+  With the slides, build a list of all objects you can find and the actions/functionalities that are related to. Do you have objects that have the same data and the same actions/functionalities ?
+{{</ tip >}}
+
+
+**<ins>Second step</ins> : explore the existing code**
+- Have a look at the code and try to think which piece of code you would be albe to reuse. Which functions could be used as class methods ?
+
+{{< tip >}}
+If you have finish these two steps, it's time now to write python code. Read again **part 4** of the lecture to be sure of knowing the syntax of classes.
+{{</ tip >}}
+
+**<ins>Third step</ins> : write your own classes**
+- Refactor your code in order to get rid of all function that are defined above the `if __name__ == '__main__'`
+
+**<ins>Fourth step</ins> : draw conclusions**
+- What are the benefits/the desavantages of a such refactoring ?
 
 ## 5.Bonus Task: Extend the pet Clinic Example
 
