@@ -1,6 +1,6 @@
 +++
-title = "18/November - Object-oriented Python"
-description = "Goals"
+title = "12/April - Object-oriented Python"
+description = "Basics of OOP"
 # weight = 10
 +++
 
@@ -220,6 +220,10 @@ pet_one.hello()
 
 ### Class inheritance
 
+{{< tip >}}
+  Understanding the concept of class can be a bit difficult at first. This section is not essential if you are still struggling with the previous concepts. ;)
+{{</ tip >}}
+
 Inheritance allows us to define a class that is a sub-category of another class. For example at the pet clinic, we have
 a `Pet` class. But using the `Pet` class, we cannot differentiate between cats, dogs, turtles or birds.
 
@@ -339,7 +343,176 @@ bird_one.fly()
 # Swoooosh! I'm flying away! I am a bird!
 ```
 
-## 5. Task: Extend the pet Clinic Example
+## Small challenge : "It's almost Easter..."
+
+In this exercise, we will try to create a small game using Object Oriented Programming. It is still possible not to use classes, but you will see that it complicates the code considerably... The ultimate goal of this challenge is to show you the power of classes !
+
+#### The game : context & rules
+
+Every year, in a small rural village, the municipality organizes a treasure hunt. Many sweets are hidden in the town and the participants have to find them within a given time. The one who finds the most sweets wins the game. Let's code this.
+
+Here is the code that simulate the game, the **goal** is to reimplement this code by using classes.
+
+```python
+from random import randrange
+
+
+def does_challenger_win(challenger, world):
+    """
+
+        Desc : tells whether the challenger wins a point. If yes it modifies the number of points.
+        Params : world, challenger
+        Return : boolean according to the results
+
+    """
+    if challenger['position'] == 1:
+        challenger['collected_treasure'] += 1
+        return True
+    else:
+        return False
+
+
+def set_mood_challenger(challenger, new_mood):
+    """
+
+        Desc : sets the mood of the challenger
+        Params : challenger, new_mood
+        Return : True
+
+    """
+    challenger['mood'] = new_mood
+    return True
+
+
+def set_position_challenger(challenger, new_pos):
+    """
+
+        Desc : sets the mood of the challenger
+        Params : challenger, new_mood
+        Return : True
+
+    """
+    challenger['position'] = new_pos
+    return True
+
+
+def change_position_challenger(challenger, world):
+    """
+
+        Desc : gives the new box number where the challenger has to go + sets the new position of the challenger
+        Params : challenger, world
+        Return : the new given position
+
+    """
+    square_number = randrange(len(world)) # HINT : randrange is a method from the 'random' library. It gives an integer between 0 and len(world).
+    set_position_challenger(challenger, square_number)
+    return square_number
+
+
+def print_challenger(challenger):
+    """
+
+        Desc : return the relevant information of the challenger when programmers use 'print'
+        Params : challenger
+        Return : the name of the challenger
+
+    """
+    return challenger['name']
+
+
+def interview_challengers_podium(challengers):
+    """
+
+        Desc : interviews the first three challengers and asks them their mood after the competition. The answer of this question is printed.
+        Params : challengers
+        Return : the list of moods in the same order than the ranking
+
+    """
+    # TO BE COMPLETED
+    pass
+
+
+def announce_challengers(challengers):
+    """
+
+        Desc : announces(print) the challenger
+        Params : challengers
+        Return : True
+
+    """
+    print("The name of the challenger number one is {}".format(print_challenger(challengers[0])))
+    print("The name of the challenger number two is {}".format(print_challenger(challengers[1])))
+    print("The name of the challenger number three is {}".format(print_challenger(challengers[2])))
+    print("The name of the challenger number four is {}".format(print_challenger(challengers[3])))
+    # TO BE REFACTORED (use a for...loop that depends dynamicaly on the number of challengers)
+    return 1
+
+
+def announce_winner(challengers):
+    """
+
+        Desc : finds the challenger who has collected the most treasure and prints and returns the winner
+        Params : challengers
+        Return : the winner (as an object)
+
+    """
+    # TODO : case when there is a draw
+    hyp_winner = challengers[0]
+    for challenger in challengers:
+        if challenger['collected_treasure'] > hyp_winner['collected_treasure']:
+            hyp_winner = challenger
+    return hyp_winner
+
+
+
+
+
+if __name__ == '__main__':
+
+    # Part one : data definition
+    moods = ["happy", "anxious", "impatient", "desappointed", "amazed"]
+
+    # Note to the programmer : if you want to add challengers to the game you must follow the following rules :
+    # a challenger is a challenger IF AND ONLY IF he/she has a name, an age, a mood, a position and a collected_treasure
+
+    challenger_1 = {'name': "Antoine", 'age': 23, 'mood': moods[0], 'position': 0, 'collected_treasure': 0}
+    challenger_2 = {'name':"Thomas", 'age': 18, 'mood': moods[1], 'position': 0, 'collected_treasure': 0}
+    challenger_3 = {'name':"Julia", 'age': 28, 'mood': moods[0], 'position': 0, 'collected_treasure': 0}
+    challenger_4 = {'name':"Richard", 'age': 40, 'mood': moods[2], 'position': 0, 'collected_treasure': 0}
+
+    challengers = [challenger_1, challenger_2, challenger_3, challenger_4]
+
+    sport_commmentator = {'name': "Kathrine", 'age':68, 'voice_ton':"calm" }
+
+    world_2D = [0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1]
+
+    n_turns = 8
+
+    # Part two : game execution
+    announce_challengers(challengers)
+
+    print("The game is starting...")
+
+    for turn_index in range(n_turns):
+        for challenger in challengers:
+            change_position_challenger(challenger, world_2D)
+            does_challenger_win(challenger, world_2D)
+
+    winner = announce_winner(challengers)
+    print(winner)
+
+    for challenger in challengers:
+        if challenger == winner:
+            set_mood_challenger(challenger, moods[4])
+        else:
+            set_mood_challenger(challenger, moods[3])
+
+    interview_challengers_podium(challengers)
+```
+
+Guide lines:
+
+## 5.Bonus Task: Extend the pet Clinic Example
 
 - Write out all the code in the examples above in your preferred python environment and verify that they work for you
 - Add the ability to specify an age of the pet to the `Pet` class
@@ -366,6 +539,7 @@ bird_one.fly()
   - Creating 3 REDI School objects representing the locatios in Germany
   - Creating 1 course object representing a course offered at one of the schools (3 course objects in total)
   - Creating students objects representing each of the students of the `Intro To CS` course.
+
 
 
 
