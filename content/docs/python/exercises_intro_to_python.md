@@ -1,5 +1,5 @@
 +++
-title = "24/March - Exercises"
+title = "24/March - Exercises : intro to Python"
 description = "Quick exercises to play with programming fundamentals"
 +++
 
@@ -155,8 +155,8 @@ A function/method is an object that take inputs (parameters) and give you back o
 Try it by yourself !
 
 #### Small challenge
-Create a function called `minutes_to_date(minutes)`that that translates minutes in this format YYear:DDay:HHours:MMinutes
-http://localhost:1313/ber-dcp-intro-to-computer-science/
+Create a function called `minutes_to_date(minutes)`that translates minutes in this format YYear:DDay:HHours:MMinutes
+
 - Give the result of minute_to_date(123234987)
 
 {{< tip >}}
