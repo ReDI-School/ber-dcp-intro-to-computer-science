@@ -351,6 +351,8 @@ In this exercise, we will try to create a small game using Object Oriented Progr
 
 Every year, in a small rural village, the municipality organizes a treasure hunt. Many sweets are hidden in the town and the participants have to find them within a given time. The one who finds the most sweets wins the game. Let's code this.
 
+[The slides available here give you a better understanding of how the game will be run.](https://drive.google.com/file/d/1pVF-N2Gf4RXdCmssmfpz1JxKq7-CyJ9o/view?usp=sharing)
+
 Here is the code that simulate the game, the **goal** is to reimplement this code by using classes.
 
 ```python
