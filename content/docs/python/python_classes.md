@@ -522,31 +522,41 @@ if __name__ == '__main__':
             set_mood_challenger(challenger, moods[3])
 
     interview_challengers_podium(sport_commentator, challengers)
+
 ```
 
 ## Guide lines and TODO:
 
 **<ins>First step</ins> : work only with the story**
 - Write down objects that you would like to build in this problem.
-- Attach to these objects data and functionalities
+- Attach data and functionalities to these objects.
 
 {{< tip >}}
-  With the slides, build a list of all objects you can find and the actions/functionalities that are related to. Do you have objects that have the same data and the same actions/functionalities ?
+  With the slides, build a list of all objects you can find and the related actions/functionalities. Do you have objects that have the same data and the same actions/functionalities ? If so, think of the class. ;)
 {{</ tip >}}
 
 
 **<ins>Second step</ins> : explore the existing code**
-- Have a look at the code and try to think which piece of code you would be albe to reuse. Which functions could be used as class methods ?
+- Have a look at the code and try to think which piece of code you would be able to reuse. Which functions could be used as class methods ?
+
+- Make ties with what you found in the first step.
 
 {{< tip >}}
-If you have finish these two steps, it's time now to write python code. Read again **part 4** of the lecture to be sure of knowing the syntax of classes.
+If you have finish these two steps, it's time now to write python code. Make sure that you know well the syntax of python classes, don't hesitate to read again the **part 4** of the lecture.
 {{</ tip >}}
 
-**<ins>Third step</ins> : write your own classes**
-- Refactor your code in order to get rid of all function that are defined above the `if __name__ == '__main__'`
 
+**<ins>Third step</ins> : Refactoring : write your own classes**
+- Refactor your code in order to get rid of all function that are defined above the `if __name__ == '__main__'`. In order to do it, you need to create several classes.
+{{< tip >}}
+**Refactoring definition:**
+"In computer programming and software design, **code refactoring** is the process of restructuring existing computer code [...] without changing its external behavior." [Wikipedia](https://en.wikipedia.org/wiki/Code_refactoring)
+{{</ tip >}}
 **<ins>Fourth step</ins> : draw conclusions**
-- What are the benefits/the desavantages of a such refactoring ?
+- What are the benefits/the desavantages of a such refactoring ? Write at least four bullets.
+
+**<ins>Fifth step</ins> : finalize some functions**
+- To finish the challenge, you have to **refactor** the function formerly called `announce_challengers()` and to fill in the function formely called `interview_challengers_podium()`.
 
 ## 5.Bonus Task: Extend the pet Clinic Example
 
