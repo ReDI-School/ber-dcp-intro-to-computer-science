@@ -359,45 +359,42 @@ Here is the code that simulate the game, the **goal** is to reimplement this cod
 from random import randrange
 
 
-def does_challenger_win(challenger, world):
+def update_challenger_points(challenger, world):
     """
 
         Desc : tells whether the challenger wins a point. If yes it modifies the number of points.
         Params : world, challenger
-        Return : boolean according to the results
+        Return : None
 
     """
-    if challenger['position'] == 1:
+    if world[challenger['position']] == 1:
         challenger['collected_treasures'] += 1
-        return True
-    else:
-        return False
 
 
-def set_mood_challenger(challenger, new_mood):
+def set_challenger_mood(challenger, new_mood):
     """
 
         Desc : sets the mood of the challenger
         Params : challenger, new_mood
-        Return : True
+        Return : None
 
     """
     challenger['mood'] = new_mood
-    return True
 
-def set_position_challenger(challenger, new_pos):
+
+def set_challenger_position(challenger, new_pos):
     """
 
         Desc : sets the mood of the challenger
         Params : challenger, new_mood
-        Return : True
+        Return : None
 
     """
     challenger['position'] = new_pos
-    return True
 
 
-def change_position_challenger(challenger, world):
+
+def update_challenger_position(challenger, world):
     """
 
         Desc : gives the new box number where the challenger has to go + sets the new position of the challenger
@@ -406,7 +403,7 @@ def change_position_challenger(challenger, world):
 
     """
     square_number = randrange(len(world)) # HINT : randrange is a method from the 'random' library. It gives an integer between 0 and len(world).
-    set_position_challenger(challenger, square_number)
+    set_challenger_position(challenger, square_number)
     return square_number
 
 
@@ -508,8 +505,8 @@ if __name__ == '__main__':
 
     for turn_index in range(n_turns):
         for challenger in challengers:
-            change_position_challenger(challenger, world_2D)
-            does_challenger_win(challenger, world_2D)
+            update_challenger_position(challenger, world_2D)
+            update_challenger_points(challenger, world_2D)
 
     winner = find_winner(challengers)
     annouce_winner(sport_commentator, winner)
@@ -517,9 +514,9 @@ if __name__ == '__main__':
 
     for challenger in challengers:
         if challenger == winner:
-            set_mood_challenger(challenger, moods[4])
+            set_challenger_mood(challenger, moods[4])
         else:
-            set_mood_challenger(challenger, moods[3])
+            set_challenger_mood(challenger, moods[3])
 
     interview_challengers_podium(sport_commentator, challengers)
 
