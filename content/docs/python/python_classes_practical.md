@@ -1,5 +1,5 @@
 +++
-title = "23/November - Object-oriented Python"
+title = "14/April - Practical Object-oriented Python"
 description = "Goals"
 # weight = 10
 +++
@@ -8,33 +8,33 @@ description = "Goals"
 
 ## Prerequisites
 
-- Review the following concepts from the [previous class](../python_classes/) and answer the following questions:
+- Read through the content from the [previous class](../python_classes/). Review the following concepts and try to answer the following questions:
   - What is object orientated programming
   - Difference between an Object and a Class
   - How do we define a constructor function
   - How do we define attributes on a class
   - How do we create a method on a class
   - How do we create an inhertiance class
-- \[Recommended\]: Work on the bonus task (task 6) from the previous class
-- \[Optional\]: review the w3 schools' [materials on Python classes](https://www.w3schools.com/python/python_classes.asp)
+- \[Recommended\]: review the w3 schools' [materials on Python classes](https://www.w3schools.com/python/python_classes.asp)
+- \[Optional\]: Work on the bonus task (task 6) from the previous class
 
 ---
 
 ## Class Curriculum
 
-| Section content                                        | Expected time (mins) | Pre - Requirements |
-| ------------------------------------------------------ | -------------------- | ------------------ |
-| Lesson Goals                                           | 5 minutes            | ❌                 |
-| Check-in on pre-reqs, recap, questions from last class | 10 - 15 minutes      | ❌                 |
-| Kahoot                                                 | 10 - 15 minutes      | ❌                 |
-| Exercises in groups                                    | 30 minutes           | ❌                 |
-| Break                                                  | 10 minutes           | ❌                 |
-| Exercises in groups                                    | 40 minutes           | ❌                 |
-| Check-out                                              | 10 minutes           | ❌                 |
+| Section content                   | Expected time (mins) | Pre - Requirements |
+| --------------------------------- | -------------------- | ------------------ |
+| Lesson Goals                      | 5 minutes            | ❌                 |
+| Recap & questions from last class | 30 - 45 minutes      | ❌                 |
+| Kahoot                            | 10 - 15 minutes      | ❌                 |
+| Break                             | 10 minutes           | ❌                 |
+| Exercises in groups               | 40-50 minutes        | ❌                 |
+| Check-out                         | 10 minutes           | ❌                 |
 
 ## 0. Lesson Goals
 
-- Practice object-oriented programming concepts
+- Recap content and activity from last class
+- Understand and practice object-oriented programming concepts
 
 ## 1. Check-In
 
@@ -61,7 +61,7 @@ Example solutions to parts 1-3 will be posted after class :)
 
    - What properties should this class have?
    - Include an object method that displays the card. (Hint: you can `print` the properties of the card.)
-   - Test your implementation by creating and displaying a few cards (ex. Ace of Spades, 4 of Hearts, 10 of Diamonds...)
+   - Test your implementation by creating and displaying a few cards (ex. Ace of Spades, 4 of Hearts, 10 of Diamonds, Queen of Clubs...)
    <!-- 
       Possible solution:
 
