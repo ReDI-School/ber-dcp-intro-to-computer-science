@@ -8,7 +8,7 @@ description = "Goals"
 
 ## Prerequisites
 
-- Read through the content from the [previous class](../python_classes/). Review the following concepts and try to answer the following questions:
+- Read through the content from the [previous class](../python_classes/). Review the following concepts and try to answer these questions:
   - What is object orientated programming
   - Difference between an Object and a Class
   - How do we define a constructor function
