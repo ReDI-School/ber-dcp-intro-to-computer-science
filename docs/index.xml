@@ -4,11 +4,7 @@
     <title>Berlin 2022 - Intro to Computer Science on Intro to Computer-Science Berlin</title>
     <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/</link>
     <description>Recent content in Berlin 2022 - Intro to Computer Science on Intro to Computer-Science Berlin</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>05/April - Practical Python Session</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/</link>
@@ -26,6 +22,15 @@ Review 31/March - Installing Python   (Optional) create a repository (local and 
       
       <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes/</guid>
       <description>Prerequisites  You have completely set up one of the three Python development options  VsCode PyCharm Google Colab Notebook   You have solved the tasks from the last class   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Lesson Goals 5 minutes ❌   Check-in on pre-reqs and questions from last class 15 minutes ❌   Procedural programming 10 minutes ❌   Object-oriented Programming 10 minutes ❌   Pillars of object-oriented programming 10 minutes ❌   Break 10 minutes ❌   Task: Extend the pet clinic example 20 minutes ❌   Bonus Task: Implement a REDI Course Management System 20 minutes ❌   Check-out 10 minutes ❌    0.</description>
+    </item>
+    
+    <item>
+      <title>14/April - Practical Object-oriented Python</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes_practical/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes_practical/</guid>
+      <description>Prerequisites  Read through the content from the previous class. Review the following concepts and try to answer these questions:  What is object orientated programming Difference between an Object and a Class How do we define a constructor function How do we define attributes on a class How do we create a method on a class How do we create an inhertiance class   [Recommended]: review the w3 schools&#39; materials on Python classes [Optional]: Work on the bonus task (task 6) from the previous class   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Lesson Goals 5 minutes ❌   Recap &amp;amp; questions from last class 30 - 45 minutes ❌   Kahoot 10 - 15 minutes ❌   Break 10 minutes ❌   Exercises in groups 40-50 minutes ❌   Check-out 10 minutes ❌    0.</description>
     </item>
     
     <item>
