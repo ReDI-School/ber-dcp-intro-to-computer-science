@@ -1,5 +1,5 @@
 +++
-title = "04/October - Basic knowledge of HTML"
+title = "21/04 - Basic knowledge of HTML"
 description = "Goals"
 weight = 10
 +++
@@ -161,7 +161,3 @@ the `<head>` tag and a grandchild of the `<html>` tag.
 
 - [HTML Class Practice](https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal)
 - [HTML cheatsheet](https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf), by Stanford University
-
-## Next class preparation
-
-{{< button "../basic_css/" "Basics knowledge of CSS" "mb-1 grid-4" >}}
