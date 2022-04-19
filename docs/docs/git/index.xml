@@ -4,7 +4,11 @@
     <title>2 - Version Control with Git and GitHub on Intro to Computer-Science Berlin</title>
     <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/</link>
     <description>Recent content in 2 - Version Control with Git and GitHub on Intro to Computer-Science Berlin</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>22/March - Version Control with Git and GitHub</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github_desktop/</link>
