@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.81.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.68.3" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://redi-school.github.io/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://redi-school.github.io/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://redi-school.github.io/favicons/favicon-16x16.png'>
@@ -12,14 +12,15 @@
 <title>14/April - Practical Object-oriented Python | Intro to Computer-Science Berlin</title><meta property="og:title" content="14/April - Practical Object-oriented Python" />
 <meta property="og:description" content="Goals" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes_practical/" /><meta property="article:section" content="docs" />
-
-<meta property="article:modified_time" content="2022-04-12T23:41:17&#43;02:00" />
-
+<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes_practical/" />
+<meta property="article:modified_time" content="2022-04-19T16:35:25+02:00" />
 <meta itemprop="name" content="14/April - Practical Object-oriented Python">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2022-04-12T23:41:17&#43;02:00" />
-<meta itemprop="wordCount" content="796">
+<meta itemprop="dateModified" content="2022-04-19T16:35:25&#43;02:00" />
+<meta itemprop="wordCount" content="253">
+
+
+
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="14/April - Practical Object-oriented Python"/>
 <meta name="twitter:description" content="Goals"/>
@@ -217,7 +218,15 @@
     <li><a href="#1-check-in">1. Check-In</a></li>
     <li><a href="#2-kahoot">2. Kahoot</a></li>
     <li><a href="#3-exercises-part-1">3. Exercises (part 1)</a></li>
-    <li><a href="#4-exercises-part-2">4. Exercises (part 2)</a></li>
+  </ul>
+</nav>
+        <h3 class="section_link"><a id="docs-19april---practing-object-oriented-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_exercises_practical/">19/April - Practing Object-oriented Python</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#0-lesson-goals">0. Lesson Goals</a></li>
+    <li><a href="#1-check-in">1. Check-In</a></li>
+    <li><a href="#2-recap">2. Recap</a></li>
+    <li><a href="#3-exercises-card-game">3. Exercises (Card Game)</a></li>
   </ul>
 </nav>
         <h3 class="section_link"><a id="docs-24march---exercises--intro-to-python" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/exercises_intro_to_python/">24/March - Exercises : intro to Python</a></h3><nav id="TableOfContents">
@@ -352,10 +361,10 @@
 <li>How do we define a constructor function</li>
 <li>How do we define attributes on a class</li>
 <li>How do we create a method on a class</li>
-<li>How do we create an inhertiance class</li>
+<li>How do we create an inhertiance class
+ [Recommended]: review the w3 schools' <a href="https://www.w3schools.com/python/python_classes.asp">materials on Python classes</a></li>
 </ul>
 </li>
-<li>[Recommended]: review the w3 schools' <a href="https://www.w3schools.com/python/python_classes.asp">materials on Python classes</a></li>
 <li>[Optional]: Work on the bonus task (task 6) from the previous class</li>
 </ul>
 <hr>
@@ -414,141 +423,6 @@
 <p>Let's do <a href="https://play.kahoot.it/v2/?quizId=1b6aba45-138f-4af3-bb3a-3c8e290a26d5">a Kahoot</a> to check our understanding of the concepts covered last class!</p>
 <h2 id="3-exercises-part-1">3. Exercises (part 1)</h2>
 <p>In groups, go through the exercises on <a href="https://pynative.com/python-object-oriented-programming-oop-exercise/">this tutorial</a>. Try not to look at the solutions until you have finished the problem. Copy the skeleton code into your local development setup (VSCode, PyCharm, or Google Colab) and try to achieve the &quot;expected output&quot; described for each exercise. Make sure everyone in your group has understood and produced the proper output before moving on to the next task in this section :)</p>
-<h2 id="4-exercises-part-2">4. Exercises (part 2)</h2>
-<p>In groups, let's start building a card game in Python. (While we won't implement an entire game in this activity, implementing a Blackjack, Poker, or other game-player could be a fun project!)</p>
-<p>The goal will be to describe the real-world situation of a deck of cards using Python code. This is meant to be challenging; Google is your friend here, use it to look up how to do things and to help you understand the material!</p>
-<p>Example solutions to parts 1-3 will be posted after class :)</p>
-<ol start="0">
-<li>
-<p>If you aren't sure what a deck of cards is, feel free to check out <a href="https://en.wikipedia.org/wiki/Standard_52-card_deck">this Wikipedia page</a> or chat with your group :). The rest of this exercise assumes a standard 52-card deck (French deck), but feel free to use a different style if you wish.</p>
-</li>
-<li>
-<p>Define a <code>Card</code> class.</p>
-<ul>
-<li>What properties should this class have?</li>
-<li>Include an object method that displays the card. (Hint: you can <code>print</code> the properties of the card.)</li>
-<li>Test your implementation by creating and displaying a few cards (ex. Ace of Spades, 4 of Hearts, 10 of Diamonds, Queen of Clubs...)</li>
-</ul>
-<!-- 
-   Possible solution:
-
-```python
-    class Card:
-        def __init__(self, suit, name):
-            # Note: you can add additional checks here
-            self.suit = suit
-            self.name = name
-
-        def display(self):
-            print(self.name, "of", self.suit)
-
-    # Test instantiating and displaying a card
-    test_card = Card("spades", "A")
-    test_card.display()
-
-```
-
-</li>
-</ol>
-<ol start="2">
-<li>
-<p>Define a <code>Deck</code> class.</p>
-<ul>
-<li>What properties should this class have?</li>
-<li>In the <strong>init</strong> constructor, make sure to build some representation of the 52-card deck. (Hint: use a nested for loop to create all the necessary cards)</li>
-<li>Include an object method that displays the deck.</li>
-<li>Test your implementation by displaying the deck. Is the whole deck there and as you expect?</li>
-</ul>
-<!-- Possible solution:
-
-```python
-    class Deck:
-        def __init__(self):
-            # Define the suits and names that we will iterate over
-            suits = ["spades", "hearts", "diamonds", "clubs"]
-            names = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
-            # Create a list of Cards, one value for each suit
-            self.cards = []
-            for suit in suits:
-                for name in names:
-                    self.cards.append(Card(suit, name))
-
-        def display(self):
-            print("deck:")
-            # Let's display each card in the deck using the Card's display object method
-            for card in self.cards:
-                card.display()
-
-    # Test out instantiating and displaying the Deck
-    deck = Deck()
-    deck.display()
-``` -->
-</li>
-<li>
-<p>(Challenge) Define a <code>Hand</code> class. A Hand is a list of cards that has a total value. For now, go ahead and assume that the value of a Hand is the sum of the values of each card and you can feel free to use the following scheme: Ace = 1 point, 2 = 2 points ... , King = 13 points. (Hint: consider using a dictionary mapping from card type to value.)</p>
-<ul>
-<li>What properties should this class have?</li>
-<li>Include a method to get the value of the hand.</li>
-<li>Include a method to display the hand.</li>
-<li>Test your implementation by creating (instantiating) a few <code>Hand</code> objects and displaying them.</li>
-</ul>
-<!-- Possible solution:
-
-```python
-    class Hand:
-        def __init__(self):
-            # This is one way of implementing this; you could also take in a list of cards and set that here (and add the value) for example.
-            self.cards = []
-            self.value = 0
-
-        def add_card(self, card):
-            # We could also make this a "global variable" instead of duplicating across Deck and Hand
-            # As a bonus task: feel free to try making card_values a "global variable" and use this in Deck and Hand :)
-            card_values = {
-                "A": 1,
-                "2": 2,
-                "3": 3,
-                "4": 4,
-                "5": 5,
-                "6": 6,
-                "7": 7,
-                "8": 8,
-                "9": 9,
-                "10": 10,
-                "J": 11,
-                "Q": 12,
-                "K": 13,
-            }
-            # Add the card to the hand's list of cards
-            self.cards.append(card)
-            # Add the card's point value (from the mapping above) to the total value of the hand
-            self.value += card_values[card.name]
-
-        def display(self):
-            print("value of hand:", self.value)
-            print("cards in hand:")
-            for card in self.cards:
-                card.display()
-
-     # Test instantiating a Hand and adding two cards to it, then displaying the hand
-     hand = Hand()
-     # Can create a Card to add to the hand and pass in as a variable
-     test_card = Card("spades", "A")
-     hand.add_card(test_card)
-     # Or we can directly create and add a Card in the same line
-     hand.add_card(Card("hearts", "10"))
-     hand.display()
-``` -->
-</li>
-</ol>
-<p>(Optional challenge tasks / Project ideas) Note: all of these are supposed to be challenging, and implementing a combination of these (or the last one) could be an exciting project later in the coming weeks as well! Feel free to extend the example above by picking any of the additional tasks to &quot;add-on&quot; to your deck of cards:</p>
-<ul>
-<li><code>Deck</code>: add a <code>draw</code> function which returns the next card drawn in the deck.</li>
-<li><code>Deck</code>: add a <code>shuffle</code> function which gives the deck a random order. (Hint: use the Python <code>random</code> library to do this; feel free to Google or ask for help on how to access these functions)</li>
-<li><code>Hand</code>: choose a game of your choice (i.e. Blackjack, Poker, ...) and write a method to either 1) compare two hands or 2) an object method that tells you if this is a winnning hand</li>
-<li><code>Game</code>: (this could be a project for later in the class ;)) choose a 2-player card game of your choice and implement a game played by two auto-players</li>
-<li>???: feel free to add additional classes or properties that you think make sense or are missing!</li>
-</ul>
 
     <div class="pager">
   
@@ -563,8 +437,8 @@
   
   <div class="pager_item next">
     
-    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/git/git_and_github_desktop/" class="pager_link button" title="22/March - Version Control with Git and GitHub">
-      <span class="pager_label">22/March - Version Control with Git and GitHub</span>
+    <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_exercises_practical/" class="pager_link button" title="19/April - Practing Object-oriented Python">
+      <span class="pager_label">19/April - Practing Object-oriented Python</span>
     </a>
   </div>
   
@@ -716,7 +590,7 @@
   </symbol>
 </svg>
 
-<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.33c39fe654e5e9b532b7271f379ff81ca53f8a89d4196f93e38499ebba177cfa4246ff9481f84fba0e9cdc09b7c49a83f9f1b4c8a5165125c3992f1f8136fd78.js"></script>
+<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.da447fb55567ef78b2118176ae7d1d5dd0ec562b6ae1f7dbaf677ec1bc6b0dedd5e2a2146e761b1716034fd8188bac4ad3806ac5b2ee7f3dd06f3fcb96dbaceb.js"></script>
 
 </body>
 </html>
