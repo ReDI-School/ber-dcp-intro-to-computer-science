@@ -95,7 +95,11 @@ Example solutions to parts 1-3 will be posted after class :)
        test_card = Card("spades", "A")
        test_card.display()
 
+<<<<<<< HEAD
    ```
+=======
+   ``` -->
+>>>>>>> 6cadd595d7fe5277e842f5c657f47281ada4d09e
 
 2) Define a `Deck` class.
 
