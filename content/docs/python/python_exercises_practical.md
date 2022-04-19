@@ -95,7 +95,7 @@ Example solutions to parts 1-3 will be posted after class :)
        test_card = Card("spades", "A")
        test_card.display()
 
-   ```
+   ``` -->
 
 2) Define a `Deck` class.
 
