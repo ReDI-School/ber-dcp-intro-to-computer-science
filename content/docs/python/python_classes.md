@@ -536,7 +536,8 @@ SOLUTION : You can check [this document](https://drive.google.com/file/d/1qtXloa
 {{</ tip >}}
 
 **<ins>Second step</ins> : explore the existing code**
-- Have a look at the code above and try to think which piece of code you would be able to reuse. Which functions could be used as class methods ?
+The code above is achieving what we want to do in this exercise, but with the wrong paradigm, the **procedural** paradigm. We want to tranform it into an Oriented Object code
+- Have a look at the code above and try to think which piece of code you would be able to reuse. Do you find the data you've already spotted during the first step ? Which functions could be used as class methods ?
 
 - Write the name of the chosen functions in the notes you've made during the first part and bind them to a specific class.
 
@@ -545,7 +546,7 @@ If you **need** help you can check [this document](https://drive.google.com/file
 {{</ tip >}}
 
 {{< tip >}}
-If you have finish these two steps, it's time now to write python code. **Make sure that you know well the syntax of python classes**, don't hesitate to read again the **part 4** of the lecture.
+If you have finish these two steps, it's time now to write python code. **Make sure that you know well the syntax of python classes**, don't hesitate to read again the **part 4** of the lecture and do the pet example by yourself.
 {{</ tip >}}
 
 
