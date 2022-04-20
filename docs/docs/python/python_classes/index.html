@@ -13,11 +13,11 @@
 <meta property="og:description" content="Basics of OOP" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes/" />
-<meta property="article:modified_time" content="2022-04-12T18:05:26+02:00" />
+<meta property="article:modified_time" content="2022-04-20T00:15:07+02:00" />
 <meta itemprop="name" content="12/April - Object-oriented Python">
 <meta itemprop="description" content="Basics of OOP">
-<meta itemprop="dateModified" content="2022-04-12T18:05:26&#43;02:00" />
-<meta itemprop="wordCount" content="2877">
+<meta itemprop="dateModified" content="2022-04-20T00:15:07&#43;02:00" />
+<meta itemprop="wordCount" content="3012">
 
 
 
@@ -33,17 +33,17 @@
   <meta name="description" content="Basics of OOP">
 
 </head>
-  
-    
-  
+
+
+
 <body class="page-page"data-code="7" data-lines="false" >
   <header class="nav_header">
 <nav class="wrap nav menu">
 	<a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/" class="nav_brand">
 		<picture data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/E048.svg" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/E048.svg">
-			
+
 			<source srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/E048.svg' media="(prefers-color-scheme: dark)">
-			
+
 			<img srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/E048.svg' alt = 'Intro to Computer-Science Berlin Logo'>
 		</picture>
 		<label class="nav_toggle toggle" title='Site Menu' role="button">
@@ -69,26 +69,26 @@
 		<li class="nav-item">
 			<a class="nav-link" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/"><span>Course Overview</span></a>
 		</li>
-		
+
 		<li class="nav-item nav_repo">
 			<a class="nav-link" href="https://github.com/ReDI-School/ber-dcp-intro-to-computer-science" target="_blank">
-				
+
 					<picture data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/GitHubMarkLight.svg" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/GitHubMarkDark.svg">
-						
+
 							<source srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/GitHubMarkDark.svg' media="(prefers-color-scheme: dark)">
-						
+
 						<img srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/images/GitHubMarkLight.svg' alt = 'GitHub Repo'>
 					</picture>
-				
+
 			</a>
 		</li>
 		<li class="nav-item">
 <div class = 'color_mode'>
   <label for = 'mode'>
     <picture data-lit="https://redi-school.github.io/ber-dcp-intro-to-computer-science/icons/sun.svg" data-dark="https://redi-school.github.io/ber-dcp-intro-to-computer-science/icons/moon.svg">
-      
+
         <source srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/icons/moon.svg' media="(prefers-color-scheme: dark)">
-      
+
       <img srcset = 'https://redi-school.github.io/ber-dcp-intro-to-computer-science/icons/sun.svg' alt = 'Light/Dark Mode Icon' class="color_icon">
     </picture>
   </label>
@@ -661,7 +661,7 @@ that apply to only them. For example cats can meow, dogs can bark, birds can fly
 <p>In this exercise, we will try to create a small game using Object Oriented Programming. It is still possible not to use classes, but you will see that it complicates the code considerably... The ultimate goal of this challenge is to show you the power of classes !</p>
 <h4 id="the-game--context--rules">The game : context &amp; rules</h4>
 <p>Every year, in a small rural village, the municipality organizes a treasure hunt. Many sweets are hidden in the town and the participants have to find them within a given time. The one who finds the most sweets wins the game. Let's code this.</p>
-<p><a href="https://drive.google.com/file/d/1pVF-N2Gf4RXdCmssmfpz1JxKq7-CyJ9o/view?usp=sharing">The slides available here give you a better understanding of how the game will be run.</a></p>
+<p>The slides available <a href="https://drive.google.com/file/d/1pVF-N2Gf4RXdCmssmfpz1JxKq7-CyJ9o/view?usp=sharing">here</a> give you a better understanding of how the game will be run.</p>
 <p>Here is the code that simulate the game, the <strong>goal</strong> is to reimplement this code by using classes.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">  1</span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
 <span class="ln">  2</span>
@@ -830,38 +830,47 @@ that apply to only them. For example cats can meow, dogs can bark, birds can fly
 </code></pre></div><h2 id="guide-lines-and-todo">Guide lines and TODO:</h2>
 <p><strong><ins>First step</ins> : work only with the story</strong></p>
 <ul>
-<li>Write down objects that you would like to build in this problem.</li>
-<li>Attach data and functionalities to these objects.</li>
+<li>With the help of the <a href="https://drive.google.com/file/d/1pVF-N2Gf4RXdCmssmfpz1JxKq7-CyJ9o/view?usp=sharing">slides</a>, write down any kind of entities you can find in the story.</li>
+<li>Try to draw links between entities. Can you say that some entities belongs to others ?</li>
+<li>Among these entities, which one could be created by a class ? Which entities are in reality just data/attributes of a class ?</li>
 </ul>
+<p>These questions are broad (and a bit complicated) and there is not just one solution !</p>
 
 <div class="tip">
-  With the slides, build a list of all objects you can find and the related actions/functionalities. Do you have objects that have the same data and the same actions/functionalities ? If so, think of the class. ;)
+  SOLUTION : You can check <a href="https://drive.google.com/file/d/1qtXloa1_dLAyORvBBB6D93huZL3b7nJm/view?usp=sharing">this document</a> to see which classes could be interesting to create (slide 1). Don't hesitate to let comments on the doc if you have questions.
 </div>
 
 <p><strong><ins>Second step</ins> : explore the existing code</strong></p>
 <ul>
 <li>
-<p>Have a look at the code and try to think which piece of code you would be able to reuse. Which functions could be used as class methods ?</p>
+<p>Have a look at the code above and try to think which piece of code you would be able to reuse. Which functions could be used as class methods ?</p>
 </li>
 <li>
-<p>Make ties with what you found in the first step.</p>
+<p>Write the name of the chosen functions in the notes you've made during the first part and bind them to a specific class.</p>
 </li>
 </ul>
 
 <div class="tip">
-  If you have finish these two steps, it's time now to write python code. Make sure that you know well the syntax of python classes, don't hesitate to read again the <strong>part 4</strong> of the lecture.
+  If you <strong>need</strong> help you can check <a href="https://drive.google.com/file/d/1qtXloa1_dLAyORvBBB6D93huZL3b7nJm/view?usp=sharing">this document</a>. From slide 3 to 6, you will find the attributes that you have to put in the class. From slide 7 to 21, you will find the methods that you have to implement in your classes.
 </div>
 
-<p><strong><ins>Third step</ins> : Refactoring : write your own classes</strong></p>
+
+<div class="tip">
+  If you have finish these two steps, it's time now to write python code. <strong>Make sure that you know well the syntax of python classes</strong>, don't hesitate to read again the <strong>part 4</strong> of the lecture.
+</div>
+
+<p><strong><ins>Third step</ins> : Refactoring : write your own classes (This is HARD but a very good exercise if you feel confortable with concepts and the syntax)</strong></p>
 <ul>
-<li>Refactor your code in order to get rid of all function that are defined above the <code>if __name__ == '__main__'</code>. In order to do it, you need to create several classes.
+<li>Refactor your code in order to get rid of all functions that are defined above the <code>if __name__ == '__main__'</code>. These functions will be put, in the end, in the new classes. In order to do it, you need to create several classes.
 
 <div class="tip">
   <strong>Refactoring definition:</strong>
 &quot;In computer programming and software design, <strong>code refactoring</strong> is the process of restructuring existing computer code [...] without changing its external behavior.&quot; <a href="https://en.wikipedia.org/wiki/Code_refactoring">Wikipedia</a>
 </div>
-
-<strong><ins>Fourth step</ins> : draw conclusions</strong></li>
+</li>
+</ul>
+<p><strong><ins>Fourth step</ins> : draw conclusions</strong></p>
+<ul>
 <li>What are the benefits/the desavantages of a such refactoring ? Write at least four bullets.</li>
 </ul>
 <p><strong><ins>Fifth step</ins> : finalize some functions</strong></p>
@@ -909,23 +918,23 @@ that apply to only them. For example cats can meow, dogs can bark, birds can fly
 </ul>
 
     <div class="pager">
-  
+
   <div class="pager_item prev">
-    
+
     <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/" class="pager_link button" title="05/April - Practical Python Session">
       <span class="pager_label">05/April - Practical Python Session</span>
     </a>
   </div>
-  
 
-  
+
+
   <div class="pager_item next">
-    
+
     <a href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes_practical/" class="pager_link button" title="14/April - Practical Object-oriented Python">
       <span class="pager_label">14/April - Practical Object-oriented Python</span>
     </a>
   </div>
-  
+
 </div>
 <svg width="0" height="0" class="hidden">
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004" id="next">

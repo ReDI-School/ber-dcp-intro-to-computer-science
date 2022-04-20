@@ -351,7 +351,7 @@ In this exercise, we will try to create a small game using Object Oriented Progr
 
 Every year, in a small rural village, the municipality organizes a treasure hunt. Many sweets are hidden in the town and the participants have to find them within a given time. The one who finds the most sweets wins the game. Let's code this.
 
-[The slides available here give you a better understanding of how the game will be run.](https://drive.google.com/file/d/1pVF-N2Gf4RXdCmssmfpz1JxKq7-CyJ9o/view?usp=sharing)
+The slides available [here](https://drive.google.com/file/d/1pVF-N2Gf4RXdCmssmfpz1JxKq7-CyJ9o/view?usp=sharing) give you a better understanding of how the game will be run.
 
 Here is the code that simulate the game, the **goal** is to reimplement this code by using classes.
 
@@ -525,30 +525,38 @@ if __name__ == '__main__':
 ## Guide lines and TODO:
 
 **<ins>First step</ins> : work only with the story**
-- Write down objects that you would like to build in this problem.
-- Attach data and functionalities to these objects.
+- With the help of the [slides](https://drive.google.com/file/d/1pVF-N2Gf4RXdCmssmfpz1JxKq7-CyJ9o/view?usp=sharing), write down any kind of entities you can find in the story.
+- Try to draw links between entities. Can you say that some entities belongs to others ?
+- Among these entities, which one could be created by a class ? Which entities are in reality just data/attributes of a class ?
+
+These questions are broad (and a bit complicated) and there is not just one solution !
 
 {{< tip >}}
-  With the slides, build a list of all objects you can find and the related actions/functionalities. Do you have objects that have the same data and the same actions/functionalities ? If so, think of the class. ;)
+SOLUTION : You can check [this document](https://drive.google.com/file/d/1qtXloa1_dLAyORvBBB6D93huZL3b7nJm/view?usp=sharing) to see which classes could be interesting to create (slide 1). Don't hesitate to let comments on the doc if you have questions.
 {{</ tip >}}
-
 
 **<ins>Second step</ins> : explore the existing code**
-- Have a look at the code and try to think which piece of code you would be able to reuse. Which functions could be used as class methods ?
+The code above is achieving what we want to do in this exercise, but with the wrong paradigm, the **procedural** paradigm. We want to tranform it into an Oriented Object code
+- Have a look at the code above and try to think which piece of code you would be able to reuse. Do you find the data you've already spotted during the first step ? Which functions could be used as class methods ?
 
-- Make ties with what you found in the first step.
+- Write the name of the chosen functions in the notes you've made during the first part and bind them to a specific class.
 
 {{< tip >}}
-If you have finish these two steps, it's time now to write python code. Make sure that you know well the syntax of python classes, don't hesitate to read again the **part 4** of the lecture.
+If you **need** help you can check [this document](https://drive.google.com/file/d/1qtXloa1_dLAyORvBBB6D93huZL3b7nJm/view?usp=sharing). From slide 3 to 6, you will find the attributes that you have to put in the class. From slide 7 to 21, you will find the methods that you have to implement in your classes.
+{{</ tip >}}
+
+{{< tip >}}
+If you have finish these two steps, it's time now to write python code. **Make sure that you know well the syntax of python classes**, don't hesitate to read again the **part 4** of the lecture and do the pet example by yourself.
 {{</ tip >}}
 
 
-**<ins>Third step</ins> : Refactoring : write your own classes**
-- Refactor your code in order to get rid of all function that are defined above the `if __name__ == '__main__'`. In order to do it, you need to create several classes.
+**<ins>Third step</ins> : Refactoring : write your own classes (This is HARD but a very good exercise if you feel confortable with concepts and the syntax)**
+- Refactor your code in order to get rid of all functions that are defined above the `if __name__ == '__main__'`. These functions will be put, in the end, in the new classes. In order to do it, you need to create several classes.
 {{< tip >}}
 **Refactoring definition:**
 "In computer programming and software design, **code refactoring** is the process of restructuring existing computer code [...] without changing its external behavior." [Wikipedia](https://en.wikipedia.org/wiki/Code_refactoring)
 {{</ tip >}}
+
 **<ins>Fourth step</ins> : draw conclusions**
 - What are the benefits/the desavantages of a such refactoring ? Write at least four bullets.
 
