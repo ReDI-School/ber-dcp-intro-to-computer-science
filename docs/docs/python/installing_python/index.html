@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.68.3" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.97.2" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://redi-school.github.io/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://redi-school.github.io/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://redi-school.github.io/favicons/favicon-16x16.png'>
@@ -12,15 +12,14 @@
 <title>31/03/2022 - Installing Python | Intro to Computer-Science Berlin</title><meta property="og:title" content="31/03/2022 - Installing Python" />
 <meta property="og:description" content="Goals" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/installing_python/" />
+<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/installing_python/" /><meta property="article:section" content="docs" />
+
 <meta property="article:modified_time" content="2022-03-31T18:33:16+02:00" />
+
 <meta itemprop="name" content="31/03/2022 - Installing Python">
 <meta itemprop="description" content="Goals">
-<meta itemprop="dateModified" content="2022-03-31T18:33:16&#43;02:00" />
-<meta itemprop="wordCount" content="5398">
-
-
-
+<meta itemprop="dateModified" content="2022-03-31T18:33:16+02:00" />
+<meta itemprop="wordCount" content="5388">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="31/03/2022 - Installing Python"/>
 <meta name="twitter:description" content="Goals"/>
@@ -342,6 +341,50 @@
   </section>
   <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/" class="group">4 - Introduction to Web Development</a></h2>
+      <section class="" id="docs-4---introduction-to-web-development">
+        <h3 class="section_link"><a id="docs-2104---basic-knowledge-of-html" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_html/">21/04 - Basic knowledge of HTML</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparations">Preparations</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#watch-these-videos">Watch these Videos</a></li>
+            <li><a href="#install-the-live-server-vscode-extension">Install the Live Server VsCode Extension</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#html---what-is-it">HTML - What is it?</a></li>
+    <li><a href="#how-to-get-started">How to get started?</a></li>
+    <li><a href="#structure-of-html-documents">Structure of HTML Documents</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#html-skeleton">HTML Skeleton</a></li>
+            <li><a href="#elements--tags">Elements &amp; Tags</a></li>
+            <li><a href="#attributes-and-values">Attributes and Values</a></li>
+            <li><a href="#nesting-elements">Nesting Elements</a></li>
+            <li><a href="#block-vs-inline-elements">Block vs. Inline Elements</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#exercise">Exercise</a></li>
+    <li><a href="#extra-resources">Extra resources</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#glossary">Glossary</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
   </section>
   <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/references/" class="group">References &amp; Cheat Sheets</a></h2>
@@ -559,12 +602,12 @@ computer -- select <code>3.10.0</code>, the version you installed.
 <p>Comments are lines of code that Python will intentionally ignore. Comments are a great way to leave notes to yourself and to other people who will later need to figure out what that code does.</p>
 <p>There are two ways to write comments in Python:</p>
 <p>Using # will tell Python to ignore the remainder of the text on the current line. This is an in-line comment:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="c1"># This is an in-line comment.</span>
-</code></pre></div><p>You can also have comments that span multiple lines which are done with three single or double quotes to start and 3 to end.</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="s1">&#39;&#39;&#39;
-</span><span class="ln">2</span><span class="s1">This is a mutiline comment
-</span><span class="ln">3</span><span class="s1">&#39;&#39;&#39;</span>
-</code></pre></div><p>NOTE: As you write code, you should regularly add comments to clarify the function of parts of your code. Good commenting can help communicate the intent of your code—both for others and for your future self.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1"># This is an in-line comment.</span>
+</span></span></code></pre></div><p>You can also have comments that span multiple lines which are done with three single or double quotes to start and 3 to end.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="s1">This is a mutiline comment
+</span></span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="s1">&#39;&#39;&#39;</span>
+</span></span></code></pre></div><p>NOTE: As you write code, you should regularly add comments to clarify the function of parts of your code. Good commenting can help communicate the intent of your code—both for others and for your future self.</p>
 <p>For each of the following tasks, add a comment about your code that states which task you are working on (ex. <code># Code for task 12</code>). Once you have completed a task, you can comment out the printed value from that section, so that you do not continue to see the output of all the previous tasks each time. (There isn't a real output for this task!)</p>
 <h3 id="task-1---declare-variables">Task 1 - Declare variables</h3>
 <p>Last class, we went over several Python data types. A &quot;data type&quot; describes the quality or structure of a piece of information. Some of the data types that we saw last class include:</p>
@@ -578,16 +621,16 @@ computer -- select <code>3.10.0</code>, the version you installed.
 <p>For example, computers distinguish between numbers, such as the number 12, and strings, such as &quot;12&quot;, &quot;dog&quot;, or &quot;123 cats&quot;, which are collections of characters. Computers can perform mathematical operations on a number, but not on a string.</p>
 <p>Variables allow computers to store and manipulate data in a dynamic fashion. They do this by using a &quot;label&quot; to point to the data rather than using the data itself. Any of the data types may be stored in a variable, and the value of a variable can be modified.</p>
 <p>We can create a new Python variable by assigning a value to a label, using the = assignment operator.</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="n">my_name</span> <span class="o">=</span> <span class="s2">&#34;tess&#34;</span><span class="p">;</span>
-</code></pre></div><p>creates a variable called <code>my_name</code>. A variable name can be composed of characters, numbers, and the _ underscore character. It can't start with a number.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">my_name</span> <span class="o">=</span> <span class="s2">&#34;tess&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><p>creates a variable called <code>my_name</code>. A variable name can be composed of characters, numbers, and the _ underscore character. It can't start with a number.</p>
 <p>Create a variable called <code>our_class</code> and assign it the value &quot;Intro to CS&quot;. Print the value of this variable to make sure that it has been set to <code>Intro to CS</code>.</p>
 <h3 id="task-2---assign-the-value-of-one-variable-to-another">Task 2 - Assign the value of one variable to another</h3>
 <p>After a value is assigned to a variable using the assignment operator, you can assign the value of that variable to another variable using the assignment operator. Here's an example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="n">my_var</span> <span class="o">=</span> <span class="s1">&#39;asdf&#39;</span>
-<span class="ln">2</span><span class="n">my_num</span> <span class="o">=</span> <span class="n">my_var</span>
-<span class="ln">3</span><span class="k">print</span><span class="p">(</span><span class="n">my_num</span><span class="p">)</span>
-<span class="ln">4</span><span class="c1"># outputs &#39;asdf&#39;</span>
-</code></pre></div><p>Create a variable <code>a</code> and assign it to the value of 5. Assign the contents of <code>a</code> to a new variable, <code>b</code>. Print the values of <code>a</code> and <code>b</code> and make sure these are the same.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">my_var</span> <span class="o">=</span> <span class="s1">&#39;asdf&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">my_num</span> <span class="o">=</span> <span class="n">my_var</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">my_num</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"># outputs &#39;asdf&#39;</span>
+</span></span></code></pre></div><p>Create a variable <code>a</code> and assign it to the value of 5. Assign the contents of <code>a</code> to a new variable, <code>b</code>. Print the values of <code>a</code> and <code>b</code> and make sure these are the same.</p>
 <h3 id="task-3---adding">Task 3 - Adding</h3>
 <ul>
 <li>Create a variable <code>c</code> and assign it to the value of two integers added together (i.e. <code>2 + 4</code>). Print <code>c</code> and make sure that this is equal to the sum of the two numbers you have added together.</li>
@@ -621,24 +664,24 @@ computer -- select <code>3.10.0</code>, the version you installed.
 <h3 id="task-7---modulo-remainder">Task 7 - Modulo (remainder)</h3>
 <p>The modulo (%) or remainder operator gives the remainder of the division of two numbers.
 Example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">because</span>
-<span class="ln">2</span><span class="mi">2</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">4</span>
-<span class="ln">3</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">(</span><span class="n">Remainder</span><span class="p">)</span>
-</code></pre></div><p>This can be useful to check, among other things, whether a number is even or odd, by checking the remainder of the division of the number by 2:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="mi">17</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">(</span><span class="mi">17</span> <span class="ow">is</span> <span class="n">Odd</span><span class="p">)</span>
-<span class="ln">2</span><span class="mi">48</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">(</span><span class="mi">48</span> <span class="ow">is</span> <span class="n">Even</span><span class="p">)</span>
-</code></pre></div><p>Copy the following code and replace <code>VALUE_HERE</code> with an integer so that the value of <code>mod_output</code> is equal to 3.</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="n">a</span> <span class="o">=</span> <span class="n">VALUE_HERE</span>
-<span class="ln">2</span><span class="n">mod_output</span> <span class="o">=</span> <span class="mi">9</span> <span class="o">%</span> <span class="n">a</span>
-<span class="ln">3</span><span class="k">print</span><span class="p">(</span><span class="n">mod_output</span><span class="p">)</span>
-</code></pre></div><h3 id="task-8---string-variables">Task 8 - String variables</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="mi">5</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">because</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="mi">2</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">4</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="mi">5</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">(</span><span class="n">Remainder</span><span class="p">)</span>
+</span></span></code></pre></div><p>This can be useful to check, among other things, whether a number is even or odd, by checking the remainder of the division of the number by 2:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="mi">17</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">(</span><span class="mi">17</span> <span class="ow">is</span> <span class="n">Odd</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="mi">48</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">=</span> <span class="mi">0</span> <span class="p">(</span><span class="mi">48</span> <span class="ow">is</span> <span class="n">Even</span><span class="p">)</span>
+</span></span></code></pre></div><p>Copy the following code and replace <code>VALUE_HERE</code> with an integer so that the value of <code>mod_output</code> is equal to 3.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="n">VALUE_HERE</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">mod_output</span> <span class="o">=</span> <span class="mi">9</span> <span class="o">%</span> <span class="n">a</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">mod_output</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="task-8---string-variables">Task 8 - String variables</h3>
 <p>Recall that a string is a series of zero or more characters that are enclosed in either single or double quotes, or triple quotes (the same as with multiline comments). Valid strings in Python include:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="s2">&#34;&#34;</span>  <span class="c1"># empty string</span>
-<span class="ln">2</span><span class="s2">&#34;&#39;hello&#39;&#34;</span>
-<span class="ln">3</span><span class="s1">&#39;adf&#39;</span>
-<span class="ln">4</span><span class="s1">&#39;&#34;asdf&#34;&#39;</span>
-<span class="ln">5</span><span class="s2">&#34;&#34;&#34;asdf&#34;&#34;&#34;</span>
-</code></pre></div><p>In Python, you can &quot;concatenate&quot;, or join, two strings together using the <code>+</code> operator. In Python, <code>'hello' + ' world'</code> would equal <code>'hello world'</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="s2">&#34;&#34;</span>  <span class="c1"># empty string</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="s2">&#34;&#39;hello&#39;&#34;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="s1">&#39;adf&#39;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="s1">&#39;&#34;asdf&#34;&#39;</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="s2">&#34;&#34;&#34;asdf&#34;&#34;&#34;</span>
+</span></span></code></pre></div><p>In Python, you can &quot;concatenate&quot;, or join, two strings together using the <code>+</code> operator. In Python, <code>'hello' + ' world'</code> would equal <code>'hello world'</code>.</p>
 <ul>
 <li>Create two new string variables: <code>my_first_name</code> and <code>my_last_name</code> and assign them to the values of your first and last name. Print out the value of each variable to confirm this.</li>
 <li>Concatenate the two string variables and print this result. Additionally, try to add a space between the two. (Hint: you can concatenate more than one string in an expression, like: <code>'hello' + ',' + 'world'</code>).</li>
@@ -647,17 +690,17 @@ Example:</p>
 </ul>
 <h3 id="task-9---string-lengths">Task 9 - String lengths</h3>
 <p>In Python, you can find the length of a String value by writing using the built-in <code>len</code> function. Example:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="nb">len</span><span class="p">(</span><span class="s2">&#34;redi&#34;</span><span class="p">)</span>
-<span class="ln">2</span><span class="c1"># outputs 4</span>
-<span class="ln">3</span><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;hello, world&#39;</span><span class="p">)</span>
-<span class="ln">4</span><span class="c1"># outputs 12</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">len</span><span class="p">(</span><span class="s2">&#34;redi&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"># outputs 4</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">len</span><span class="p">(</span><span class="s1">&#39;hello, world&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"># outputs 12</span>
+</span></span></code></pre></div><ul>
 <li>Copy the following snippet into your file, and then print the lengths of each of the following variables:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="n">empty</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
-<span class="ln">2</span><span class="n">language</span> <span class="o">=</span> <span class="s2">&#34;Python&#34;</span>
-<span class="ln">3</span><span class="n">sentence</span> <span class="o">=</span> <span class="s2">&#34;I&#39;m a really long sentence&#34;</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">empty</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">language</span> <span class="o">=</span> <span class="s2">&#34;Python&#34;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">sentence</span> <span class="o">=</span> <span class="s2">&#34;I&#39;m a really long sentence&#34;</span>
+</span></span></code></pre></div><ul>
 <li>Write a line of code that defines the variable <code>total_length</code> as the sum of the lengths of all three variables above.</li>
 </ul>
 <h3 id="task-10---strings-as-iterables">Task 10 - Strings as iterables</h3>
@@ -671,39 +714,39 @@ Example:</p>
 </ul>
 <h3 id="task-11---slicing-strings">Task 11 - Slicing strings</h3>
 <p>You can use the same principle we just used to retrieve a part of the string (sometimes referred to as a &quot;substring&quot;). Here are some examples (note: leaving the index off before or after the <code>:</code> is shorthand for the start and end of the word):</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="n">word</span> <span class="o">=</span> <span class="s2">&#34;Hello!&#34;</span>
-<span class="ln">2</span><span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># outputs: &#34;e&#34;</span>
-<span class="ln">3</span><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># outputs: &#34;Hel&#34;; equivalent to word[:3]</span>
-<span class="ln">4</span><span class="n">word</span><span class="p">[:]</span>  <span class="c1"># outputs: &#34;Hello!&#34;</span>
-<span class="ln">5</span><span class="n">word</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>  <span class="c1"># outputs: &#34;lo!&#34;; equivalent to word[3:]</span>
-<span class="ln">6</span><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># outputs: &#34;ll&#34;; equivalent to word[2:len(word) - 2]</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">word</span> <span class="o">=</span> <span class="s2">&#34;Hello!&#34;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># outputs: &#34;e&#34;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">word</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>  <span class="c1"># outputs: &#34;Hel&#34;; equivalent to word[:3]</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="n">word</span><span class="p">[:]</span>  <span class="c1"># outputs: &#34;Hello!&#34;</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="n">word</span><span class="p">[</span><span class="mi">3</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>  <span class="c1"># outputs: &#34;lo!&#34;; equivalent to word[3:]</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="n">word</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># outputs: &#34;ll&#34;; equivalent to word[2:len(word) - 2]</span>
+</span></span></code></pre></div><ul>
 <li>Using the variable <code>sentence</code> from task 9, <code>sentence = &quot;I'm a really long sentence&quot;</code>, create a new variable <code>only_really</code> that contains only the word <code>really</code> in the sentence, and print the value of this variable.</li>
 <li>Using the variable <code>sentence</code> again, create a new variable called <code>first_letters</code> that contains the first 4 letters of <code>sentence</code>.</li>
 </ul>
 <h3 id="task-12---lists">Task 12 - Lists</h3>
 <p>Lists are one of the more complex Python data types. Lists hold other data types like strings, integers, floats, and even lists. Each list item has an index, like strings. The index starts from 0. Just as with strings, the <code>len</code> function also gives you the length of a list. Also like strings, you can slice a list, which means to get some part of the overall list. Here are some examples to illustrate this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln"> 1</span><span class="c1"># creating some lists</span>
-<span class="ln"> 2</span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="s1">&#39;orange&#39;</span><span class="p">]</span>
-<span class="ln"> 3</span><span class="n">stuff</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;asdf&#39;</span><span class="p">,</span> <span class="mf">123.013</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]]</span>
-<span class="ln"> 4</span>
-<span class="ln"> 5</span><span class="c1"># here&#39;s the indexing</span>
-<span class="ln"> 6</span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="s1">&#39;orange&#39;</span><span class="p">]</span>
-<span class="ln"> 7</span><span class="c1">#            0        1        2</span>
-<span class="ln"> 8</span><span class="c1"># like strings, lists can also use negative indexing</span>
-<span class="ln"> 9</span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="s1">&#39;orange&#39;</span><span class="p">]</span>
-<span class="ln">10</span><span class="c1">#           -3       -2        -1</span>
-<span class="ln">11</span>
-<span class="ln">12</span><span class="c1"># get the length of the list</span>
-<span class="ln">13</span><span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
-<span class="ln">14</span><span class="c1"># outputs: 3</span>
-<span class="ln">15</span>
-<span class="ln">16</span><span class="c1"># slice a list</span>
-<span class="ln">17</span><span class="n">fruits</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
-<span class="ln">18</span><span class="c1"># outputs: [&#39;apple&#39;, &#39;banana&#39;]</span>
-<span class="ln">19</span><span class="n">fruits</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="ln">20</span><span class="c1"># outputs: [&#39;banana&#39;, &#39;orange&#39;]</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c1"># creating some lists</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="s1">&#39;orange&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="n">stuff</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="s1">&#39;asdf&#39;</span><span class="p">,</span> <span class="mf">123.013</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]]</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="c1"># here&#39;s the indexing</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="s1">&#39;orange&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="c1">#            0        1        2</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="c1"># like strings, lists can also use negative indexing</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="s1">&#39;orange&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="c1">#           -3       -2        -1</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="c1"># get the length of the list</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="nb">len</span><span class="p">(</span><span class="n">fruits</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="c1"># outputs: 3</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="c1"># slice a list</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="n">fruits</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="c1"># outputs: [&#39;apple&#39;, &#39;banana&#39;]</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="n">fruits</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="c1"># outputs: [&#39;banana&#39;, &#39;orange&#39;]</span>
+</span></span></code></pre></div><ul>
 <li>Create a list with the first names of your breakout room group, and assign this to the variable <code>first_names</code>. Print the list.</li>
 <li>Print out the value of the second name in <code>first_names</code>. (Hint: use the bracket notation asa with strings.)</li>
 <li>Print the length of the list of names.</li>
@@ -711,35 +754,35 @@ Example:</p>
 </ul>
 <h3 id="task-13---appending-and-removing-elements-from-a-list">Task 13 - Appending and removing elements from a list</h3>
 <p>There are several methods that you can use with lists. The <code>.append()</code> method adds an item to a list, while the <code>.remove()</code> method removes an item from the list:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="s1">&#39;orange&#39;</span><span class="p">]</span>
-<span class="ln">2</span><span class="n">fruits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;mango&#39;</span><span class="p">)</span>
-<span class="ln">3</span><span class="c1"># value of fruits is now: [&#39;apple&#39;,&#39;banana&#39;,&#39;orange&#39;,&#39;mango&#39;]</span>
-<span class="ln">4</span><span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;banana&#39;</span><span class="p">)</span>
-<span class="ln">5</span><span class="c1"># value of fruits is now: [&#39;apple&#39;,&#39;orange&#39;,&#39;mango&#39;]</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span><span class="s1">&#39;banana&#39;</span><span class="p">,</span><span class="s1">&#39;orange&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">fruits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;mango&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"># value of fruits is now: [&#39;apple&#39;,&#39;banana&#39;,&#39;orange&#39;,&#39;mango&#39;]</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;banana&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="c1"># value of fruits is now: [&#39;apple&#39;,&#39;orange&#39;,&#39;mango&#39;]</span>
+</span></span></code></pre></div><ul>
 <li>Using the list of your names (<code>first_names</code>), add one name and print the list.</li>
 <li>Using the list of your names (<code>first_names</code>), remove one name and print the list.</li>
 </ul>
 <h3 id="task-14---dictionaries">Task 14 - Dictionaries</h3>
 <p>Dictionaries are a Python data structure. While lists allow you to create ordered collections of values, dictionaries allow you to create collections of key / value pairs. An analogy for a dictionary is a telephone book: you can look up a telephone number (value) by a person's name (key).</p>
 <p>Here are some dictionary examples:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="n">empty_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-<span class="ln">2</span><span class="n">dog</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Roger&#39;</span> <span class="p">}</span>
-<span class="ln">3</span><span class="c1"># assign the value: 8 to the key: &#39;age&#39;</span>
-<span class="ln">4</span><span class="n">dog</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span>
-<span class="ln">5</span><span class="c1"># the dog dictionary now looks like: { &#39;name&#39;: &#39;Roger&#39;, &#39;age&#39;: 8 }</span>
-<span class="ln">6</span>
-<span class="ln">7</span><span class="c1"># access a value by a key</span>
-<span class="ln">8</span><span class="n">dog</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
-<span class="ln">9</span><span class="c1"># outputs: &#39;Roger&#39;</span>
-</code></pre></div><p>Dictionaries also contain the <code>.keys()</code>, <code>.values()</code>, and <code>.items()</code> methods which return iterables (like lists) of these values:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="nb">list</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<span class="ln">2</span><span class="c1"># outputs: [&#39;name&#39;, &#39;age&#39;]</span>
-<span class="ln">3</span><span class="nb">list</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
-<span class="ln">4</span><span class="c1"># outputs: [&#39;Roger&#39;, 8]</span>
-<span class="ln">5</span><span class="nb">list</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
-<span class="ln">6</span><span class="c1"># outputs: [(&#39;name&#39;, &#39;Roger&#39;), (&#39;age&#39;, 8)]</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">empty_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">dog</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;Roger&#39;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"># assign the value: 8 to the key: &#39;age&#39;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="n">dog</span><span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="c1"># the dog dictionary now looks like: { &#39;name&#39;: &#39;Roger&#39;, &#39;age&#39;: 8 }</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="c1"># access a value by a key</span>
+</span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="n">dog</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">9</span><span class="cl"><span class="c1"># outputs: &#39;Roger&#39;</span>
+</span></span></code></pre></div><p>Dictionaries also contain the <code>.keys()</code>, <code>.values()</code>, and <code>.items()</code> methods which return iterables (like lists) of these values:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">list</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"># outputs: [&#39;name&#39;, &#39;age&#39;]</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">list</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"># outputs: [&#39;Roger&#39;, 8]</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="nb">list</span><span class="p">(</span><span class="n">dog</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="c1"># outputs: [(&#39;name&#39;, &#39;Roger&#39;), (&#39;age&#39;, 8)]</span>
+</span></span></code></pre></div><ul>
 <li>Create a dictionary called <code>person</code> with the keys <code>first_name</code> amd <code>last_name</code> and give them some values. Print out the dictionary.</li>
 <li>In the <code>person</code> dictionary, assign the <code>job</code> key to the value <code>programmer</code>, and print out the dictionary.</li>
 <li>Access and print out the value of the <code>first_name</code> key in the <code>person</code> dictionary.</li>
@@ -747,11 +790,11 @@ Example:</p>
 </ul>
 <h3 id="task-15---booleans">Task 15 - Booleans</h3>
 <p>Booleans may only be one of two values: <code>True</code> or <code>False</code>. These are like on-off switches, where True is on and False is off. These states are mutually exclusive -- a condition can only be either <code>True</code> or <code>False</code> but not both. You can use the <code>not</code> keyword to &quot;flip the switch&quot; of the boolean value.</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="n">val1</span> <span class="o">=</span> <span class="bp">True</span>
-<span class="ln">2</span><span class="n">val2</span> <span class="o">=</span> <span class="ow">not</span> <span class="bp">True</span>
-<span class="ln">3</span><span class="k">print</span><span class="p">(</span><span class="n">val2</span><span class="p">)</span>
-<span class="ln">4</span><span class="c1"># outputs: False</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">val1</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">val2</span> <span class="o">=</span> <span class="ow">not</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">val2</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"># outputs: False</span>
+</span></span></code></pre></div><ul>
 <li>Create a variable called <code>boolean_var</code> and set it to <code>False</code>.</li>
 <li>Print the value of the opposite of <code>boolean_var</code> (using <code>not</code>).</li>
 </ul>
@@ -764,10 +807,10 @@ Example:</p>
 <li><code>&lt;</code>: less than operator: returns True if the left side is less than the right side and False if not</li>
 </ul>
 <p>Note that you can assign a boolean expression to a variable:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">2</span>
-<span class="ln">2</span><span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="ln">3</span><span class="c1"># outputs: False</span>
-</code></pre></div><p>Assign these examples to variables and print them out:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"># outputs: False</span>
+</span></span></code></pre></div><p>Assign these examples to variables and print them out:</p>
 <ul>
 <li><code>1 == 1</code></li>
 <li><code>1 == '1'</code></li>
@@ -782,19 +825,19 @@ Example:</p>
 <p>When you're dealing with booleans, and expressions that return a boolean in particular, we can execute different code depending on their True or False values, using <code>if</code>, <code>elif</code>, and <code>else</code> statements. Pay attention to the indentation and white space in Python, as this is very important! Indented blocks &quot;belong&quot; to the overhanging lines above them; you can think of this as &quot;stepping into&quot; indented blocks if conditions evaluate to true.</p>
 <p>This is a conditional statement: <code>if CONDITION:</code> means: &quot;if <code>CONDITION</code> evaluates to <code>True</code>, then execute the indented code that follows directly after the statement&quot;</p>
 <p>Here's an example for <code>if...else</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">if</span> <span class="n">CONDITION_A</span><span class="p">:</span>
-<span class="ln">2</span>    <span class="n">STATEMENT_A</span>
-<span class="ln">3</span><span class="k">else</span><span class="p">:</span>
-<span class="ln">4</span>    <span class="n">STATEMENT_B</span>
-</code></pre></div><p>In this example, &quot;if <code>CONDITION_A</code> evaluates to <code>True</code>, then execute <code>STATEMENT_A</code>. Otherwise (if <code>CONDITION_A</code> evaluates to <code>False</code>), then execute <code>STATEMENT_B</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">if</span> <span class="n">CONDITION_A</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="n">STATEMENT_A</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="n">STATEMENT_B</span>
+</span></span></code></pre></div><p>In this example, &quot;if <code>CONDITION_A</code> evaluates to <code>True</code>, then execute <code>STATEMENT_A</code>. Otherwise (if <code>CONDITION_A</code> evaluates to <code>False</code>), then execute <code>STATEMENT_B</code>.</p>
 <p>And for <code>if...elif...else</code>:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">if</span> <span class="n">CONDITION_A</span><span class="p">:</span>
-<span class="ln">2</span>    <span class="n">STATEMENT_A</span>
-<span class="ln">3</span><span class="k">elif</span> <span class="n">CONDITION_B</span><span class="p">:</span>
-<span class="ln">4</span>    <span class="n">STATEMENT_B</span>
-<span class="ln">5</span><span class="k">else</span><span class="p">:</span>
-<span class="ln">6</span>    <span class="n">STATEMENT_C</span>
-</code></pre></div><p>(Note: <code>elif</code> stands for &quot;else if&quot;, and you can have as many of these as you want in between the beginning <code>if</code> and ending <code>else</code> statements.)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">if</span> <span class="n">CONDITION_A</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="n">STATEMENT_A</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="k">elif</span> <span class="n">CONDITION_B</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="n">STATEMENT_B</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="n">STATEMENT_C</span>
+</span></span></code></pre></div><p>(Note: <code>elif</code> stands for &quot;else if&quot;, and you can have as many of these as you want in between the beginning <code>if</code> and ending <code>else</code> statements.)</p>
 <p>In this example, &quot;if <code>CONDITION_A</code> evaluates to <code>True</code>, then execute <code>STATEMENT_A</code> only. Otherwise (if <code>CONDITION_A</code> evaluates to <code>False</code>), then check if <code>CONDITION_B</code> evaluates to <code>True</code> and if so, execute <code>STATEMENT_B</code> only. If both <code>CONDITION_A</code> and <code>CONDITION_B</code> evaluate to <code>False</code>, then execute <code>STATEMENT_C</code>. Note that here, we are only ever execute one of the <code>STATEMENT_</code>'s, even if multiple conditions evaluate to <code>True</code>.</p>
 <ul>
 <li>Use the definition: <code>my_list = [1, 2, 3]</code>. Create an if statement that checks if the last value of the list is equal to 3 and if so, prints &quot;the condition was true&quot;.</li>
@@ -805,9 +848,9 @@ Example:</p>
 <h3 id="task-18---functions">Task 18 - Functions</h3>
 <p>A function lets us create a set of instructions that we can run when needed. Functions are essential in Python and in many other programming languages. They help us create meaningful programs, because they allow us to decompose a program into manageable parts, and they promote readability and code reuse.</p>
 <p>Here is an example function:</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="ln">1</span><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-<span class="ln">2</span>    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;Hello,&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-</code></pre></div><p>This is the function definition. There is a <code>def</code> keyword, so that the Python interpreter knows that this is a function <code>def</code>inition, function name (<code>greet</code>), arguments (<code>name</code> in this case), and a body (the set of instructions, which is the part that follows the colon and is indented one level on the left).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello,&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</span></span></code></pre></div><p>This is the function definition. There is a <code>def</code> keyword, so that the Python interpreter knows that this is a function <code>def</code>inition, function name (<code>greet</code>), arguments (<code>name</code> in this case), and a body (the set of instructions, which is the part that follows the colon and is indented one level on the left).</p>
 <p>To run this function, we must call it. This is the syntax to call the function: <code>greet('Rami')</code>
 We can execute this function as many times as we want to.</p>
 <p>The name of the function, hello, is very important. It should be descriptive,
@@ -983,7 +1026,7 @@ so anyone calling it can imagine what the function does.</p>
   </symbol>
 </svg>
 
-<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.da447fb55567ef78b2118176ae7d1d5dd0ec562b6ae1f7dbaf677ec1bc6b0dedd5e2a2146e761b1716034fd8188bac4ad3806ac5b2ee7f3dd06f3fcb96dbaceb.js"></script>
+<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.90d892b347a32126ea9a367a37b0713d1de58290515e4b99d522ec14e7a93f46b97b55e542b4b4c237513cd859e526a35e525f71271986c505752d240b463c7b.js"></script>
 
 </body>
 </html>

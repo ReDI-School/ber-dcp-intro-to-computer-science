@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en" class="dark">
 <head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.68.3" />
+<meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Hugo 0.97.2" />
 <link rel="apple-touch-icon" sizes="180x180" href='https://redi-school.github.io/favicons/apple-touch-icon.png'>
 <link rel="icon" type="image/png" sizes="32x32" href='https://redi-school.github.io/favicons/favicon-32x32.png'>
 <link rel="icon" type="image/png" sizes="16x16" href='https://redi-school.github.io/favicons/favicon-16x16.png'>
@@ -12,15 +12,14 @@
 <title>12/April - Object-oriented Python | Intro to Computer-Science Berlin</title><meta property="og:title" content="12/April - Object-oriented Python" />
 <meta property="og:description" content="Basics of OOP" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes/" />
-<meta property="article:modified_time" content="2022-04-20T00:15:07+02:00" />
+<meta property="og:url" content="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/python_classes/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2022-04-12T18:05:26+02:00" />
+
 <meta itemprop="name" content="12/April - Object-oriented Python">
 <meta itemprop="description" content="Basics of OOP">
-<meta itemprop="dateModified" content="2022-04-20T00:15:07&#43;02:00" />
-<meta itemprop="wordCount" content="3012">
-
-
-
+<meta itemprop="dateModified" content="2022-04-12T18:05:26+02:00" />
+<meta itemprop="wordCount" content="2732">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="12/April - Object-oriented Python"/>
 <meta name="twitter:description" content="Basics of OOP"/>
@@ -342,6 +341,50 @@
   </section>
   <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/" class="group">4 - Introduction to Web Development</a></h2>
+      <section class="" id="docs-4---introduction-to-web-development">
+        <h3 class="section_link"><a id="docs-2104---basic-knowledge-of-html" href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_html/">21/04 - Basic knowledge of HTML</a></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#preparations">Preparations</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#watch-these-videos">Watch these Videos</a></li>
+            <li><a href="#install-the-live-server-vscode-extension">Install the Live Server VsCode Extension</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#class-curriculum">Class Curriculum</a></li>
+    <li><a href="#lesson-goal">Lesson Goal</a></li>
+    <li><a href="#html---what-is-it">HTML - What is it?</a></li>
+    <li><a href="#how-to-get-started">How to get started?</a></li>
+    <li><a href="#structure-of-html-documents">Structure of HTML Documents</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#html-skeleton">HTML Skeleton</a></li>
+            <li><a href="#elements--tags">Elements &amp; Tags</a></li>
+            <li><a href="#attributes-and-values">Attributes and Values</a></li>
+            <li><a href="#nesting-elements">Nesting Elements</a></li>
+            <li><a href="#block-vs-inline-elements">Block vs. Inline Elements</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#exercise">Exercise</a></li>
+    <li><a href="#extra-resources">Extra resources</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#glossary">Glossary</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </section>
   </section>
   <section class="section aside_inner">
     <h2 class="section_title"><a  href="https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/references/" class="group">References &amp; Cheat Sheets</a></h2>
@@ -483,13 +526,13 @@ You can think of object-oriented programming like the process of solving a jigsa
 <h3 id="classes">Classes</h3>
 <p>Classes represent a group of objects you would like to manage in your program. Classes in python are declared
 as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">class</span> <span class="nc">class_name</span><span class="p">:</span>
-<span class="ln">2</span>  <span class="n">class_body</span>
-</code></pre></div><p>For example if you are writing code to manage the pets at a pet clinic then your program is managing different pets, whether they are
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">class</span> <span class="nc">class_name</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="n">class_body</span>
+</span></span></code></pre></div><p>For example if you are writing code to manage the pets at a pet clinic then your program is managing different pets, whether they are
 dogs, cats, turtles etc. In your program you would represent all these different breeds using a <code>Pet</code> class.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
-<span class="ln">2</span>  <span class="k">pass</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="k">pass</span>
+</span></span></code></pre></div>
 <div class="tip">
   Note: The <code>pass</code> keyword is used when we do not want to specify any details of the class.
 </div>
@@ -498,13 +541,13 @@ dogs, cats, turtles etc. In your program you would represent all these different
 <p>When we define a class only the description or a blueprint of all possible objects defined by that class is created. For example
 one particular cat at the pet clinic is an object of the Pet class. When you create an object from a class in your code, you assign it
 to a variable to allow you do something meaningful with that specific object. You create an object and assign it to a variable as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">object_variable</span> <span class="o">=</span> <span class="n">class_name</span><span class="p">()</span>
-</code></pre></div><p>For example, an object for a cat called <code>Maya</code> can be created from the <code>Pet</code> class as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">maya</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
-</code></pre></div><p>Now you can print the <code>Maya</code> object</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">print</span><span class="p">(</span><span class="n">maya</span><span class="p">)</span>
-<span class="ln">2</span><span class="c1"># outputs something like -&gt; &lt;__main__.Pet object at 0x7ff41e9bcdd0&gt;</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">object_variable</span> <span class="o">=</span> <span class="n">class_name</span><span class="p">()</span>
+</span></span></code></pre></div><p>For example, an object for a cat called <code>Maya</code> can be created from the <code>Pet</code> class as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">maya</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
+</span></span></code></pre></div><p>Now you can print the <code>Maya</code> object</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">maya</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"># outputs something like -&gt; &lt;__main__.Pet object at 0x7ff41e9bcdd0&gt;</span>
+</span></span></code></pre></div>
 <div class="tip">
   Note: The <code>0x7ff41e9bcdd0</code> above is the address of <code>Maya</code> in memory on my computer. The value will be different on your computer
 </div>
@@ -515,43 +558,43 @@ to a variable to allow you do something meaningful with that specific object. Yo
 <p>All classes have a function called <code>__init__()</code>, which is always executed when an object of the class is being constructed.</p>
 <p>Use the <code>__init__()</code> function to assign values to object properties, or other operations that are necessary to do when the object is being created:</p>
 <p>For example, in the example from above</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">maya</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
-</code></pre></div><p>We know that object relates to a cat called <code>Maya</code> because we stored the object in a variable called <code>maya</code>.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">maya</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
+</span></span></code></pre></div><p>We know that object relates to a cat called <code>Maya</code> because we stored the object in a variable called <code>maya</code>.</p>
 <p>Now consider if we instead named the variable differently:</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">pet_one</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
-</code></pre></div><p>We've lost all hints that the <code>pet_one</code> object actually refers to <code>Maya</code>. We can add a constructor function to the <code>Pet</code>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">pet_one</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">()</span>
+</span></span></code></pre></div><p>We've lost all hints that the <code>pet_one</code> object actually refers to <code>Maya</code>. We can add a constructor function to the <code>Pet</code>
 class which will allow us to give names to pets objects we create.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
-<span class="ln">2</span>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-<span class="ln">3</span>    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span></code></pre></div>
 <div class="tip">
   Note: The self parameter is a reference to the current class object and is used to access variables that belong to the object.
 </div>
 
 <p>With the new constructor function added to the <code>Pet</code> class, we can now create pet objects with actual names</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">pet_one</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">(</span><span class="s2">&#34;Maya&#34;</span><span class="p">)</span>
-<span class="ln">2</span><span class="n">pet_two</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">(</span><span class="s2">&#34;Felix&#34;</span><span class="p">)</span>
-</code></pre></div><p>And we can selectively print the names of each pet</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">print</span><span class="p">(</span><span class="n">pet_one</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-<span class="ln">2</span><span class="k">print</span><span class="p">(</span><span class="n">pet_two</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-<span class="ln">3</span><span class="c1"># outputs</span>
-<span class="ln">4</span><span class="c1"># Maya</span>
-<span class="ln">5</span><span class="c1"># Felix</span>
-</code></pre></div><h3 id="object-methods">Object Methods</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">pet_one</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">(</span><span class="s2">&#34;Maya&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">pet_two</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">(</span><span class="s2">&#34;Felix&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>And we can selectively print the names of each pet</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">pet_one</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">pet_two</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"># outputs</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="c1"># Maya</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="c1"># Felix</span>
+</span></span></code></pre></div><h3 id="object-methods">Object Methods</h3>
 <p>Objects can also contain functions called <code>Methods</code>. Methods allow the program to perform actions on objects.</p>
 <p>Let us add a <code>hello</code> method to the <code>Pet</code> class that the pets can use to introduce themselves (if they could speak)</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
-<span class="ln">2</span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-<span class="ln">3</span>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-<span class="ln">4</span>
-<span class="ln">5</span>    <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ln">6</span>        <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hello my name is &#34;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-</code></pre></div><p>Now we can create a pet called called <code>Maya</code> and have her say hello!</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">1</span><span class="n">pet_one</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">(</span><span class="s2">&#34;maya&#34;</span><span class="p">)</span>
-<span class="ln">2</span><span class="n">pet_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
-<span class="ln">3</span><span class="c1"># output -&gt; Hello my name is maya</span>
-</code></pre></div><h3 id="class-inheritance">Class inheritance</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello my name is &#34;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></span></code></pre></div><p>Now we can create a pet called called <code>Maya</code> and have her say hello!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">pet_one</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">(</span><span class="s2">&#34;maya&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">pet_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="c1"># output -&gt; Hello my name is maya</span>
+</span></span></code></pre></div><h3 id="class-inheritance">Class inheritance</h3>
 
 <div class="tip">
   Understanding the concept of class can be a bit difficult at first. This section is not essential if you are still struggling with the previous concepts. ;)
@@ -561,44 +604,44 @@ class which will allow us to give names to pets objects we create.</p>
 a <code>Pet</code> class. But using the <code>Pet</code> class, we cannot differentiate between cats, dogs, turtles or birds.</p>
 <p>We can create new classes for the different kinds of animals at the pet clinic and have all of them inherit from the <code>Pet</code>
 class.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
-<span class="ln"> 2</span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-<span class="ln"> 3</span>        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-<span class="ln"> 4</span>
-<span class="ln"> 5</span>    <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ln"> 6</span>        <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hello my name is &#34;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-<span class="ln"> 7</span>
-<span class="ln"> 8</span><span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
-<span class="ln"> 9</span>    <span class="k">pass</span>
-<span class="ln">10</span>
-<span class="ln">11</span><span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
-<span class="ln">12</span>    <span class="k">pass</span>
-<span class="ln">13</span>
-<span class="ln">14</span><span class="k">class</span> <span class="nc">Turtle</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
-<span class="ln">15</span>    <span class="k">pass</span>
-<span class="ln">16</span>
-<span class="ln">17</span><span class="k">class</span> <span class="nc">Bird</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
-<span class="ln">18</span>    <span class="k">pass</span>
-</code></pre></div><p>The <code>Pet</code> class is known as the parent class.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello my name is &#34;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="k">pass</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">    <span class="k">pass</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="k">class</span> <span class="nc">Turtle</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">    <span class="k">pass</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">
+</span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="k">class</span> <span class="nc">Bird</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">    <span class="k">pass</span>
+</span></span></code></pre></div><p>The <code>Pet</code> class is known as the parent class.</p>
 <p>The <code>Cat</code>, <code>Dog</code>, <code>Turtle</code> and <code>Bird</code> classes are known as child class.</p>
 <p>Now we can create more pet objects using their specific classes and they will all be able to say <code>hello</code> because they've inherited
 the hello method from the <code>Pet</code> class</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="n">cat_one</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s2">&#34;maya&#34;</span><span class="p">)</span>
-<span class="ln"> 2</span><span class="n">dog_one</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s2">&#34;bosco&#34;</span><span class="p">)</span>
-<span class="ln"> 3</span><span class="n">turtle_one</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">(</span><span class="s2">&#34;speedy&#34;</span><span class="p">)</span>
-<span class="ln"> 4</span><span class="n">bird_one</span> <span class="o">=</span> <span class="n">Bird</span><span class="p">(</span><span class="s2">&#34;diver&#34;</span><span class="p">)</span>
-<span class="ln"> 5</span>
-<span class="ln"> 6</span><span class="n">cat_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
-<span class="ln"> 7</span><span class="n">dog_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
-<span class="ln"> 8</span><span class="n">turtle_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
-<span class="ln"> 9</span><span class="n">bird_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
-<span class="ln">10</span>
-<span class="ln">11</span><span class="c1"># outputs</span>
-<span class="ln">12</span><span class="c1"># Hello my name is maya</span>
-<span class="ln">13</span><span class="c1"># Hello my name is bosco</span>
-<span class="ln">14</span><span class="c1"># Hello my name is speedy</span>
-<span class="ln">15</span><span class="c1"># Hello my name is diver</span>
-</code></pre></div><p>Even though we now have various child classes of the parent class <code>Pet</code>, each of those child classes have characteristics
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="n">cat_one</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s2">&#34;maya&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="n">dog_one</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s2">&#34;bosco&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="n">turtle_one</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">(</span><span class="s2">&#34;speedy&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="n">bird_one</span> <span class="o">=</span> <span class="n">Bird</span><span class="p">(</span><span class="s2">&#34;diver&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="n">cat_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="n">dog_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="n">turtle_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="n">bird_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="c1"># outputs</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="c1"># Hello my name is maya</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="c1"># Hello my name is bosco</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="c1"># Hello my name is speedy</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="c1"># Hello my name is diver</span>
+</span></span></code></pre></div><p>Even though we now have various child classes of the parent class <code>Pet</code>, each of those child classes have characteristics
 that apply to only them. For example cats can meow, dogs can bark, birds can fly and turtles can hide in their shell.</p>
 <p>We can add more specific class methods into the various child classes to provide more specific behaviors.</p>
 <p>Lets add:</p>
@@ -608,226 +651,225 @@ that apply to only them. For example cats can meow, dogs can bark, birds can fly
 <li>A <code>fly</code> method to the <code>Bird</code> class which causes the bird to fly</li>
 <li>A <code>hide</code> method to the <code>Turtle</code> class which causes the turtle to go into its shell</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
-<span class="ln"> 2</span>  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-<span class="ln"> 3</span>    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
-<span class="ln"> 4</span>
-<span class="ln"> 5</span>  <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ln"> 6</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hello my name is &#34;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
-<span class="ln"> 7</span>
-<span class="ln"> 8</span><span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
-<span class="ln"> 9</span>  <span class="k">def</span> <span class="nf">meow</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ln">10</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Meeeeeooooww! I am a cat!&#34;</span><span class="p">)</span>
-<span class="ln">11</span>
-<span class="ln">12</span><span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
-<span class="ln">13</span>  <span class="k">def</span> <span class="nf">bark</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ln">14</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Wooof! Woof! I am a dog!&#34;</span><span class="p">)</span>
-<span class="ln">15</span>
-<span class="ln">16</span><span class="k">class</span> <span class="nc">Turtle</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
-<span class="ln">17</span>  <span class="k">def</span> <span class="nf">hide</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ln">18</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Hide! I&#39;m shy! I am a turtle!&#34;</span><span class="p">)</span>
-<span class="ln">19</span>
-<span class="ln">20</span><span class="k">class</span> <span class="nc">Bird</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
-<span class="ln">21</span>  <span class="k">def</span> <span class="nf">fly</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="ln">22</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;Swoooosh! I&#39;m flying away! I am a bird!&#34;</span><span class="p">)</span>
-</code></pre></div><p>Now lets get all our pets to first say hello and then perform the actions they are good at</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln"> 1</span><span class="n">cat_one</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s2">&#34;maya&#34;</span><span class="p">)</span>
-<span class="ln"> 2</span><span class="n">dog_one</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s2">&#34;bosco&#34;</span><span class="p">)</span>
-<span class="ln"> 3</span><span class="n">turtle_one</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">(</span><span class="s2">&#34;speedy&#34;</span><span class="p">)</span>
-<span class="ln"> 4</span><span class="n">bird_one</span> <span class="o">=</span> <span class="n">Bird</span><span class="p">(</span><span class="s2">&#34;diver&#34;</span><span class="p">)</span>
-<span class="ln"> 5</span>
-<span class="ln"> 6</span><span class="n">cat_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
-<span class="ln"> 7</span><span class="n">cat_one</span><span class="o">.</span><span class="n">meow</span><span class="p">()</span>
-<span class="ln"> 8</span>
-<span class="ln"> 9</span><span class="n">dog_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
-<span class="ln">10</span><span class="n">dog_one</span><span class="o">.</span><span class="n">bark</span><span class="p">()</span>
-<span class="ln">11</span>
-<span class="ln">12</span><span class="n">turtle_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
-<span class="ln">13</span><span class="n">turtle_one</span><span class="o">.</span><span class="n">hide</span><span class="p">()</span>
-<span class="ln">14</span>
-<span class="ln">15</span><span class="n">bird_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
-<span class="ln">16</span><span class="n">bird_one</span><span class="o">.</span><span class="n">fly</span><span class="p">()</span>
-<span class="ln">17</span>
-<span class="ln">18</span><span class="c1"># outputs</span>
-<span class="ln">19</span><span class="c1"># Hello my name is maya</span>
-<span class="ln">20</span><span class="c1"># Meeeeeooooww! I am a cat!</span>
-<span class="ln">21</span><span class="c1"># Hello my name is bosco</span>
-<span class="ln">22</span><span class="c1"># Wooof! Woof! I am a dog!</span>
-<span class="ln">23</span><span class="c1"># Hello my name is speedy</span>
-<span class="ln">24</span><span class="c1"># Hide! I&#39;m shy! I am a turtle!</span>
-<span class="ln">25</span><span class="c1"># Hello my name is diver</span>
-<span class="ln">26</span><span class="c1"># Swoooosh! I&#39;m flying away! I am a bird!</span>
-</code></pre></div><h2 id="small-challenge--its-almost-easter">Small challenge : &quot;It's almost Easter...&quot;</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello my name is &#34;</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">  <span class="k">def</span> <span class="nf">meow</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Meeeeeooooww! I am a cat!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">  <span class="k">def</span> <span class="nf">bark</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Wooof! Woof! I am a dog!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="k">class</span> <span class="nc">Turtle</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">  <span class="k">def</span> <span class="nf">hide</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hide! I&#39;m shy! I am a turtle!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">
+</span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="k">class</span> <span class="nc">Bird</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">  <span class="k">def</span> <span class="nf">fly</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Swoooosh! I&#39;m flying away! I am a bird!&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>Now lets get all our pets to first say hello and then perform the actions they are good at</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="n">cat_one</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s2">&#34;maya&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="n">dog_one</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s2">&#34;bosco&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="n">turtle_one</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">(</span><span class="s2">&#34;speedy&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="n">bird_one</span> <span class="o">=</span> <span class="n">Bird</span><span class="p">(</span><span class="s2">&#34;diver&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="n">cat_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="n">cat_one</span><span class="o">.</span><span class="n">meow</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="n">dog_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="n">dog_one</span><span class="o">.</span><span class="n">bark</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="n">turtle_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="n">turtle_one</span><span class="o">.</span><span class="n">hide</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">
+</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="n">bird_one</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="n">bird_one</span><span class="o">.</span><span class="n">fly</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">
+</span></span><span class="line"><span class="ln">18</span><span class="cl"><span class="c1"># outputs</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl"><span class="c1"># Hello my name is maya</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl"><span class="c1"># Meeeeeooooww! I am a cat!</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl"><span class="c1"># Hello my name is bosco</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl"><span class="c1"># Wooof! Woof! I am a dog!</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl"><span class="c1"># Hello my name is speedy</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="c1"># Hide! I&#39;m shy! I am a turtle!</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="c1"># Hello my name is diver</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="c1"># Swoooosh! I&#39;m flying away! I am a bird!</span>
+</span></span></code></pre></div><h2 id="small-challenge--its-almost-easter">Small challenge : &quot;It's almost Easter...&quot;</h2>
 <p>In this exercise, we will try to create a small game using Object Oriented Programming. It is still possible not to use classes, but you will see that it complicates the code considerably... The ultimate goal of this challenge is to show you the power of classes !</p>
 <h4 id="the-game--context--rules">The game : context &amp; rules</h4>
 <p>Every year, in a small rural village, the municipality organizes a treasure hunt. Many sweets are hidden in the town and the participants have to find them within a given time. The one who finds the most sweets wins the game. Let's code this.</p>
 <p>The slides available <a href="https://drive.google.com/file/d/1pVF-N2Gf4RXdCmssmfpz1JxKq7-CyJ9o/view?usp=sharing">here</a> give you a better understanding of how the game will be run.</p>
 <p>Here is the code that simulate the game, the <strong>goal</strong> is to reimplement this code by using classes.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="ln">  1</span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
-<span class="ln">  2</span>
-<span class="ln">  3</span>
-<span class="ln">  4</span><span class="k">def</span> <span class="nf">update_challenger_points</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">world</span><span class="p">):</span>
-<span class="ln">  5</span>    <span class="s2">&#34;&#34;&#34;
-</span><span class="ln">  6</span><span class="s2">
-</span><span class="ln">  7</span><span class="s2">        Desc : tells whether the challenger wins a point. If yes it modifies the number of points.
-</span><span class="ln">  8</span><span class="s2">        Params : world, challenger
-</span><span class="ln">  9</span><span class="s2">        Return : None
-</span><span class="ln"> 10</span><span class="s2">
-</span><span class="ln"> 11</span><span class="s2">    &#34;&#34;&#34;</span>
-<span class="ln"> 12</span>    <span class="k">if</span> <span class="n">world</span><span class="p">[</span><span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-<span class="ln"> 13</span>        <span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;collected_treasures&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="ln"> 14</span>
-<span class="ln"> 15</span>
-<span class="ln"> 16</span><span class="k">def</span> <span class="nf">set_challenger_mood</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">new_mood</span><span class="p">):</span>
-<span class="ln"> 17</span>    <span class="s2">&#34;&#34;&#34;
-</span><span class="ln"> 18</span><span class="s2">
-</span><span class="ln"> 19</span><span class="s2">        Desc : sets the mood of the challenger
-</span><span class="ln"> 20</span><span class="s2">        Params : challenger, new_mood
-</span><span class="ln"> 21</span><span class="s2">        Return : None
-</span><span class="ln"> 22</span><span class="s2">
-</span><span class="ln"> 23</span><span class="s2">    &#34;&#34;&#34;</span>
-<span class="ln"> 24</span>    <span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;mood&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_mood</span>
-<span class="ln"> 25</span>
-<span class="ln"> 26</span>
-<span class="ln"> 27</span><span class="k">def</span> <span class="nf">set_challenger_position</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">new_pos</span><span class="p">):</span>
-<span class="ln"> 28</span>    <span class="s2">&#34;&#34;&#34;
-</span><span class="ln"> 29</span><span class="s2">
-</span><span class="ln"> 30</span><span class="s2">        Desc : sets the mood of the challenger
-</span><span class="ln"> 31</span><span class="s2">        Params : challenger, new_mood
-</span><span class="ln"> 32</span><span class="s2">        Return : None
-</span><span class="ln"> 33</span><span class="s2">
-</span><span class="ln"> 34</span><span class="s2">    &#34;&#34;&#34;</span>
-<span class="ln"> 35</span>    <span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_pos</span>
-<span class="ln"> 36</span>
-<span class="ln"> 37</span>
-<span class="ln"> 38</span>
-<span class="ln"> 39</span><span class="k">def</span> <span class="nf">update_challenger_position</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">world</span><span class="p">):</span>
-<span class="ln"> 40</span>    <span class="s2">&#34;&#34;&#34;
-</span><span class="ln"> 41</span><span class="s2">
-</span><span class="ln"> 42</span><span class="s2">        Desc : gives the new box number where the challenger has to go + sets the new position of the challenger
-</span><span class="ln"> 43</span><span class="s2">        Params : challenger, world
-</span><span class="ln"> 44</span><span class="s2">        Return : the new given position
-</span><span class="ln"> 45</span><span class="s2">
-</span><span class="ln"> 46</span><span class="s2">    &#34;&#34;&#34;</span>
-<span class="ln"> 47</span>    <span class="n">square_number</span> <span class="o">=</span> <span class="n">randrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">world</span><span class="p">))</span> <span class="c1"># HINT : randrange is a method from the &#39;random&#39; library. It gives an integer between 0 and len(world).</span>
-<span class="ln"> 48</span>    <span class="n">set_challenger_position</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">square_number</span><span class="p">)</span>
-<span class="ln"> 49</span>    <span class="k">return</span> <span class="n">square_number</span>
-<span class="ln"> 50</span>
-<span class="ln"> 51</span>
-<span class="ln"> 52</span><span class="k">def</span> <span class="nf">print_challenger</span><span class="p">(</span><span class="n">challenger</span><span class="p">):</span>
-<span class="ln"> 53</span>    <span class="s2">&#34;&#34;&#34;
-</span><span class="ln"> 54</span><span class="s2">
-</span><span class="ln"> 55</span><span class="s2">        Desc : return the relevant information of the challenger when programmers use &#39;print&#39;
-</span><span class="ln"> 56</span><span class="s2">        Params : challenger
-</span><span class="ln"> 57</span><span class="s2">        Return : the name of the challenger
-</span><span class="ln"> 58</span><span class="s2">
-</span><span class="ln"> 59</span><span class="s2">    &#34;&#34;&#34;</span>
-<span class="ln"> 60</span>    <span class="k">print</span><span class="p">(</span><span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
-<span class="ln"> 61</span>
-<span class="ln"> 62</span>
-<span class="ln"> 63</span><span class="k">def</span> <span class="nf">interview_challengers_podium</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">challengers</span><span class="p">):</span>
-<span class="ln"> 64</span>    <span class="s2">&#34;&#34;&#34;
-</span><span class="ln"> 65</span><span class="s2">
-</span><span class="ln"> 66</span><span class="s2">        Desc : interviews the first three challengers and asks them their mood after the competition. The answer of this question is printed.
-</span><span class="ln"> 67</span><span class="s2">        Params : challengers
-</span><span class="ln"> 68</span><span class="s2">        Return : the list of moods in the same order than the ranking
-</span><span class="ln"> 69</span><span class="s2">
-</span><span class="ln"> 70</span><span class="s2">    &#34;&#34;&#34;</span>
-<span class="ln"> 71</span>    <span class="c1"># TO BE COMPLETED</span>
-<span class="ln"> 72</span>    <span class="k">pass</span>
-<span class="ln"> 73</span>
-<span class="ln"> 74</span>
-<span class="ln"> 75</span><span class="k">def</span> <span class="nf">announce_challengers</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">challengers</span><span class="p">):</span>
-<span class="ln"> 76</span>    <span class="s2">&#34;&#34;&#34;
-</span><span class="ln"> 77</span><span class="s2">
-</span><span class="ln"> 78</span><span class="s2">        Desc : announces(print) the challenger
-</span><span class="ln"> 79</span><span class="s2">        Params : challengers
-</span><span class="ln"> 80</span><span class="s2">        Return : True
-</span><span class="ln"> 81</span><span class="s2">
-</span><span class="ln"> 82</span><span class="s2">    &#34;&#34;&#34;</span>
-<span class="ln"> 83</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;[{}]:&#39;The name of the challenger number one is {}&#39;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">challengers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
-<span class="ln"> 84</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;[{}]:&#39;The name of the challenger number one is {}&#39;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">challengers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
-<span class="ln"> 85</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;[{}]:&#39;The name of the challenger number one is {}&#39;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">challengers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
-<span class="ln"> 86</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;[{}]:&#39;The name of the challenger number one is {}&#39;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">challengers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
-<span class="ln"> 87</span>    <span class="c1"># TO BE REFACTORED (use a for...loop that depends dynamicaly on the number of challengers)</span>
-<span class="ln"> 88</span>    <span class="k">return</span> <span class="mi">1</span>
-<span class="ln"> 89</span>
-<span class="ln"> 90</span>
-<span class="ln"> 91</span><span class="k">def</span> <span class="nf">annouce_winner</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">winner</span><span class="p">):</span>
-<span class="ln"> 92</span>    <span class="s2">&#34;&#34;&#34;
-</span><span class="ln"> 93</span><span class="s2">
-</span><span class="ln"> 94</span><span class="s2">        Desc : announces the winner
-</span><span class="ln"> 95</span><span class="s2">        Params : challengers
-</span><span class="ln"> 96</span><span class="s2">        Return : True
-</span><span class="ln"> 97</span><span class="s2">
-</span><span class="ln"> 98</span><span class="s2">    &#34;&#34;&#34;</span>
-<span class="ln"> 99</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;[{}]:&#39;And the winner is {}&#39;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">winner</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
-<span class="ln">100</span>    <span class="k">return</span> <span class="bp">True</span>
-<span class="ln">101</span>
-<span class="ln">102</span>
-<span class="ln">103</span><span class="k">def</span> <span class="nf">find_winner</span><span class="p">(</span><span class="n">challengers</span><span class="p">):</span>
-<span class="ln">104</span>    <span class="s2">&#34;&#34;&#34;
-</span><span class="ln">105</span><span class="s2">
-</span><span class="ln">106</span><span class="s2">        Desc : finds the challenger who has collected the most treasure and prints and returns the winner
-</span><span class="ln">107</span><span class="s2">        Params : challengers
-</span><span class="ln">108</span><span class="s2">        Return : the winner (as an object)
-</span><span class="ln">109</span><span class="s2">
-</span><span class="ln">110</span><span class="s2">    &#34;&#34;&#34;</span>
-<span class="ln">111</span>    <span class="c1"># TODO : case when there is a draw</span>
-<span class="ln">112</span>    <span class="n">hyp_winner</span> <span class="o">=</span> <span class="n">challengers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="ln">113</span>    <span class="k">for</span> <span class="n">challenger</span> <span class="ow">in</span> <span class="n">challengers</span><span class="p">:</span>
-<span class="ln">114</span>        <span class="k">if</span> <span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;collected_treasures&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">hyp_winner</span><span class="p">[</span><span class="s1">&#39;collected_treasures&#39;</span><span class="p">]:</span>
-<span class="ln">115</span>            <span class="n">hyp_winner</span> <span class="o">=</span> <span class="n">challenger</span>
-<span class="ln">116</span>    <span class="k">return</span> <span class="n">hyp_winner</span>
-<span class="ln">117</span>
-<span class="ln">118</span>
-<span class="ln">119</span>
-<span class="ln">120</span>
-<span class="ln">121</span>
-<span class="ln">122</span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-<span class="ln">123</span>
-<span class="ln">124</span>    <span class="c1"># Part one : data definition</span>
-<span class="ln">125</span>    <span class="n">moods</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;happy&#34;</span><span class="p">,</span> <span class="s2">&#34;anxious&#34;</span><span class="p">,</span> <span class="s2">&#34;impatient&#34;</span><span class="p">,</span> <span class="s2">&#34;desappointed&#34;</span><span class="p">,</span> <span class="s2">&#34;amazed&#34;</span><span class="p">]</span>
-<span class="ln">126</span>
-<span class="ln">127</span>    <span class="c1"># Note to the programmer : if you want to add challengers to the game you must follow the following rules :</span>
-<span class="ln">128</span>    <span class="c1"># a challenger is a challenger IF AND ONLY IF he/she has a name, an age, a mood, a position and a collected_treasures</span>
-<span class="ln">129</span>
-<span class="ln">130</span>    <span class="n">challenger_1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&#34;Antoine&#34;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;mood&#39;</span><span class="p">:</span> <span class="n">moods</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;position&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;collected_treasures&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
-<span class="ln">131</span>    <span class="n">challenger_2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&#34;Thomas&#34;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">&#39;mood&#39;</span><span class="p">:</span> <span class="n">moods</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;position&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;collected_treasures&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
-<span class="ln">132</span>    <span class="n">challenger_3</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&#34;Julia&#34;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span> <span class="s1">&#39;mood&#39;</span><span class="p">:</span> <span class="n">moods</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;position&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;collected_treasures&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
-<span class="ln">133</span>    <span class="n">challenger_4</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&#34;Richard&#34;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span> <span class="s1">&#39;mood&#39;</span><span class="p">:</span> <span class="n">moods</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;position&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;collected_treasures&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
-<span class="ln">134</span>
-<span class="ln">135</span>    <span class="n">challengers</span> <span class="o">=</span> <span class="p">[</span><span class="n">challenger_1</span><span class="p">,</span> <span class="n">challenger_2</span><span class="p">,</span> <span class="n">challenger_3</span><span class="p">,</span> <span class="n">challenger_4</span><span class="p">]</span>
-<span class="ln">136</span>
-<span class="ln">137</span>    <span class="n">sport_commentator</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&#34;Kathrine&#34;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">68</span> <span class="p">}</span>
-<span class="ln">138</span>
-<span class="ln">139</span>    <span class="n">world_2D</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
-<span class="ln">140</span>
-<span class="ln">141</span>    <span class="n">n_turns</span> <span class="o">=</span> <span class="mi">8</span>
-<span class="ln">142</span>
-<span class="ln">143</span>    <span class="c1"># Part two : game execution</span>
-<span class="ln">144</span>    <span class="n">announce_challengers</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">challengers</span><span class="p">)</span>
-<span class="ln">145</span>
-<span class="ln">146</span>    <span class="k">print</span><span class="p">(</span><span class="s2">&#34;The game is starting...&#34;</span><span class="p">)</span>
-<span class="ln">147</span>
-<span class="ln">148</span>    <span class="k">for</span> <span class="n">turn_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_turns</span><span class="p">):</span>
-<span class="ln">149</span>        <span class="k">for</span> <span class="n">challenger</span> <span class="ow">in</span> <span class="n">challengers</span><span class="p">:</span>
-<span class="ln">150</span>            <span class="n">update_challenger_position</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">world_2D</span><span class="p">)</span>
-<span class="ln">151</span>            <span class="n">update_challenger_points</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">world_2D</span><span class="p">)</span>
-<span class="ln">152</span>
-<span class="ln">153</span>    <span class="n">winner</span> <span class="o">=</span> <span class="n">find_winner</span><span class="p">(</span><span class="n">challengers</span><span class="p">)</span>
-<span class="ln">154</span>    <span class="n">annouce_winner</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">winner</span><span class="p">)</span>
-<span class="ln">155</span>
-<span class="ln">156</span>
-<span class="ln">157</span>    <span class="k">for</span> <span class="n">challenger</span> <span class="ow">in</span> <span class="n">challengers</span><span class="p">:</span>
-<span class="ln">158</span>        <span class="k">if</span> <span class="n">challenger</span> <span class="o">==</span> <span class="n">winner</span><span class="p">:</span>
-<span class="ln">159</span>            <span class="n">set_challenger_mood</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">moods</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
-<span class="ln">160</span>        <span class="k">else</span><span class="p">:</span>
-<span class="ln">161</span>            <span class="n">set_challenger_mood</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">moods</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
-<span class="ln">162</span>
-<span class="ln">163</span>    <span class="n">interview_challengers_podium</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">challengers</span><span class="p">)</span>
-<span class="ln">164</span>
-</code></pre></div><h2 id="guide-lines-and-todo">Guide lines and TODO:</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">  1</span><span class="cl"><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randrange</span>
+</span></span><span class="line"><span class="ln">  2</span><span class="cl">
+</span></span><span class="line"><span class="ln">  3</span><span class="cl">
+</span></span><span class="line"><span class="ln">  4</span><span class="cl"><span class="k">def</span> <span class="nf">update_challenger_points</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">world</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">  5</span><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="ln">  6</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln">  7</span><span class="cl"><span class="s2">        Desc : tells whether the challenger wins a point. If yes it modifies the number of points.
+</span></span></span><span class="line"><span class="ln">  8</span><span class="cl"><span class="s2">        Params : world, challenger
+</span></span></span><span class="line"><span class="ln">  9</span><span class="cl"><span class="s2">        Return : None
+</span></span></span><span class="line"><span class="ln"> 10</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 11</span><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln"> 12</span><span class="cl">    <span class="k">if</span> <span class="n">world</span><span class="p">[</span><span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln"> 13</span><span class="cl">        <span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;collected_treasures&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="ln"> 14</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 15</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 16</span><span class="cl"><span class="k">def</span> <span class="nf">set_challenger_mood</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">new_mood</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 17</span><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="ln"> 18</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 19</span><span class="cl"><span class="s2">        Desc : sets the mood of the challenger
+</span></span></span><span class="line"><span class="ln"> 20</span><span class="cl"><span class="s2">        Params : challenger, new_mood
+</span></span></span><span class="line"><span class="ln"> 21</span><span class="cl"><span class="s2">        Return : None
+</span></span></span><span class="line"><span class="ln"> 22</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 23</span><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln"> 24</span><span class="cl">    <span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;mood&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_mood</span>
+</span></span><span class="line"><span class="ln"> 25</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 26</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 27</span><span class="cl"><span class="k">def</span> <span class="nf">set_challenger_position</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">new_pos</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 28</span><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="ln"> 29</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 30</span><span class="cl"><span class="s2">        Desc : sets the mood of the challenger
+</span></span></span><span class="line"><span class="ln"> 31</span><span class="cl"><span class="s2">        Params : challenger, new_mood
+</span></span></span><span class="line"><span class="ln"> 32</span><span class="cl"><span class="s2">        Return : None
+</span></span></span><span class="line"><span class="ln"> 33</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 34</span><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln"> 35</span><span class="cl">    <span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_pos</span>
+</span></span><span class="line"><span class="ln"> 36</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 37</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 38</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 39</span><span class="cl"><span class="k">def</span> <span class="nf">update_challenger_position</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">world</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 40</span><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="ln"> 41</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 42</span><span class="cl"><span class="s2">        Desc : gives the new box number where the challenger has to go + sets the new position of the challenger
+</span></span></span><span class="line"><span class="ln"> 43</span><span class="cl"><span class="s2">        Params : challenger, world
+</span></span></span><span class="line"><span class="ln"> 44</span><span class="cl"><span class="s2">        Return : the new given position
+</span></span></span><span class="line"><span class="ln"> 45</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 46</span><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln"> 47</span><span class="cl">    <span class="n">square_number</span> <span class="o">=</span> <span class="n">randrange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">world</span><span class="p">))</span> <span class="c1"># HINT : randrange is a method from the &#39;random&#39; library. It gives an integer between 0 and len(world).</span>
+</span></span><span class="line"><span class="ln"> 48</span><span class="cl">    <span class="n">set_challenger_position</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">square_number</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 49</span><span class="cl">    <span class="k">return</span> <span class="n">square_number</span>
+</span></span><span class="line"><span class="ln"> 50</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 51</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 52</span><span class="cl"><span class="k">def</span> <span class="nf">print_challenger</span><span class="p">(</span><span class="n">challenger</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 53</span><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="ln"> 54</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 55</span><span class="cl"><span class="s2">        Desc : return the relevant information of the challenger when programmers use &#39;print&#39;
+</span></span></span><span class="line"><span class="ln"> 56</span><span class="cl"><span class="s2">        Params : challenger
+</span></span></span><span class="line"><span class="ln"> 57</span><span class="cl"><span class="s2">        Return : the name of the challenger
+</span></span></span><span class="line"><span class="ln"> 58</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 59</span><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln"> 60</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="ln"> 61</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 62</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 63</span><span class="cl"><span class="k">def</span> <span class="nf">interview_challengers_podium</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">challengers</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 64</span><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="ln"> 65</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 66</span><span class="cl"><span class="s2">        Desc : interviews the first three challengers and asks them their mood after the competition. The answer of this question is printed.
+</span></span></span><span class="line"><span class="ln"> 67</span><span class="cl"><span class="s2">        Params : challengers
+</span></span></span><span class="line"><span class="ln"> 68</span><span class="cl"><span class="s2">        Return : the list of moods in the same order than the ranking
+</span></span></span><span class="line"><span class="ln"> 69</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 70</span><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln"> 71</span><span class="cl">    <span class="c1"># TO BE COMPLETED</span>
+</span></span><span class="line"><span class="ln"> 72</span><span class="cl">    <span class="k">pass</span>
+</span></span><span class="line"><span class="ln"> 73</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 74</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 75</span><span class="cl"><span class="k">def</span> <span class="nf">announce_challengers</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">challengers</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 76</span><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="ln"> 77</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 78</span><span class="cl"><span class="s2">        Desc : announces(print) the challenger
+</span></span></span><span class="line"><span class="ln"> 79</span><span class="cl"><span class="s2">        Params : challengers
+</span></span></span><span class="line"><span class="ln"> 80</span><span class="cl"><span class="s2">        Return : True
+</span></span></span><span class="line"><span class="ln"> 81</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 82</span><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln"> 83</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;[</span><span class="si">{}</span><span class="s2">]:&#39;The name of the challenger number one is </span><span class="si">{}</span><span class="s2">&#39;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">challengers</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
+</span></span><span class="line"><span class="ln"> 84</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;[</span><span class="si">{}</span><span class="s2">]:&#39;The name of the challenger number one is </span><span class="si">{}</span><span class="s2">&#39;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">challengers</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
+</span></span><span class="line"><span class="ln"> 85</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;[</span><span class="si">{}</span><span class="s2">]:&#39;The name of the challenger number one is </span><span class="si">{}</span><span class="s2">&#39;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">challengers</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
+</span></span><span class="line"><span class="ln"> 86</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;[</span><span class="si">{}</span><span class="s2">]:&#39;The name of the challenger number one is </span><span class="si">{}</span><span class="s2">&#39;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">challengers</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
+</span></span><span class="line"><span class="ln"> 87</span><span class="cl">    <span class="c1"># TO BE REFACTORED (use a for...loop that depends dynamicaly on the number of challengers)</span>
+</span></span><span class="line"><span class="ln"> 88</span><span class="cl">    <span class="k">return</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="ln"> 89</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 90</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 91</span><span class="cl"><span class="k">def</span> <span class="nf">annouce_winner</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">winner</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 92</span><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="ln"> 93</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 94</span><span class="cl"><span class="s2">        Desc : announces the winner
+</span></span></span><span class="line"><span class="ln"> 95</span><span class="cl"><span class="s2">        Params : challengers
+</span></span></span><span class="line"><span class="ln"> 96</span><span class="cl"><span class="s2">        Return : True
+</span></span></span><span class="line"><span class="ln"> 97</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln"> 98</span><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln"> 99</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;[</span><span class="si">{}</span><span class="s2">]:&#39;And the winner is </span><span class="si">{}</span><span class="s2">&#39;&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="n">winner</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]))</span>
+</span></span><span class="line"><span class="ln">100</span><span class="cl">    <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="ln">101</span><span class="cl">
+</span></span><span class="line"><span class="ln">102</span><span class="cl">
+</span></span><span class="line"><span class="ln">103</span><span class="cl"><span class="k">def</span> <span class="nf">find_winner</span><span class="p">(</span><span class="n">challengers</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">104</span><span class="cl">    <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="ln">105</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln">106</span><span class="cl"><span class="s2">        Desc : finds the challenger who has collected the most treasure and prints and returns the winner
+</span></span></span><span class="line"><span class="ln">107</span><span class="cl"><span class="s2">        Params : challengers
+</span></span></span><span class="line"><span class="ln">108</span><span class="cl"><span class="s2">        Return : the winner (as an object)
+</span></span></span><span class="line"><span class="ln">109</span><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="ln">110</span><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">111</span><span class="cl">    <span class="c1"># TODO : case when there is a draw</span>
+</span></span><span class="line"><span class="ln">112</span><span class="cl">    <span class="n">hyp_winner</span> <span class="o">=</span> <span class="n">challengers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">113</span><span class="cl">    <span class="k">for</span> <span class="n">challenger</span> <span class="ow">in</span> <span class="n">challengers</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">114</span><span class="cl">        <span class="k">if</span> <span class="n">challenger</span><span class="p">[</span><span class="s1">&#39;collected_treasures&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">hyp_winner</span><span class="p">[</span><span class="s1">&#39;collected_treasures&#39;</span><span class="p">]:</span>
+</span></span><span class="line"><span class="ln">115</span><span class="cl">            <span class="n">hyp_winner</span> <span class="o">=</span> <span class="n">challenger</span>
+</span></span><span class="line"><span class="ln">116</span><span class="cl">    <span class="k">return</span> <span class="n">hyp_winner</span>
+</span></span><span class="line"><span class="ln">117</span><span class="cl">
+</span></span><span class="line"><span class="ln">118</span><span class="cl">
+</span></span><span class="line"><span class="ln">119</span><span class="cl">
+</span></span><span class="line"><span class="ln">120</span><span class="cl">
+</span></span><span class="line"><span class="ln">121</span><span class="cl">
+</span></span><span class="line"><span class="ln">122</span><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">123</span><span class="cl">
+</span></span><span class="line"><span class="ln">124</span><span class="cl">    <span class="c1"># Part one : data definition</span>
+</span></span><span class="line"><span class="ln">125</span><span class="cl">    <span class="n">moods</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;happy&#34;</span><span class="p">,</span> <span class="s2">&#34;anxious&#34;</span><span class="p">,</span> <span class="s2">&#34;impatient&#34;</span><span class="p">,</span> <span class="s2">&#34;desappointed&#34;</span><span class="p">,</span> <span class="s2">&#34;amazed&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">126</span><span class="cl">
+</span></span><span class="line"><span class="ln">127</span><span class="cl">    <span class="c1"># Note to the programmer : if you want to add challengers to the game you must follow the following rules :</span>
+</span></span><span class="line"><span class="ln">128</span><span class="cl">    <span class="c1"># a challenger is a challenger IF AND ONLY IF he/she has a name, an age, a mood, a position and a collected_treasures</span>
+</span></span><span class="line"><span class="ln">129</span><span class="cl">
+</span></span><span class="line"><span class="ln">130</span><span class="cl">    <span class="n">challenger_1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&#34;Antoine&#34;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;mood&#39;</span><span class="p">:</span> <span class="n">moods</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;position&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;collected_treasures&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+</span></span><span class="line"><span class="ln">131</span><span class="cl">    <span class="n">challenger_2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&#34;Thomas&#34;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">&#39;mood&#39;</span><span class="p">:</span> <span class="n">moods</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;position&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;collected_treasures&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+</span></span><span class="line"><span class="ln">132</span><span class="cl">    <span class="n">challenger_3</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&#34;Julia&#34;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span> <span class="s1">&#39;mood&#39;</span><span class="p">:</span> <span class="n">moods</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;position&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;collected_treasures&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+</span></span><span class="line"><span class="ln">133</span><span class="cl">    <span class="n">challenger_4</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&#34;Richard&#34;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span> <span class="s1">&#39;mood&#39;</span><span class="p">:</span> <span class="n">moods</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;position&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;collected_treasures&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+</span></span><span class="line"><span class="ln">134</span><span class="cl">
+</span></span><span class="line"><span class="ln">135</span><span class="cl">    <span class="n">challengers</span> <span class="o">=</span> <span class="p">[</span><span class="n">challenger_1</span><span class="p">,</span> <span class="n">challenger_2</span><span class="p">,</span> <span class="n">challenger_3</span><span class="p">,</span> <span class="n">challenger_4</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">136</span><span class="cl">
+</span></span><span class="line"><span class="ln">137</span><span class="cl">    <span class="n">sport_commentator</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s2">&#34;Kathrine&#34;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">:</span><span class="mi">68</span> <span class="p">}</span>
+</span></span><span class="line"><span class="ln">138</span><span class="cl">
+</span></span><span class="line"><span class="ln">139</span><span class="cl">    <span class="n">world_2D</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">140</span><span class="cl">
+</span></span><span class="line"><span class="ln">141</span><span class="cl">    <span class="n">n_turns</span> <span class="o">=</span> <span class="mi">8</span>
+</span></span><span class="line"><span class="ln">142</span><span class="cl">
+</span></span><span class="line"><span class="ln">143</span><span class="cl">    <span class="c1"># Part two : game execution</span>
+</span></span><span class="line"><span class="ln">144</span><span class="cl">    <span class="n">announce_challengers</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">challengers</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">145</span><span class="cl">
+</span></span><span class="line"><span class="ln">146</span><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;The game is starting...&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">147</span><span class="cl">
+</span></span><span class="line"><span class="ln">148</span><span class="cl">    <span class="k">for</span> <span class="n">turn_index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_turns</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">149</span><span class="cl">        <span class="k">for</span> <span class="n">challenger</span> <span class="ow">in</span> <span class="n">challengers</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">150</span><span class="cl">            <span class="n">update_challenger_position</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">world_2D</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">151</span><span class="cl">            <span class="n">update_challenger_points</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">world_2D</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">152</span><span class="cl">
+</span></span><span class="line"><span class="ln">153</span><span class="cl">    <span class="n">winner</span> <span class="o">=</span> <span class="n">find_winner</span><span class="p">(</span><span class="n">challengers</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">154</span><span class="cl">    <span class="n">annouce_winner</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">winner</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">155</span><span class="cl">
+</span></span><span class="line"><span class="ln">156</span><span class="cl">
+</span></span><span class="line"><span class="ln">157</span><span class="cl">    <span class="k">for</span> <span class="n">challenger</span> <span class="ow">in</span> <span class="n">challengers</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">158</span><span class="cl">        <span class="k">if</span> <span class="n">challenger</span> <span class="o">==</span> <span class="n">winner</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">159</span><span class="cl">            <span class="n">set_challenger_mood</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">moods</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+</span></span><span class="line"><span class="ln">160</span><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">161</span><span class="cl">            <span class="n">set_challenger_mood</span><span class="p">(</span><span class="n">challenger</span><span class="p">,</span> <span class="n">moods</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+</span></span><span class="line"><span class="ln">162</span><span class="cl">
+</span></span><span class="line"><span class="ln">163</span><span class="cl">    <span class="n">interview_challengers_podium</span><span class="p">(</span><span class="n">sport_commentator</span><span class="p">,</span> <span class="n">challengers</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="guide-lines-and-todo">Guide lines and TODO:</h2>
 <p><strong><ins>First step</ins> : work only with the story</strong></p>
 <ul>
 <li>With the help of the <a href="https://drive.google.com/file/d/1pVF-N2Gf4RXdCmssmfpz1JxKq7-CyJ9o/view?usp=sharing">slides</a>, write down any kind of entities you can find in the story.</li>
@@ -1083,7 +1125,7 @@ that apply to only them. For example cats can meow, dogs can bark, birds can fly
   </symbol>
 </svg>
 
-<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.da447fb55567ef78b2118176ae7d1d5dd0ec562b6ae1f7dbaf677ec1bc6b0dedd5e2a2146e761b1716034fd8188bac4ad3806ac5b2ee7f3dd06f3fcb96dbaceb.js"></script>
+<script src="https://redi-school.github.io/ber-dcp-intro-to-computer-science/js/bundle.min.90d892b347a32126ea9a367a37b0713d1de58290515e4b99d522ec14e7a93f46b97b55e542b4b4c237513cd859e526a35e525f71271986c505752d240b463c7b.js"></script>
 
 </body>
 </html>
