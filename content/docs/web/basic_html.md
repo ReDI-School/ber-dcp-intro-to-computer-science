@@ -32,14 +32,6 @@ The following video from Khan Academy's _Internet 101_ series will give you a hi
 <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"><img width=56 src="https://code.visualstudio.com/assets/apple-touch-icon.png" /> Live Server</a>
 <a href="https://www.youtube.com/watch?v=jdWlGQdq1Q0&t=245s"><img width=56 src="https://cdn.icon-icons.com/icons2/195/PNG/256/YouTube_23392.png" /> Youtube Instructions</a>
 
-
-  
-<!-- ### 5. HTML class practice repository on Github
-
-Visit the following github page and follow the instructions to work on the activity for this class 
-- https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal -->
----
-
 ## Class Curriculum
 
 | Section content                          | Expected time (mins) | Pre - Requirements |
@@ -48,9 +40,9 @@ Visit the following github page and follow the instructions to work on the activ
 | HTML Basics explained | 15 minutes        | ❌ 
 | Creating your first webpage |  15-30 minutes        | ❌  |
 | Class break                                    | 10 minutes           | 
-| HTML Exercise (in breakout rooms) * [link](https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal)              | 45-60 minutes        | VsCode, Chrome, GitHub Desktop  |
+| HTML Exercise (in breakout rooms) * [link](https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal)              | 45 minutes        | VsCode, Chrome, GitHub Desktop  |
 
-<hr>
+---
 
 ## Lesson Goal
 
@@ -195,7 +187,7 @@ Elements can be placed inside other elements, which is called nesting.
 Most elements are (by default) `block` like **headers**, **paragraphs**, **divs**, **lists** → there is a line break after each element.
 Some elements like **links**, **images** and **spans** are `inline` → they do not start on a new line and only occupy the space they need.
 
-<br>
+---
 
 ## Overview
 
@@ -253,7 +245,14 @@ Some elements like **links**, **images** and **spans** are `inline` → they do 
 | `<footer>` `</footer>` | Base of a page or section - might include contact information/some site navigation |
 
 
+## Exercise
+→ we will build a simple journal using HTML (+ CSS which we will learn about tomorrow)
 
+Clone this repository with `GitHub Desktop`: https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal
+
+→ Instructions are in the `README.md` of the repository.
+
+---
 
 ## Extra resources
 
@@ -261,7 +260,7 @@ Some elements like **links**, **images** and **spans** are `inline` → they do 
 - [HTML cheatsheet](https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf), by Stanford University
 - [Semantic HTML](https://www.codecademy.com/learn/learn-html/modules/learn-semantic-html), semantic elements are essential for **accessibility**
 
----
+<br>
 
 #### Glossary
 
