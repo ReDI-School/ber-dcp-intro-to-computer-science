@@ -40,7 +40,7 @@ The following video from Khan Academy's _Internet 101_ series will give you a hi
 | HTML Basics explained | 15 minutes        | ❌ 
 | Creating your first webpage |  15-30 minutes        | ❌  |
 | Class break                                    | 10 minutes           | 
-| HTML Exercise (in breakout rooms) * [link](https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal)              | 45 minutes        | VsCode, Chrome, GitHub Desktop  |
+| HTML Exercise (in breakout rooms) * [link](https://github.com/hannah-eichelsdoerfer/ber-intro-to-cs-2022-journal-exercise)              | 45 minutes        | VsCode, Chrome, GitHub Desktop  |
 
 ---
 
@@ -248,7 +248,8 @@ Some elements like **links**, **images** and **spans** are `inline` → they do 
 ## Exercise
 → we will build a simple journal using HTML (+ CSS which we will learn about tomorrow)
 
-Clone this repository with `GitHub Desktop`: https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal
+Clone this repository with `GitHub Desktop`: 
+- https://github.com/hannah-eichelsdoerfer/ber-intro-to-cs-2022-journal-exercise
 
 → Instructions are in the `README.md` of the repository.
 
@@ -256,7 +257,6 @@ Clone this repository with `GitHub Desktop`: https://github.com/ReDI-School/ber-
 
 ## Extra resources
 
-- [HTML Class Practice](https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal)
 - [HTML cheatsheet](https://web.stanford.edu/group/csp/cs21/htmlcheatsheet.pdf), by Stanford University
 - [Semantic HTML](https://www.codecademy.com/learn/learn-html/modules/learn-semantic-html), semantic elements are essential for **accessibility**
 
