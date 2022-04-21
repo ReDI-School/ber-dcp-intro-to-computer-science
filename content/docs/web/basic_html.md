@@ -46,7 +46,7 @@ Visit the following github page and follow the instructions to work on the activ
 | ---------------------------------------- | -------------------- | ------------------ |
 | Remaining questions on Python concepts                        | 10-15 minutes            | ❌                    |
 | HTML Basics explained | 15 minutes        | ❌ 
-| Creating your first webpage |  15 minutes        | ❌  |
+| Creating your first webpage |  15-30 minutes        | ❌  |
 | Class break                                    | 10 minutes           | 
 | HTML Exercise (in breakout rooms) * [link](https://github.com/ReDI-School/ber-intro-to-cs-2021-html-journal)              | 45-60 minutes        | VsCode, Chrome, GitHub Desktop  |
 
@@ -58,14 +58,17 @@ Understand what HTML is, why we use it and create a HTML-based journal with link
 
 ## HTML - What is it?
 
-HTML, HyperText Markup Language, is a markup language for documents designed to be displayed in a Web Browser.  
 
-Web brosers fetch HTML documents from Web servers over the internet or on your laptop
+It makes up the structure and content of any webpage and tells it how it should look strucure wise.
+![html-css-js-anology](https://scontent-frt3-2.xx.fbcdn.net/v/t1.6435-9/119026861_1499182456955951_7652532436839803427_n.png?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=kOh4c0z6WA4AX9c1tQm&_nc_oc=AQlhWYWIIcB1qs850n4o6wnk2pyFr_6Xy4nbRWtGjhkm5gmMWClZj8fijUH1jxmDKVo&_nc_ht=scontent-frt3-2.xx&oh=00_AT-Qw_Cd9W4Fb2qmXywVYTmYjVrfZ6PC2NNNqEs9HRaosw&oe=6284AFFF)
+
+→ `HyperText Markup Language`, is a markup language (not a programming language!) designed to be displayed in a Web Browser. 
+
 
 ![html-intro-image](https://d6x8u9i2.rocketcdn.me/blog/wp-content/uploads/2018/10/http.png)
 
-HTML elements are the building blocks of HTML pages and specify how text, images, video and interactive forms can be
-embedded on a web page which is being displayed in the browser.
+→ When you type in an address (url) your computer makes a request to a server and asks for this specific website (`get request`) and the server talks through http (`hyper text transfer protocol`) and responds with the html code.
+
 
 ## How to get started?
 > Review [Starting a brand new project](../../git/git_and_github_desktop) from the Version Control with Git and GitHub lecture
@@ -89,26 +92,59 @@ Why call it _index_? When your browser downloads the website files from a server
   
   <body>
     <!-- Actual page content (displayed in browser) -->
-    <div>
-      <p>Hello world!</p>
-    </div>
+     <h1>Hello world!</h1>
   </body>
 </html>
 ```
 
+<details>
+  <summary>What is the meaning of each of these lines?! 📖 </summary>
+  
+  1. The page is defined as an HTML document:
+  ```html
+  <!DOCTYPE html>
+  ```
+  1. The `html`tag represents the root of the document, all other elements need to go inside these tags:
+  ```html
+  <html>
+    ...
+  </html>
+  ```
+  3. The intelligence of a page is placed between the `head`tags (like meta data, link to stylesheets and so on)
+  ```html
+  <head>
+    <!-- Page's intelligence (meta data) -->
+    ...
+  </head>
+  ```
+  5. A title is added to the tab:
+  ```html
+  <title> This is a title </title>
+  ```
+  5. The visual website content will be contained within the `body`. Right now it contains only a header saying Hello, World!:
+  ```html
+  <body>
+     <!-- Actual page content (displayed in browser) -->
+     <h1>Hello world!</h1>
+  </body>
+  ```
+</details>
+
+<br>
+
 → To create the basic skeleton use a snippet: simply type `!` in an empty `.html` file and hit enter.
 
+The set of all opening and closing tags in a HTML document form a hierarchy (just like a tree). For example in the  HTML markup above, the `<html>` tag is the parent of the `<head>` and `<body>` tags. The `<title>` tag is a child of the `<head>` tag and a grandchild of the `<html>` tag.
 
-The set of all start and end tags in a HTML document form a hierarchy (just like a tree). For example in the 
-HTML markup below, the `<html>` tag is the parent of the `<head>` and `<body>` tags. The `<title>` tag is a child of
-the `<head>` tag and a grandchild of the `<html>` tag. 
 
+<br>
 
 #### Elements & Tags
 ![test](https://sts.doit.wisc.edu/manuals/html/images/basics-structure-1.png)
-→ the whole thing is called an **element** (opening tag + content + closing tag)
+→ the whole thing is called an **element** (opening tag + content + closing tag)\
+→ elements tell the browser how to display the content (default styling - can be overwritten with CSS)
 
-There are a few self-closing tags (do not need a closing tag), the ones you should really be aware of are `img` and `input`
+There are also **self-closing tags** (do not need a closing tag), the most common ones are `img` and `input`
 ```html
 <!-- Examples of self-closing tags -->
 
@@ -120,11 +156,46 @@ There are a few self-closing tags (do not need a closing tag), the ones you shou
 <input type="email" />
 ```
 
+<br>
 
 #### Attributes and Values
 ![test](https://sts.doit.wisc.edu/manuals/html/images/basics-structure-2.png)
 
 As you can see above in the code example, tags can take certain attributes and values inside the opening tag.
+
+<br>
+
+#### Nesting Elements
+Elements can be placed inside other elements, which is called nesting.
+
+→ make sure to always indent properly (opening and closing tag on same level), otherwise when the page gets larger, nesting can become complicated and errors are more likely to occur (missing closing tags, wrong nesting and so on)
+````html
+<!-- WRONG ❌ hard to read and prone for errors -->
+<ul>
+  <li>Apple</li>
+<li>Orange</li>
+    <li>Banana</li><li>Strawberry
+    </li>
+  </ul>
+
+<!-- CORRECT ✅ -->
+<ul>
+  <li>Apple</li>
+  <li>Orange</li>
+  <li>Banana</li>
+  <li>Strawberry</li>
+</ul>
+
+````
+<br>
+
+#### Block vs. Inline Elements
+![Block vs. Inline Elements](https://www.freecodecamp.org/news/content/images/size/w2400/2021/01/Screen-Shot-2021-01-11-at-1.17.22-PM.png)
+
+Most elements are (by default) `block` like **headers**, **paragraphs**, **divs**, **lists** → there is a line break after each element.
+Some elements like **links**, **images** and **spans** are `inline` → they do not start on a new line and only occupy the space they need.
+
+<br>
 
 ## Overview
 
@@ -160,7 +231,7 @@ As you can see above in the code example, tags can take certain attributes and v
 | `<br />` | Interrupts the flow of text to a new line | [Try it](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs) |
 | `<hr />` | Thematic Break (Horizontal rule/line) |
 | `<div> </div>` | Used to format block content with CSS | [Try it](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_block_div) |
-| `<span> <span>` | Used to format inline content with CSS | [Try it](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_inline_span)
+| `<span> <span>` | Content Division element (allows grouping together of elements, handy for styling) | [Try it](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_inline_span)
 | `<ul> </ul>` | Creates an unordered list | [Try it](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered) |
 | `<ol start=xx> </ol>` | Creates an ordered list (start=xx, where xx is a counting number) | [Try it](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered) |
 | `<li> </li>` | Specifies each list item of either the unordered or ordered list | [Try it](https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_list_test) |
@@ -169,8 +240,19 @@ As you can see above in the code example, tags can take certain attributes and v
 | `<th> </th>` | Creates a table header |
 | `<tr> </tr>` | Creates a row of a table |
 | `<td> </td>` | Creates a column within a row of a table |
+| `<form> </form>` | Creates a form |
+| `<input type="..."/>` | Takes Input from the user (different types of input elements, such as text fields, checkboxes, radio buttons, submit buttons, ...) |
+| `<label> </label>` | Defines a label for form elements |
 | `<iframe> </iframe>` | Used to embed a webpage within another webpage. Its useful for embedding youtube videos on a web page | [Try it](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_youtubeiframe) |
 | `<!-- ... -->` | Comment - anything in-between these tags is ignored |
+| **Semantic Elements** | *Semantic elements give meaning to the code, important for accessibility* |
+| `<header>` `</header>` | ´content that should be considered introductory to a page or section |
+| `<nav>` `</nav>` | Navigation menu with links |
+| `<main>` `</main>` | The main content of the webpage, only one per page |
+| `<section>` `</section>` | For grouping together nearby content of a similar them |
+| `<footer>` `</footer>` | Base of a page or section - might include contact information/some site navigation |
+
+
 
 
 ## Extra resources
