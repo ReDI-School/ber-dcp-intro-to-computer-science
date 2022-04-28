@@ -17,6 +17,16 @@ HTTP and HTML - 7:07
     </item>
     
     <item>
+      <title>28/04 - Basic knowledge of CSS</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/basic_css/</guid>
+      <description>Preparations 1. Revise HTML Basics  What&#39;s a HTML element? What&#39;s a HTML tag? What&#39;s a HTML attribute?  → Basic HTML
+2. Watch these Videos  CSS in 100 Seconds - 2:19 CSS explained in 5 minutes - 8:15 Learn CSS in 20 Minutes - 23:43   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Questions from last session 15 minutes ❌   Lesson Agenda and Goals 5 minutes ❌   CSS Basics explained 20 minutes Preparations section   Live Demonstration of CSS Basics 25 minutes HTML Basics   Class break 10 minutes ❌   CSS Activity (in breakout rooms) 45-60 minutes VsCode and Git installed    Lesson Goal Understand what CSS is, why we use it and how we can use it to style our webpages.</description>
+    </item>
+    
+    <item>
       <title>05/April - Practical Python Session</title>
       <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/python/practical_python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
