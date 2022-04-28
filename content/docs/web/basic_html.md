@@ -38,9 +38,9 @@ The following video from Khan Academy's _Internet 101_ series will give you a hi
 | ---------------------------------------- | -------------------- | ------------------ |
 | Remaining questions on Python concepts   | 10-15 minutes        | ❌                 |
 | HTML Basics explained                    | 15 minutes           | ❌                 |
-| Creating your first webpage              | 15-30 minutes       | ❌                  |
-| Class break                              | 10 minutes           | 
-| HTML Exercise (in breakout rooms) * [link](https://github.com/hannah-eichelsdoerfer/ber-intro-to-cs-2022-journal-exercise)              | 45 minutes        | VsCode, Chrome, GitHub Desktop  |
+| Creating your first webpage              | 15-30 minutes        | ❌                 |
+| Class break                              | 10 minutes           |                    | 
+| HTML Exercise (in breakout rooms) * [link](https://github.com/hannah-eichelsdoerfer/ber-intro-to-cs-2022-journal-exercise)     | 45 minutes           | VsCode, Chrome, GitHub Desktop |
 
 ---
 
