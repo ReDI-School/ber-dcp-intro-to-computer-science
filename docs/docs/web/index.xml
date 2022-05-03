@@ -26,5 +26,14 @@ HTTP and HTML - 7:07
 2. Watch these Videos  CSS in 100 Seconds - 2:19 CSS explained in 5 minutes - 8:15 Learn CSS in 20 Minutes - 23:43   Class Curriculum    Section content Expected time (mins) Pre - Requirements     Questions from last session 15 minutes ❌   Lesson Agenda and Goals 5 minutes ❌   CSS Basics explained 20 minutes Preparations section   Live Demonstration of CSS Basics 25 minutes HTML Basics   Class break 10 minutes ❌   CSS Activity (in breakout rooms) 45-60 minutes VsCode and Git installed    Lesson Goal Understand what CSS is, why we use it and how we can use it to style our webpages.</description>
     </item>
     
+    <item>
+      <title>3/May - Practical Demonstration of HTML and CSS</title>
+      <link>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/html_css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://redi-school.github.io/ber-dcp-intro-to-computer-science/docs/web/html_css/</guid>
+      <description>Prerequisites  You have VsCode and Git installed Review the CSS course content, and watch this video (if you haven&#39;t already): Learn CSS in 20 Minutes Review the HTML course content, check out this video (start at 7:30 and end at 49:35 unless you&#39;d like to learn about semantic tags :-) ) Decide who to build a website for (you? your pet? someone else?). Pick a simple background image for your website.</description>
+    </item>
+    
   </channel>
 </rss>
