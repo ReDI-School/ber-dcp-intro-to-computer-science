@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "/Users/hannaheichelsdoerfer/code/redi/ber-dcp-intro-to-computer-science",
+	"sourceRoot": "/home/charles/Documents/redi-school/ber-dcp-intro-to-computer-science",
 	"sources": [
 		"themes/compose/assets/sass/main.sass",
 		"themes/compose/assets/sass/_variables.sass",
