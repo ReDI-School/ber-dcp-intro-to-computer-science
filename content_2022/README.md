@@ -86,7 +86,7 @@ Git enables us to version control our files and track changes so that we have a 
 #### 1.2.3.4 Using Git
 
 - From the bash command line interface in your Windows Terminal, run: ```git clone https://github.com/ReDI-School/hh-dcp-intro-to-computer-science.git```. This will create a local version of this repository in your WSL. This is needed before we can progress with subsequent steps. 
-- Type ```ls``` to list all files and directories and you should now see a new folder called "datascience-bootcamp".
+- Type ```ls``` to list all files and directories and you should now see a new folder called "hh-dcp-intro-to-computer-science".
 - To update your local repository to the must up-to-date status of the remote version, navigate into your repository (```cd hh-dcp-intro-to-computer-science```; **Note:** you can use the tap key to autocomplete the directory name) and type ```git pull```. We will run this command at the start of every session of the bootcamp to have the up-to-date content.
 - Udacity has a very good free course about Git essentials [here](https://www.udacity.com/course/version-control-with-git--ud123), which we can recommend. In general, we would strongly advise to use Git for version control for your future coding projects. For Avanade internal projects we can also use Git with Azure DevOps (Azure Repos) instead of Github. Find more information on using Git with Azure DevOps [here](https://docs.microsoft.com/en-us/azure/devops/user-guide/code-with-git?view=azure-devops).
 
