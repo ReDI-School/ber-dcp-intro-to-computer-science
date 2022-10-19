@@ -6,7 +6,7 @@
 
 ## 1.2 Tools Setup
 
-Before we start the deep dive into the data-related topics of the data science bootcamp, we will install all required tools on our system and at the same time familiarize ourselves with a chosen subset of the landscape of commonly used data science tools (**Note**: here we assume that you are working with a Windows OS; steps will deviate if you have MacOS or a Linux distribution). While the landscape of data science tools is very diverse nowadays, we will cover some of the most well known and useful tools including:
+Before we start the deep dive into the Python, we will install all required tools on our system and at the same time familiarize ourselves with a chosen subset of the landscape of commonly used data science tools (**Note**: here we assume that you are working with a Windows OS; steps will deviate if you have MacOS or a Linux distribution). While the landscape of data science tools is very diverse nowadays, we will cover some of the most well known and useful tools including:
 - Windows Subystem for Linux (WSL)
 - Windows Terminal
 - Git
@@ -87,7 +87,7 @@ Git enables us to version control our files and track changes so that we have a 
 
 - From the bash command line interface in your Windows Terminal, run: ```git clone https://github.com/ReDI-School/hh-dcp-intro-to-computer-science.git```. This will create a local version of this repository in your WSL. This is needed before we can progress with subsequent steps. 
 - Type ```ls``` to list all files and directories and you should now see a new folder called "hh-dcp-intro-to-computer-science".
-- To update your local repository to the must up-to-date status of the remote version, navigate into your repository (```cd hh-dcp-intro-to-computer-science```; **Note:** you can use the tap key to autocomplete the directory name) and type ```git pull```. We will run this command at the start of every session of the bootcamp to have the up-to-date content.
+- To update your local repository to the must up-to-date status of the remote version, navigate into your repository (```cd hh-dcp-intro-to-computer-science```; **Note:** you can use the tap key to autocomplete the directory name) and type ```git pull```. We will run this command at the start of every lesson to have the up-to-date content.
 - Udacity has a very good free course about Git essentials [here](https://www.udacity.com/course/version-control-with-git--ud123), which we can recommend. In general, we would strongly advise to use Git for version control for your future coding projects. For Avanade internal projects we can also use Git with Azure DevOps (Azure Repos) instead of Github. Find more information on using Git with Azure DevOps [here](https://docs.microsoft.com/en-us/azure/devops/user-guide/code-with-git?view=azure-devops).
 
 ### 1.2.4 Miniconda & Python
@@ -108,11 +108,11 @@ Miniconda is a small bootstrap version of Anaconda that includes only conda, Pyt
 
 #### 1.2.4.2 Create the Conda Environment
 
-We will now create our first conda environment to install all required packages for the bootcamp. The most reproducible and recommended way to install a conda environment is from an environment definition in a ".yml" file. To this end, the repository that we just cloned in the previous step contains an "environment.yml" file where the Python version as well as all required packages including their respective versions are defined. We can install the conda environment from the "environment.yml" file as follows:
+We will now create our first conda environment to install all required packages for the lessons. The most reproducible and recommended way to install a conda environment is from an environment definition in a ".yml" file. To this end, the repository that we just cloned in the previous step contains an "environment.yml" file where the Python version as well as all required packages including their respective versions are defined. We can install the conda environment from the "environment.yml" file as follows:
 - First navigate to the root of your local repository by running ```cd ```.  
 - Then run ```conda env create -f environment.yml``` to install the conda environment defined in the "environment.yml" file. **Note**: When using WSL, it can happen that Conda fails to connect to the anaconda repo and returns a CondaHTTPError. If that is the case, open the Windows Command Prompt and type ```wsl --shutdown```. This will restart WSL. Then open WSL and try again.
-- After the installation is done, run ```conda env list``` to list all conda environments. Next to the "base" environment, which is installed by default, you should now see the environment named "datascience-bootcamp".
-- You can activate the new environment by running ```conda activate intro-to-cs```. We will activate this environment at the beginning of every session of the data science bootcamp. In your day-to-day work, we recommend to create different conda environments for different projects so that you have isolated environments and don't break things because of incompatability of packages across projects.
+- After the installation is done, run ```conda env list``` to list all conda environments. Next to the "base" environment, which is installed by default, you should now see the environment named "intro-to-cs".
+- You can activate the new environment by running ```conda activate intro-to-cs```. We will activate this environment at the beginning of every lesson of Python classes. In your day-to-day work, we recommend to create different conda environments for different projects so that you have isolated environments and don't break things because of incompatability of packages across projects.
 - To deactivate the new environment, run ```conda deactivate intro-to-cs```.
 - OPTIONAL: to uninstall the newly installed conda environment, run ```conda env remove -n intro-to-cs```.
 
@@ -222,7 +222,7 @@ JupyterLab is the latest open-source web-based interactive development environme
 
 - Activate the conda environment by opening your Linux distribution's command line via Windows Terminal and typing ```conda activate intro-to-cs```.
 - Then type ```jupyter lab --no-browser``` to launch JupyterLab. Copy the URL, open the browser of your choice on your local workstation (e.g. Google Chrome), and paste the URL into the address bar. (**Note**: don't close the terminal as we have started an interactive JupyterLab session, which will be terminated once you close your terminal. You can stop the interactive session by pressing "CTRL + C".)
-- You can now work with notebooks (".ipynb" format) in JupyterLab and follow the hands-on lab sessions during the rest of the data science bootcamp. All packages that you will need during the bootcamp are defined in the "environment.yml" file and have therefore been installed in your conda environment called "intor-to-cs". Since we started the JupyterLab session from within this environment, you have now access to all required packages.
+- You can now work with notebooks (".ipynb" format) in JupyterLab and follow the hands-on python sessions. All packages that you will need during the Python classes are defined in the "environment.yml" file and have therefore been installed in your conda environment called "intor-to-cs". Since we started the JupyterLab session from within this environment, you have now access to all required packages.
 
 ## 1.3 Introduction to Python
 
