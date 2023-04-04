@@ -324,19 +324,26 @@ https://code.visualstudio.com/docs/editor/versioncontrol#_git-support
 
 ow install the [Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) in your WSL distribution. -->
 
-### 1.2.6 JupyterLab
+### 1.6 JupyterLab
 
 JupyterLab is the latest open-source web-based interactive development environment for notebooks, code, and data. As such, it is one of the most popular tools for Data Scientists. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. A modular design invites extensions to expand and enrich functionality.
 
 **Documentation**: [https://jupyterlab.readthedocs.io/en/stable/](https://jupyterlab.readthedocs.io/en/stable/)
 
-#### 1.2.6.1 Run JupyterLab 
+#### 1.6.1 Run JupyterLab 
 
-- Activate the conda environment by opening your Linux distribution's command line via Windows Terminal and typing ```conda activate intro-to-cs```.
-- Then type ```jupyter lab --no-browser``` to launch JupyterLab. Copy the URL, open the browser of your choice on your local workstation (e.g. Google Chrome), and paste the URL into the address bar. (**Note**: don't close the terminal as we have started an interactive JupyterLab session, which will be terminated once you close your terminal. You can stop the interactive session by pressing "CTRL + C".)
+- Activate the conda environment by opening your Linux distribution's command line via Windows Terminal or other terminals by running
+
+```conda activate intro-to-cs```
+
+- Run 
+
+```jupyter lab --no-browser``` 
+
+This will launch JupyterLab. Copy the URL, open the browser of your choice on your local workstation (e.g. Google Chrome), and paste the URL into the address bar. (**Note**: don't close the terminal as we have started an interactive JupyterLab session, which will be terminated once you close your terminal. You can stop the interactive session by pressing "CTRL + C".)
 - You can now work with notebooks (".ipynb" format) in JupyterLab and follow the hands-on python sessions. All packages that you will need during the Python classes are defined in the "environment.yml" file and have therefore been installed in your conda environment called "intor-to-cs". Since we started the JupyterLab session from within this environment, you have now access to all required packages.
 
-## 1.3 Introduction to Python
+## 1.7 Introduction to Python
 
 - Now that we have started a JupyterLab session, open the notebook **"1.Intro to Python"** in the **"lecture1"** folder from your JupyterLab browser application. Then, go through the notebook by following the instructions written directly in the markdown cells of this notebook.
 
