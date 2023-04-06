@@ -48,6 +48,7 @@ This will install WSL together with an Ubuntu distribution on your computer. You
 - Upgrade your packages using the apt package manager by running ```sudo apt update && sudo apt upgrade``` in the launched bash console.
 
 - You can open the new file system that comes with our Ubuntu distribution by leveraging the Windows explorer. To do this, enter the home directory and start the explorer executable from your Bash console as follows:
+
 ```cd ~```
 ```explorer.exe .```
 
@@ -118,11 +119,13 @@ If it output some numbers which represent the version of git you installed, this
 #### 1.3.4 Git Config File Setup
 
 - To set up the Git config file, run on your terminal:
+
 ```git config --global user.name "<YOUR_NAME>"``` and replace <YOUR_NAME> with your Github Account user name.
 
 - Then run ```git config --global user.email "<YOUR_EMAIL>"``` and replace <YOUR_EMAIL> with your Github Account email.
 
 - If you need to edit the Git config, you can use the text editor nano as follows:
+
 ```nano ~/.gitconfig```. When you are done, save the changes with CTRL + X  -> Y -> Enter.
 
 #### 1.3.5 Getting ReDI course repo
@@ -142,7 +145,7 @@ This will list all files and directories in that folder and you should now see a
 
 - To update your local repository to the most up-to-date status of the remote version, navigate into your repository 
 
-```cd hh-dcp-intro-to-computer-science```
+```cd hh-dcp-intro-to-computer-science/content_2023```
 
  **Note:** you can use the tap key to autocomplete the directory name).
  
@@ -191,6 +194,10 @@ Download the appropriate installer for your OS with the latest python version(Py
 #### 1.4.2 Create the Conda Environment
 
 We will now create our first conda environment to install all required packages and libraies for the lessons. The most reproducible and recommended way to install a conda environment is from an environment definition in a ".yml" file. To this end, the repository that we just cloned in the previous step contains an "environment.yml" file where the Python version as well as all required packages including their respective versions are defined. We can install the conda environment from the "environment.yml" file as follows:
+
+- Navigate to content_2023 folder
+
+```cd hh-dcp-intro-to-computer-science/content_2023```
 
 - Run 
 
