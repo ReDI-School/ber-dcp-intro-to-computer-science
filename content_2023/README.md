@@ -184,6 +184,7 @@ Miniconda is a small bootstrap version of Anaconda that includes only conda, Pyt
 - To make the installation changes take effect, close and then re-open your terminal window.
 
 - Run the command
+
  ```conda list``` 
  
  This command is use to verify that conda is now installed. If an output of packages is returned, you are good to go; otherwise it will tell you that the conda command was not found.
